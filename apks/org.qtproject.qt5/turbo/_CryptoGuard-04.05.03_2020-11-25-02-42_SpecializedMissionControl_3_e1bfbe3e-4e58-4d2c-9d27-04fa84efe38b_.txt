@@ -1,0 +1,44 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/org.qtproject.qt5/turbo/SpecializedMissionControl_3.12.0_Apkpure.apk
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "MD5" in com.google.common.hash.Hashing$Md5Holder::clinit.
+***Found: "MD5" in io.grpc.okhttp.internal.Util::md5Hex.
+***Found: "SHA-1" in com.squareup.okhttp.internal.Util::shaBase64.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "SHA1" in com.google.firebase.inappmessaging.internal.injection.modules.GrpcClientModule::signatureDigest.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "SHA1" in com.google.firebase.installations.local.IidStore::getIdFromPublicKey.
+***Found: "SHA-1" in com.google.common.hash.Hashing$Sha1Holder::clinit.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzku::zzE.
+***Found: "MD5" in com.squareup.okhttp.internal.Util::md5Hex.
+***Found: "SHA-1" in com.google.firebase.messaging.GmsRpc::getHashedFirebaseAppName.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "SHA-1" in io.grpc.okhttp.internal.Util::shaBase64.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "SHA-1" in com.squareup.okhttp.internal.Util::sha1.
+***Found: "SHA-1" in com.google.android.gms.common.zzl::zza.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "SHA-1" in com.google.firebase.crashlytics.internal.common.CommonUtils::sha1.
+***Found: "SHA-1" in io.grpc.okhttp.internal.Util::sha1.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in io.grpc.internal.ExponentialBackoffPolicy::init.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.util.RoundRobinLoadBalancer::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzku::zzq.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.okhttp.OkHttpClientTransport::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.hash.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.bumptech.glide.load.resource.gif.GifFrameLoader::getFrameSignature.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zza.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.zzee::zzb.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.okhttp.OkHttpClientTransport::init.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.internal.DnsNameResolver::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.Utils::getRandomDelayForSyncPrevention.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.internal.RetriableStream::clinit.
+=======================================

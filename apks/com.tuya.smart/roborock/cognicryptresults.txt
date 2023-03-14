@@ -1,0 +1,3030 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+4    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is too old. Falling back to java.lang.reflect API.
+4    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+5    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.3.0 or better (Maven group id: org.ow2.asm).
+5    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Ruleset: 
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	javax.crypto.CipherInputStream
+	javax.net.ssl.CertPathTrustManagerParameters
+	java.security.spec.ECGenParameterSpec
+	javax.crypto.spec.IvParameterSpec
+	java.security.AlgorithmParameters
+	java.security.spec.ECParameterSpec
+	java.security.MessageDigest
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.KeyAgreement
+	java.security.spec.X509EncodedKeySpec
+	javax.net.ssl.SSLEngine
+	java.security.KeyFactory
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.Key
+	java.security.spec.DSAParameterSpec
+	java.security.KeyPairGenerator
+	javax.crypto.SecretKeyFactory
+	java.security.cert.PKIXParameters
+	javax.net.ssl.SSLParameters
+	java.security.KeyPair
+	java.security.Signature
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.SecretKey
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.GCMParameterSpec
+	java.security.DigestInputStream
+	java.security.SecureRandom
+	javax.crypto.Cipher
+	javax.net.ssl.KeyManagerFactory
+	javax.crypto.spec.DHParameterSpec
+	javax.crypto.KeyGenerator
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.Mac
+	javax.crypto.spec.SecretKeySpec
+	java.security.DigestOutputStream
+	javax.net.ssl.KeyStoreBuilderParameters
+	java.security.KeyStore
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.CipherOutputStream
+	java.security.cert.TrustAnchor
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.spec.MGF1ParameterSpec
+	void
+	java.security.AlgorithmParameterGenerator
+
+Analyzed Objects: 
+	Object:
+		Variable: $r21
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r21.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r20, $r13)
+		Method: <o0OO0oO0.OooO0OO: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+		SHA-256: 1b0ca7c771d9ab86cb8da844ca9bd1e873e0aa6b34341c820139b42188c39e9d
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer74698)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: byte[] encrypt(java.security.PublicKey,byte[])>
+		SHA-256: e694729607a45d747564bb914e7d819a2693ae83bc644637f6e6b60ea14df0f
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String decrypt(java.lang.String)>
+		SHA-256: 1ae19e8e32e1a6337016be55b5f93ee04cb281820681fcd5a7d3394ac30f11db
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.Cipher
+		Statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer76994, varReplacer76995)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO0O0(byte[])>
+		SHA-256: 6f2e38c4fc88298c464ef79f616718ac06ded0562957788827e4d339acf7c841
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: java.security.KeyStore
+		Statement: $r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r9)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: 5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r5.<java.security.SecureRandom: void <init>(byte[])>($r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O00000Oo(android.content.SharedPreferences,byte[])>
+		SHA-256: a1ac3e73670c388ff4a3dacabd3efcfb611605c0da2ad528b5c7d8f1edef2f02
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: javax.crypto.spec.GCMParameterSpec
+		Statement: specialinvoke $r3.<javax.crypto.spec.GCMParameterSpec: void <init>(int,byte[])>(varReplacer111999, $r1)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.Cipher O000000o(byte[],boolean)>
+		SHA-256: 306499994e8116554784a5ed7d6407dc92389dca2073988de16fe2a3fdc694a4
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r5 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>(varReplacer128010)
+		Method: <com.tuya.smart.mqtt.MqttAndroidClient: javax.net.ssl.SSLSocketFactory getSSLSocketFactory(java.io.InputStream,java.lang.String)>
+		SHA-256: a6ee412bc5741a0a260a68c91e425309deab198950bd4f519a2ade7aba3bf63a
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: java.security.PublicKey
+		Statement: $r16 = virtualinvoke $r15.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r14)
+		Method: <com.tuya.smart.common.o000o0o0oo: void O000000o(byte[])>
+		SHA-256: b565bfe1c4d3b4b5609baf589fcba8fc45b2b52a18d8e3e341ece33b16d1f997
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $z0 = virtualinvoke $r11.<java.security.Signature: boolean verify(byte[])>($r1)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: 981dac69599569e828c0ab9b35ea93ae3ac67de57980ae8619f871e946dd3e7d
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: byte[]
+		Statement: virtualinvoke $r11.<java.security.SecureRandom: void nextBytes(byte[])>($r9)
+		Method: <com.google.android.gms.measurement.internal.OooO: void OooOOOO()>
+		SHA-256: 2c07508d17d5e3d3823754d071a59916ba189bd04aaf3b7f001581c53f936526
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Mac
+		Statement: $r4 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer51256)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO0o(com.roborock.internal.common.util.store.EncryptionManager$OooO00o)>
+		SHA-256: 269ce1f6cf1ac4c56baa8ae9bea6fbb2808c855a43514dd1ee5c90ec0b917550
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r4.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r5, $r2)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO00o(byte[])>
+		SHA-256: e4c549724262d53b133ff5740d3e09b2a5fc86dc5e25ef5cd73f2a62ef41833
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: badd7c778b6495fe0d51ee9a57c6857ba047e4bff53503e9ad2cdf6d3768bb87
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.CipherOutputStream
+		Statement: specialinvoke $r5.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r4, $r2)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO0O0(byte[])>
+		SHA-256: f26922ee72536282b8c91f04a4ab9d4df51a5c27026e7e8c51fb991913e53203
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r2.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r1)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: javax.crypto.Cipher OooOO0(byte[],boolean)>
+		SHA-256: 8a16dd623137cd9a060680fcb1e2d4f815d0b17a014bcc7eea2122f7c5ce6cd2
+		Secure: true
+	Object:
+		Variable: $r13
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r13.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r15)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: 8778e56f9f9828c861b1030481ad38824cf5a90b1b7e99db61d0fe2c47dfd21d
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.MessageDigest
+		Statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer49267)
+		Method: <o0O0oOoo.o0000O0O: java.util.ArrayList OooO00o(android.content.Context,java.lang.String)>
+		SHA-256: f1ecebd4bd393cb89ebb86e829026052fdff9f29fd5ea432e1bd1fa0af1549be
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer124431)
+		Method: <com.tuya.smart.android.common.utils.MD5: java.lang.String md5(java.lang.String)>
+		SHA-256: 3cc1950d6b259d15ae1031bc1d3586507d3697f7393bf038ea6ead3039dacb90
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.net.ssl.SSLContext
+		Statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>($r4, $r3)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: 2de0dbcb962ff3cb3e0d9dc8e9469638e8762c9aa5d9bef5cf875912fda1093
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.tuya.sdk.security.EncryptionManager: com.tuya.sdk.security.EncryptionManager$O000000o O000000o(byte[],byte[])>
+		SHA-256: 9387ee9ab0bd357309084e20daf5292b02d55e6da3fdfc366a9371376fabfb1a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer77018, $r2)
+		Method: <okhttp3.internal.platform.BouncyCastlePlatform: javax.net.ssl.SSLContext newSSLContext()>
+		SHA-256: 589ccbf051e6ae4a648e787eed97fbdbabdbafa50f719d5e892d4088a32bd226
+		Secure: false
+	Object:
+		Variable: $r19
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r19.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer19121)
+		Method: <o0OOOo0O.o00Ooo$OooO00o: void run()>
+		SHA-256: 71728a49b781a06fafe7f36e17b58af8695aead6f5f455866888627b6122f629
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r0)
+		Method: <com.tuya.smart.android.common.utils.MD5Util: byte[] computeMD5Hash(byte[])>
+		SHA-256: 5e51b04a64b810fd3cad35f7e4e49c9a466893111d828b369573eff1457aef0a
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r3.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.internal.recaptcha.o0O0o00O: void <clinit>()>
+		SHA-256: a22f1b6bede0d1a5fce33b9fc18fead98d83c52026db5214dd366b6e01c6bf39
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: javax.crypto.Cipher
+		Statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer76996, varReplacer76997)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO00o(byte[])>
+		SHA-256: 5b2b743d6245b394ca389c4874431a98bd6d1b7b3a2b58d425524a356bacf436
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: byte[] encryptWithBytes(java.lang.String)>
+		SHA-256: 4870598332f10eb5ebfa8a36f059ae1566f01fb5961adaa24c99a37ea78d5daa
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r11.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r13)
+		Method: <com.roborock.smart.fragment.MallFragment$verifyBundle$2: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: f028361db03dface9ba505c83d930e905f94429df2a22393f74cfd7fe75b13cc
+		Secure: false
+	Object:
+		Variable: varReplacer32188
+		Type: java.lang.String
+		Statement: $r14 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer32188)
+		Method: <com.roborock.smart.fragment.MallFragment$verifyBundle$2: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: b5bd7af91f131c3ac1dd3c23c75fd40f765e7228436e950d1e2364c8449da97f
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r2.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r1)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.Cipher O00000Oo(byte[],boolean)>
+		SHA-256: ab6e233d1303ad96099184d1a3fc8cbe2e7c97e790175003ab2ff53724519ae8
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r2)
+		Method: <com.tuya.smart.common.O00000Oo: byte[] O000000o(byte[],byte[])>
+		SHA-256: c6d1b04cf03c7ac3f0dd060f857188ea442ebf2a2d0d48ab7bffd06f25576f84
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.KeyFactory
+		Statement: $r13 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer3986)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: 3b4ad302ea654680c8f31fb84386d18dcb3f8db7ea2631451b922cd31b39a0f3
+		Secure: true
+	Object:
+		Variable: varReplacer8825
+		Type: java.lang.String
+		Statement: $r16 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer8825)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: 7997e1579b6840a756c0be34651b7d720d73776e3ee8030023424c683ae89096
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r5.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r3)
+		Method: <o0OOOOOO.OooO0o$OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: 4c9a66a2a007ad714eeea04453a148787cbc24bd570caaf6cd8e9f53e08e1154
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.firebase.crashlytics.internal.common.CommonUtils: java.lang.String OooOOO0(java.lang.String)>
+		SHA-256: d2c74aae6660d2436c67c0231ba28881a5adbce75e15772920c76b229996a9c5
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.Cipher
+		Statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer75751)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O000000o(byte[],byte[],byte[])>
+		SHA-256: 64500ed94cb031561c02cae3ac1edf958ca9b53c437e9eb91087b601449ff8d7
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.o00Oo0: java.security.SecureRandom OooOo00()>
+		SHA-256: 8e082b23d9965455eaaf9f8b3ae6a53f6c113a1d06da1e174508dec697b834da
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.SecretKey
+		Statement: $r6 = virtualinvoke $r4.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O000000o(android.content.SharedPreferences,byte[])>
+		SHA-256: 64b8d6763f55a8295ec16e6f7ef8f5f885d4f3ebc22589454c3736dc3de2a5fa
+		Secure: false
+	Object:
+		Variable: varReplacer134267
+		Type: java.lang.String
+		Statement: $r15 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String,java.lang.String)>(varReplacer134267, varReplacer134268)
+		Method: <com.tuya.smart.common.o000o0o0oo: void O000000o(byte[])>
+		SHA-256: f9d6f7ed31575a44c7e9cb9154218f964dbc661331c8f643bcee74393a3f5e23
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r16 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String,java.lang.String)>($r11, $r12)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: 51438369a357067707332506854fc20b41f55bae36aefc78dabd79b339ad0ac5
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String decryptWithBase64(java.lang.String)>
+		SHA-256: 73279fcdf8f3ca9f352ab916e0f36b579a36dc46c69387d1c60ba0e3eba76d2b
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r3.<java.security.SecureRandom: void nextBytes(byte[])>($r2)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: com.roborock.internal.common.util.store.EncryptionManager$OooO00o OooO0oO(byte[])>
+		SHA-256: 86751ff42b386617b155cd9ece091077e28a5ff6ae09e73a2995ed40e793af5f
+		Secure: true
+	Object:
+		Variable: $r14
+		Type: java.security.KeyPairGenerator
+		Statement: $r14 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer51264, varReplacer51265)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: b830fb79ed55f1975494c7cc94b1bd375e90ae93d7003cecc92150a5e423cc70
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.Cipher
+		Statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer112463, varReplacer112464)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O0000OOo(byte[])>
+		SHA-256: 57a054097b090b5f1929b0a80ecba440abb3f690efbe59efd67223c5f19c974b
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r13.<java.security.SecureRandom: void <init>()>()
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: 3a1f126b3afb07ca33f84b3fa067ab58321d423ba567ca9cccfe0add96c8fc4c
+		Secure: true
+	Object:
+		Variable: $r16
+		Type: java.security.Signature
+		Statement: $r16 = staticinvoke <java.security.Signature: java.security.Signature getInstance(java.lang.String)>(varReplacer32184)
+		Method: <com.roborock.smart.fragment.MallFragment$verifyBundle$2: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: 7083b9700c9a914769da9176ff4fabf5c448937bb057976eb88ccaec96d03a21
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.KeyGenerator
+		Statement: $r4 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>(varReplacer98147)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O000000o(android.content.SharedPreferences,byte[])>
+		SHA-256: 5141d5196d5b82e930187fd40423f75a6a747eba86771a69e3013061e78f49f
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: byte[] encryptWithBytes(byte[])>
+		SHA-256: c07c92637065f9963c307700984b9b22baa6e07708cd5fd04e6038051df5143d
+		Secure: false
+	Object:
+		Variable: $r25
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r25 = virtualinvoke $r24.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: 4845d370b2525dcea0df759ea58084eaf3dcb6fdbc3f0bf5f8bd3b0be6f2613e
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r0)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O0000ooo(byte[])>
+		SHA-256: 65289c88515ea3d4800fdde096eef1bc6716cedd8531621ea9ee97f15a57dde0
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.KeyFactory
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer74700)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: java.security.interfaces.RSAPublicKey generateRSAPublicKey(java.math.BigInteger,java.math.BigInteger)>
+		SHA-256: c7def650460c8f709ade873b46386314ae78d5feb0329456ddd536b1a1a21001
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: java.security.KeyPairGenerator
+		Statement: $r10 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>(varReplacer3914)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: 3dad5dafba675c43636c1b79eb6b049bc397cd5938e4314ee0b9fd4993a3bdc5
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r3 = virtualinvoke $r2.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <okhttp3.internal.platform.Platform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: c3dcfb07eabeaead2afa7b41e33d56187e303e14a7184c21b7bac99836f2c278
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r4.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r5, $r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O0000OOo(byte[])>
+		SHA-256: 52d9c1e26ac8563cba289d6e3c320d2b5d53f0c7bd0f46c02ff3477951604c0f
+		Secure: false
+	Object:
+		Variable: varReplacer98156
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer98156)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.SecretKey O00000o0(android.content.SharedPreferences)>
+		SHA-256: 48aad31f1ee3c62e0a547c1a21c1be7d76425a4ec0fb3febe3dd4556243ac576
+		Secure: false
+	Object:
+		Variable: $r34
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r34.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer51288)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: f8e07a088ece957e263e2e5deff0a1b55acd32552e3421193078bd180e6e06ad
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.Cipher
+		Statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer134340)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O00000Oo(byte[],byte[],byte[])>
+		SHA-256: cbdd649b006bdcb26c94e5f85f9c43336a7cdc50128d1b7c00f7b09bd39a6511
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer20320)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO0O0(byte[],byte[])>
+		SHA-256: 38ad994ef4efff1e19572be9405cb3704ecfabb176cc110afac3b6652cdad52e
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer134351)
+		Method: <com.tuya.smart.common.oooo0000o: void O0000o00()>
+		SHA-256: 5fb8ce904cb35c6781e70d711c897a674ce6fcac8629828093626cd1fb0d53d7
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.security.Key generateKey()>
+		SHA-256: fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420
+		Secure: false
+	Object:
+		Variable: $z0
+		Type: boolean
+		Statement: $z0 = virtualinvoke $r18.<java.security.Signature: boolean verify(byte[])>($r1)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: 1650664e170d682995753d15a86a936d218c2d9abad7cd022d8668bc2a1daad7
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.net.ssl.SSLContext
+		Statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r4)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: faf8a006ee2bf18d70acac36e6184b973d313a1f622eaa10afaeb42c1349d99c
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer122831)
+		Method: <org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketHandshake: byte[] sha1(java.lang.String)>
+		SHA-256: c91af32c3795436a0eec164fc12485b9700ecce0f6ad6546204f5b01efa131d8
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.facebook.cache.common.OooO00o: java.lang.String OooO0O0(com.facebook.cache.common.CacheKey)>
+		SHA-256: 726f90280afc605809e472041e7a6f44e605a5102a461a09ccbb837f6c558ee
+		Secure: false
+	Object:
+		Variable: $r22
+		Type: byte[]
+		Statement: $r22 = virtualinvoke $r20.<java.security.MessageDigest: byte[] digest(byte[])>($r22)
+		Method: <com.google.firebase.installations.remote.OooO0OO: java.net.HttpURLConnection OooO0OO(java.net.URL,java.lang.String)>
+		SHA-256: 8f233d94ac0748ffe154928a867ade33b710be8b7ed702dda20d486a864d331c
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r2.<java.security.SecureRandom: void <init>()>()
+		Method: <com.roborock.smart.utils.SharedPrefUtil: java.lang.String OooOo0(android.content.Context)>
+		SHA-256: 6ffaba7d66f988a469bfe71df9013b895410dc12d2eb7d34db2dddf9f20c3aa7
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String decrypt(byte[])>
+		SHA-256: d20a17eedf9d76fdc72dd37c023530af2c2764050615a9f141cf62f05b85cd92
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r5.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O000000o(byte[],byte[],byte[])>
+		SHA-256: ef04670c61db0ed3c1ab0faee51ef888fe5b0d3ef179b65f0d00d9f0541cd6a0
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer98153)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.SecretKey O00000Oo(android.content.SharedPreferences)>
+		SHA-256: b09ab0a4884af36a47281a48b4a345dbaf7f85b063cd82b757a4f69a51474af5
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r3)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: a52c3af9d678b28f0e495486e3ffc6a89ef65883521c05fdaf6711f262581506
+		Secure: true
+	Object:
+		Variable: $r8
+		Type: java.security.KeyStore
+		Statement: $r8 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer22570)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void <init>(android.content.Context,android.content.SharedPreferences,java.lang.String,byte[],com.roborock.internal.common.util.store.SecuredPreferenceStore$KeyStoreRecoveryNotifier)>
+		SHA-256: a2493ef39a06a3da5cfd12901e636576a8b064632cc7197e6da8eb31b7267465
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketHandshake: byte[] sha1(java.lang.String)>
+		SHA-256: 6eda339e373514871fdcaa5a3395bb2434b6fe5d0b32f9405d0cd6757160c015
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer134341)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O00000Oo(byte[],byte[],byte[])>
+		SHA-256: f64910b8718eec0464e6c269272b16161132cd3a07a8b4e3ba001d2254ae03ea
+		Secure: false
+	Object:
+		Variable: varReplacer31313
+		Type: java.lang.String
+		Statement: $r16 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer31313)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: e8dc9dde01a8a26f33e914abdde7eb0800e82c382959ecb97e195afbf498634c
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: byte[] decryptWithBytes(byte[])>
+		SHA-256: 9a97ab8158c304f102c41f7e78d4c53ad9fb716256d9eadfdc38ac1803ce0030
+		Secure: false
+	Object:
+		Variable: $r17
+		Type: javax.net.ssl.KeyManager[]
+		Statement: $r17 = virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManager[] getKeyManagers()>()
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: cd0e3b76762bcc893e3b8c71b838de88e9ec2eaaec5c03709c5f4ebb7add121e
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer20354)
+		Method: <com.roborock.homesec.RtcClient: void <clinit>()>
+		SHA-256: bd178c0d06916984a8f9521a76d68c783e9c37f43f367d83612ff0083f40d1ac
+		Secure: false
+	Object:
+		Variable: varReplacer3986
+		Type: java.lang.String
+		Statement: $r13 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer3986)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: e7fc9aca3e37b39c4d3e8e2259424f37f3a86149a4bd720fedee54b52d8f2b27
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r1)
+		Method: <com.google.android.gms.measurement.internal.o00O0O: long OooOo0o(byte[])>
+		SHA-256: afca9baeffc11036e709f1f89d820731c86f9e733b1a5f5c200538a19689eb3b
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r3)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: a52c3af9d678b28f0e495486e3ffc6a89ef65883521c05fdaf6711f262581506
+		Secure: false
+	Object:
+		Variable: r0
+		Type: com.tuya.smart.android.common.utils.FixedSecureRandom
+		Statement: specialinvoke r0.<java.security.SecureRandom: void <init>()>()
+		Method: <com.tuya.smart.android.common.utils.FixedSecureRandom: void <init>()>
+		SHA-256: c6036e9e7c875fe564fdde7319a908d8e330139e306440a672f8af29a3147138
+		Secure: true
+	Object:
+		Variable: $r27
+		Type: javax.crypto.SecretKey
+		Statement: $r27 = virtualinvoke $r7.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: 6e39be3136093465b5f9b5f8bc0fbd9974ce4f6ca699107a7ede548670addb5a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer4582)
+		Method: <com.tuya.sdk.security.EncryptionManager: java.lang.String O00000o0(java.lang.String)>
+		SHA-256: 9d95811fea687a0490c418d892d4e5d100b8d80be839bd139293df00a28def02
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.android.play.core.assetpacks.OooOOO: java.lang.String OooO00o(java.util.List)>
+		SHA-256: 8b41f0701e3a98a6027a1e02653dc18e0236f263c2d0d1c381d8d963cfa10ece
+		Secure: false
+	Object:
+		Variable: varReplacer20318
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer20318)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO0O0(byte[],byte[])>
+		SHA-256: 8c4fd9d4b687b14ea503a9a074171848a449417fbb577e1b1c5c23b3a8a92cba
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.KeyFactory
+		Statement: $r9 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer32783)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: c536ad8b52d6ef890f536337445eb3ba224bf2e592c12d46f9a9b92e3ff92d38
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r24 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r4)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: de66e4144aaa3aabd8d127116cf758b63d13d022f82524c5f32831cfbb2c1332
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: javax.crypto.Cipher
+		Statement: $r8 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer19114)
+		Method: <o0OOOo0O.o00Ooo$OooO00o: void run()>
+		SHA-256: a4df0919144a725020e2d7cc20b574f3628d4e70c6628d1b1376b85794fbc58
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r5.<java.security.SecureRandom: void <init>()>()
+		Method: <com.tuya.smart.common.o00oo00000: void <init>(byte[],byte[],com.tuya.smart.common.o00oo00000$O000000o)>
+		SHA-256: bac0b321ebb879da54a355f1bbb00c9ec9a5ede0e77993b7393942c7a4030134
+		Secure: true
+	Object:
+		Variable: $r7
+		Type: byte[]
+		Statement: $r7 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.facebook.soloader.SoLoader$OooO00o: java.lang.String OooO0O0(java.lang.String)>
+		SHA-256: e6360f8cc1dc8a18f13c738699ca95f3e279ecc6d7bf154c7bfee4f2f0e627a2
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r5.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O00000Oo(byte[],byte[],byte[])>
+		SHA-256: d1c541c45dd276cb6cf2e19fedd54c7cff3391072bc4e377dd9358277c516112
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.MessageDigest
+		Statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer914)
+		Method: <o0OOOoOo.oO0Ooooo: java.lang.String OooO0O0(android.content.Context)>
+		SHA-256: d8e78e3a4ac19d649befa5f3009a68df39f5ea4438356d0479a864d812bb8cd4
+		Secure: false
+	Object:
+		Variable: $r28
+		Type: byte[]
+		Statement: virtualinvoke $r13.<java.security.SecureRandom: void nextBytes(byte[])>($r28)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: e780052284ebee5582f21d0dd43f3937c49d97a90b547737cc6574b0c55c48cd
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r5.<java.security.SecureRandom: void <init>(byte[])>($r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O000000o(android.content.SharedPreferences,byte[])>
+		SHA-256: cea36ed839feb61b780aa8f2339968a7fb3e4f37c0fd8020cd4d23d286b83fc5
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1340)
+		Method: <com.tuya.smart.android.common.utils.MD5Util: byte[] computeMD5Hash(byte[])>
+		SHA-256: c12dd956e49f4c114f1155ca0ae5933d1fa8383e5940a5b5bb96c5f379adbaa0
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.Cipher
+		Statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer112461, varReplacer112462)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O0000O0o(byte[])>
+		SHA-256: f4d7211be8042e53a917f3eb984957232568b4528afd70c0b0122dd04a1afa3a
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $z0 = virtualinvoke $r18.<java.security.Signature: boolean verify(byte[])>($r2)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: 450c6ff9b3f446f661366baf5f3fd6a1bda12cd9969eaf414c4aa4cf9bd5418a
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.net.ssl.SSLContext
+		Statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer128011)
+		Method: <com.tuya.smart.mqtt.MqttAndroidClient: javax.net.ssl.SSLSocketFactory getSSLSocketFactory(java.io.InputStream,java.lang.String)>
+		SHA-256: 2e21baac3cb8d5225cbf61a5db4ade64dd5e24e64105512de001b7e0efb6c5f4
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r24 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String,java.lang.String)>($r4, $r11)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: fd0c4a58400177d31bbe9ea62ad6d455eb87001952d7b82065a2d5b455cb75b7
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.KeyPairGenerator
+		Statement: $r2 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer131910, varReplacer131911)
+		Method: <com.tuya.smart.common.ooo0o0oo0: void O00000Oo()>
+		SHA-256: 798178cc8722ad98b70b83a6a15bd7b042e4e838934a7f72f81d8730adfbc0af
+		Secure: false
+	Object:
+		Variable: $r17
+		Type: java.security.PublicKey
+		Statement: $r17 = virtualinvoke $r16.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r13)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: 86606c8a3d71abf23151aacb52fe9fc35cf2f4bfefdb343e554987d7850ce107
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer20318)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO0O0(byte[],byte[])>
+		SHA-256: 25580a339ba56547e0bf53d059941d5fd1589798d610f05c7570c94dd443de36
+		Secure: false
+	Object:
+		Variable: varReplacer18226
+		Type: java.lang.String
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, varReplacer18226)
+		Method: <o0OOOOOO.OooO0o$OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: 415e87017d66ac3cdc072aa503eb770d6196b9b4e5716043aecf0584e705cc86
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer76969)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: javax.crypto.Cipher OooO(byte[],boolean)>
+		SHA-256: 7438c8f43479640a557bb0293edef1299b504a28337b31ab343b0320b0ce24c8
+		Secure: false
+	Object:
+		Variable: $r15
+		Type: java.security.KeyFactory
+		Statement: $r15 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String,java.lang.String)>(varReplacer134267, varReplacer134268)
+		Method: <com.tuya.smart.common.o000o0o0oo: void O000000o(byte[])>
+		SHA-256: bf25da2dd466f88764301a7b39a8142c81c1e9784c2eab5050342c4a7b9b0989
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, varReplacer18226)
+		Method: <o0OOOOOO.OooO0o$OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: 173e7544c18a9012019a2236ea44cf788255b5fe65f6261b5c72e1979d4a5579
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1172)
+		Method: <com.roborock.internal.common.util.OooO0O0: java.lang.String OooO0OO(byte[])>
+		SHA-256: 956e823a0fe38dddd85fed02bf75583ef0248df7febf3fa353e9d33324cb5516
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r5.<java.security.SecureRandom: void <init>()>()
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O00000Oo(android.content.SharedPreferences,byte[])>
+		SHA-256: af3805241823a4805a9f34359b58263bbd4fd383e7de9f7b0e06c78c638f7926
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: java.security.MessageDigest
+		Statement: $r5 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer98419)
+		Method: <com.facebook.soloader.SoLoader$OooO00o: java.lang.String OooO0O0(java.lang.String)>
+		SHA-256: 41596856f8fce3ddbd3dd2af4052eb217b67d79fedce298a6ac38fd0cabf94
+		Secure: false
+	Object:
+		Variable: $r36
+		Type: javax.crypto.Cipher
+		Statement: $r36 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer3908)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: 83fc0a21544927593321b2679eac6d036faeff5e11791d924b0ffd52b1012e41
+		Secure: false
+	Object:
+		Variable: varReplacer74700
+		Type: java.lang.String
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer74700)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: java.security.interfaces.RSAPublicKey generateRSAPublicKey(java.math.BigInteger,java.math.BigInteger)>
+		SHA-256: accb92cc35fd90fa6556e422ae85c44bb4cb29ef54ff0ca3f27f3cd7dbdfcab9
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r1, varReplacer76230)
+		Method: <com.tuya.smart.common.O00000Oo: byte[] O000000o(byte[],byte[])>
+		SHA-256: 1613afcfbcdbba817e6fb1b4c547d5d5b8458db84a0a38ae5886e1d2eca852ad
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest()>()
+		Method: <o0OOOoOo.oO0Ooooo: java.lang.String OooO0O0(android.content.Context)>
+		SHA-256: eb8f8f829e4f01790b101d00b6ef8ffebe2ea1dad15a1eaa5c86653ac002063f
+		Secure: false
+	Object:
+		Variable: varReplacer88680
+		Type: java.lang.String
+		Statement: $r7 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer88680)
+		Method: <o0O0OO0.OooO00o: java.lang.String OooO00o()>
+		SHA-256: 76c62d6c83972d66cb3650bc8f8a9bbdd68d31d32b85ec567f22e6f67db3cad2
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O00000o(com.tuya.sdk.security.EncryptionManager$O000000o)>
+		SHA-256: 43c7cc4ce25dfbfdfda8e77c94d10c8ed0f72f5af76c090b792ff5515623aa63
+		Secure: false
+	Object:
+		Variable: $z0
+		Type: boolean
+		Statement: $z0 = virtualinvoke $r18.<java.security.Signature: boolean verify(byte[])>($r2)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: 8bd7282ddb50655607579625f2a85c9d974070c2c4a9aa91e8e4b3bc22517519
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.tuya.sdk.security.EncryptionManager: com.tuya.sdk.security.EncryptionManager$O000000o O00000Oo(byte[],byte[])>
+		SHA-256: 405576cd0c25dc1df10726feb325859e7e1896a2d8532cdb008181108307e7bf
+		Secure: false
+	Object:
+		Variable: varReplacer98153
+		Type: java.lang.String
+		Statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer98153)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.SecretKey O00000Oo(android.content.SharedPreferences)>
+		SHA-256: 24417c52b1cdb78228063583ee2a95053ded34e0651724a0b030788fe118a1fe
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: java.security.Signature
+		Statement: $r11 = staticinvoke <java.security.Signature: java.security.Signature getInstance(java.lang.String)>(varReplacer32780)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: 4c4ee90168c9a9c6e5cdaa633e17f7cf6d34d786721b5776466f76049577682a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O00000Oo(byte[],byte[],byte[])>
+		SHA-256: 5bd032a7c729a6e9d81f3e47fcd8bdf992ce456222263e053f4117cbd2cd4efa
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r2)
+		Method: <com.tuya.smart.common.O00000Oo: byte[] O000000o(byte[],byte[])>
+		SHA-256: 305cd12b88c56472dedc2e05da96a331c46c153ebbbee0034f9adbffcf407d48
+		Secure: false
+	Object:
+		Variable: varReplacer76230
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r1, varReplacer76230)
+		Method: <com.tuya.smart.common.O00000Oo: byte[] O000000o(byte[],byte[])>
+		SHA-256: dc8eb016f0bcaf3d754364cace417551827004e4042415d17851db328dcaf19a
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer75748)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O000000o(byte[],byte[],byte[])>
+		SHA-256: fee54d9c6883d56ff5e61f7c9c8bb73e0a94d225da5435c85679c7b4bcc2c1e3
+		Secure: false
+	Object:
+		Variable: varReplacer4430
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4430)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: eb48b2f90cf05809578052f69309e48656012a3dc121db595876f50c506d68c6
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer4431)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: a49c60f991fc5fb1ec40a0d8d9c844f4e8775771d7d9d79521fbb49ba7c60e83
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String decryptWithBase64(java.lang.String)>
+		SHA-256: c9ca7748c7d260b9e2579bd238f756142ef47a712db43b18d13bc6c0282e437e
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O00000oO(com.tuya.sdk.security.EncryptionManager$O000000o)>
+		SHA-256: 5ad3256fc4f9196fb40ed78786bf60b8ba7de4fc7ef1f76771104e378d72a2c3
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.PublicKey
+		Statement: $r4 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: java.security.interfaces.RSAPublicKey generateRSAPublicKey(java.math.BigInteger,java.math.BigInteger)>
+		SHA-256: 1c8e457d99f25bbcbcf6d3731fba89d8feef07a9c2103f2eb88131edfbcf977f
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer15513)
+		Method: <com.facebook.cache.common.OooO00o: java.lang.String OooO0O0(com.facebook.cache.common.CacheKey)>
+		SHA-256: 2f564d4ab52e8df731110ea72be087d4370685a476ad1014915e82504d169497
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer40116)
+		Method: <com.google.android.play.core.assetpacks.OooOOO: java.lang.String OooO00o(java.util.List)>
+		SHA-256: dd4b4e20a013b006f432f378356cc6be29acdaf393a3d7c93b33c5d14847aae3
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r4.<javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int)>($r2, $i0, $i1, $r0, $i4)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: byte[] encrypt(java.security.PublicKey,byte[])>
+		SHA-256: 67795490f34473354a93bee485f1317afa6857329bcb4f12fb24749b54fcb9f7
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: virtualinvoke $r4.<javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int)>($r2, $i0, $i1, $r0, $i4)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: byte[] encrypt(java.security.PublicKey,byte[])>
+		SHA-256: ed45f83747a617acbebd339f6c05750c5871006a868b8afb6bc5a68a5e50b2cf
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r3)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: a52c3af9d678b28f0e495486e3ffc6a89ef65883521c05fdaf6711f262581506
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: java.security.PublicKey
+		Statement: $r10 = virtualinvoke $r9.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r6)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: 3096ec1d1af51a27359fb508fc7c9e5ff9104105c29f92657a4712ce2e3e4ea
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: virtualinvoke $r5.<java.security.SecureRandom: void nextBytes(byte[])>($r4)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O00000Oo(android.content.SharedPreferences,byte[])>
+		SHA-256: e9258847c3bd9a1a4c8e5512bf508850461d0e283514810dbd0787773d1eff74
+		Secure: true
+	Object:
+		Variable: varReplacer51288
+		Type: java.lang.String
+		Statement: specialinvoke $r34.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer51288)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: cd581e9842e394425f47bba4cdee6a16b14652539443518069364fe406b2eccb
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r4 = virtualinvoke $r3.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <okhttp3.internal.platform.OpenJSSEPlatform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: a729cfd5669df603070b7ba7d05b524b10a048ab1da974a5ccb1df973521b7d3
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String encrypt(java.lang.String)>
+		SHA-256: 1053fd1204fd79e79f1988d177e7dfe5968736074acfe778afed99fad39bfaa6
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: java.security.KeyPair
+		Statement: $r11 = virtualinvoke $r10.<java.security.KeyPairGenerator: java.security.KeyPair generateKeyPair()>()
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: 2756e03334ebb537efa2feeba9ad7006fdd5f9c3f7b3b2b738f1e0295fbd680f
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r3 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String,java.security.Provider)>($r1, $r2)
+		Method: <okhttp3.internal.platform.OpenJSSEPlatform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: 1027fce20723454b26980f38c5edb26bcec19bffa5b6443c75459b577c51d460
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer105370)
+		Method: <o000o0o.OooOOO$OooO00o: java.lang.Object create()>
+		SHA-256: c1a8b0c3254acc04ade0f108149f5360136e12e1e76f385f2836ac5192438cb7
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Mac
+		Statement: $r6 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer51294)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: com.roborock.internal.common.util.store.EncryptionManager$OooO00o OooO0oO(byte[])>
+		SHA-256: a4302c165d455486c2377588f790d7d23cefd830bb60a8029072cf17db121b71
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer76967, varReplacer76968)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: javax.crypto.Cipher OooOO0(byte[],boolean)>
+		SHA-256: b77fe988c89d33ccc060b44e2b4509c7384bcf0e79902c324126133789302771
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r9.<java.security.MessageDigest: byte[] digest(byte[])>($r10)
+		Method: <com.google.firebase.messaging.OooO: void OooO0O0(java.lang.String,java.lang.String,android.os.Bundle)>
+		SHA-256: d3c4fd88f980819abd7ff2858b5c9fe46868b1a17010033633233e7f25f7590c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: com.roborock.internal.common.util.store.EncryptionManager$OooO00o OooO0oO(byte[])>
+		SHA-256: 2f90da23c45f0f57a5a3583ed3d261899efcc7c9f672c91edd1101f41eeaadaf
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r6 = virtualinvoke $r5.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <com.tuya.smart.mqtt.MqttAndroidClient: javax.net.ssl.SSLSocketFactory getSSLSocketFactory(java.io.InputStream,java.lang.String)>
+		SHA-256: ed1314fa9d97ef43277965437091c7989d4fad0ac15e97966cac8586740bcb39
+		Secure: false
+	Object:
+		Variable: $r15
+		Type: java.security.PublicKey
+		Statement: $r15 = virtualinvoke $r14.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r11)
+		Method: <com.roborock.smart.fragment.MallFragment$verifyBundle$2: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: af204f864eae2baddf2b3dc1a8935ded5c4dc568616a0df928645f3d5dd30adb
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke $r12.<java.security.MessageDigest: byte[] digest(byte[])>($r6)
+		Method: <o0O0OO0.OooO00o: java.lang.String OooO00o()>
+		SHA-256: c45da2124ee5808fb03cb85f98e67e0d5b8fe77b729079eb5669f61c4e4210ea
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+		Method: <okio.ByteString: okio.ByteString digest$okio(java.lang.String)>
+		SHA-256: ae39b036c5eeeba58d380660f68e23806935f12d2f5c9cefe65440425aa34f4a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer77015)
+		Method: <okhttp3.internal.platform.Platform: javax.net.ssl.SSLContext newSSLContext()>
+		SHA-256: 9ae440b4432d6f7646b55d13775174e6087b022c6cd2b3fcd671cff025f4f891
+		Secure: false
+	Object:
+		Variable: $r18
+		Type: byte[]
+		Statement: $r26 = virtualinvoke $r36.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r18, $i4, $i1)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: 55841dd24ca6ec43aee921dbb2b25d019347c5c8812a5a1dfbaf63664a0211f5
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r0.<java.security.SecureRandom: void <init>()>()
+		Method: <org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketFrame: byte[] generateMaskingKey()>
+		SHA-256: ded8c01ae161f817a55af6faa3fd5fe16afaa1e6eb084c4584cbe9739e09cf7b
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer4579)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: java.lang.String OooOO0O(java.lang.String)>
+		SHA-256: af9c54cdd44cef8e04e6364b059b68742ddd4498347b32a1e8b3f7f0e0f2b2bd
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+		Method: <okio.SegmentedByteString: okio.ByteString digest$okio(java.lang.String)>
+		SHA-256: 6c960e488f21ae2f1d37981b7f790ff5823030d9f242d798118968e0f93ba357
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r16 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>($r11)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: 3502fa758305a1dec42a6535b8ce8189f7707f9bdc917efceea97f5a2943e84d
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r0)
+		Method: <com.roborock.internal.common.util.OooO0O0: java.lang.String OooO0OO(byte[])>
+		SHA-256: b4f687fb5970d3955db6f9bcecaa4d03b4d5a5e95413ec3cf5a5ad2f1440f611
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: com.roborock.internal.common.util.store.EncryptionManager$OooO00o OooO0oO(byte[])>
+		SHA-256: 2f90da23c45f0f57a5a3583ed3d261899efcc7c9f672c91edd1101f41eeaadaf
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer112002)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O00000oo(byte[])>
+		SHA-256: 2c6270f86e6755ec124373437006fa98cc580b9a969afd24f78500cf55ce100a
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String decrypt(java.lang.String)>
+		SHA-256: d20a17eedf9d76fdc72dd37c023530af2c2764050615a9f141cf62f05b85cd92
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r2 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r1)
+		Method: <okhttp3.internal.platform.Platform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: 5fb6984969c8c0f60ee84399ef18a49aa63648c889757c4080685ad119ecd903
+		Secure: false
+	Object:
+		Variable: $r18
+		Type: byte[]
+		Statement: $r18 = virtualinvoke $r36.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r18, $i4, $i6)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: 69ea10ebc8b7beccb45d0ca8fd05010e8af3833b4199ea501813ba27dd391b15
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.KeyGenerator
+		Statement: $r7 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>(varReplacer51270)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: 2be33ce070712e4c881057e62898288d8cdb714030a0b0cc7ecd4f91b733225d
+		Secure: false
+	Object:
+		Variable: $r18
+		Type: javax.crypto.KeyAgreement
+		Statement: $r18 = staticinvoke <javax.crypto.KeyAgreement: javax.crypto.KeyAgreement getInstance(java.lang.String,java.lang.String)>(varReplacer134272, varReplacer134273)
+		Method: <com.tuya.smart.common.o000o0o0oo: void O000000o(byte[])>
+		SHA-256: 9b49dc71931776afc1d45b11f3e75e6454e0b1fbb0ffd4ea3f3be77d5ea822fb
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: byte[] encryptWithBytes(byte[])>
+		SHA-256: 3391739ff9365f2fb45717cf8220ddf2a308570437aa6157efbbea8fc20fb4a
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r2)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO0o(com.roborock.internal.common.util.store.EncryptionManager$OooO00o)>
+		SHA-256: 716f516db734cc861e8a7a9852c0acf51cad5b394a1956b40811f14f7b569171
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.lang.String
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.security.Key generateKey()>
+		SHA-256: 99a7c065dcde5b4d9acf0bbfab2cc0ae6e476bd9367919db058dc6e550331012
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.MessageDigest
+		Statement: $r9 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer105391)
+		Method: <com.google.firebase.messaging.OooO: void OooO0O0(java.lang.String,java.lang.String,android.os.Bundle)>
+		SHA-256: 22e42ae469198d44965ffa83c520e2f269a8fbafa32b1364f1d1c9ebd9d4dec1
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r2 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r1)
+		Method: <okhttp3.internal.platform.ConscryptPlatform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: 316cbc86e080130334eaabd60025d96084375d0058312a103cd3255ba6f0aeb
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO0O0(byte[],byte[])>
+		SHA-256: a7a9ce30193b20c390a0cbd36e7b3488e084ba95013366e1d3b55858df39a7d3
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: virtualinvoke $r2.<java.security.SecureRandom: void nextBytes(byte[])>($r3)
+		Method: <com.roborock.smart.utils.SharedPrefUtil: java.lang.String OooOo0(android.content.Context)>
+		SHA-256: da82f3469ef2a7750cf0500a33d080b47c94284c765cbd1b2e226233f49517a6
+		Secure: true
+	Object:
+		Variable: varReplacer32783
+		Type: java.lang.String
+		Statement: $r9 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer32783)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: 4c5d36706b55fc64b0010fc0287fd5468d6670197ff43915f6ebc756718475a3
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r5.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O000000o(byte[],byte[],byte[])>
+		SHA-256: 73951b40337a7cd46e77ff4e5fde7ac39af88a05fc900f53758447123e4deeb5
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: virtualinvoke $r4.<javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int)>($r2, $i0, $i4, $r0, $i5)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: byte[] encrypt(java.security.PublicKey,byte[])>
+		SHA-256: e6df469bedc7a9fe7aae7dc24dda3fd31738133abf9337c5f8320baa1e4e01d2
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O000000o(byte[],byte[],byte[])>
+		SHA-256: 40db9ac49af5fe9d81117c59271c262cb5ec89b9593a69c85330bf8c70a2804
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4430)
+		Method: <com.roborock.internal.common.util.OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: 81abd9f12f3bb3d8f7cc681a06138e16070de1c4c9693926a87112152d26da54
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r6.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r8)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: 3e5915e192596df0484255e876d8cc39ac2f03b399af48a911941666e6bed622
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer76231)
+		Method: <com.tuya.smart.common.O00000Oo: byte[] O000000o(byte[],byte[])>
+		SHA-256: 8a0a3a0e7155d25f237bbf1957bbee0482934996598ba14539b3239b6d00e09c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: byte[] decryptWithBytes(byte[])>
+		SHA-256: 8f201932059d3425e2f977fb0261b23cfdad7d684e7acf00b95b6a1abcc15cd6
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r3.<java.security.SecureRandom: void <init>()>()
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: com.roborock.internal.common.util.store.EncryptionManager$OooO00o OooO0oO(byte[])>
+		SHA-256: d7f4e2ddd02d3c9f40c9ad14a0cf0004515b6c3d619c787762415e1ddb85dd65
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <com.google.android.gms.internal.recaptcha.zzly: java.security.MessageDigest zzf(java.lang.String)>
+		SHA-256: 6278e0f143b6b532c1ec63a703d795e4ee14e75d30eaa7a43f38d4ec03e3a05d
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: javax.crypto.spec.GCMParameterSpec
+		Statement: specialinvoke $r3.<javax.crypto.spec.GCMParameterSpec: void <init>(int,byte[])>(varReplacer76970, $r1)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: javax.crypto.Cipher OooO(byte[],boolean)>
+		SHA-256: e0e228f1b366c4d68bda5c5e9a72cd3c1b62592e2bb7f5a74b4fa9b677eaa3b6
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r0.<java.security.SecureRandom: void <init>()>()
+		Method: <com.tuya.smart.common.o00o00o000: byte[] O000000o()>
+		SHA-256: 999f0982c21370503de9e81f38ceaeb148779fc0c93bf9094a8f4a0c2c539886
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: java.security.KeyPair
+		Statement: $r3 = virtualinvoke $r2.<java.security.KeyPairGenerator: java.security.KeyPair generateKeyPair()>()
+		Method: <com.tuya.smart.common.ooo0o0oo0: void O00000Oo()>
+		SHA-256: 5ae777b221c1a62492802ef945e99733c2838289a2dcd70cbb81c8db69fa345b
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r10.<java.security.SecureRandom: void <init>(byte[])>($r1)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O00000oO(byte[])>
+		SHA-256: 382e1f37667360a2980bc2273a1e8a65022807c39511bd0ca3150213f225d0d6
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r8.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r6)
+		Method: <o0O0OO0.OooO00o: java.lang.String OooO00o()>
+		SHA-256: 5b26c6183d4b6775134b1eb1c87177270aedd2d062d9ffb795b6c321a4102a95
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: java.lang.String O00000o0(java.lang.String)>
+		SHA-256: eb55771ffdbce2bcf26e8abccc088a5eae94d75b226c8038d7c6043bc149f7d5
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.android.gms.internal.recaptcha.oO00OO0O: com.google.android.gms.internal.recaptcha.oO0O0OoO OooO0OO()>
+		SHA-256: cccb6ffacfca842a597194210d572e3a8c055e38f721abc916414ce039ab58b2
+		Secure: true
+	Object:
+		Variable: varReplacer75748
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer75748)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O000000o(byte[],byte[],byte[])>
+		SHA-256: 614aa0b15ef2c7f637388ec01064ee0d5a6e531e3f2c4f851c8d8b3b32aa925b
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: byte[]
+		Statement: $r11 = virtualinvoke $r8.<java.security.MessageDigest: byte[] digest(byte[])>($r11)
+		Method: <o00oo0Oo.oO0: java.lang.String OooOOO(java.lang.String,boolean)>
+		SHA-256: 9de17a6c634d49172667e45c0621c1ec0b14ae50aec013cc243e3590d815fde
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r8)
+		Method: <o00oOOOo.o0OoOoOo: java.lang.Object call()>
+		SHA-256: de4ea6086ba282197a89dd6e382ed59c09053d0f6d734f8ee1a871c40f28ca03
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.tuya.smart.android.common.utils.MD5: java.lang.String md5(java.lang.String)>
+		SHA-256: 7c868d91021c90edf508a141465f67da16f97ad4be5f2784af06d7c773bb2719
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: byte[] encryptWithBytes(java.lang.String)>
+		SHA-256: c07c92637065f9963c307700984b9b22baa6e07708cd5fd04e6038051df5143d
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r2)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: byte[] OooO0o(com.roborock.internal.common.util.store.EncryptionManager$OooO00o)>
+		SHA-256: 716f516db734cc861e8a7a9852c0acf51cad5b394a1956b40811f14f7b569171
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.net.ssl.SSLParameters
+		Statement: specialinvoke $r6.<javax.net.ssl.SSLParameters: void <init>()>()
+		Method: <org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule: void start()>
+		SHA-256: 859fe0ec5a0ef670ee98b35ac915e8f21b89da12473bd5b28964a8131b54f41c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.o00Oo0: void OooO()>
+		SHA-256: bcf07aa2ca58f7e17ed1856284b4a3bd982353069a06b6566324ec6def2fa335
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: javax.crypto.Cipher
+		Statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer18227)
+		Method: <o0OOOOOO.OooO0o$OooO00o: byte[] OooO00o(byte[],byte[])>
+		SHA-256: dcbb278e3169e2fd16ebe5b46537d98d72285a966fa77be870d5e4cce0536718
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r14.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r15)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: bb2a3ae4ca27b24c2496fcb22d84104a55000201d80e3d36aecfac254489638e
+		Secure: false
+	Object:
+		Variable: varReplacer19121
+		Type: java.lang.String
+		Statement: specialinvoke $r19.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer19121)
+		Method: <o0OOOo0O.o00Ooo$OooO00o: void run()>
+		SHA-256: 5a21a27243117c73af6a54bb9b302738f16e70cdd450f8c0a41d91319091d18e
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <o00oOoO0.o00O00OO: java.security.MessageDigest OooO00o(java.lang.String)>
+		SHA-256: bc414d456c87d28fe17c78747e70630200b9c102d1049bda1782ad84248aeb1
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: java.security.KeyFactory
+		Statement: $r16 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer8825)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: f85c801a819aa9d800fc83c6a2fb2fb3828a388ca95dda0e13d3231598597769
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer98156)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.SecretKey O00000o0(android.content.SharedPreferences)>
+		SHA-256: 724c9c0cf633c5848e9a98ee18dd7c82fe8e95e96b0f1e9b3c06a1b740a0f054
+		Secure: false
+	Object:
+		Variable: varReplacer134341
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer134341)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O00000Oo(byte[],byte[],byte[])>
+		SHA-256: cf73bf286097d56e576ae99993dbd3e49c4609994a6c354a86b00689d8cd5f40
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String encryptWithBase64(java.lang.String)>
+		SHA-256: 52cbc22322ffedac3ccaaaa5b6117d4a593a771c212e4a4e460c3b84ad397a31
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.KeyGenerator
+		Statement: $r7 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer51280, varReplacer51281)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: 66709e80dbb4ec6364341a1eb1e9d133ffbc12299951cf3bb2829f7e8040f9ee
+		Secure: false
+	Object:
+		Variable: $z0
+		Type: boolean
+		Statement: $z0 = virtualinvoke $r11.<java.security.Signature: boolean verify(byte[])>($r1)
+		Method: <com.roborock.smart.model.RNMallPluginDownloadManager: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)>
+		SHA-256: 536694749e64c270611b3c12fd20b058a1ed7fec60ef3c442b879e7911727bfc
+		Secure: false
+	Object:
+		Variable: $r18
+		Type: java.security.Signature
+		Statement: $r18 = staticinvoke <java.security.Signature: java.security.Signature getInstance(java.lang.String)>(varReplacer8826)
+		Method: <o0OOOo0O.Oooo0: java.lang.Object doInBackground(java.lang.Object[])>
+		SHA-256: 91c8ee8f5117294e6033a981f0689c079c5d0d442bfa2e00975ea42d99e517aa
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.KeyPairGenerator
+		Statement: $r5 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer98139, varReplacer98140)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O000000o(android.content.Context,byte[])>
+		SHA-256: a6591db7bb3db68bc6c40c1c0b999f616d5b58f8dc62d0b4020074ba9f4464a8
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: byte[]
+		Statement: $r13 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest()>()
+		Method: <o0O0oOoo.o0000O0O: java.util.ArrayList OooO00o(android.content.Context,java.lang.String)>
+		SHA-256: fc386b0864b1602493b543f3acbc002d8b4f8322bf5114cc31a9c4011b3b7001
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String encryptWithBase64(java.lang.String)>
+		SHA-256: 6b3a816b91c2146936fbeb8b29e0cc95d740fc3c2d7f792156d1f2b23b9aa11a
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.KeyFactory
+		Statement: $r7 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer88680)
+		Method: <o0O0OO0.OooO00o: java.lang.String OooO00o()>
+		SHA-256: b2bfc294e7b006bde7a463188c4064279f1ccb16370db611b7b73128b5b4eb94
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r1 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String,java.lang.String)>(varReplacer51389, varReplacer51390)
+		Method: <okhttp3.internal.platform.BouncyCastlePlatform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: 3785fe1c5494c8f1ed11f844c02017c273cee122c6ea58e0baf6b151a36b6531
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.KeyGenerator
+		Statement: $r4 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer98131, varReplacer98132)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O00000oO(byte[])>
+		SHA-256: ae1ed94833e428c13677458b7c59eb2959dfbe36397032d58c7de3b63cfb2242
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.KeyStore
+		Statement: $r3 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer128009)
+		Method: <com.tuya.smart.mqtt.MqttAndroidClient: javax.net.ssl.SSLSocketFactory getSSLSocketFactory(java.io.InputStream,java.lang.String)>
+		SHA-256: a251d9ad90d898d1ccfd1102d184dbf575c2749fbb38a92414c4bd274b2e134d
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer49507)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O0000ooo(byte[])>
+		SHA-256: 121c64874811f10c8caf716562224593fd21ea2ed4f0208a8e789b9b8e2c72e4
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O00000o0()>
+		SHA-256: e513faf86516f86fc501036b85b0f60de119daf8e698a7489ccaa6afa3ad91f7
+		Secure: true
+	Object:
+		Variable: $r17
+		Type: java.security.PublicKey
+		Statement: $r17 = virtualinvoke $r16.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r14)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: 4719177cfe7e36ed79a646442ebd43b1742ccf9c0cc1c9b11e6521c18dedb44f
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.PublicKey
+		Statement: $r9 = virtualinvoke $r7.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r8)
+		Method: <o0O0OO0.OooO00o: java.lang.String OooO00o()>
+		SHA-256: 174240e649660734b8f738af47dcca8dca75f9fef0d5dd57d79bb0c23aeb77d3
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: java.security.KeyFactory
+		Statement: $r16 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer31313)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: c6f974ea938113c1e70e5304efe0ad90fb4dc9fc459f716636f62d9bffeab2b5
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer43967)
+		Method: <com.google.android.gms.measurement.internal.o00Oo0: java.security.MessageDigest OooOOoo()>
+		SHA-256: fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $z0 = virtualinvoke $r18.<java.security.Signature: boolean verify(byte[])>($r1)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: 6dfc0516593d2f05dd8f3d9bb4b6067acea5a11f149d1867fc02a37afd941b6a
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer51287)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: 24f5e4ffe46963b4a3425962080442097c13dd1a240d2b84309421c5ff5c7367
+		Secure: false
+	Object:
+		Variable: $r18
+		Type: java.security.Signature
+		Statement: $r18 = staticinvoke <java.security.Signature: java.security.Signature getInstance(java.lang.String)>(varReplacer31329)
+		Method: <com.roborock.smart.service.DownloadListener$decompress$1: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: dc9d4f97a7e58348140a4f0bea9e3a2ffae7aea8e764710263014364f923ab3e
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r3)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: a52c3af9d678b28f0e495486e3ffc6a89ef65883521c05fdaf6711f262581506
+		Secure: false
+	Object:
+		Variable: $r33
+		Type: byte[]
+		Statement: $r33 = virtualinvoke $r27.<java.security.MessageDigest: byte[] digest(byte[])>($r33)
+		Method: <com.google.android.gms.measurement.internal.o000oOoO: o00oo0Oo.oOO0000 OooOOo0(boolean)>
+		SHA-256: d4df9ab93fffee59654b5e95aedba81b7f1186353b1ffb85cabb69c46ac0e7cb
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.MessageDigest
+		Statement: $r9 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16859)
+		Method: <o0O000O.OooOo: boolean OooO0O0(android.content.Context)>
+		SHA-256: 89609983579e0f53e7899637fa90af9fe48ee3735c8ceada7ba7ec53639b387c
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r0)
+		Method: <com.tuya.smart.common.o00ooo0o00: byte[] O000000o(byte[])>
+		SHA-256: 9e30d319e72cab11e964d5bc6e49cfd0953bcc839e5c814c8cda20cdb4cf8a46
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: java.lang.String OooOO0O(java.lang.String)>
+		SHA-256: 72086411014f39efadcf054a54b6bd08087faa64743eb67fe5bcfbd24dc02fca
+		Secure: true
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r9.<java.security.MessageDigest: byte[] digest()>()
+		Method: <o0O000O.OooOo: boolean OooO0O0(android.content.Context)>
+		SHA-256: 9e26c3f1871ccc6795473437032e346e87d63abd4808218585fab9d528288558
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.net.ssl.SSLParameters
+		Statement: specialinvoke $r6.<javax.net.ssl.SSLParameters: void <init>()>()
+		Method: <org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule: void start()>
+		SHA-256: 859fe0ec5a0ef670ee98b35ac915e8f21b89da12473bd5b28964a8131b54f41c
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r1)
+		Method: <com.tuya.sdk.security.EncryptionManager: boolean O000000o(android.content.Context,byte[])>
+		SHA-256: 5e97bb7990bcbbd7ddf1674418c72cfdc6073532ad352d08ad8724fe4c66e002
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: java.security.KeyFactory
+		Statement: $r14 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer32188)
+		Method: <com.roborock.smart.fragment.MallFragment$verifyBundle$2: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: 761ff8ef67135f16f59d2bcb679a425c1563cb90d37994045174e8be582f0547
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: virtualinvoke $r0.<java.security.SecureRandom: void nextBytes(byte[])>($r1)
+		Method: <com.tuya.smart.common.o00o00o000: byte[] O000000o()>
+		SHA-256: ebd6bdb514682f13420e4413040f4a66a849ae8ad75e7bb03a770c7a8fbc44e
+		Secure: true
+	Object:
+		Variable: $r20
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r20.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+		Method: <o0OOOo0O.o00Ooo$OooO00o: void run()>
+		SHA-256: 41bb360c32004b1e86c3e868afade63fad2984385425bc0b2a2b1af459a40461
+		Secure: false
+	Object:
+		Variable: varReplacer51287
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer51287)
+		Method: <com.roborock.internal.common.util.store.EncryptionManager: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])>
+		SHA-256: d79fd140e85e357b196cc590ccecd37e42a9b46d88e0a19752709c8716e5a715
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r2 = virtualinvoke $r1.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <okhttp3.internal.platform.BouncyCastlePlatform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: 84f17b7e3930c76e2b174d27b9668ee8d3209ae5512e2c539d541e6ef4265515
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.KeyStore
+		Statement: $r1 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer53286)
+		Method: <com.tuya.sdk.security.EncryptionManager: void O00000Oo()>
+		SHA-256: 1095f2d5877ec606e322982e457820d8c202f629951075a84edc0e6b6ab797b0
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: java.security.KeyStore
+		Statement: $r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r9)
+		Method: <org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory: javax.net.ssl.SSLContext getSSLContext(java.lang.String)>
+		SHA-256: 5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.android.gms.internal.recaptcha.oO00OO0O: com.google.android.gms.internal.recaptcha.oO0O0OoO OooO0OO()>
+		SHA-256: cccb6ffacfca842a597194210d572e3a8c055e38f721abc916414ce039ab58b2
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r4)
+		Method: <okio.ByteString: okio.ByteString digest$okio(java.lang.String)>
+		SHA-256: d4bf5cc88c644b9a20ac4aef1746c1f0c9ae862102406e7436b8866c875859ff
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <okio.SegmentedByteString: okio.ByteString digest$okio(java.lang.String)>
+		SHA-256: 9d21c3f9e3f612ea7264d21dc14a8967f32993fff60292ad252f8676282c7571
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer124198)
+		Method: <com.tuya.smart.common.o00ooo0o00: byte[] O000000o(byte[])>
+		SHA-256: f42a0c6bbebc6867fb515c19b5634a0b5b33ef167a2791edabeff70e40a814e5
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r4.<javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int)>($r2, $i0, $i4, $r0, $i5)
+		Method: <com.tuya.smart.android.common.utils.RSAUtil: byte[] encrypt(java.security.PublicKey,byte[])>
+		SHA-256: 5b27a141901983867bb61889a93be2d67c0816b1f0d26cb9b540dfe099bdca79
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String encrypt(java.lang.String)>
+		SHA-256: 665d497d0ae630b766ea660547f9443fbaa3461ff5b09b0d8a62650df9dad8c0
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r3 = virtualinvoke $r2.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <okhttp3.internal.platform.ConscryptPlatform: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: 15a76129680a3cd57380001c355c828c5afc3ba9ce32fff65b352ff3390bbd6
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer20361)
+		Method: <com.roborock.homesec.RtcClient: void <clinit>()>
+		SHA-256: 2b2b64b346408b25bfe93a0470f774f0afd42ae5ebe355f33b7c937c653f38a0
+		Secure: false
+	Object:
+		Variable: $r26
+		Type: byte[]
+		Statement: $r26 = virtualinvoke $r36.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r18, $i4, $i1)
+		Method: <o0OOOOOO.OooO0o$OooO00o: void run()>
+		SHA-256: c3164dc1c1aded8d5634aa7adb1ae987ac05db202bef6970bc50a41fb48d62e
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer77014, $r2)
+		Method: <okhttp3.internal.platform.ConscryptPlatform: javax.net.ssl.SSLContext newSSLContext()>
+		SHA-256: 28270830c403e1e1d4b76fddac83e0de3bd70e69a4210991c0a37a2dc1aae43b
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r5.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.tuya.smart.common.o00o00o0o0: byte[] O00000Oo(byte[],byte[],byte[])>
+		SHA-256: 71a92d0103e1d54a3696d268595d18f1fe9c6dab6e4a435c3fff8847efc681a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.tuya.smart.android.common.utils.AESUtil: java.lang.String decrypt(byte[])>
+		SHA-256: e4b1d0c874187eec3801ed7b37e428fef37e48da5266ab236ff1ab28e87c9baa
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer77011, $r2)
+		Method: <okhttp3.internal.platform.OpenJSSEPlatform: javax.net.ssl.SSLContext newSSLContext()>
+		SHA-256: fbf2039358b39d2864276969813b829fa37736ae0d3cccf7cb1ccdc76ecf6200
+		Secure: false
+	Object:
+		Variable: $r22
+		Type: javax.crypto.Mac
+		Statement: $r22 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>($r13)
+		Method: <o0OO0oO0.OooO0OO: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+		SHA-256: d321ce2f08fb644be65fdef0a619c93589b11eb7019ffd33ecaac9c70f512c07
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: java.lang.String
+		Statement: specialinvoke $r21.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r20, $r13)
+		Method: <o0OO0oO0.OooO0OO: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+		SHA-256: ce86fe818b9ad5be332d3191a605d7d9f6818705b040c6aba1863efbd1de72c5
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer111996, varReplacer111997)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.Cipher O00000Oo(byte[],boolean)>
+		SHA-256: ea979bb083e1134bbe1c8255a447edfd1d3ea3db5ce0144b275ba1c9694ac3a4
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r8.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r2, varReplacer19115, $i1)
+		Method: <o0OOOo0O.o00Ooo$OooO00o: void run()>
+		SHA-256: b3865d456b4e0de6d7955713bf64441907dfe35cee7bf910a7e4abdea8a448a4
+		Secure: false
+	Object:
+		Variable: $r12
+		Type: java.security.MessageDigest
+		Statement: $r12 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer88681)
+		Method: <o0O0OO0.OooO00o: java.lang.String OooO00o()>
+		SHA-256: 96c4e96ce9e77a9e5e0784d5468a3dc0c321bf27fbc75a320d0bfa3d812b97ad
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.CipherOutputStream
+		Statement: specialinvoke $r5.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r4, $r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O0000O0o(byte[])>
+		SHA-256: 38dca30377f60cecea8572e4c4cc3479605a6c111c25d26810e9dc89b2e8fb10
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r1.<java.security.SecureRandom: void nextBytes(byte[])>($r2)
+		Method: <com.tuya.sdk.security.EncryptionManager: byte[] O00000o0()>
+		SHA-256: e638e7b34a2b75184a436f555b534e1356d20fca0148b5a1584ab89ad21f25bb
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer112000)
+		Method: <com.tuya.sdk.security.EncryptionManager: javax.crypto.Cipher O000000o(byte[],boolean)>
+		SHA-256: e85f86864975cdac900444b2b8c10f2a4f1ff0aff4d495ed0c9830b9d8cc2528
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r16.<java.security.Signature: boolean verify(byte[])>($r2)
+		Method: <com.roborock.smart.fragment.MallFragment$verifyBundle$2: java.lang.Object invokeSuspend(java.lang.Object)>
+		SHA-256: 4e42d15cd029912c59f55205ba6f49b42160bc2860f0a3ed3182d24937d1ac19
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <com.tuya.smart.common.oooo0000o: void O0000o00()>
+		SHA-256: 6f1f52e56c8d222a746c17fa6e232435a8a58baea5f8d741f9207f97cf25b1f7
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer64511)
+		Method: <com.google.firebase.crashlytics.internal.common.CommonUtils: java.lang.String OooOOO0(java.lang.String)>
+		SHA-256: 915f5979672760cbf89e443909413403d894547235fd8fa751ce7f6408a77d54
+		Secure: false
+
+Findings in Java Class: o0OOOoOo.oO0Ooooo
+
+	 in Method: java.lang.String OooO0O0(android.content.Context)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #d8e78e3a4ac19d649befa5f3009a68df39f5ea4438356d0479a864d812bb8cd4)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer914)
+
+
+Findings in Java Class: com.roborock.internal.common.util.OooO0O0
+
+	 in Method: java.lang.String OooO0OO(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #956e823a0fe38dddd85fed02bf75583ef0248df7febf3fa353e9d33324cb5516)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1172)
+
+
+Findings in Java Class: com.tuya.smart.android.common.utils.MD5Util
+
+	 in Method: byte[] computeMD5Hash(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #c12dd956e49f4c114f1155ca0ae5933d1fa8383e5940a5b5bb96c5f379adbaa0)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1340)
+
+
+Findings in Java Class: o0OOOOOO.OooO0o$OooO00o
+
+	 in Method: void run()
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #83fc0a21544927593321b2679eac6d036faeff5e11791d924b0ffd52b1012e41)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $i1 = virtualinvoke $r36.<javax.crypto.Cipher: int getBlockSize()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #83fc0a21544927593321b2679eac6d036faeff5e11791d924b0ffd52b1012e41)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to javax.crypto.Cipher: int doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer), javax.crypto.Cipher: byte[] doFinal(byte[]), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[]), javax.crypto.Cipher: byte[] doFinal(byte[],int,int), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int), update, wrap
+			at statement: $r18 = virtualinvoke $r36.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r18, $i4, $i6)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #83fc0a21544927593321b2679eac6d036faeff5e11791d924b0ffd52b1012e41)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to javax.crypto.Cipher: int doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer), javax.crypto.Cipher: byte[] doFinal(byte[]), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[]), javax.crypto.Cipher: byte[] doFinal(byte[],int,int), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int), update, wrap
+			at statement: $r26 = virtualinvoke $r36.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r18, $i4, $i1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r36.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer3947, $r37)
+
+		ConstraintError violating CrySL rule for java.security.KeyPairGenerator (on Object #3dad5dafba675c43636c1b79eb6b049bc397cd5938e4314ee0b9fd4993a3bdc5)
+			First parameter (with value 1024) should be any of {4096, 3072, 2048}
+			at statement: virtualinvoke $r10.<java.security.KeyPairGenerator: void initialize(int)>(varReplacer3978)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #83fc0a21544927593321b2679eac6d036faeff5e11791d924b0ffd52b1012e41)
+			First parameter (with value "RSA/NONE/PKCS1Padding") should be any of RSA/{Empty String, ECB}
+			at statement: $r36 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer3908)
+
+
+	 in Method: byte[] OooO00o(byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, varReplacer18226)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #dcbb278e3169e2fd16ebe5b46537d98d72285a966fa77be870d5e4cce0536718)
+			First parameter (with value "AES/ECB/PKCS5Padding") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer18227)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r5.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer18225, $r1)
+
+
+Findings in Java Class: com.roborock.internal.common.util.OooO00o
+
+	 in Method: byte[] OooO00o(byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4430)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #a49c60f991fc5fb1ec40a0d8d9c844f4e8775771d7d9d79521fbb49ba7c60e83)
+			First parameter (with value "AES/ECB/PKCS5Padding") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer4431)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #81abd9f12f3bb3d8f7cc681a06138e16070de1c4c9693926a87112152d26da54)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4430)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer4429, $r0)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #81abd9f12f3bb3d8f7cc681a06138e16070de1c4c9693926a87112152d26da54)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4430)
+
+
+	 in Method: byte[] OooO0O0(byte[],byte[])
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #25580a339ba56547e0bf53d059941d5fd1589798d610f05c7570c94dd443de36)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer20318)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #25580a339ba56547e0bf53d059941d5fd1589798d610f05c7570c94dd443de36)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer20318)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer20319, $r0)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #38ad994ef4efff1e19572be9405cb3704ecfabb176cc110afac3b6652cdad52e)
+			First parameter (with value "AES/ECB/PKCS5Padding") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer20320)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer20318)
+
+
+Findings in Java Class: o0OOOo0O.Oooo0
+
+	 in Method: java.lang.Object doInBackground(java.lang.Object[])
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #91c8ee8f5117294e6033a981f0689c079c5d0d442bfa2e00975ea42d99e517aa)
+			Operation on object of type java.security.Signature object not completed. Expected call to update, verify
+			at statement: virtualinvoke $r18.<java.security.Signature: void initVerify(java.security.PublicKey)>($r17)
+
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPubkey
+			at statement: virtualinvoke $r18.<java.security.Signature: void initVerify(java.security.PublicKey)>($r17)
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r17 = virtualinvoke $r16.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r13)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #91c8ee8f5117294e6033a981f0689c079c5d0d442bfa2e00975ea42d99e517aa)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: boolean verify(byte[],int,int), java.security.Signature: boolean verify(byte[]), update
+			at statement: $z0 = virtualinvoke $r18.<java.security.Signature: boolean verify(byte[])>($r2)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #91c8ee8f5117294e6033a981f0689c079c5d0d442bfa2e00975ea42d99e517aa)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: void update(byte), java.security.Signature: void update(byte[],int,int), java.security.Signature: void update(byte[]), java.security.Signature: void update(java.nio.ByteBuffer), verify
+			at statement: virtualinvoke $r18.<java.security.Signature: void update(byte[],int,int)>($r1, varReplacer8827, $i0)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r13.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r15)
+
+
+Findings in Java Class: com.facebook.cache.common.OooO00o
+
+	 in Method: java.lang.String OooO0O0(com.facebook.cache.common.CacheKey)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #2f564d4ab52e8df731110ea72be087d4370685a476ad1014915e82504d169497)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer15513)
+
+
+Findings in Java Class: com.roborock.homesec.RtcClient
+
+	 in Method: void <clinit>()
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #bd178c0d06916984a8f9521a76d68c783e9c37f43f367d83612ff0083f40d1ac)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer20354)
+
+
+Findings in Java Class: com.roborock.internal.common.util.store.EncryptionManager
+
+	 in Method: void <init>(android.content.Context,android.content.SharedPreferences,java.lang.String,byte[],com.roborock.internal.common.util.store.SecuredPreferenceStore$KeyStoreRecoveryNotifier)
+		ConstraintError violating CrySL rule for java.security.KeyStore (on Object #a2493ef39a06a3da5cfd12901e636576a8b064632cc7197e6da8eb31b7267465)
+			First parameter (with value "AndroidKeyStore") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}
+			at statement: $r8 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer22570)
+
+
+	 in Method: byte[] OooO0o(com.roborock.internal.common.util.store.EncryptionManager$OooO00o)
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #269ce1f6cf1ac4c56baa8ae9bea6fbb2808c855a43514dd1ee5c90ec0b917550)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r3 = virtualinvoke $r4.<javax.crypto.Mac: byte[] doFinal(byte[])>($r3)
+
+
+	 in Method: com.roborock.internal.common.util.store.EncryptionManager$OooO00o OooO0oO(byte[])
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #a4302c165d455486c2377588f790d7d23cefd830bb60a8029072cf17db121b71)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r1 = virtualinvoke $r6.<javax.crypto.Mac: byte[] doFinal(byte[])>($r1)
+
+
+	 in Method: javax.crypto.Cipher OooOO0(byte[],boolean)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($b0, $r4, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #b77fe988c89d33ccc060b44e2b4509c7384bcf0e79902c324126133789302771)
+			First parameter (with value "AES/CBC/PKCS7Padding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer76967, varReplacer76968)
+
+
+	 in Method: byte[] OooO0O0(byte[])
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #6f2e38c4fc88298c464ef79f616718ac06ded0562957788827e4d339acf7c841)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r5.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r4, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #6f2e38c4fc88298c464ef79f616718ac06ded0562957788827e4d339acf7c841)
+			First parameter (with value "RSA/ECB/PKCS1Padding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer76994, varReplacer76995)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.CipherOutputStream
+			Second parameter was not properly generated as generatedCipher
+			at statement: specialinvoke $r5.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r4, $r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer76993, $r3)
+
+
+	 in Method: byte[] OooO00o(byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer76998, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.CipherInputStream
+			Second parameter was not properly generated as generatedCipher
+			at statement: specialinvoke $r4.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r5, $r2)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #5b2b743d6245b394ca389c4874431a98bd6d1b7b3a2b58d425524a356bacf436)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r4.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r5, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #5b2b743d6245b394ca389c4874431a98bd6d1b7b3a2b58d425524a356bacf436)
+			First parameter (with value "RSA/ECB/PKCS1Padding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer76996, varReplacer76997)
+
+
+	 in Method: void OooOOO0(android.content.Context,android.content.SharedPreferences,byte[])
+		RequiredPredicateError violating CrySL rule for java.security.SecureRandom
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r34.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer51288)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.KeyGenerator
+			Second parameter was not properly generated as randomized
+			at statement: virtualinvoke $r7.<javax.crypto.KeyGenerator: void init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)>($r12, $r13)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.KeyGenerator
+			Second parameter was not properly generated as randomized
+			at statement: virtualinvoke $r7.<javax.crypto.KeyGenerator: void init(int,java.security.SecureRandom)>(varReplacer51282, $r13)
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyPairGenerator
+			First parameter was not properly generated as preparedRSA
+			at statement: virtualinvoke $r14.<java.security.KeyPairGenerator: void initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)>($r19, $r13)
+
+
+	 in Method: javax.crypto.Cipher OooO(byte[],boolean)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($b0, $r2, $r3)
+
+
+Findings in Java Class: com.roborock.smart.service.DownloadListener$decompress$1
+
+	 in Method: java.lang.Object invokeSuspend(java.lang.Object)
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #dc9d4f97a7e58348140a4f0bea9e3a2ffae7aea8e764710263014364f923ab3e)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: void update(byte), java.security.Signature: void update(byte[],int,int), java.security.Signature: void update(byte[]), java.security.Signature: void update(java.nio.ByteBuffer), verify
+			at statement: virtualinvoke $r18.<java.security.Signature: void update(byte[],int,int)>($r12, varReplacer31312, $i1)
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r17 = virtualinvoke $r16.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r14)
+
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPubkey
+			at statement: virtualinvoke $r18.<java.security.Signature: void initVerify(java.security.PublicKey)>($r17)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r14.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r15)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #dc9d4f97a7e58348140a4f0bea9e3a2ffae7aea8e764710263014364f923ab3e)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: boolean verify(byte[],int,int), java.security.Signature: boolean verify(byte[]), update
+			at statement: $z0 = virtualinvoke $r18.<java.security.Signature: boolean verify(byte[])>($r1)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #dc9d4f97a7e58348140a4f0bea9e3a2ffae7aea8e764710263014364f923ab3e)
+			Operation on object of type java.security.Signature object not completed. Expected call to update, verify
+			at statement: virtualinvoke $r18.<java.security.Signature: void initVerify(java.security.PublicKey)>($r17)
+
+
+Findings in Java Class: com.roborock.smart.fragment.MallFragment$verifyBundle$2
+
+	 in Method: java.lang.Object invokeSuspend(java.lang.Object)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r15 = virtualinvoke $r14.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r11)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #7083b9700c9a914769da9176ff4fabf5c448937bb057976eb88ccaec96d03a21)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: boolean verify(byte[],int,int), java.security.Signature: boolean verify(byte[]), update
+			at statement: virtualinvoke $r16.<java.security.Signature: boolean verify(byte[])>($r2)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r11.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r13)
+
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPubkey
+			at statement: virtualinvoke $r16.<java.security.Signature: void initVerify(java.security.PublicKey)>($r15)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #7083b9700c9a914769da9176ff4fabf5c448937bb057976eb88ccaec96d03a21)
+			Operation on object of type java.security.Signature object not completed. Expected call to update, verify
+			at statement: virtualinvoke $r16.<java.security.Signature: void initVerify(java.security.PublicKey)>($r15)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #7083b9700c9a914769da9176ff4fabf5c448937bb057976eb88ccaec96d03a21)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: void update(byte), java.security.Signature: void update(byte[],int,int), java.security.Signature: void update(byte[]), java.security.Signature: void update(java.nio.ByteBuffer), verify
+			at statement: virtualinvoke $r16.<java.security.Signature: void update(byte[],int,int)>($r1, varReplacer32190, $i0)
+
+
+Findings in Java Class: com.roborock.smart.model.RNMallPluginDownloadManager
+
+	 in Method: boolean OooO0oO(com.roborock.smart.model.RNMallPluginDownloadManager,java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #4c4ee90168c9a9c6e5cdaa633e17f7cf6d34d786721b5776466f76049577682a)
+			Operation on object of type java.security.Signature object not completed. Expected call to update, verify
+			at statement: virtualinvoke $r11.<java.security.Signature: void initVerify(java.security.PublicKey)>($r10)
+
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPubkey
+			at statement: virtualinvoke $r11.<java.security.Signature: void initVerify(java.security.PublicKey)>($r10)
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r10 = virtualinvoke $r9.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r6)
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature (on Object #4c4ee90168c9a9c6e5cdaa633e17f7cf6d34d786721b5776466f76049577682a)
+			Operation on object of type java.security.Signature object not completed. Expected call to java.security.Signature: void update(byte), java.security.Signature: void update(byte[],int,int), java.security.Signature: void update(byte[]), java.security.Signature: void update(java.nio.ByteBuffer), verify
+			at statement: virtualinvoke $r11.<java.security.Signature: void update(byte[],int,int)>($r0, varReplacer32778, $i1)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r6.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r8)
+
+
+Findings in Java Class: o00oOoO0.o00O00OO
+
+	 in Method: java.security.MessageDigest OooO00o(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #bc414d456c87d28fe17c78747e70630200b9c102d1049bda1782ad84248aeb1)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #bc414d456c87d28fe17c78747e70630200b9c102d1049bda1782ad84248aeb1)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #bc414d456c87d28fe17c78747e70630200b9c102d1049bda1782ad84248aeb1)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+
+Findings in Java Class: com.google.firebase.installations.remote.OooO0OO
+
+	 in Method: java.net.HttpURLConnection OooO0OO(java.net.URL,java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #bc414d456c87d28fe17c78747e70630200b9c102d1049bda1782ad84248aeb1)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to update, java.security.MessageDigest: byte[] digest(byte[])
+			at statement: $r22 = virtualinvoke $r20.<java.security.MessageDigest: byte[] digest(byte[])>($r22)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #bc414d456c87d28fe17c78747e70630200b9c102d1049bda1782ad84248aeb1)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r20 = staticinvoke <o00oOoO0.o00O00OO: java.security.MessageDigest OooO00o(java.lang.String)>(varReplacer68443)
+
+
+Findings in Java Class: com.google.android.play.core.assetpacks.OooOOO
+
+	 in Method: java.lang.String OooO00o(java.util.List)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #dd4b4e20a013b006f432f378356cc6be29acdaf393a3d7c93b33c5d14847aae3)
+			First parameter (with value "SHA256") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer40116)
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #dd4b4e20a013b006f432f378356cc6be29acdaf393a3d7c93b33c5d14847aae3)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.o00Oo0
+
+	 in Method: java.security.MessageDigest OooOOoo()
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer43967)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer43967)
+
+
+Findings in Java Class: o00oo0Oo.oO0
+
+	 in Method: java.lang.String OooOOO(java.lang.String,boolean)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r8 = staticinvoke <com.google.android.gms.measurement.internal.o00Oo0: java.security.MessageDigest OooOOoo()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.o00O0O
+
+	 in Method: long OooOo0o(byte[])
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r4 = staticinvoke <com.google.android.gms.measurement.internal.o00Oo0: java.security.MessageDigest OooOOoo()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.o000oOoO
+
+	 in Method: o00oo0Oo.oOO0000 OooOOo0(boolean)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to update, java.security.MessageDigest: byte[] digest(byte[])
+			at statement: $r33 = virtualinvoke $r27.<java.security.MessageDigest: byte[] digest(byte[])>($r33)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #fa6e99341c75c62cd5085e2cd9ebe79e195dfb228e49f96b7c33e85ada1a0f67)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r27 = staticinvoke <com.google.android.gms.measurement.internal.o00Oo0: java.security.MessageDigest OooOOoo()>()
+
+
+Findings in Java Class: org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule
+
+	 in Method: void start()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLParameters (on Object #859fe0ec5a0ef670ee98b35ac915e8f21b89da12473bd5b28964a8131b54f41c)
+			Operation on object of type javax.net.ssl.SSLParameters object not completed. Expected call to setProtocols, setCipherSuites
+			at statement: virtualinvoke $r9.<javax.net.ssl.SSLSocket: void setSSLParameters(javax.net.ssl.SSLParameters)>($r6)
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLParameters (on Object #859fe0ec5a0ef670ee98b35ac915e8f21b89da12473bd5b28964a8131b54f41c)
+			Operation on object of type javax.net.ssl.SSLParameters object not completed. Expected call to setProtocols, setCipherSuites
+			at statement: virtualinvoke $r9.<javax.net.ssl.SSLSocket: void setSSLParameters(javax.net.ssl.SSLParameters)>($r6)
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLParameters (on Object #859fe0ec5a0ef670ee98b35ac915e8f21b89da12473bd5b28964a8131b54f41c)
+			Operation on object of type javax.net.ssl.SSLParameters object not completed. Expected call to setProtocols, setCipherSuites
+			at statement: virtualinvoke $r9.<javax.net.ssl.SSLSocket: void setSSLParameters(javax.net.ssl.SSLParameters)>($r6)
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLParameters (on Object #859fe0ec5a0ef670ee98b35ac915e8f21b89da12473bd5b28964a8131b54f41c)
+			Operation on object of type javax.net.ssl.SSLParameters object not completed. Expected call to setProtocols, setCipherSuites
+			at statement: virtualinvoke $r9.<javax.net.ssl.SSLSocket: void setSSLParameters(javax.net.ssl.SSLParameters)>($r6)
+
+
+Findings in Java Class: o0O0oOoo.o0000O0O
+
+	 in Method: java.util.ArrayList OooO00o(android.content.Context,java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #f1ecebd4bd393cb89ebb86e829026052fdff9f29fd5ea432e1bd1fa0af1549be)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to update, java.security.MessageDigest: byte[] digest(byte[])
+			at statement: $r13 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest()>()
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #f1ecebd4bd393cb89ebb86e829026052fdff9f29fd5ea432e1bd1fa0af1549be)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r7 = null
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #f1ecebd4bd393cb89ebb86e829026052fdff9f29fd5ea432e1bd1fa0af1549be)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer49267)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #f1ecebd4bd393cb89ebb86e829026052fdff9f29fd5ea432e1bd1fa0af1549be)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer49267)
+
+
+Findings in Java Class: com.tuya.smart.common.o00o00o0o0
+
+	 in Method: byte[] O0000ooo(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #121c64874811f10c8caf716562224593fd21ea2ed4f0208a8e789b9b8e2c72e4)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer49507)
+
+
+	 in Method: byte[] O000000o(byte[],byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #64500ed94cb031561c02cae3ac1edf958ca9b53c437e9eb91087b601449ff8d7)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer75751)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r5.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer75749, $r4, $r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer75748)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r5.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer75749, $r4, $r1)
+
+
+	 in Method: byte[] O00000Oo(byte[],byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #cbdd649b006bdcb26c94e5f85f9c43336a7cdc50128d1b7c00f7b09bd39a6511)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer134340)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer134341)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r5.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer134342, $r4, $r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+
+
+Findings in Java Class: com.tuya.sdk.security.EncryptionManager
+
+	 in Method: void O00000Oo()
+		ConstraintError violating CrySL rule for java.security.KeyStore (on Object #1095f2d5877ec606e322982e457820d8c202f629951075a84edc0e6b6ab797b0)
+			First parameter (with value "AndroidKeyStore") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}
+			at statement: $r1 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer53286)
+
+
+	 in Method: javax.crypto.Cipher O00000Oo(byte[],boolean)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($b0, $r4, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #ea979bb083e1134bbe1c8255a447edfd1d3ea3db5ce0144b275ba1c9694ac3a4)
+			First parameter (with value "AES/CBC/PKCS7Padding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer111996, varReplacer111997)
+
+
+	 in Method: byte[] O00000oo(byte[])
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #2c6270f86e6755ec124373437006fa98cc580b9a969afd24f78500cf55ce100a)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r2 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal(byte[])>($r2)
+
+
+	 in Method: byte[] O0000O0o(byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer112460, $r3)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #f4d7211be8042e53a917f3eb984957232568b4528afd70c0b0122dd04a1afa3a)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r5.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r4, $r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.CipherOutputStream
+			Second parameter was not properly generated as generatedCipher
+			at statement: specialinvoke $r5.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r4, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #f4d7211be8042e53a917f3eb984957232568b4528afd70c0b0122dd04a1afa3a)
+			First parameter (with value "RSA/ECB/PKCS1Padding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer112461, varReplacer112462)
+
+
+	 in Method: byte[] O0000OOo(byte[])
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #57a054097b090b5f1929b0a80ecba440abb3f690efbe59efd67223c5f19c974b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r4.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r5, $r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer112465, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.CipherInputStream
+			Second parameter was not properly generated as generatedCipher
+			at statement: specialinvoke $r4.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r5, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #57a054097b090b5f1929b0a80ecba440abb3f690efbe59efd67223c5f19c974b)
+			First parameter (with value "RSA/ECB/PKCS1Padding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>(varReplacer112463, varReplacer112464)
+
+
+	 in Method: boolean O000000o(android.content.SharedPreferences,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.KeyGenerator
+			Second parameter was not properly generated as randomized
+			at statement: virtualinvoke $r4.<javax.crypto.KeyGenerator: void init(int,java.security.SecureRandom)>(varReplacer98145, $r5)
+
+		RequiredPredicateError violating CrySL rule for java.security.SecureRandom
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r5.<java.security.SecureRandom: void <init>(byte[])>($r2)
+
+
+	 in Method: boolean O00000oO(byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.KeyGenerator
+			Second parameter was not properly generated as randomized
+			at statement: virtualinvoke $r4.<javax.crypto.KeyGenerator: void init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)>($r9, $r10)
+
+		RequiredPredicateError violating CrySL rule for java.security.SecureRandom
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r10.<java.security.SecureRandom: void <init>(byte[])>($r1)
+
+
+	 in Method: javax.crypto.SecretKey O00000o0(android.content.SharedPreferences)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer98156)
+
+
+	 in Method: javax.crypto.SecretKey O00000Oo(android.content.SharedPreferences)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, varReplacer98153)
+
+
+	 in Method: boolean O000000o(android.content.Context,byte[])
+		RequiredPredicateError violating CrySL rule for java.security.KeyPairGenerator
+			First parameter was not properly generated as preparedRSA
+			at statement: virtualinvoke $r5.<java.security.KeyPairGenerator: void initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)>($r12, $r13)
+
+		RequiredPredicateError violating CrySL rule for java.security.SecureRandom
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r13.<java.security.SecureRandom: void <init>(byte[])>($r1)
+
+
+	 in Method: javax.crypto.Cipher O000000o(byte[],boolean)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($b0, $r2, $r3)
+
+
+Findings in Java Class: com.google.firebase.crashlytics.internal.common.CommonUtils
+
+	 in Method: java.lang.String OooOOO0(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #915f5979672760cbf89e443909413403d894547235fd8fa751ce7f6408a77d54)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer64511)
+
+
+Findings in Java Class: com.tuya.smart.android.common.utils.AESUtil
+
+	 in Method: java.lang.String encrypt(java.lang.String)
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #1053fd1204fd79e79f1988d177e7dfe5968736074acfe778afed99fad39bfaa6)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer66590, $r2)
+
+
+	 in Method: java.security.Key generateKey()
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #fc832f4d6b3614e670a07e6164462f05dff3e6eb13f9d027958aff0301ac0420)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r3)
+
+
+	 in Method: java.lang.String encryptWithBase64(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer111185, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #52cbc22322ffedac3ccaaaa5b6117d4a593a771c212e4a4e460c3b84ad397a31)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+
+	 in Method: byte[] decryptWithBytes(byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #9a97ab8158c304f102c41f7e78d4c53ad9fb716256d9eadfdc38ac1803ce0030)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer111989, $r2)
+
+
+	 in Method: byte[] encryptWithBytes(byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #c07c92637065f9963c307700984b9b22baa6e07708cd5fd04e6038051df5143d)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer112001, $r2)
+
+
+	 in Method: byte[] encryptWithBytes(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer129559, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #c07c92637065f9963c307700984b9b22baa6e07708cd5fd04e6038051df5143d)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+
+	 in Method: java.lang.String decryptWithBase64(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer134215, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #73279fcdf8f3ca9f352ab916e0f36b579a36dc46c69387d1c60ba0e3eba76d2b)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+
+	 in Method: java.lang.String decrypt(byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #d20a17eedf9d76fdc72dd37c023530af2c2764050615a9f141cf62f05b85cd92)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer135427, $r2)
+
+
+	 in Method: java.lang.String decrypt(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer136866, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #d20a17eedf9d76fdc72dd37c023530af2c2764050615a9f141cf62f05b85cd92)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+
+
+Findings in Java Class: com.google.android.gms.internal.recaptcha.oO00OO0O
+
+	 in Method: com.google.android.gms.internal.recaptcha.oO0O0OoO OooO0OO()
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #6278e0f143b6b532c1ec63a703d795e4ee14e75d30eaa7a43f38d4ec03e3a05d)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #6278e0f143b6b532c1ec63a703d795e4ee14e75d30eaa7a43f38d4ec03e3a05d)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+
+
+Findings in Java Class: com.google.android.gms.internal.recaptcha.oO0Oo0oo
+
+	 in Method: com.google.android.gms.internal.recaptcha.oO0O0OoO zzb(byte[],int,int)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #6278e0f143b6b532c1ec63a703d795e4ee14e75d30eaa7a43f38d4ec03e3a05d)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r3 = interfaceinvoke $r2.<com.google.android.gms.internal.recaptcha.zzlo: com.google.android.gms.internal.recaptcha.oO0O0OoO OooO0OO()>()
+
+
+Findings in Java Class: com.tuya.smart.android.common.utils.RSAUtil
+
+	 in Method: byte[] encrypt(java.security.PublicKey,byte[])
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #e694729607a45d747564bb914e7d819a2693ae83bc644637f6e6b60ea14df0f)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $i2 = virtualinvoke $r4.<javax.crypto.Cipher: int getOutputSize(int)>($i2)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #e694729607a45d747564bb914e7d819a2693ae83bc644637f6e6b60ea14df0f)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to javax.crypto.Cipher: int doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer), javax.crypto.Cipher: byte[] doFinal(byte[]), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[]), javax.crypto.Cipher: byte[] doFinal(byte[],int,int), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int), update, wrap
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int)>($r2, $i0, $i4, $r0, $i5)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #e694729607a45d747564bb914e7d819a2693ae83bc644637f6e6b60ea14df0f)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to javax.crypto.Cipher: int doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer), javax.crypto.Cipher: byte[] doFinal(byte[]), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[]), javax.crypto.Cipher: byte[] doFinal(byte[],int,int), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int), update, wrap
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int)>($r2, $i0, $i1, $r0, $i4)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.SecureRandom)>(varReplacer74699, $r1, $r3)
+
+
+	 in Method: java.security.interfaces.RSAPublicKey generateRSAPublicKey(java.math.BigInteger,java.math.BigInteger)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r4 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+
+
+Findings in Java Class: com.tuya.smart.common.O00000Oo
+
+	 in Method: byte[] O000000o(byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #8a0a3a0e7155d25f237bbf1957bbee0482934996598ba14539b3239b6d00e09c)
+			First parameter (with value "AES/ECB/NoPadding") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer76231)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r1, varReplacer76230)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer76232, $r0)
+
+
+Findings in Java Class: okhttp3.internal.platform.OpenJSSEPlatform
+
+	 in Method: javax.net.ssl.SSLContext newSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #fbf2039358b39d2864276969813b829fa37736ae0d3cccf7cb1ccdc76ecf6200)
+			First parameter (with value "TLSv1.3") should be any of {TLSv1.2}
+			at statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer77011, $r2)
+
+
+	 in Method: javax.net.ssl.X509TrustManager platformTrustManager()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r3.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer51374)
+
+
+Findings in Java Class: okhttp3.internal.platform.ConscryptPlatform
+
+	 in Method: javax.net.ssl.SSLContext newSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #28270830c403e1e1d4b76fddac83e0de3bd70e69a4210991c0a37a2dc1aae43b)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer77014, $r2)
+
+
+	 in Method: javax.net.ssl.X509TrustManager platformTrustManager()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r2.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer51379)
+
+
+	 in Method: javax.net.ssl.SSLSocketFactory newSslSocketFactory(javax.net.ssl.X509TrustManager)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer51400, $r5, varReplacer51400)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer51400, $r5, varReplacer51400)
+
+
+Findings in Java Class: okhttp3.internal.platform.Platform
+
+	 in Method: javax.net.ssl.SSLContext newSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #9ae440b4432d6f7646b55d13775174e6087b022c6cd2b3fcd671cff025f4f891)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer77015)
+
+
+	 in Method: javax.net.ssl.SSLSocketFactory newSslSocketFactory(javax.net.ssl.X509TrustManager)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer51395, $r10, varReplacer51395)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer51395, $r10, varReplacer51395)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer51395, $r10, varReplacer51395)
+
+
+	 in Method: javax.net.ssl.X509TrustManager platformTrustManager()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r2.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer51383)
+
+
+Findings in Java Class: okhttp3.internal.platform.BouncyCastlePlatform
+
+	 in Method: javax.net.ssl.SSLContext newSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #589ccbf051e6ae4a648e787eed97fbdbabdbafa50f719d5e892d4088a32bd226)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer77018, $r2)
+
+
+	 in Method: javax.net.ssl.X509TrustManager platformTrustManager()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r1.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer51391)
+
+
+Findings in Java Class: o0O0OO0.OooO00o
+
+	 in Method: java.lang.String OooO00o()
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r9 = virtualinvoke $r7.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r8)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r8.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r6)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #96c4e96ce9e77a9e5e0784d5468a3dc0c321bf27fbc75a320d0bfa3d812b97ad)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r12 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer88681)
+
+
+Findings in Java Class: o0OO0oO0.OooO0OO
+
+	 in Method: okhttp3.Response intercept(okhttp3.Interceptor$Chain)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r21.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r20, $r13)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #d321ce2f08fb644be65fdef0a619c93589b11eb7019ffd33ecaac9c70f512c07)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r20 = virtualinvoke $r22.<javax.crypto.Mac: byte[] doFinal(byte[])>($r20)
+
+
+Findings in Java Class: com.facebook.soloader.SoLoader$OooO00o
+
+	 in Method: java.lang.String OooO0O0(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #41596856f8fce3ddbd3dd2af4052eb217b67d79fedce298a6ac38fd0cabf94)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r5 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer98419)
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #41596856f8fce3ddbd3dd2af4052eb217b67d79fedce298a6ac38fd0cabf94)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r7 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest()>()
+
+
+Findings in Java Class: com.google.firebase.messaging.OooO
+
+	 in Method: void OooO0O0(java.lang.String,java.lang.String,android.os.Bundle)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #22e42ae469198d44965ffa83c520e2f269a8fbafa32b1364f1d1c9ebd9d4dec1)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r9 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer105391)
+
+
+Findings in Java Class: okio.ByteString
+
+	 in Method: okio.ByteString digest$okio(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #ae39b036c5eeeba58d380660f68e23806935f12d2f5c9cefe65440425aa34f4a)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #ae39b036c5eeeba58d380660f68e23806935f12d2f5c9cefe65440425aa34f4a)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+
+Findings in Java Class: okio.SegmentedByteString
+
+	 in Method: okio.ByteString digest$okio(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6c960e488f21ae2f1d37981b7f790ff5823030d9f242d798118968e0f93ba357)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #6c960e488f21ae2f1d37981b7f790ff5823030d9f242d798118968e0f93ba357)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r5 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6c960e488f21ae2f1d37981b7f790ff5823030d9f242d798118968e0f93ba357)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+
+Findings in Java Class: org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketHandshake
+
+	 in Method: byte[] sha1(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #c91af32c3795436a0eec164fc12485b9700ecce0f6ad6546204f5b01efa131d8)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer122831)
+
+
+Findings in Java Class: com.tuya.smart.common.o00ooo0o00
+
+	 in Method: byte[] O000000o(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #f42a0c6bbebc6867fb515c19b5634a0b5b33ef167a2791edabeff70e40a814e5)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer124198)
+
+
+Findings in Java Class: com.tuya.smart.android.common.utils.MD5
+
+	 in Method: java.lang.String md5(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #3cc1950d6b259d15ae1031bc1d3586507d3697f7393bf038ea6ead3039dacb90)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer124431)
+
+
+Findings in Java Class: com.tuya.smart.mqtt.MqttAndroidClient
+
+	 in Method: javax.net.ssl.SSLSocketFactory getSSLSocketFactory(java.io.InputStream,java.lang.String)
+		ConstraintError violating CrySL rule for javax.net.ssl.TrustManagerFactory (on Object #a6ee412bc5741a0a260a68c91e425309deab198950bd4f519a2ade7aba3bf63a)
+			First parameter (with value "X509") should be any of {PKIX, SunX509}
+			at statement: $r5 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>(varReplacer128010)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r5.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer128012, $r6, varReplacer128012)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer128012, $r6, varReplacer128012)
+
+		ConstraintError violating CrySL rule for java.security.KeyStore (on Object #a251d9ad90d898d1ccfd1102d184dbf575c2749fbb38a92414c4bd274b2e134d)
+			First parameter (with value "BKS") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}
+			at statement: $r3 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer128009)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #2e21baac3cb8d5225cbf61a5db4ade64dd5e24e64105512de001b7e0efb6c5f4)
+			First parameter (with value "TLSv1") should be any of {TLSv1.2}
+			at statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer128011)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #a251d9ad90d898d1ccfd1102d184dbf575c2749fbb38a92414c4bd274b2e134d)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r3.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r1, $r4)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #a251d9ad90d898d1ccfd1102d184dbf575c2749fbb38a92414c4bd274b2e134d)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r3.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r1, $r4)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer128012, $r6, varReplacer128012)
+
+
+Findings in Java Class: com.tuya.smart.common.ooo0o0oo0
+
+	 in Method: void O00000Oo()
+		ConstraintError violating CrySL rule for java.security.KeyPairGenerator (on Object #798178cc8722ad98b70b83a6a15bd7b042e4e838934a7f72f81d8730adfbc0af)
+			First parameter (with value "ECDH") should be any of {RSA, EC, DSA, DiffieHellman, DH}
+			at statement: $r2 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer131910, varReplacer131911)
+
+
+Findings in Java Class: org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory
+
+	 in Method: javax.net.ssl.SSLContext getSSLContext(java.lang.String)
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #51438369a357067707332506854fc20b41f55bae36aefc78dabd79b339ad0ac5)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #51438369a357067707332506854fc20b41f55bae36aefc78dabd79b339ad0ac5)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r17, $r25, varReplacer132721)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #5149894d05ef20df222d58c4a033421d6302e35e69a14f445f906bc16807ea17)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r17, $r25, varReplacer132721)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r24.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>($r14)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r17, $r25, varReplacer132721)
+
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #51438369a357067707332506854fc20b41f55bae36aefc78dabd79b339ad0ac5)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #51438369a357067707332506854fc20b41f55bae36aefc78dabd79b339ad0ac5)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.KeyManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #faf8a006ee2bf18d70acac36e6184b973d313a1f622eaa10afaeb42c1349d99c)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r4)
+
+
+Findings in Java Class: com.tuya.smart.common.o000o0o0oo
+
+	 in Method: void O000000o(byte[])
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r16 = virtualinvoke $r15.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r14)
+
+		ConstraintError violating CrySL rule for javax.crypto.KeyAgreement (on Object #9b49dc71931776afc1d45b11f3e75e6454e0b1fbb0ffd4ea3f3be77d5ea822fb)
+			First parameter (with value "ECDH") should be any of {DH, DiffieHellman, NH}
+			at statement: $r18 = staticinvoke <javax.crypto.KeyAgreement: javax.crypto.KeyAgreement getInstance(java.lang.String,java.lang.String)>(varReplacer134272, varReplacer134273)
+
+		ConstraintError violating CrySL rule for java.security.KeyFactory (on Object #bf25da2dd466f88764301a7b39a8142c81c1e9784c2eab5050342c4a7b9b0989)
+			First parameter (with value "ECDH") should be any of {RSA, DiffieHellman, DH, DSA, EC}
+			at statement: $r15 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String,java.lang.String)>(varReplacer134267, varReplacer134268)
+
+
+Findings in Java Class: com.tuya.smart.common.oooo0000o
+
+	 in Method: void O0000o00()
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #5fb8ce904cb35c6781e70d711c897a674ce6fcac8629828093626cd1fb0d53d7)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer134351)
+
+
+Findings in Java Class: o0OOOo0O.o00Ooo$OooO00o
+
+	 in Method: void run()
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r8.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer19119, $r7, $r9)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r19.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer19121)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r20.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 47
+	Number of Objects Analyzed: 261
+
+	CryptoAnalysis found the following violations. For details see description above.
+	IncompleteOperationError: 37
+	NeverTypeOfError: 18
+	TypestateError: 9
+	HardCodedError: 6
+	ConstraintError: 58
+	RequiredPredicateError: 89
+=====================================================================

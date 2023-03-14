@@ -1,0 +1,23 @@
+ INFO | 2023-03-06 09:24:01.976 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2023-03-06 09:24:02.102 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Legacy
+ INFO | 2023-03-06 09:24:02.128 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2023-03-06 09:24:02.161 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2023-03-06 09:24:02.166 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2023-03-06 09:24:02.204 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2023-03-06 09:24:02.215 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: InsecureAssymCryptoFinder
+java.lang.RuntimeException: NOT POSSIBLE StringConstant or NewExpr at $u3#47.<jcifs.smb.DfsReferral: java.lang.String n> = "\\"
+ INFO | 2023-03-06 09:28:44.417 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: BrokenCryptoFinder
+ INFO | 2023-03-06 09:31:24.588 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: UntrustedPrngFinder
+ INFO | 2023-03-06 09:31:34.321 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2023-03-06 09:31:49.959 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2023-03-06 09:31:50.242 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: HostNameVerifierFinder
+ INFO | 2023-03-06 09:31:50.526 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: BrokenHashFinder
+ INFO | 2023-03-06 09:33:07.730 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableIVFinder
+ INFO | 2023-03-06 16:02:19.331 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PBESaltFinder
+ INFO | 2023-03-06 16:03:34.166 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PBEInterationCountFinder
+ INFO | 2023-03-06 16:04:46.115 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableSeedFinder
+ INFO | 2023-03-06 16:04:59.567 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableKeyStorePasswordFinder
+ INFO | 2023-03-06 16:05:25.101 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: HttpUrlFinder
+ INFO | 2023-03-06 16:25:06.912 | Interface.SubRunner (SubRunner.java:59) | Stopped the scanning process
+ INFO | 2023-03-06 16:25:06.959 | Interface.SubRunner (SubRunner.java:62) | Writing the output to the file: /home/srazmjo/library_analysis/apks/com.amazonaws.remoteconfiguration/ledremotes/_CryptoGuard-04.05.03_LedRemoteControl_10_0_0_4_f5644758-2e4b-4d55-aea7-3800ddcc4888_.txt
+/home/srazmjo/library_analysis/apks/com.amazonaws.remoteconfiguration/ledremotes/_CryptoGuard-04.05.03_LedRemoteControl_10_0_0_4_f5644758-2e4b-4d55-aea7-3800ddcc4888_.txt

@@ -1,0 +1,1086 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is too old. Falling back to java.lang.reflect API.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.3.0 or better (Maven group id: org.ow2.asm).
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Ruleset: 
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.PBEKeySpec
+	java.security.spec.MGF1ParameterSpec
+	java.security.MessageDigest
+	javax.crypto.Cipher
+	java.security.KeyPair
+	javax.crypto.SecretKeyFactory
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.SecretKey
+	javax.crypto.spec.IvParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.spec.GCMParameterSpec
+	javax.crypto.spec.SecretKeySpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	java.security.spec.DSAParameterSpec
+	javax.crypto.KeyAgreement
+	java.security.cert.TrustAnchor
+	javax.crypto.spec.DHParameterSpec
+	javax.net.ssl.SSLParameters
+	javax.net.ssl.SSLContext
+	java.security.Key
+	java.security.KeyFactory
+	void
+	java.security.DigestOutputStream
+	java.security.SecureRandom
+	java.security.cert.PKIXParameters
+	java.security.spec.X509EncodedKeySpec
+	javax.crypto.spec.DHGenParameterSpec
+	javax.net.ssl.SSLEngine
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.Signature
+	javax.crypto.CipherOutputStream
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.AlgorithmParameterGenerator
+	javax.crypto.Mac
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.AlgorithmParameters
+	javax.crypto.CipherInputStream
+	java.security.DigestInputStream
+	java.security.spec.ECParameterSpec
+	javax.crypto.KeyGenerator
+	java.security.KeyStore
+	java.security.spec.ECGenParameterSpec
+	java.security.KeyPairGenerator
+	javax.net.ssl.KeyManagerFactory
+	java.security.spec.DSAGenParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r6
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r6.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r7, $r3)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String decryptWithRsa(java.lang.String)>
+		SHA-256: b2cb489842869d627265b33164c02c29d4cf39b1166dc3076b8ba6ed5f5c655d
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: $r1 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String,java.lang.String)>(varReplacer679, varReplacer680)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: 27869a9fec79ae39679a81bc65b0210a5164a9500681536a9da4c3de566d4e1d
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: javax.crypto.KeyGenerator
+		Statement: $r0 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>(varReplacer682)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: 9b7fb7b83dea0f8df1170ef8019d63b4d4045d942dd25d392d9532352803aee6
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: java.security.PublicKey
+		Statement: $r5 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r4)
+		Method: <com.google.firebase.iid.zzq: java.security.PublicKey zza(java.lang.String)>
+		SHA-256: a4fe4326071074e487c671e4de381be412fc3035191121bf52a6a1e41bf574ab
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.eapil.lib.HttpTask: void trustAllHosts()>
+		SHA-256: 5db05be4864d366e84d01c0d5e833ddb0970571d59b7f1329f7154cc09bdd27a
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: java.security.PublicKey
+		Statement: $r4 = virtualinvoke $r2.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r3)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String RsaEncrypt(java.lang.String)>
+		SHA-256: c542c4c36304252885c932d53e9aa00ec58af7e548b4dec50a991b07d605186b
+		Secure: false
+	Object:
+		Variable: varReplacer39731
+		Type: java.lang.String
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer39731)
+		Method: <com.google.firebase.iid.zzq: java.security.PublicKey zza(java.lang.String)>
+		SHA-256: 824e4dcf80742fdc9694aa590732984ce22929d1e09ca0e959f5c707c079909e
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r8.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+		Method: <com.google.firebase.iid.zzq: java.security.PublicKey zza(java.lang.String)>
+		SHA-256: f51e95ccd6c924c4ea4a1db99f8912f5c5dc3c14e27355563a8f45ea6b3d7252
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: $r1 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String)>(varReplacer683)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: fe68874da3230b04d522228314647e82dc1683c6c8ee82437cf5d05601741ed7
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer15095)
+		Method: <com.quvii.qvfun.publico.util.SystemUtil: java.lang.String hashKeyForDisk(java.lang.String)>
+		SHA-256: 30f5fe72d9e90763b005fd7af34ed22d1373c350eecb27ee4a44a7bcd361174f
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c39c56e747360db9a9f921be06d8848d4de8e843b3286998ddc0a11af3ee0e60
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r2.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r1)
+		Method: <com.quvii.qvweb.publico.utils.EncryptUtil: void initAesKey(byte[])>
+		SHA-256: e3222336da507900b49e0d88ac8d21df200fa1021fec0c9842a3f4b23e8fd1af
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r8)
+		Method: <com.google.android.gms.measurement.internal.zzfg: java.lang.String zzb(java.lang.String)>
+		SHA-256: 2fba8037c4c1bfcd3991589a98549d8d54a89bc9007f8e32095da3758542300d
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.KeyFactory
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer39731)
+		Method: <com.google.firebase.iid.zzq: java.security.PublicKey zza(java.lang.String)>
+		SHA-256: ec4f9bc10736e5a2bff51101021543021a53da236eefaa37d1c5d95018a92f76
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: javax.net.ssl.SSLContext
+		Statement: $r11 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer4848)
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: 8c4822f588decc5393f600afb6dce914e0cba7a6a90321b2057b7e067837c8fe
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c39c56e747360db9a9f921be06d8848d4de8e843b3286998ddc0a11af3ee0e60
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <okio.f: okio.f b(java.lang.String)>
+		SHA-256: 6986ffe47dd19e5ec9d600a8cd3ccfe1efb2815f8b0665e23fc7df90234d9698
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.SecretKey
+		Statement: $r3 = virtualinvoke $r0.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: 92361711b240f2a1150438a90c2feb956bc0e8ab9302b601ac23d928acf959b5
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: java.security.KeyPairGenerator
+		Statement: $r0 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>(varReplacer36166)
+		Method: <com.google.firebase.iid.zzb: java.security.KeyPair zza()>
+		SHA-256: fdddb469ecf1b2507f0d508637915aac447502ea24c46dbc4cac90643c827682
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: java.security.KeyStore
+		Statement: $r0 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer618)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initKeyStore()>
+		SHA-256: 27889f883cd56654ae82a81f81f5844c6bfc157307dd39428e47b7f46c4ccec6
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer4841)
+		Method: <com.quvii.publico.utils.QvEncrypt: java.lang.String sha256(java.lang.String)>
+		SHA-256: dcfe4e91533a354305934a920ce4d922ca2f56546cb56e1c2bb520d548f8d421
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: $r1 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String,java.security.Provider)>(varReplacer685, $r2)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: 9c2cd217e0905e706da954660ae4e5330527e354af18fe71d4779bfb5dd46d94
+		Secure: true
+	Object:
+		Variable: varReplacer10663
+		Type: java.lang.String
+		Statement: $r2 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer10663)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String RsaEncrypt(java.lang.String)>
+		SHA-256: 5e0772974865bc15bd62ef88197f4beea6ed30b2645b28474c22f5d758449f3d
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = interfaceinvoke $r3.<javax.crypto.SecretKey: byte[] getEncoded()>()
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: d650ca6311e2af4079f4d7f6cfc1e74346e041dda9e0d74d61d2202ca0053f4a
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer36163)
+		Method: <com.google.firebase.iid.zzai: java.lang.String zza(java.security.PublicKey)>
+		SHA-256: 7004179c781af583031af8460faaaaa67220663f467da1a16abbd28a2fc3ad86
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer41504)
+		Method: <com.eapil.lib.HttpTask: void trustAllHosts()>
+		SHA-256: a2a8cfde3b46df699f42d3a1c48806b3abbc3847d4c97377c3616c7c80644542
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c39c56e747360db9a9f921be06d8848d4de8e843b3286998ddc0a11af3ee0e60
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r1, varReplacer6776)
+		Method: <com.quvii.qvweb.publico.utils.EncryptUtil: void initAesKey(byte[])>
+		SHA-256: 9d64879cef9b94421ca2c9baf6b3eb7fc78becdcd21374060d3de0271bc76723
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer18490)
+		Method: <com.google.android.gms.measurement.internal.zzkk: java.security.MessageDigest zzi()>
+		SHA-256: da9d17fb2c0e9f6a17a68aaf8adc3effb26c44cef737efc0428d284f59bd4719
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <com.google.android.gms.common.util.AndroidUtilsLight: java.security.MessageDigest zzj(java.lang.String)>
+		SHA-256: ae3618d0d1f264c3cd26a80f719d0eedb09a990816926713b695a9a95da4ac0d
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r10.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r11, $r7)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void checkNewKey()>
+		SHA-256: 6b6d1d67f0ab5fb67557acc7f2605bd99bd3ed540a0af1fa530c55735a7d3e55
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.SSLContext
+		Statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer8386)
+		Method: <com.quvii.publico.utils.QvNetUtil: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: 7d49ba88f67e1c9eedf03f339823b30f9401e6b41bf6642adae9beeb1ceed51c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.quvii.publico.utils.QvNetUtil: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: 583ee5f3b61586546800d6fc0e04eaa41c6879aa4e29edc71b7361f1dc7ca61a
+		Secure: true
+	Object:
+		Variable: varReplacer659
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer659)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c245772cdd51eae3721e8845a81f1bf2e69e1637f341313f5b4b63cdcc20c6e2
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r3 = virtualinvoke $r2.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <okhttp3.OkHttpClient: javax.net.ssl.X509TrustManager systemDefaultTrustManager()>
+		SHA-256: 4704c3ea9d50e304ebaa64f80abc0358b23fd9e2c75b25360e6595ec058a5c98
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c39c56e747360db9a9f921be06d8848d4de8e843b3286998ddc0a11af3ee0e60
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r2 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r1)
+		Method: <okhttp3.OkHttpClient: javax.net.ssl.X509TrustManager systemDefaultTrustManager()>
+		SHA-256: 61965954da2703450175e336d331a8bc311810e943eebaeca9d739b64a0fdc1
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: virtualinvoke $r4.<java.security.SecureRandom: void nextBytes(byte[])>($r3)
+		Method: <com.google.android.gms.measurement.internal.zzkk: java.lang.String zzk()>
+		SHA-256: 4fdb94f80407b0fba635d419569ed348bd049d0d47a09fb7ee328268aa400924
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer10662)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String RsaEncrypt(java.lang.String)>
+		SHA-256: 34d586fded3caac9616ef28ce804bffff261ed0f280f6fdfe9cea61fcb18f0e5
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+		Method: <okio.f: okio.f b(java.lang.String)>
+		SHA-256: 6bb0a2206e44b4e0c6fed31d11e10376126c188eb98912c92549adf21e8e77a5
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.quvii.qvlib.util.QvEncrypt: java.lang.String sha256(java.lang.String)>
+		SHA-256: 1f3bad9b6b3bcc2e68d310d30f77a3fb9892a36776f32182f09a47de08c2f7b
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer6778)
+		Method: <com.quvii.qvweb.publico.utils.EncryptUtil: void initAesKey(byte[])>
+		SHA-256: c7fd5f2cc6c394a2c977d293c4dacd05341732a7d58d0e61158586f7e107f7c1
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.SSLContext
+		Statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer8472)
+		Method: <com.quvii.qvlib.util.QvNetUtil: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: 91edc45e086b8cb4a1a2f71d4bb2d34b7e8f9975e7c36b454b8feb97984d3ba5
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String RsaEncrypt(java.lang.String)>
+		SHA-256: 316d6b563c738d83a9290e3ea7246e60f305b49c4d589f5c3de3e84a1faa3486
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer666)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String encryptWithRsa(java.lang.String)>
+		SHA-256: cf107dafbd1e6a6e3dfefb7e5a2f1a27549fc688b6c7ffcc243e4ddc06d1f127
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.google.firebase.iid.zzai: java.lang.String zza(java.security.PublicKey)>
+		SHA-256: 2588077170008e0db3ee8ecda4d7c2979b53592106b15f51cc846aab2970de36
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer625)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void checkNewKey()>
+		SHA-256: 1f0e208a0ab71ca2b1082e863c7da07d55c3d07b3e604476fa6f441919d7c42a
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r3.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String RsaEncrypt(java.lang.String)>
+		SHA-256: 778701b91ed066b33ade125dfd9c9aed6222f91a4fe5f0f3a9b9007afe917ee8
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.quvii.qvfun.publico.version.AppVersionManager: javax.net.ssl.SSLSocketFactory getSSLSocketFactory()>
+		SHA-256: 192f49f49d853c07f514504fce80c6b124dcb2e8ebb4efcde477d1dcaeea3ec3
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.SSLContext
+		Statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer27807)
+		Method: <okhttp3.OkHttpClient: javax.net.ssl.SSLSocketFactory systemDefaultSslSocketFactory(javax.net.ssl.X509TrustManager)>
+		SHA-256: cf305028f30d2dee2d120878f635ee3c51bad8a442250e8d5b89d6ebd53e4221
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.zzkk: void f_()>
+		SHA-256: 84ec2ad5b092e54f7d6845dc8611285947501a2da918961b8b20f72af61ce3b7
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.SSLContext
+		Statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer4825)
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: okhttp3.OkHttpClient$Builder createBuilder()>
+		SHA-256: b2b8b68905979f7bdb329b4ef0499601069caf6938d42b078ca7a9ca3c68b06
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer34670)
+		Method: <com.quvii.publico.utils.QvEncrypt: java.lang.String getMD5(java.lang.String)>
+		SHA-256: 59ebfc8da4821cfceb2270648dbeb3ba7f44805c6ee54884da4e18cfb48a81a9
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.quvii.qvweb.publico.utils.NetWorkUtils: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: e617428eaf6feca573a310db94d89de3409908f37d2de65380772b3758184cfe
+		Secure: true
+	Object:
+		Variable: $r14
+		Type: javax.net.ssl.KeyManager[]
+		Statement: $r14 = virtualinvoke $r13.<javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManager[] getKeyManagers()>()
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: 5d95d7e5f8ffa44550668b6257f20523d18705b1f721fd98586be02dd0425664
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.PublicKey
+		Statement: $r5 = virtualinvoke $r4.<java.security.KeyPair: java.security.PublicKey getPublic()>()
+		Method: <com.google.firebase.iid.zzq: com.google.firebase.iid.zzs zzb(android.content.Context,java.lang.String)>
+		SHA-256: 3d32ab549d77ac907d85095010591f738c0b1e8b0dd4031f95f04df77e41f036
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: java.security.KeyStore
+		Statement: $r3 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer4846)
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: 8ba285c76c87469cc545f2aa6f5a6670b1a793b179bd21daebc6506489251816
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.KeyFactory
+		Statement: $r2 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer10663)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String RsaEncrypt(java.lang.String)>
+		SHA-256: 5832377c77dbd51a9c736e41e19cdadd5f780bb84e9d96eaa977f928da9c51ad
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r5)
+		Method: <com.google.android.gms.common.zzm: java.lang.String zzc(java.lang.String,com.google.android.gms.common.zze,boolean,boolean)>
+		SHA-256: f058fe58647ffa4cb8db79b9535c46a7dfeb49c7921d2a4041a5970d6b3b3927
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer673)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String decryptWithRsa(java.lang.String)>
+		SHA-256: 2b8c24ae7f3b0d80049164e868343c89ad931f79a5dea3d5aa4950210751661f
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: $r1 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String)>(varReplacer686)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: byte[] createAesKey()>
+		SHA-256: f4a5b0d65b81c581fe699832b6ebb7cd2653c40c788efd3518826e60b8066375
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c39c56e747360db9a9f921be06d8848d4de8e843b3286998ddc0a11af3ee0e60
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r1)
+		Method: <com.quvii.qvfun.publico.App: void initQvLib()>
+		SHA-256: ead06303410e5e2ca077b5090fdccf9361a95a4f5c041f20b483e689cf630a0b
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r1)
+		Method: <com.google.android.gms.measurement.internal.zzkg: long zza(byte[])>
+		SHA-256: 5a5c1dd855011abe0bce532ec937469ebd656f9d6427d17b4e70cb5d4d66be34
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.quvii.publico.utils.QvEncrypt: java.lang.String sha256(java.lang.String)>
+		SHA-256: 1f3bad9b6b3bcc2e68d310d30f77a3fb9892a36776f32182f09a47de08c2f7b
+		Secure: true
+	Object:
+		Variable: $r15
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r15 = virtualinvoke $r12.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: 8f37b554338044799d6142c060296d26fed4a6a0fcaee03e61a3e9e83bd6acdb
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.KeyPair
+		Statement: $r1 = virtualinvoke $r0.<java.security.KeyPairGenerator: java.security.KeyPair generateKeyPair()>()
+		Method: <com.google.firebase.iid.zzb: java.security.KeyPair zza()>
+		SHA-256: 75f694556d8adb9d0bac48ea8d33a1b6e0b3f75dfdd1e323d018d3b050c5f9de
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer4338)
+		Method: <com.quvii.qvlib.util.QvEncrypt: java.lang.String sha256(java.lang.String)>
+		SHA-256: 1e04a86c2dd4abe790fa63ec925e41cfa28bdd4f6c1f6c159f1a23b55209d988
+		Secure: true
+	Object:
+		Variable: $r13
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r13 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>(varReplacer4849)
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: 3b66d2d1cb48cb00674eb1f4978bf15f3588d8a81f22e41796ff16712a31320c
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.SSLContext
+		Statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer8404)
+		Method: <com.quvii.qvweb.publico.utils.NetWorkUtils: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: 7ab8424326de7428a18863b261a2fcc497d97d38a6b88f882f28853bfed1e150
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.quvii.qvfun.publico.util.SystemUtil: java.lang.String hashKeyForDisk(java.lang.String)>
+		SHA-256: 182363696b464baeac30fc0898f305482325511c89342f3a3da600a5e90599ca
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: c39c56e747360db9a9f921be06d8848d4de8e843b3286998ddc0a11af3ee0e60
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: java.security.KeyPairGenerator
+		Statement: $r11 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String,java.lang.String)>(varReplacer641, varReplacer642)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void createNewKeys(java.lang.String)>
+		SHA-256: 2268cc30ddff9961e27577ab6c1929a44d8ee0226180df8b6865739f06fb2b54
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.quvii.qvlib.util.QvNetUtil: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: 583ee5f3b61586546800d6fc0e04eaa41c6879aa4e29edc71b7361f1dc7ca61a
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.zzkk: java.security.SecureRandom zzh()>
+		SHA-256: b5c1a633527c5ca930fbd77acf565dc80168b3ac349b769665af6e935de9bc4e
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.SSLContext
+		Statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer30725)
+		Method: <com.quvii.qvfun.publico.version.AppVersionManager: javax.net.ssl.SSLSocketFactory getSSLSocketFactory()>
+		SHA-256: 71a3d99b9069f32cb6fcebd78a42eae612255a516cf340f7e93c1607e63f1c1
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.quvii.publico.utils.QvEncrypt: java.lang.String getMD5(java.lang.String)>
+		SHA-256: 2b76205bfd87da1a92250486acb72d2dbde87b5bad127609bbd274eae0b640e2
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.CipherOutputStream
+		Statement: specialinvoke $r7.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r6, $r3)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: java.lang.String encryptWithRsa(java.lang.String)>
+		SHA-256: 4d536a78eda8cff3d205960899c56fee8ca3404eb6868d576a4ad59cd6ac0685
+		Secure: false
+	Object:
+		Variable: $r12
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r12 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>(varReplacer4845)
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: 7aef0446cefcec30f7cf4268601b30961d335206341e025e6284fb5bbf734024
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: byte[]
+		Statement: $r11 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r11)
+		Method: <com.google.android.gms.measurement.internal.zzkk: long zza(android.content.Context,java.lang.String)>
+		SHA-256: b10c215b13560551ac0e44649cc3d339c26d0857076ec617de55576ba4eb84c9
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer6780)
+		Method: <com.quvii.qvweb.publico.utils.EncryptUtil: void initAesKey(byte[])>
+		SHA-256: cd6a3a4c853b7f21e5eda0530443b24864fd61b4c3af26226c587b2dc2ee5c60
+		Secure: false
+	Object:
+		Variable: varReplacer6776
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r1, varReplacer6776)
+		Method: <com.quvii.qvweb.publico.utils.EncryptUtil: void initAesKey(byte[])>
+		SHA-256: 9ba59d8f28f2f71527a8b15d10f595ccd3b766d87f7be3838f61979bdbd8676d
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer659)
+		Method: <com.quvii.qvlib.util.QvEncryptKeyStoreUtil: void initAesKey()>
+		SHA-256: cc1bbca82a906c962b9d35c0801962e441430432730469d15f2159ebf966345f
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.KeyStore
+		Statement: $r4 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer4847)
+		Method: <com.quvii.qvweb.publico.utils.OkHttpUtil: void initSSL()>
+		SHA-256: af9d89552dce91d6aa96ffc025322939d7c4643a04c1cbbb33fc8d1f46b39203
+		Secure: false
+
+Findings in Java Class: com.quvii.qvlib.util.QvEncryptKeyStoreUtil
+
+	 in Method: void initKeyStore()
+		ConstraintError violating CrySL rule for java.security.KeyStore (on Object #27889f883cd56654ae82a81f81f5844c6bfc157307dd39428e47b7f46c4ccec6)
+			First parameter (with value "AndroidKeyStore") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}
+			at statement: $r0 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer618)
+
+		TypestateError violating CrySL rule for java.security.KeyStore (on Object #27889f883cd56654ae82a81f81f5844c6bfc157307dd39428e47b7f46c4ccec6)
+			Unexpected call to method getEntry on object of type java.security.KeyStore. Expect a call to one of the following methods load
+			at statement: $r2 = virtualinvoke $r0.<java.security.KeyStore: java.security.KeyStore$Entry getEntry(java.lang.String,java.security.KeyStore$ProtectionParameter)>(varReplacer615, varReplacer616)
+
+
+	 in Method: void checkNewKey()
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1f0e208a0ab71ca2b1082e863c7da07d55c3d07b3e604476fa6f441919d7c42a)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r10.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r11, $r7)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #6b6d1d67f0ab5fb67557acc7f2605bd99bd3ed540a0af1fa530c55735a7d3e55)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to close
+			at statement: $i0 = virtualinvoke $r10.<javax.crypto.CipherInputStream: int read()>()
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer633, $r9)
+
+
+	 in Method: void createNewKeys(java.lang.String)
+		TypestateError violating CrySL rule for java.security.KeyPairGenerator (on Object #2268cc30ddff9961e27577ab6c1929a44d8ee0226180df8b6865739f06fb2b54)
+			Unexpected call to method generateKeyPair on object of type java.security.KeyPairGenerator. Expect a call to one of the following methods initialize
+			at statement: virtualinvoke $r11.<java.security.KeyPairGenerator: java.security.KeyPair generateKeyPair()>()
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyPairGenerator
+			First parameter was not properly generated as preparedRSA
+			at statement: virtualinvoke $r11.<java.security.KeyPairGenerator: void initialize(java.security.spec.AlgorithmParameterSpec)>($r5)
+
+
+	 in Method: void initAesKey()
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedOAEP
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer656, $r4, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedGCM
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer656, $r4, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer656, $r4, $r5)
+
+		ForbiddenMethodError violating CrySL rule for javax.crypto.Cipher
+			Detected call to forbidden method void init(int,java.security.Key) of class javax.crypto.Cipher. Instead, call method <javax.crypto.Cipher: void init(int,java.security.Key)>.
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer661, $r4)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer650, $r4, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer661, $r4)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer659)
+
+
+	 in Method: java.lang.String encryptWithRsa(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.CipherOutputStream
+			Second parameter was not properly generated as generatedCipher
+			at statement: specialinvoke $r7.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r6, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer665, $r5)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #cf107dafbd1e6a6e3dfefb7e5a2f1a27549fc688b6c7ffcc243e4ddc06d1f127)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r7.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>($r6, $r3)
+
+
+	 in Method: java.lang.String decryptWithRsa(java.lang.String)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #2b8c24ae7f3b0d80049164e868343c89ad931f79a5dea3d5aa4950210751661f)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r6.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r7, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer674, $r5)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #b2cb489842869d627265b33164c02c29d4cf39b1166dc3076b8ba6ed5f5c655d)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to close
+			at statement: $i0 = virtualinvoke $r6.<javax.crypto.CipherInputStream: int read()>()
+
+
+	 in Method: java.lang.String RsaEncrypt(java.lang.String)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r4 = virtualinvoke $r2.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer10661, $r5)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r3.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r1)
+
+
+Findings in Java Class: com.google.android.gms.common.util.AndroidUtilsLight
+
+	 in Method: java.security.MessageDigest zzj(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #ae3618d0d1f264c3cd26a80f719d0eedb09a990816926713b695a9a95da4ac0d)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #ae3618d0d1f264c3cd26a80f719d0eedb09a990816926713b695a9a95da4ac0d)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+
+Findings in Java Class: com.quvii.qvweb.publico.utils.OkHttpUtil
+
+	 in Method: okhttp3.OkHttpClient$Builder createBuilder()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer4829, $r11, varReplacer4829)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer4829, $r11, varReplacer4829)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #b2b8b68905979f7bdb329b4ef0499601069caf6938d42b078ca7a9ca3c68b06)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer4825)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer4829, $r11, varReplacer4829)
+
+
+	 in Method: void initSSL()
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #8ba285c76c87469cc545f2aa6f5a6670b1a793b179bd21daebc6506489251816)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r3.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r8, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #8ba285c76c87469cc545f2aa6f5a6670b1a793b179bd21daebc6506489251816)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r3.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r8, $r10)
+
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #3b66d2d1cb48cb00674eb1f4978bf15f3588d8a81f22e41796ff16712a31320c)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r13.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r3, $r10)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #3b66d2d1cb48cb00674eb1f4978bf15f3588d8a81f22e41796ff16712a31320c)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r13.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r3, $r10)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #3b66d2d1cb48cb00674eb1f4978bf15f3588d8a81f22e41796ff16712a31320c)
+			First parameter (with value "X509") should be any of {PKIX, SunX509}
+			at statement: $r13 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>(varReplacer4849)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r12.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>($r4)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r11.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r14, $r15, varReplacer4844)
+
+		TypestateError violating CrySL rule for javax.net.ssl.TrustManagerFactory (on Object #7aef0446cefcec30f7cf4268601b30961d335206341e025e6284fb5bbf734024)
+			Unexpected call to method getTrustManagers on object of type javax.net.ssl.TrustManagerFactory.
+			at statement: $r15 = virtualinvoke $r12.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+
+		ConstraintError violating CrySL rule for java.security.KeyStore (on Object #8ba285c76c87469cc545f2aa6f5a6670b1a793b179bd21daebc6506489251816)
+			First parameter (with value "BKS") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}
+			at statement: $r3 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer4846)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8c4822f588decc5393f600afb6dce914e0cba7a6a90321b2057b7e067837c8fe)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r11 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer4848)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #af9d89552dce91d6aa96ffc025322939d7c4643a04c1cbbb33fc8d1f46b39203)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r4.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r9, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #af9d89552dce91d6aa96ffc025322939d7c4643a04c1cbbb33fc8d1f46b39203)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r4.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r9, $r10)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.TrustManagerFactory (on Object #7aef0446cefcec30f7cf4268601b30961d335206341e025e6284fb5bbf734024)
+			First parameter (with value "X509") should be any of {PKIX, SunX509}
+			at statement: $r12 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>(varReplacer4845)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.KeyManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r13.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r3, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r11.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r14, $r15, varReplacer4844)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r11.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r14, $r15, varReplacer4844)
+
+
+Findings in Java Class: com.quvii.qvweb.publico.utils.EncryptUtil
+
+	 in Method: void initAesKey(byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer6777, $r0, $r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer6777, $r0, $r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #c7fd5f2cc6c394a2c977d293c4dacd05341732a7d58d0e61158586f7e107f7c1)
+			First parameter (with value "AES/CBC/PKCS7Padding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer6778)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r2.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r1, varReplacer6776)
+
+
+Findings in Java Class: com.quvii.publico.utils.QvNetUtil
+
+	 in Method: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer8387, $r0, $r1)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #7d49ba88f67e1c9eedf03f339823b30f9401e6b41bf6642adae9beeb1ceed51c)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer8386)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer8387, $r0, $r1)
+
+
+Findings in Java Class: com.quvii.qvweb.publico.utils.NetWorkUtils
+
+	 in Method: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #7ab8424326de7428a18863b261a2fcc497d97d38a6b88f882f28853bfed1e150)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer8404)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer8405, $r0, $r1)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer8405, $r0, $r1)
+
+
+Findings in Java Class: com.quvii.qvlib.util.QvNetUtil
+
+	 in Method: javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer8471, $r0, $r1)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #91edc45e086b8cb4a1a2f71d4bb2d34b7e8f9975e7c36b454b8feb97984d3ba5)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer8472)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r4.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer8471, $r0, $r1)
+
+
+Findings in Java Class: com.quvii.qvfun.publico.util.SystemUtil
+
+	 in Method: java.lang.String hashKeyForDisk(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #30f5fe72d9e90763b005fd7af34ed22d1373c350eecb27ee4a44a7bcd361174f)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer15095)
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzkk
+
+	 in Method: java.security.MessageDigest zzi()
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #da9d17fb2c0e9f6a17a68aaf8adc3effb26c44cef737efc0428d284f59bd4719)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer18490)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #da9d17fb2c0e9f6a17a68aaf8adc3effb26c44cef737efc0428d284f59bd4719)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer18490)
+
+
+	 in Method: long zza(android.content.Context,java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #da9d17fb2c0e9f6a17a68aaf8adc3effb26c44cef737efc0428d284f59bd4719)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r4 = staticinvoke <com.google.android.gms.measurement.internal.zzkk: java.security.MessageDigest zzi()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzfg
+
+	 in Method: java.lang.String zzb(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #da9d17fb2c0e9f6a17a68aaf8adc3effb26c44cef737efc0428d284f59bd4719)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r7 = staticinvoke <com.google.android.gms.measurement.internal.zzkk: java.security.MessageDigest zzi()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzkg
+
+	 in Method: long zza(byte[])
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #da9d17fb2c0e9f6a17a68aaf8adc3effb26c44cef737efc0428d284f59bd4719)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r3 = staticinvoke <com.google.android.gms.measurement.internal.zzkk: java.security.MessageDigest zzi()>()
+
+
+Findings in Java Class: okhttp3.OkHttpClient
+
+	 in Method: javax.net.ssl.SSLSocketFactory systemDefaultSslSocketFactory(javax.net.ssl.X509TrustManager)
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #cf305028f30d2dee2d120878f635ee3c51bad8a442250e8d5b89d6ebd53e4221)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer27807)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer27808, $r7, varReplacer27808)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer27808, $r7, varReplacer27808)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer27808, $r7, varReplacer27808)
+
+
+	 in Method: javax.net.ssl.X509TrustManager systemDefaultTrustManager()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r2.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer27804)
+
+
+Findings in Java Class: com.quvii.qvfun.publico.version.AppVersionManager
+
+	 in Method: javax.net.ssl.SSLSocketFactory getSSLSocketFactory()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer30723, $r3, $r1)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #71a3d99b9069f32cb6fcebd78a42eae612255a516cf340f7e93c1607e63f1c1)
+			First parameter (with value "SSL") should be any of {TLSv1.2}
+			at statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer30725)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer30723, $r3, $r1)
+
+
+Findings in Java Class: com.quvii.publico.utils.QvEncrypt
+
+	 in Method: java.lang.String getMD5(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #59ebfc8da4821cfceb2270648dbeb3ba7f44805c6ee54884da4e18cfb48a81a9)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer34670)
+
+
+Findings in Java Class: com.google.firebase.iid.zzai
+
+	 in Method: java.lang.String zza(java.security.PublicKey)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #7004179c781af583031af8460faaaaa67220663f467da1a16abbd28a2fc3ad86)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer36163)
+
+
+Findings in Java Class: okio.f
+
+	 in Method: okio.f b(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6bb0a2206e44b4e0c6fed31d11e10376126c188eb98912c92549adf21e8e77a5)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6bb0a2206e44b4e0c6fed31d11e10376126c188eb98912c92549adf21e8e77a5)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+
+Findings in Java Class: com.eapil.lib.HttpTask
+
+	 in Method: void trustAllHosts()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer41505, $r0, $r1)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #a2a8cfde3b46df699f42d3a1c48806b3abbc3847d4c97377c3616c7c80644542)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer41504)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer41505, $r0, $r1)
+
+
+Findings in Java Class: com.google.firebase.iid.zzq
+
+	 in Method: java.security.PublicKey zza(java.lang.String)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r5 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r4)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r8.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+
+
+Findings in Java Class: com.quvii.qvfun.publico.App
+
+	 in Method: void initQvLib()
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r4.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r1)
+
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 47
+	Number of Objects Analyzed: 84
+
+	CryptoAnalysis found the following violations. For details see description above.
+	RequiredPredicateError: 43
+	ConstraintError: 20
+	ForbiddenMethodError: 1
+	TypestateError: 3
+	NeverTypeOfError: 3
+	IncompleteOperationError: 10
+	HardCodedError: 3
+=====================================================================

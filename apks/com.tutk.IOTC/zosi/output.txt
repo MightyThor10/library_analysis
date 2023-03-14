@@ -1,0 +1,47 @@
+ INFO | 2023-02-28 12:48:36.789 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2023-02-28 12:48:36.914 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Legacy
+ INFO | 2023-02-28 12:48:36.929 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2023-02-28 12:48:36.965 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2023-02-28 12:48:36.968 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2023-02-28 12:48:36.997 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2023-02-28 12:48:37.062 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: InsecureAssymCryptoFinder
+ INFO | 2023-02-28 12:51:08.890 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: BrokenCryptoFinder
+ INFO | 2023-02-28 12:51:40.254 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: UntrustedPrngFinder
+ INFO | 2023-02-28 12:51:45.899 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2023-02-28 12:51:58.324 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2023-02-28 12:51:58.493 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: HostNameVerifierFinder
+ INFO | 2023-02-28 12:51:58.665 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: BrokenHashFinder
+ INFO | 2023-02-28 12:53:05.726 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableIVFinder
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOfRange(Arrays.java:3664)
+	at java.lang.String.<init>(String.java:207)
+	at java.lang.StringBuilder.toString(StringBuilder.java:407)
+	at analyzer.BaseAnalyzer.buildNewAnalysisList(BaseAnalyzer.java:288)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:195)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:205)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:205)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysisInternal(BaseAnalyzer.java:181)
+	at analyzer.BaseAnalyzer.runBackwardSlicingAnalysis(BaseAnalyzer.java:127)

@@ -1,0 +1,202 @@
+Analyzing APK File: /media/data2/library_analysis/apks/com.tuyasmart.stencil/OrientSmart_1_0_5.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::decryptDataWithLocalKey.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.control.LocalControl3_2::encryptRequestWithLocalKey.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::encryptAES16Compat.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::encryptPublishWithLocalKey2_2.
+***Found: "AES" in com.tuya.smart.android.common.utils.EncyptionUtils::encryptAes.
+***Found: "AES/ECB/NoPadding" in aua::a.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.utils.LocalUtils::decryptControlBeanWithLocalKey2_0.
+***Found: "AES" in com.tuya.smart.android.common.utils.EncyptionUtils::decryptAes.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.utils.LocalUtils::encryptRequestWithLocalKey2_0.
+***Found: "AES" in duy::a.
+***Found: "AES" in duy::b.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::encryptPublishWithLocalKey2_1.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::decryptAES16Compat.
+***Found: "AES" in com.tuya.smart.android.network.TuyaApiParams::getEncryptPostDataString.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::decryptPublishWithLocalKey.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::decryptPublishWithLocalKey.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::encryptPublishWithLocalKey.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesEncrypt.
+***Found: "AES" in com.tuya.sdk.mqtt.MqttTransfer::decryptPublishByteWithLocalKey.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesEncryptNoAsc.
+***Found: "AES" in com.tuya.smart.android.network.Business::decryptResponse.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.AESUtil::decrypt.
+***Found: "AES/ECB/NoPadding" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesDecryptNoAsc.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.utils.LocalUtils::encryptRequestWithLocalKey.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.resp.LocalResp3_2::decryptRespWithLocalKey.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.AESUtil::encrypt.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesEncrypt.
+***Found: "AES" in com.tuya.smart.android.base.EncryptApiParams::encryptPostDataString.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesDecrypt.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in com.tuya.sdk.sigmesh.util.TuyaOtaDataPacket::computeMD5Hash.
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "MD5" in soloader.SoLoader::getLibHash.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "MD5" in com.tuya.sdk.sigmesh.action.SigNewOtaAction::prepareForFirmwareFile.
+***Found: "MD5" in ean::a.
+***Found: "SHA-1" in com.facebook.FacebookSdk::getApplicationSignature.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "SHA-1" in com.facebook.internal.Utility::sha1hash.
+***Found: "MD5" in com.tuya.sdk.blelib.utils.MD5Utils::MD5_12.
+***Found: "MD5" in com.tuya.sdk.tuyamesh.utils.MD5Util::computeMD5Hash.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "MD5" in bhq$a::a.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "MD5" in ota.BLEUpgradeDataModel::run.
+***Found: "md5" in aum::b:871.
+***Found: "MD5" in aum::b:871.
+***Found: "MD5" in bgh::a.
+***Found: "MD5" in com.facebook.appevents.AppEvent::md5Checksum.
+***Found: "MD5" in com.tuya.sdk.sigmesh.util.SigMeshUtil::computeMD5Hash.
+***Found: "MD5" in com.tuya.sdk.tuyamesh.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in com.tuya.sdk.ble.core.packet.TuyaDataPacket::computeMD5Hash.
+***Found: "MD5" in com.tuya.smart.litho.mist.config.DemoEncryptProvider::encryptToText.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zza.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "MD5" in com.tuya.smart.litho.mist.util.StringUtils::md5.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1Hash.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "SHA1" in aht::a.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5::md5.
+***Found: "MD5" in aup::a.
+***Found: "MD5" in atw::c.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "MD5" in org.chromium.net.X509Util::hashPrincipal.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1HashBase64.
+***Found: "MD5" in com.facebook.internal.Utility::md5hash.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in com.tuya.android.mist.util.StringUtils::md5.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in ota.BLEUpgradeV2DataModel::run.
+***Found: "MD5" in ota.BLEUpgradeV3DataModel::run.
+***Found: "sha1" in aum::b:872.
+***Found: "SHA-1" in aum::b:872.
+***Found: "MD5" in vt::clinit:4.
+***Found: "SHA-1" in com.facebook.internal.Utility::sha1hash.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "afdsofjpaw1fn023" in bne::g.
+***Found: Constant "0" in com.tuya.sdk.ble.core.connect.V2WiFiBleConfigController::sendConfigInfoToDevice:695.
+***Found: Constant "afdsofjpaw1fn023" in bmd::c.
+***Found: Constant "-123" in com.tuya.sdk.ble.core.connect.V1PlusBleConnectController::replayTimeDpAck:517.
+***Found: Constant "8" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "0" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::sendSsid:451.
+***Found: Constant "4" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "37" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "-78" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "6" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "-1" in com.tuya.sdk.sigmesh.action.SigNewOtaAction::init.
+***Found: Constant "119" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "0" in com.tuya.sdk.ble.core.connect.V2WiFiBleConfigController::sendReceiveAck:722.
+***Found: Constant "1" in com.tuya.sdk.ble.core.connect.V1PlusBleConnectController::replayTimeDpAck:517.
+***Found: Constant "5" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "afdsofjpaw1fn023" in bpf::z.
+***Found: Constant "afdsofjpaw1fn023" in bnc::b.
+***Found: Constant "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: Constant "78" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "eapil_initVector" in com.eapil.lib.EapilAesUtils::aesDecode:56.
+***Found: Constant "2" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+***Found: Constant "-69" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "-1" in com.tuya.sdk.sigmesh.action.SigNewOtaAction::init:43.
+***Found: Constant "access_2017-7-17" in com.eapil.lib.EapilAesUtils::aesDecode:57.
+***Found: Constant "afdsofjpaw1fn023" in bpg::onEvent.
+***Found: Constant "94" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "-1" in com.tuya.sdk.sigmesh.action.SigNewOtaAction::init.
+***Found: Constant "afdsofjpaw1fn023" in biu::onEvent.
+***Found: Constant "-1" in com.tuya.sdk.sigmesh.action.SigNewOtaAction::init.
+***Found: Constant "-17" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit:70.
+***Found: Constant "afdsofjpaw1fn023" in bnc::c.
+***Found: Constant "34" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "afdsofjpaw1fn023" in bnl$3::run.
+***Found: Constant "0" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::sendConfigData:420.
+***Found: Constant "-126" in com.tuya.sdk.ble.core.connect.V1PlusBleConnectController::sendTimeToDevice:825.
+***Found: Constant "afdsofjpaw1fn023" in bzn::a.
+***Found: Constant "1" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit:69.
+***Found: Constant "afdsofjpaw1fn023" in bpk::b.
+***Found: Constant "0" in com.tuya.sdk.ble.core.connect.V1PlusBleConnectController::replayTimeDpAck:517.
+***Found: Constant "-114" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "87" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "afdsofjpaw1fn023" in bpm::l.
+***Found: Constant "48" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "afdsofjpaw1fn023" in bpk::k.
+***Found: Constant "afdsofjpaw1fn023" in biw::onEvent.
+***Found: Constant "-45" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "9" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "113" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "100" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "3" in com.tuya.sdk.ble.core.connect.V1WiFiBleConfigController::clinit.
+***Found: Constant "-127" in com.tuya.sdk.ble.core.connect.V1PlusBleConnectController::sendTimestampToDevice:775.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Cause: Used default key size in com.tuya.sdk.security.EncryptionManager::generateRSAKeys.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in lib.HttpTask::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://%s/onchange" in com.facebook.react.devsupport.DevServerHelper::createOnChangeEndpointUrl:509.
+***Found: "http://%s/%s" in com.facebook.react.devsupport.DevServerHelper::createResourceURL:368.
+***Found: "http://%s/status" in com.facebook.react.devsupport.DevServerHelper::createPackagerStatusURL:436.
+***Found: "http://%s/open-stack-frame" in com.facebook.react.devsupport.DevServerHelper::createOpenStackFrameURL:376.
+***Found: "http://%s/launch-js-devtools" in com.facebook.react.devsupport.DevServerHelper::createLaunchJSDevtoolsCommandUrl:516.
+***Found: "http://%s/symbolicate" in com.facebook.react.devsupport.DevServerHelper::createSymbolicateURL:372.
+***Found: "http://%s/inspector/device?name=%s&app=%s" in com.facebook.react.devsupport.DevServerHelper::getInspectorDeviceUrl:318.
+***Found: "http://" in com.tuya.smart.litho.mist.core.TemplateDownloader::downloadTemplate:178.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: "eapil_initVector" in com.eapil.lib.EapilAesUtils::aesDecode:56.
+***Found: "0" in com.tuya.sdk.ble.core.connect.V2WiFiBleConfigController::sendConfigInfoToDevice:695.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+***Found: "0" in com.tuya.sdk.ble.core.connect.V2WiFiBleConfigController::sendReceiveAck:722.
+=======================================
+=======================================
+***Violated Rule 11: Found predictable seeds in code
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in dhc::a.
+***Found: Untrused PRNG (java.util.Random) in dlw$27::onClick.
+***Found: Untrused PRNG (java.util.Random) in ekm::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.litho.mist.util.IDUtils::getId.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.android.mist.core.expression.function.GlobalFunction$random::compute.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.pushcenter.parser.Parse::dispatch.
+***Found: Untrused PRNG (java.util.Random) in dpq::a.
+***Found: Untrused PRNG (java.util.Random) in cxa::a.
+***Found: Untrused PRNG (java.util.Random) in com.facebook.internal.Utility::generateRandomString.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.litho.mist.function.GlobalFunction$random::compute.
+***Found: Untrused PRNG (java.util.Random) in bpv::c.
+***Found: Untrused PRNG (java.util.Random) in crs$2::run.
+***Found: Untrused PRNG (java.util.Random) in bpf::y.
+***Found: Untrused PRNG (java.util.Random) in dlw::a.
+***Found: Untrused PRNG (java.util.Random) in cbg::init.
+***Found: Untrused PRNG (java.util.Random) in com.facebook.FacebookException::init.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.SafeHandler::clinit.
+***Found: Untrused PRNG (java.util.Random) in crs$1::onChoose.
+***Found: Untrused PRNG (java.util.Random) in cqk::b.
+***Found: Untrused PRNG (java.util.Random) in com.tuyasmart.stencil.component.media.MusicPlayService::j.
+***Found: Untrused PRNG (java.util.Random) in cxb::a.
+=======================================

@@ -1,0 +1,23 @@
+ INFO | 2023-03-04 23:20:17.378 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2023-03-04 23:20:17.507 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Legacy
+ INFO | 2023-03-04 23:20:17.524 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2023-03-04 23:20:17.561 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2023-03-04 23:20:17.565 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2023-03-04 23:20:17.593 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2023-03-04 23:20:17.601 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: InsecureAssymCryptoFinder
+ INFO | 2023-03-04 23:23:53.441 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: BrokenCryptoFinder
+ INFO | 2023-03-04 23:24:33.653 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: UntrustedPrngFinder
+ INFO | 2023-03-04 23:24:39.449 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2023-03-04 23:24:52.479 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2023-03-04 23:24:52.775 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: HostNameVerifierFinder
+ INFO | 2023-03-04 23:24:53.100 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: BrokenHashFinder
+ INFO | 2023-03-04 23:25:41.459 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: ConstantKeyFinder
+ INFO | 2023-03-04 23:39:15.604 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableIVFinder
+ INFO | 2023-03-04 23:52:02.648 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PBESaltFinder
+ INFO | 2023-03-04 23:52:10.258 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PBEInterationCountFinder
+ INFO | 2023-03-04 23:52:17.963 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableSeedFinder
+ INFO | 2023-03-04 23:52:36.432 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: PredictableKeyStorePasswordFinder
+ INFO | 2023-03-04 23:52:53.838 | engine.ApkEntry (ApkEntry.java:24) | Checking the rule: HttpUrlFinder
+ INFO | 2023-03-04 23:54:24.182 | Interface.SubRunner (SubRunner.java:59) | Stopped the scanning process
+ INFO | 2023-03-04 23:54:24.220 | Interface.SubRunner (SubRunner.java:62) | Writing the output to the file: /home/srazmjo/library_analysis/apks/com.tuya.fetch/kalley/_CryptoGuard-04.05.03_2020-11-25-02-42_Homekalley_1_3_0_2b5993d4-90aa-4662-a6a5-f88677c1b3fa_.txt
+/home/srazmjo/library_analysis/apks/com.tuya.fetch/kalley/_CryptoGuard-04.05.03_2020-11-25-02-42_Homekalley_1_3_0_2b5993d4-90aa-4662-a6a5-f88677c1b3fa_.txt

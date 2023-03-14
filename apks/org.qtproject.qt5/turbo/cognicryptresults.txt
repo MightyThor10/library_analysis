@@ -1,0 +1,513 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is too old. Falling back to java.lang.reflect API.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.3.0 or better (Maven group id: org.ow2.asm).
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Ruleset: 
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.PBEKeySpec
+	java.security.spec.MGF1ParameterSpec
+	java.security.MessageDigest
+	javax.crypto.Cipher
+	java.security.KeyPair
+	javax.crypto.SecretKeyFactory
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.SecretKey
+	javax.crypto.spec.IvParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.spec.GCMParameterSpec
+	javax.crypto.spec.SecretKeySpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	java.security.spec.DSAParameterSpec
+	javax.crypto.KeyAgreement
+	java.security.cert.TrustAnchor
+	javax.crypto.spec.DHParameterSpec
+	javax.net.ssl.SSLParameters
+	javax.net.ssl.SSLContext
+	java.security.Key
+	java.security.KeyFactory
+	void
+	java.security.DigestOutputStream
+	java.security.SecureRandom
+	java.security.cert.PKIXParameters
+	java.security.spec.X509EncodedKeySpec
+	javax.crypto.spec.DHGenParameterSpec
+	javax.net.ssl.SSLEngine
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.Signature
+	javax.crypto.CipherOutputStream
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.AlgorithmParameterGenerator
+	javax.crypto.Mac
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.AlgorithmParameters
+	javax.crypto.CipherInputStream
+	java.security.DigestInputStream
+	java.security.spec.ECParameterSpec
+	javax.crypto.KeyGenerator
+	java.security.KeyStore
+	java.security.spec.ECGenParameterSpec
+	java.security.KeyPairGenerator
+	javax.net.ssl.KeyManagerFactory
+	java.security.spec.DSAGenParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer25764)
+		Method: <com.google.firebase.inappmessaging.internal.injection.modules.GrpcClientModule: java.lang.String signatureDigest(android.content.pm.Signature)>
+		SHA-256: e9198c065eec6ce59728fc16bd44f48136aacee34e3291c06115e8e4057c37ff
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.google.firebase.inappmessaging.internal.injection.modules.GrpcClientModule: java.lang.String signatureDigest(android.content.pm.Signature)>
+		SHA-256: 833ba07a966a1509dfd6acfcbd6c2deff9bb5fb3f5e9619065444e4292542b37
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r4.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+		Method: <com.google.firebase.installations.local.IidStore: java.security.PublicKey parseKey(java.lang.String)>
+		SHA-256: aea7fce58cc2c3232d1730517ff25b7e58e8210bf5f593374b5621a96b219086
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: javax.net.ssl.SSLEngine
+		Statement: $r24 = virtualinvoke $r23.<javax.net.ssl.SSLContext: javax.net.ssl.SSLEngine createSSLEngine()>()
+		Method: <io.grpc.okhttp.internal.Platform: io.grpc.okhttp.internal.Platform findPlatform()>
+		SHA-256: 590ee0dc8263286253f43f535c642d5ffd5b52d0e43d40d957894ffa40eac5ce
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.KeyFactory
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer40546)
+		Method: <com.google.firebase.installations.local.IidStore: java.security.PublicKey parseKey(java.lang.String)>
+		SHA-256: a4a48515786e452f30101db8e1c78441d1e8030d9d4eb20e179cc1c240597b2c
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: byte[]
+		Statement: $r7 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest(byte[])>($r7)
+		Method: <com.google.android.gms.common.util.AndroidUtilsLight: byte[] getPackageCertificateHashBytes(android.content.Context,java.lang.String)>
+		SHA-256: b1b700d3bac9a15845b2a1446581968f445f05df9861b6e2918912b25ad1a23d
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.common.hash.MessageDigestHashFunction$MessageDigestHasher: com.google.common.hash.HashCode hash()>
+		SHA-256: 498aa274b0e0dc658a96e5b82797c2ef859caa8cc0a4a03329fbcf0be8023051
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.zzku: java.security.SecureRandom zzF()>
+		SHA-256: c2faa2959fb15875943547560a23f467d64836f63e8279c3d3338d157d0bac35
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: virtualinvoke $r6.<java.security.SecureRandom: void nextBytes(byte[])>($r4)
+		Method: <com.google.android.gms.measurement.internal.zzkn: java.lang.String zzw(com.google.android.gms.measurement.internal.zzag)>
+		SHA-256: 498bf3459b07b19b13736027a107496f87201c03084dc3d863d7f164697d5de6
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <com.google.android.gms.common.util.AndroidUtilsLight: java.security.MessageDigest zza(java.lang.String)>
+		SHA-256: c613dcbe025721f48d3fcab4e003017d7cb704971fc9d0296bae42be0b7eb30a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.zzku: void zzaA()>
+		SHA-256: 68d8cfecdc33dc0609dc7cbe1db310f0cf1669f1de7844aa705ddae95ee185e1
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer40823)
+		Method: <com.bumptech.glide.load.engine.cache.SafeKeyGenerator$1: com.bumptech.glide.load.engine.cache.SafeKeyGenerator$PoolableDigestContainer create()>
+		SHA-256: 6cebc2a8ed9d1bda318f94ca4e5eda8f9ec5e4d89a189f64bb93e4e434dd5e20
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer47552)
+		Method: <com.squareup.okhttp.internal.Util: okio.ByteString sha1(okio.ByteString)>
+		SHA-256: 65e63159bb955544da0eb921ade8280145132ed48dd5b58dab3888a738bfef2a
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r8)
+		Method: <com.google.android.gms.measurement.internal.zzjk: java.lang.String zzf(java.lang.String)>
+		SHA-256: a0bc09437016f5e4c8caef85ee64785d62b1a95338b5715a047a4a5bf0241795
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.google.firebase.installations.local.IidStore: java.lang.String getIdFromPublicKey(java.security.PublicKey)>
+		SHA-256: ad220c352da86335809a3322a312a9e0b628e3ee4c76f8896e52fc09c31946dd
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.MessageDigest
+		Statement: $r4 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer41817)
+		Method: <com.google.firebase.messaging.GmsRpc: java.lang.String getHashedFirebaseAppName()>
+		SHA-256: d9d39aeb4d0a351bb101ca1479d0f95bb47f1863d072e74ceac313dbd1f4f6f1
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <com.google.common.hash.MessageDigestHashFunction: java.security.MessageDigest getMessageDigest(java.lang.String)>
+		SHA-256: f4e887286d0504cb5722b1da9a4eac06d6ea434977af7216dbf1f6217c285838
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r5)
+		Method: <com.google.firebase.messaging.GmsRpc: java.lang.String getHashedFirebaseAppName()>
+		SHA-256: 1e52c308f161a25dc3fa5df1d12214a792527ac999f96169898f6fc8f45626b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer37317)
+		Method: <com.google.firebase.installations.local.IidStore: java.lang.String getIdFromPublicKey(java.security.PublicKey)>
+		SHA-256: 987f88670cb555ff52c7e7dc6796dd7eebc6eb7b9c9d38402bddd18b63769ea9
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.Mac
+		Statement: $r0 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>($r1)
+		Method: <com.google.common.hash.MacHashFunction: javax.crypto.Mac getMac(java.lang.String,java.security.Key)>
+		SHA-256: 6dfe92fb5526abc60bb706d9a02bc7267374c73eb4cfabeec75ce74a35a0603d
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: byte[]
+		Statement: $r24 = virtualinvoke $r17.<java.security.MessageDigest: byte[] digest(byte[])>($r24)
+		Method: <com.google.android.gms.measurement.internal.zzea: com.google.android.gms.measurement.internal.zzp zzj(java.lang.String)>
+		SHA-256: 9e7a4eb779eca5e624d811236304a4c771be47acfe2acb93cc9389cf22893cdf
+		Secure: false
+	Object:
+		Variable: $r23
+		Type: javax.net.ssl.SSLContext
+		Statement: $r23 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer5927, $r11)
+		Method: <io.grpc.okhttp.internal.Platform: io.grpc.okhttp.internal.Platform findPlatform()>
+		SHA-256: c718ec9c7e87bb0497d178963ee019b0e8246b468b18f8891cb789456a3b7ab7
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<javax.crypto.Mac: byte[] doFinal()>()
+		Method: <com.google.common.hash.MacHashFunction$MacHasher: com.google.common.hash.HashCode hash()>
+		SHA-256: a89d37061ba0dac61e1b08aaf3eb3497c39726681770418d4469691a8e1f6dbc
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.PublicKey
+		Statement: $r5 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r4)
+		Method: <com.google.firebase.installations.local.IidStore: java.security.PublicKey parseKey(java.lang.String)>
+		SHA-256: 28692ce99d5c8ca35ce46bda2fa73a18f9a164f9dc67aed298a1311d42163d12
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.squareup.okhttp.internal.Util: java.lang.String md5Hex(java.lang.String)>
+		SHA-256: ff685f32e7a7f750cd456b35d0be518bacf6cdd5ba40802666534e9df3ec3217
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.common.hash.MessageDigestHashFunction$MessageDigestHasher: com.google.common.hash.HashCode hash()>
+		SHA-256: 498aa274b0e0dc658a96e5b82797c2ef859caa8cc0a4a03329fbcf0be8023051
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.firebase.crashlytics.internal.common.CommonUtils: java.lang.String hash(byte[],java.lang.String)>
+		SHA-256: 847e78157c93691b2ae119253de6302419d14276894c4ea2f7fe9fb898fdae56
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer44124)
+		Method: <com.squareup.okhttp.internal.Util: java.lang.String md5Hex(java.lang.String)>
+		SHA-256: f3c8e8cd721930970590e915fd03cb6e1dd567033f896779f1974fef241ded6
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.net.ssl.SSLContext
+		Statement: $r6 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer40248, $r5)
+		Method: <io.grpc.okhttp.OkHttpChannelBuilder: javax.net.ssl.SSLSocketFactory createSslSocketFactory()>
+		SHA-256: a4b3cd49dcc7323d0a8b5745ce289857863bc3bec1a05c78a9fd74cc3b88e58
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r5)
+		Method: <com.google.android.gms.common.zzl: java.lang.String zza(java.lang.String,com.google.android.gms.common.zzd,boolean,boolean)>
+		SHA-256: 4d780f56dd40a05eb59e15a7928089cc92308a8c5fa53aa3d56035715450c48b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <com.google.firebase.crashlytics.internal.common.CommonUtils: java.lang.String hash(byte[],java.lang.String)>
+		SHA-256: 7fb5e1ca4e0ccb41306f524bfa8fe0a452898cd3171e10ddd8d49eb5eb47dc5a
+		Secure: false
+	Object:
+		Variable: varReplacer40546
+		Type: java.lang.String
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer40546)
+		Method: <com.google.firebase.installations.local.IidStore: java.security.PublicKey parseKey(java.lang.String)>
+		SHA-256: 70fd0fb2d3aea20a395d7c440bb8bc6e3ead55b771f7d364e9ac6b8e223ca24e
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.squareup.okhttp.internal.Util: okio.ByteString sha1(okio.ByteString)>
+		SHA-256: 533790f741ccce52b37b13a1f5b15685cf6be9dbae4d3ca5f2ae063c0b550248
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer21392)
+		Method: <com.google.android.gms.measurement.internal.zzku: java.security.MessageDigest zzE(java.lang.String)>
+		SHA-256: 3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r1)
+		Method: <com.google.android.gms.measurement.internal.zzkp: long zzd(byte[])>
+		SHA-256: cb477507e8e9ef81318e87aea2a2cd854919e96cb250af048a4c86b5936c0603
+		Secure: false
+
+Findings in Java Class: io.grpc.okhttp.internal.Platform
+
+	 in Method: io.grpc.okhttp.internal.Platform findPlatform()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #c718ec9c7e87bb0497d178963ee019b0e8246b468b18f8891cb789456a3b7ab7)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r23 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer5927, $r11)
+
+		ForbiddenMethodError violating CrySL rule for javax.net.ssl.SSLContext
+			Detected call to forbidden method javax.net.ssl.SSLContext getDefault() of class javax.net.ssl.SSLContext. Instead, call method <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>.
+			at statement: $r23 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getDefault()>()
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r23.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer5937, varReplacer5937, varReplacer5937)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r23.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer5937, varReplacer5937, varReplacer5937)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r23.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer5937, varReplacer5937, varReplacer5937)
+
+
+Findings in Java Class: com.google.android.gms.common.util.AndroidUtilsLight
+
+	 in Method: java.security.MessageDigest zza(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #c613dcbe025721f48d3fcab4e003017d7cb704971fc9d0296bae42be0b7eb30a)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #c613dcbe025721f48d3fcab4e003017d7cb704971fc9d0296bae42be0b7eb30a)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c613dcbe025721f48d3fcab4e003017d7cb704971fc9d0296bae42be0b7eb30a)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+
+	 in Method: byte[] getPackageCertificateHashBytes(android.content.Context,java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c613dcbe025721f48d3fcab4e003017d7cb704971fc9d0296bae42be0b7eb30a)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r5 = staticinvoke <com.google.android.gms.common.util.AndroidUtilsLight: java.security.MessageDigest zza(java.lang.String)>(varReplacer37562)
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzku
+
+	 in Method: java.security.MessageDigest zzE(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer21392)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer21392)
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzkp
+
+	 in Method: long zzd(byte[])
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r4 = staticinvoke <com.google.android.gms.measurement.internal.zzku: java.security.MessageDigest zzE(java.lang.String)>(varReplacer21971)
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzea
+
+	 in Method: com.google.android.gms.measurement.internal.zzp zzj(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to update, java.security.MessageDigest: byte[] digest(byte[])
+			at statement: $r24 = virtualinvoke $r17.<java.security.MessageDigest: byte[] digest(byte[])>($r24)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r17 = staticinvoke <com.google.android.gms.measurement.internal.zzku: java.security.MessageDigest zzE(java.lang.String)>(varReplacer26553)
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.zzjk
+
+	 in Method: java.lang.String zzf(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #3df0161d4feaab47a59683043705c1586b1f51f7e90aacc034111f562a61daa2)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r7 = staticinvoke <com.google.android.gms.measurement.internal.zzku: java.security.MessageDigest zzE(java.lang.String)>(varReplacer21388)
+
+
+Findings in Java Class: com.google.firebase.inappmessaging.internal.injection.modules.GrpcClientModule
+
+	 in Method: java.lang.String signatureDigest(android.content.pm.Signature)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e9198c065eec6ce59728fc16bd44f48136aacee34e3291c06115e8e4057c37ff)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer25764)
+
+
+Findings in Java Class: com.google.firebase.crashlytics.internal.common.CommonUtils
+
+	 in Method: java.lang.String hash(byte[],java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #7fb5e1ca4e0ccb41306f524bfa8fe0a452898cd3171e10ddd8d49eb5eb47dc5a)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+
+Findings in Java Class: com.google.common.hash.AbstractHashFunction
+
+	 in Method: com.google.common.hash.HashCode hashObject(java.lang.Object,com.google.common.hash.Funnel)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Mac (on Object #6dfe92fb5526abc60bb706d9a02bc7267374c73eb4cfabeec75ce74a35a0603d)
+			Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal
+			at statement: $r4 = interfaceinvoke $r3.<com.google.common.hash.Hasher: com.google.common.hash.HashCode hash()>()
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #f4e887286d0504cb5722b1da9a4eac06d6ea434977af7216dbf1f6217c285838)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r4 = interfaceinvoke $r3.<com.google.common.hash.Hasher: com.google.common.hash.HashCode hash()>()
+
+
+Findings in Java Class: com.google.common.hash.AbstractCompositeHashFunction
+
+	 in Method: com.google.common.hash.Hasher newHasher()
+		IncompleteOperationError violating CrySL rule for javax.crypto.Mac (on Object #6dfe92fb5526abc60bb706d9a02bc7267374c73eb4cfabeec75ce74a35a0603d)
+			Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal
+			at statement: $r4 = specialinvoke r0.<com.google.common.hash.AbstractCompositeHashFunction: com.google.common.hash.Hasher fromHashers(com.google.common.hash.Hasher[])>($r2)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #f4e887286d0504cb5722b1da9a4eac06d6ea434977af7216dbf1f6217c285838)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r4 = specialinvoke r0.<com.google.common.hash.AbstractCompositeHashFunction: com.google.common.hash.Hasher fromHashers(com.google.common.hash.Hasher[])>($r2)
+
+
+Findings in Java Class: com.google.common.hash.MessageDigestHashFunction$MessageDigestHasher
+
+	 in Method: com.google.common.hash.HashCode hash()
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #f4e887286d0504cb5722b1da9a4eac06d6ea434977af7216dbf1f6217c285838)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte)
+			at statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #f4e887286d0504cb5722b1da9a4eac06d6ea434977af7216dbf1f6217c285838)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte)
+			at statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+
+
+Findings in Java Class: com.google.firebase.installations.local.IidStore
+
+	 in Method: java.lang.String getIdFromPublicKey(java.security.PublicKey)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #987f88670cb555ff52c7e7dc6796dd7eebc6eb7b9c9d38402bddd18b63769ea9)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer37317)
+
+
+	 in Method: java.security.PublicKey parseKey(java.lang.String)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r5 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r4)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r4.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+
+
+Findings in Java Class: io.grpc.okhttp.OkHttpChannelBuilder
+
+	 in Method: javax.net.ssl.SSLSocketFactory createSslSocketFactory()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #a4b3cd49dcc7323d0a8b5745ce289857863bc3bec1a05c78a9fd74cc3b88e58)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $r3 = virtualinvoke $r6.<javax.net.ssl.SSLContext: javax.net.ssl.SSLSocketFactory getSocketFactory()>()
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #a4b3cd49dcc7323d0a8b5745ce289857863bc3bec1a05c78a9fd74cc3b88e58)
+			First parameter (with value "Default") should be any of {TLSv1.2}
+			at statement: $r6 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer40248, $r5)
+
+
+Findings in Java Class: com.google.firebase.messaging.GmsRpc
+
+	 in Method: java.lang.String getHashedFirebaseAppName()
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #d9d39aeb4d0a351bb101ca1479d0f95bb47f1863d072e74ceac313dbd1f4f6f1)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r4 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer41817)
+
+
+Findings in Java Class: com.squareup.okhttp.internal.Util
+
+	 in Method: java.lang.String md5Hex(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #f3c8e8cd721930970590e915fd03cb6e1dd567033f896779f1974fef241ded6)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer44124)
+
+
+	 in Method: okio.ByteString sha1(okio.ByteString)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #65e63159bb955544da0eb921ade8280145132ed48dd5b58dab3888a738bfef2a)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer47552)
+
+
+Findings in Java Class: com.google.common.hash.MacHashFunction
+
+	 in Method: javax.crypto.Mac getMac(java.lang.String,java.security.Key)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Mac
+			First parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r0.<javax.crypto.Mac: void init(java.security.Key)>($r2)
+
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 47
+	Number of Objects Analyzed: 35
+
+	CryptoAnalysis found the following violations. For details see description above.
+	ForbiddenMethodError: 1
+	IncompleteOperationError: 12
+	TypestateError: 2
+	ConstraintError: 11
+	RequiredPredicateError: 6
+=====================================================================

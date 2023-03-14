@@ -1,0 +1,144 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.tencent.wcdb/SmartLife_SmartHome_2_0_5.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::decryptDataWithLocalKey.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.control.LocalControl3_2::encryptRequestWithLocalKey.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::encryptAES16Compat.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::encryptPublishWithLocalKey2_2.
+***Found: "AES" in com.tuya.smart.android.common.utils.EncyptionUtils::encryptAes.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.utils.LocalUtils::decryptControlBeanWithLocalKey2_0.
+***Found: "AES" in com.tuya.smart.android.common.utils.EncyptionUtils::decryptAes.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.utils.LocalUtils::encryptRequestWithLocalKey2_0.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::encryptPublishWithLocalKey2_1.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::decryptAES16Compat.
+***Found: "AES" in com.tuya.smart.android.network.TuyaApiParams::getEncryptPostDataString.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::decryptPublishWithLocalKey.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::decryptPublishWithLocalKey.
+***Found: "AES" in dpk::b.
+***Found: "AES/ECB/NoPadding" in aub::a.
+***Found: "AES" in com.tuya.sdk.mqttprotocol.PublishMapper::encryptPublishWithLocalKey.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesEncrypt.
+***Found: "AES" in com.tuya.sdk.mqtt.MqttTransfer::decryptPublishByteWithLocalKey.
+***Found: "AES" in dpk::a.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesEncryptNoAsc.
+***Found: "AES" in com.tuya.smart.android.network.Business::decryptResponse.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.AESUtil::decrypt.
+***Found: "AES/ECB/NoPadding" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesDecryptNoAsc.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.utils.LocalUtils::encryptRequestWithLocalKey.
+***Found: "AES" in com.tuya.sdk.hardwareprotocol.resp.LocalResp3_2::decryptRespWithLocalKey.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.AESUtil::encrypt.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesEncrypt.
+***Found: "AES" in com.tuya.smart.android.base.EncryptApiParams::encryptPostDataString.
+***Found: "AES" in com.tuya.sdk.ble.core.utils.BLEUtil::bleAesDecrypt.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in com.tuya.sdk.sigmesh.util.TuyaOtaDataPacket::computeMD5Hash.
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "MD5" in soloader.SoLoader::getLibHash.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "MD5" in com.tuya.sdk.sigmesh.action.SigNewOtaAction::prepareForFirmwareFile.
+***Found: "SHA-1" in com.facebook.FacebookSdk::getApplicationSignature.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "SHA-1" in com.facebook.internal.Utility::sha1hash.
+***Found: "MD5" in com.tuya.sdk.blelib.utils.MD5Utils::MD5_12.
+***Found: "MD5" in com.tuya.sdk.tuyamesh.utils.MD5Util::computeMD5Hash.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "md5" in aun::b:871.
+***Found: "MD5" in aun::b:871.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "MD5" in bhr$a::a.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "MD5" in ota.BLEUpgradeDataModel::run.
+***Found: "MD5" in duz::a.
+***Found: "MD5" in com.facebook.appevents.AppEvent::md5Checksum.
+***Found: "MD5" in com.tuya.sdk.sigmesh.util.SigMeshUtil::computeMD5Hash.
+***Found: "MD5" in com.tuya.sdk.tuyamesh.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in auq::a.
+***Found: "MD5" in bgi::a.
+***Found: "MD5" in com.tuya.sdk.ble.core.packet.TuyaDataPacket::computeMD5Hash.
+***Found: "MD5" in com.tuya.smart.litho.mist.config.DemoEncryptProvider::encryptToText.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zza.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "MD5" in com.tuya.smart.litho.mist.util.StringUtils::md5.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1Hash.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5::md5.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "MD5" in org.chromium.net.X509Util::hashPrincipal.
+***Found: "sha1" in aun::b:872.
+***Found: "SHA-1" in aun::b:872.
+***Found: "SHA1" in ahu::a.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1HashBase64.
+***Found: "MD5" in com.facebook.internal.Utility::md5hash.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in com.tuya.android.mist.util.StringUtils::md5.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in ota.BLEUpgradeV2DataModel::run.
+***Found: "MD5" in atx::c.
+***Found: "MD5" in ota.BLEUpgradeV3DataModel::run.
+***Found: "MD5" in vt::clinit:4.
+***Found: "SHA-1" in com.facebook.internal.Utility::sha1hash.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Cause: Used default key size in com.tuya.sdk.security.EncryptionManager::generateRSAKeys.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in lib.HttpTask::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://%s/onchange" in com.facebook.react.devsupport.DevServerHelper::createOnChangeEndpointUrl:509.
+***Found: "http://%s/%s" in com.facebook.react.devsupport.DevServerHelper::createResourceURL:368.
+***Found: "http://%s/status" in com.facebook.react.devsupport.DevServerHelper::createPackagerStatusURL:436.
+***Found: "http://%s/open-stack-frame" in com.facebook.react.devsupport.DevServerHelper::createOpenStackFrameURL:376.
+***Found: "http://%s/launch-js-devtools" in com.facebook.react.devsupport.DevServerHelper::createLaunchJSDevtoolsCommandUrl:516.
+***Found: "http://%s/symbolicate" in com.facebook.react.devsupport.DevServerHelper::createSymbolicateURL:372.
+***Found: "http://%s/inspector/device?name=%s&app=%s" in com.facebook.react.devsupport.DevServerHelper::getInspectorDeviceUrl:318.
+***Found: "http://" in com.tuya.smart.litho.mist.core.TemplateDownloader::downloadTemplate:178.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: "eapil_initVector" in com.eapil.lib.EapilAesUtils::aesDecode:56.
+***Found: "0" in com.tuya.sdk.ble.core.connect.V2WiFiBleConfigController::sendConfigInfoToDevice:695.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+***Found: "0" in com.tuya.sdk.ble.core.connect.V2WiFiBleConfigController::sendReceiveAck:722.
+=======================================
+=======================================
+***Violated Rule 11: Found predictable seeds in code
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.litho.mist.util.IDUtils::getId.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.android.mist.core.expression.function.GlobalFunction$random::compute.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.pushcenter.parser.Parse::dispatch.
+***Found: Untrused PRNG (java.util.Random) in dhj::a.
+***Found: Untrused PRNG (java.util.Random) in cxg::a.
+***Found: Untrused PRNG (java.util.Random) in cru$2::run.
+***Found: Untrused PRNG (java.util.Random) in com.facebook.internal.Utility::generateRandomString.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.litho.mist.function.GlobalFunction$random::compute.
+***Found: Untrused PRNG (java.util.Random) in bpg::y.
+***Found: Untrused PRNG (java.util.Random) in bpw::c.
+***Found: Untrused PRNG (java.util.Random) in cbi::init.
+***Found: Untrused PRNG (java.util.Random) in cxh::a.
+***Found: Untrused PRNG (java.util.Random) in cqm::b.
+***Found: Untrused PRNG (java.util.Random) in eex::clinit.
+***Found: Untrused PRNG (java.util.Random) in cru$1::a.
+***Found: Untrused PRNG (java.util.Random) in com.facebook.FacebookException::init.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.SafeHandler::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tuyasmart.stencil.component.media.MusicPlayService::j.
+=======================================

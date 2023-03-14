@@ -1,0 +1,127 @@
+Analyzing APK File: /media/data2/library_analysis/apks/com.tuya.smart/roborock/Roborock_4.0.52_Apkpure.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES" in com.tuya.smart.common.o0o000o0o::O000000o.
+***Found: "AES" in com.tuya.smart.android.base.EncryptApiParams::encryptPostDataString.
+***Found: "AES/ECB/NoPadding" in com.tuya.smart.common.O00000Oo::O00000Oo.
+***Found: "AES/ECB/PKCS5Padding" in com.roborock.internal.common.util.OooO00o::OooO0O0.
+***Found: "AES" in com.tuya.smart.android.common.utils.EncyptionUtils::decryptAes.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::O00000o0.
+***Found: "AES" in com.tuya.smart.common.o0oo0o0oo::O000000o.
+***Found: "AES/ECB/NoPadding" in com.tuya.smart.common.O00000Oo::O000000o.
+***Found: "AES" in com.tuya.smart.common.o0oooo00o::O000000o.
+***Found: "AES" in com.tuya.smart.common.o0o000o0o::O00000Oo.
+***Found: "AES/ECB/PKCS5Padding" in o0OOOOOO.OooO0o$OooO00o::OooO00o.
+***Found: "AES" in com.tuya.smart.common.o0oooo00o::O000000o.
+***Found: "AES" in com.tuya.smart.android.common.utils.EncyptionUtils::encryptAes.
+***Found: "AES" in com.tuya.smart.common.o0oooo00o::O00000Oo.
+***Found: "AES" in com.tuya.smart.common.o0oooo00o::O000000o.
+***Found: "AES" in com.tuya.smart.common.o00oooo0o::O000000o.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::O00000oO.
+***Found: "AES/ECB/PKCS5Padding" in com.roborock.internal.common.util.OooO00o::OooO00o.
+***Found: "AES" in com.tuya.smart.common.o0oooo00o::O000000o.
+***Found: "AES" in com.tuya.smart.common.o0o0000oo::O000000o.
+***Found: "AES" in com.tuya.smart.common.o0o000o0o::O000000o.
+***Found: "AES" in com.tuya.smart.common.o0oooo00o::O000000o.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in okio.HashingSource$Companion::md5.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "MD5" in com.roborock.internal.common.util.OooO0O0::OooO00o.
+***Found: "SHA-1" in okio.HashingSink$Companion::sha1.
+***Found: "MD5" in com.roborock.homesec.RtcClient::clinit.
+***Found: "MD5" in com.tuya.smart.common.o00ooo0o00::O000000o.
+***Found: "MD5" in com.google.android.gms.measurement.internal.o00Oo0::OooOOoo.
+***Found: "SHA-1" in okio.HashingSource$Companion::sha1.
+***Found: "MD5" in com.tuya.smart.common.o00ooo0o00::O000000o.
+***Found: "MD5" in o0OOOoOo.oO0Ooooo::OooO0O0.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "SHA-1" in com.google.firebase.crashlytics.internal.common.CommonUtils::OooOOO0.
+***Found: "SHA-1" in o00oOOOo.o0OoOoOo::call.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in com.roborock.homesec.RtcClient::clinit.
+***Found: "SHA-1" in com.facebook.cache.common.OooO00o::OooO0O0.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in com.tuya.smart.common.o00o00oo0o::O00000Oo.
+***Found: "SHA-1" in com.google.firebase.messaging.OooO::OooO0O0.
+***Found: "SHA1" in org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketHandshake::sha1.
+***Found: "MD5" in o0O0oOoo.o0000O0O::OooO00o.
+***Found: "MD5" in com.roborock.internal.common.util.OooO0O0::OooO0OO.
+***Found: "MD5" in com.facebook.soloader.SoLoader$OooO00o::OooO0O0.
+***Found: "SHA1" in o0O0OO0.OooO00o::OooO00o.
+***Found: "MD5" in com.tuya.smart.common.oooo0000o::O0000o00.
+***Found: "SHA1" in com.google.firebase.installations.remote.OooO0OO::OooO0OO.
+***Found: "MD5" in com.tuya.smart.common.o00o00o0o0::O0000ooo.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5::md5.
+***Found: "MD5" in okio.HashingSink$Companion::md5.
+***Found: "SHA-1" in okio.Buffer::sha1.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "jkhy84145KGiTjug" in com.roborock.smart.dev.DevLocalLogActivity$encryptLocalLog$1$1$1::invokeSuspend:12.
+***Found: Constant "0L" in com.roborock.internal.common.activator.OooO0O0::start:1.
+***Found: Constant "jkhy84145KGiTjug" in o0OOO0O0.OooO00o::onClick.
+***Found: Constant "1.0" in o0OOOOOO.OooO0o$OooO00o::OooO0OO:6.
+***Found: Constant "key" in o0OOOOOO.OooO0o$OooO00o::run:34.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Found: "1024" in o0OOOOOO.OooO0o$OooO00o::run.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://%s/launch-js-devtools" in com.facebook.react.devsupport.DevServerHelper::OooO0OO:5.
+***Found: "http://%s/inspector/device?name=%s&app=%s" in com.facebook.react.devsupport.OooOOO::doInBackground:12.
+***Found: "http://%s/%s" in com.roborock.smart.react.worker.DevSupportManagerImpl::handleReloadJS:8.
+***Found: "http://%s/status" in com.roborock.smart.react.worker.DevSupportManagerImpl::isPackagerRunning:5.
+***Found: "http://%s/%s.%s?platform=android&dev=%s&minify=%s" in com.facebook.react.devsupport.DevServerHelper::OooO00o:9.
+***Found: "http://%s/nuclide/attach-debugger-nuclide?title=%s&app=%s&device=%s" in o00OOOo0.o00000O0::doInBackground:7.
+***Found: "http://%s/%s" in com.facebook.react.devsupport.DevSupportManagerImpl::downloadBundleResourceFromUrlSync:5.
+***Found: "http://%s/status" in com.facebook.react.devsupport.DevSupportManagerImpl::isPackagerRunning:5.
+***Found: "http://%s/onchange" in com.facebook.react.devsupport.DevServerHelper::OooO0O0:5.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in o0O0OO0O.OooO00o::OooO0O0.
+***Found: Untrused PRNG (java.util.Random) in o0O00O0.OooO00o::OooO00o.
+***Found: Untrused PRNG (java.util.Random) in o0OO.OooOOO0::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.badlogic.gdx.math.RandomXS128::init.
+***Found: Untrused PRNG (java.util.Random) in o0Oo0oOo.o0000OO0$OooO00o::OooO0oO.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.blescan.utils.SafeHandler::clinit.
+***Found: Untrused PRNG (java.util.Random) in j$.util.concurrent.ThreadLocalRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.roborock.smart.sdk.util.luban.OooO0OO::OooO00o.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o00oo0ooo0::O00000Oo.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in o0OOOo0O.o00Ooo::init.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o00o0oooo0::O00000Oo.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.KotlinRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.o00Oo0::o00Oo0.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o00oooo0o0::uploadUserAvatar.
+***Found: Untrused PRNG (java.util.Random) in com.roborock.smart.widget.HomeAnimAssemblyView::setState.
+***Found: Untrused PRNG (java.util.Random) in o0OO0o0O.OooOOO0::init.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.network.http.dns.TuyaDNS::lookup.
+***Found: Untrused PRNG (java.util.Random) in common.o00000o0oo::O000000o.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o0oo0o00o::O000000o.
+***Found: Untrused PRNG (java.util.Random) in o0OoOO00.OooOO0$OooO00o::initialValue.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.PhoneUtil::generateImei.
+***Found: Untrused PRNG (java.util.Random) in com.badlogic.gdx.math.RandomXS128::init.
+***Found: Untrused PRNG (java.util.Random) in o0Oo0oOo.o000$OooO0O0::OooOOO.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o0oo00o0o0::init.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o00o00oo0o::O000000o.
+***Found: Untrused PRNG (java.util.Random) in common.o00000o0oo::O000000o.
+***Found: Untrused PRNG (java.util.Random) in com.bumptech.glide.load.resource.gif.GifFrameLoader::OooO00o.
+***Found: Untrused PRNG (java.util.Random) in com.badlogic.gdx.math.RandomXS128::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.recaptcha.o0OOooO0::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.ooooooooo::O00000Oo.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.SafeHandler::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.o00o00o0o0::O000000o.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.common.OO0000::O00000Oo.
+***Found: Untrused PRNG (java.util.Random) in o0ooOO.o0000::OooO0Oo.
+=======================================

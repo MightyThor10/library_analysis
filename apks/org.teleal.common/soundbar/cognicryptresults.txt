@@ -1,0 +1,2361 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is too old. Falling back to java.lang.reflect API.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.3.0 or better (Maven group id: org.ow2.asm).
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Alive 16240  5000
+Ruleset: 
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.PBEKeySpec
+	java.security.spec.MGF1ParameterSpec
+	java.security.MessageDigest
+	javax.crypto.Cipher
+	java.security.KeyPair
+	javax.crypto.SecretKeyFactory
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.SecretKey
+	javax.crypto.spec.IvParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.spec.GCMParameterSpec
+	javax.crypto.spec.SecretKeySpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	java.security.spec.DSAParameterSpec
+	javax.crypto.KeyAgreement
+	java.security.cert.TrustAnchor
+	javax.crypto.spec.DHParameterSpec
+	javax.net.ssl.SSLParameters
+	javax.net.ssl.SSLContext
+	java.security.Key
+	java.security.KeyFactory
+	void
+	java.security.DigestOutputStream
+	java.security.SecureRandom
+	java.security.cert.PKIXParameters
+	java.security.spec.X509EncodedKeySpec
+	javax.crypto.spec.DHGenParameterSpec
+	javax.net.ssl.SSLEngine
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.Signature
+	javax.crypto.CipherOutputStream
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.AlgorithmParameterGenerator
+	javax.crypto.Mac
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.AlgorithmParameters
+	javax.crypto.CipherInputStream
+	java.security.DigestInputStream
+	java.security.spec.ECParameterSpec
+	javax.crypto.KeyGenerator
+	java.security.KeyStore
+	java.security.spec.ECGenParameterSpec
+	java.security.KeyPairGenerator
+	javax.net.ssl.KeyManagerFactory
+	java.security.spec.DSAGenParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Mac
+		Statement: $r6 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>($r5)
+		Method: <com.amazonaws.mobileconnectors.iot.AWSIotWebSocketUrlSigner: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)>
+		SHA-256: 22a174e840e5ad00498348e0980f69b5f8e5677b028bc69a0f885d7766c1d79d
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer76111)
+		Method: <com.google.android.play.core.splitcompat.q: java.lang.String b(byte[])>
+		SHA-256: 60b544b2c56ab5fe5ba7451b65d3c2894289598b457762195813246f0b9e0ca5
+		Secure: true
+	Object:
+		Variable: $r10
+		Type: byte[]
+		Statement: $i2 = virtualinvoke $r7.<java.security.MessageDigest: int digest(byte[],int,int)>($r10, $i2, $i11)
+		Method: <com.google.android.play.core.internal.k1: byte[][] l(int[],com.google.android.play.core.internal.u0[])>
+		SHA-256: 9342f1855340f552a3a75758d71320e5944eb64c3135203a18af9918bb7d757d
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.android.play.core.assetpacks.u1: java.lang.String b(java.util.List)>
+		SHA-256: c2ffbcd46b0cfcdc310f178220f14e292c56e7aadf894482b680881219fc8da7
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r1, $r3)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: e5db438eb4b571287e6fd3c1373b978aba12a3db2b24db51a3caea7446187504
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r11.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+		Method: <com.linkplay.statisticslibrary.utils.StatisticsAESUtil: javax.crypto.Cipher initAESCipher(java.lang.String,int)>
+		SHA-256: f2e7e3aa92ac2d79aa63ebee708648cbd542a8e44a87402609d71643013a9e7f
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.SecretKey
+		Statement: $r11 = virtualinvoke $r9.<javax.crypto.Cipher: byte[] wrap(java.security.Key)>($r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: b919afe400d0418dd4781408200b9a7e33bb3d3c58347b05232bf4a90ef1ab3c
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r16 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String,java.lang.String)>($r11, $r12)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: e0030e453eeb47e41e334c8edfbfe2d4ecfc8456e7a5af293a37168f6c0bdb7c
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r9, $i1, $i3)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.lang.String b(java.lang.String,java.lang.String)>
+		SHA-256: 9a361aee15684fc37da1376a758bbee356872b0bfe968bfd598c5fdd72158875
+		Secure: false
+	Object:
+		Variable: $r23
+		Type: java.security.PublicKey
+		Statement: $r23 = virtualinvoke $r21.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r22)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: 4dfa831527299c34934dc12e1ad27caf8e88d8bfc48eeb8050cd6ba61d03c44c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer45594)
+		Method: <com.wifiaudio.action.n.f: java.lang.String f(java.lang.String)>
+		SHA-256: 1714ea305d936aea9b713353ed859836ebcd3c3e23b96e76fc6af2ae1afc88d
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.fmxos.platform.i.a: void <init>(java.lang.Object)>
+		SHA-256: 76cd50002b578474cc4143c6068383137a15a087e213be90a2aead90b6b5c126
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.tencent.wxop.stat.common.l: java.lang.String a(java.lang.String)>
+		SHA-256: 17aa2506a4ae331cf3d9e09b26bd04ae8976bf363f2160247272d313a26c8af
+		Secure: false
+	Object:
+		Variable: $r22
+		Type: java.security.MessageDigest
+		Statement: $r22 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56170)
+		Method: <com.amazonaws.services.s3.AmazonS3Client: com.amazonaws.services.s3.model.S3Object getObject(com.amazonaws.services.s3.model.GetObjectRequest)>
+		SHA-256: bc911027746bbca33e30d04c2c5273dae5918b62d404590ecdd11f0e656c8297
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r24.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r0, $r8)
+		Method: <com.linkplay.statisticslibrary.utils.StatisticsAESUtil: java.io.File encryptFile(java.io.File,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 88e5d912c206c8a9fc06f2f522c6efa542f61194441b29f078ad18a459f42073
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.lang.String
+		Statement: specialinvoke $r11.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r0, $r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 387aed93dc455a3d893d781980018f98408eaed5be8b9ca440530fcd8c9de0dd
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.Cipher
+		Statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer38009)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String decrypt(java.lang.String,java.lang.String)>
+		SHA-256: 3f490621c41a3481652557352922749c879730df9e2f6c877419112d3fd7c8cc
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.lang.String)>($r5, $r4)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoScheme: com.amazonaws.services.s3.internal.crypto.CipherLite createCipherLite(javax.crypto.SecretKey,byte[],int,java.security.Provider)>
+		SHA-256: ba950efe28b127bd099f2d7255d087ecf1426b9676dcfa93476d19f81dc3bc03
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.SSLContext
+		Statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer58338)
+		Method: <okhttp3.internal.platform.Platform: javax.net.ssl.SSLContext getSSLContext()>
+		SHA-256: cd400fa985572e52c2ca84c9c81be407e04c78a5eef599b4e5b6cfd5368032e1
+		Secure: false
+	Object:
+		Variable: r0
+		Type: com.amazonaws.internal.SdkDigestInputStream
+		Statement: specialinvoke r0.<java.security.DigestInputStream: void <init>(java.io.InputStream,java.security.MessageDigest)>($r1, $r2)
+		Method: <com.amazonaws.internal.SdkDigestInputStream: void <init>(java.io.InputStream,java.security.MessageDigest)>
+		SHA-256: 9a42f5fce6ab5e869256ff69a376ac48773f99a18c8536697b6a39dd63ec220e
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: byte[]
+		Statement: $r7 = virtualinvoke $r6.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.bumptech.glide.load.engine.cache.SafeKeyGenerator: java.lang.String getSafeKey(com.bumptech.glide.load.Key)>
+		SHA-256: 6763e0d09de34caa999df127c6d30dc02400c44c84c5c574d6dd222776edfb5c
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r6)
+		Method: <com.e.c.f.a: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: b2e57a89461f970b65cde7b5b2da6c35c16bf7a93b180b7fb0426eeb7fdfbc94
+		Secure: false
+	Object:
+		Variable: $r21
+		Type: java.security.KeyFactory
+		Statement: $r21 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>($r15)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: a6acc1b5fb6f34c48315106326bca53b7ce67fe75dc9949f1919b780f82b7542
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer69123)
+		Method: <com.wifiaudio.utils.okhttp.k: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: 4ab286baa439ee74cccbb1513dba6f84e934becde8e8565966f2790525cec736
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r4)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoScheme: com.amazonaws.services.s3.internal.crypto.CipherLite createCipherLite(javax.crypto.SecretKey,byte[],int,java.security.Provider)>
+		SHA-256: 837d646c0ab4e66598a0209ac20610ae12b2dd00c7e839584f378254110d1da9
+		Secure: false
+	Object:
+		Variable: varReplacer30850
+		Type: java.lang.String
+		Statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer30850)
+		Method: <com.e.c.f.a: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: a4f3dba84dffdb8ebd3d334a93415bcc4146113ec8408ab99cef4480fbe7e31c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.amazonaws.auth.AbstractAWSSigner: byte[] hash(byte[])>
+		SHA-256: 7322bf7a23411b9bd0c41c784d265ac1090e72c12733f580a335adf21a2fff44
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r6, $r3)
+		Method: <com.fmxos.platform.i.a: void <init>(java.lang.Object)>
+		SHA-256: cc8c48d245a348a06d93a222d71598e0222d96b4fb41c14cfe804510e7695fee
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.crypto.Cipher
+		Statement: $r9 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r8, $r3)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: f671a7ec947e4a1520bc886cb4187f961c48b5013ab600899203a7407021588e
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer104804)
+		Method: <com.linkplay.statisticslibrary.utils.ToolUtils: java.lang.String getSHA256(java.lang.String)>
+		SHA-256: e39ba623dd59be6c7136a01ac255e5500eb5889bd994d383062ae3a8d724535c
+		Secure: true
+	Object:
+		Variable: $r8
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r8.<java.security.SecureRandom: void <init>()>()
+		Method: <com.fmxos.a.e.a: javax.net.ssl.SSLSocketFactory b()>
+		SHA-256: e41a6299988edaff7513fc09e33c64cbdf8800bd3beae139423ca1f72b623323
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.fmxos.platform.f.a.d: java.lang.String a(byte[])>
+		SHA-256: 337a3dc21569c7d63fdc72ab92dffdc9b60f07971443fc228feba3ac928977f9
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r5.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: javax.crypto.Cipher createSymmetricCipher(javax.crypto.SecretKey,int,java.security.Provider,byte[])>
+		SHA-256: 5c6a24090ef64ef3e3acbe46b42d18b28487d4f61c774a5a2de2cee225654728
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r0.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r5)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.security.interfaces.RSAPublicKey c(java.lang.String)>
+		SHA-256: 50c898f390f2310f7a5ce8567e7427ae5608699e73489038ba93321da98fa07a
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16256)
+		Method: <com.amazonaws.util.Md5Utils: byte[] computeMD5Hash(java.io.InputStream)>
+		SHA-256: 897e4698066259146ee1491ec94da62a296565d1b41899adae34d4f60780450d
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52265)
+		Method: <com.wifiaudio.action.e0.f.b: byte[] a(byte[],byte[])>
+		SHA-256: 616bd6b54fdbea6817ddd61c612d532ed3c6f23eb82f8ce1b27b441d7927f0a5
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: java.security.KeyStore
+		Statement: $r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r9)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.MessageDigest
+		Statement: $r9 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer52351)
+		Method: <com.wifiaudio.utils.FirmwareUpdateWithApp.d: java.lang.String b(java.lang.String)>
+		SHA-256: e34bbe9ad35daa502d6298c95611ef7d95ec9b80483449c6cce7c37f6d53b984
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r9.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+		Method: <com.e.c.f.a: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: bcd0b7ebacdd98974b18f318193239eb0f54300ba4843257e30d96d6dccd1e5c
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.fmxos.platform.xiaoyaos.b: java.lang.String a(byte[])>
+		SHA-256: 251ebbb0a4e1a1cac8a3332aa4dc678df1e859daa8abae34f09964d889a50d1c
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.e.f.e.c: java.lang.String a(java.lang.String,java.lang.String,android.content.Context)>
+		SHA-256: 3279a526c98b65de8e04e548189d2c729874fa4dd7b1ad7e5d9f32139e90d49e
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.KeyGenerator
+		Statement: $r1 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>($r0)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: javax.crypto.SecretKey generateOneTimeUseSymmetricKey()>
+		SHA-256: e93a89ac063abfcc66e35efa49a096405fae7494f5785a0ad2e827998a0bebef
+		Secure: false
+	Object:
+		Variable: varReplacer47620
+		Type: java.lang.String
+		Statement: $r6 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer47620)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.security.interfaces.RSAPublicKey c(java.lang.String)>
+		SHA-256: 9b28103089ee6571388e2e9a6ad9ec569c4dc17ef6c9af3bf48adce10058f891
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer30852)
+		Method: <com.e.c.f.a: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 482e28af7d92fc29ae9dc3da0452acf8d6283eb6610df3bc4741cb4f81ae0740
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r3)
+		Method: <com.wifiaudio.view.pagesmsccontent.easylink.d.b.a: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: 463f4205bb0921258e6c3f59980ebd34de6675709c95623ce44a61fa524f7a98
+		Secure: false
+	Object:
+		Variable: varReplacer67763
+		Type: java.lang.String
+		Statement: specialinvoke $r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer67763)
+		Method: <com.linkplay.statisticslibrary.utils.StatisticsAESUtil: javax.crypto.Cipher initAESCipher(java.lang.String,int)>
+		SHA-256: ce396930461feaec936f338bc440a67700faa313758172ce079fd80270ff40dd
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r0.<java.security.SecureRandom: void <init>()>()
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoScheme: void <clinit>()>
+		SHA-256: 6fa4d8a3b8929b92c8516c0152f9497fab94ad31ef34c8ab3e6be9e5ee2df174
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer57332)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String encrypt(java.lang.String,java.lang.String)>
+		SHA-256: 94f37a47fcd22dbca25339a011b01cffbee7db12a94729edb2e1be28b58cde56
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <org.eclipse.paho.client.mqttv3.internal.websocket.c: byte[] e(java.lang.String)>
+		SHA-256: 9693ed25899bd3f970f9436e6bc4242392758f093a846ca0248ab3a1b2501dff
+		Secure: false
+	Object:
+		Variable: $r22
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r22.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r5)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: 297a01bd257251c9056a812205ee76d4bd507d0141b2e8d5427f2cddc5ad5c26
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.net.ssl.SSLContext
+		Statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>($r4, $r3)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: b86a0ea90f3547987ad1f567e1418fc46c5f408a3f43c8329195b1d9d8546d7
+		Secure: false
+	Object:
+		Variable: $r12
+		Type: javax.crypto.SecretKey
+		Statement: $r12 = virtualinvoke $r5.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: javax.crypto.SecretKey generateCEK(com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 594e1ca9205370a90c482ee8e3c85d9443e229ec9bcfeb53a1996cc9eff80e29
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56032)
+		Method: <com.amazonaws.util.Md5Utils: byte[] computeMD5Hash(byte[])>
+		SHA-256: af9008c803316ba98772e710ac0d6eeeef551ec6f0cc270f9eae9cc794c6f4e7
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r3, $r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: javax.crypto.Cipher createSymmetricCipher(javax.crypto.SecretKey,int,java.security.Provider,byte[])>
+		SHA-256: 4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.linkplay.statisticslibrary.utils.ToolUtils: java.lang.String getSHA256(java.lang.String)>
+		SHA-256: 45ed1229623ce7e1b83513cc6bc1d46b47fbcb7e371350ec9136897405a3212d
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer73356)
+		Method: <com.amazonaws.auth.AbstractAWSSigner: byte[] hash(byte[])>
+		SHA-256: 5246b08c7903640bf118a1baedf56700f54ec49bbb65ce6b29fed7d50bead3a2
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.SSLContext
+		Statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer105110)
+		Method: <com.amazonaws.http.UrlHttpClient: void enableCustomTrustManager(javax.net.ssl.HttpsURLConnection)>
+		SHA-256: cccb984457d3b5756edb930c04101adc7f4d1a83f46b985ff4192897732b6b0b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r3)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String encrypt(java.lang.String,java.lang.String)>
+		SHA-256: e21a0d86cd808812c891cd6b9f38fd07959a15ebdb6ce3a9660177beb9ce5fc7
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <okio.ByteString: okio.ByteString digest(java.lang.String)>
+		SHA-256: a79a1700ae9d8d44f13ea218f751e7024f8f1222b1b2ae17cdbab7b56d352181
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: java.security.MessageDigest
+		Statement: $r11 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer69209)
+		Method: <com.wifiaudio.utils.okhttp.DeviceSecurityConfig$sha1$2: java.lang.String invoke()>
+		SHA-256: 5557d269aabd09f704a88623303ed4e4ed92d04d1d6464e0561be4b032cc917d
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: byte[]
+		Statement: $r11 = virtualinvoke $r9.<javax.crypto.Cipher: byte[] wrap(java.security.Key)>($r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: fbc56ef6d1ebd21386d4c94ba32c8ce28ffed7ecb68aea0ca1f8c4a5a73d7a10
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer47602)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.lang.String b(java.lang.String,java.lang.String)>
+		SHA-256: 3f576b6857ec7f829515b66ec285813a7f75d531dbf2f3453ae3e600c59dbd56
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer68977)
+		Method: <com.fmxos.platform.xiaoyaos.b: byte[] a(byte[],byte[])>
+		SHA-256: c86478e93e8d2fa694fc544bdbe492fcad1897a8977b202d5d8498775a337db9
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Cipher
+		Statement: $r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r4, $r3)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoScheme: com.amazonaws.services.s3.internal.crypto.CipherLite createCipherLite(javax.crypto.SecretKey,byte[],int,java.security.Provider)>
+		SHA-256: 3d4fda7aba24093881d2ce75c3ba49e31c7e2bba54c94f7bfefba556e3c8d79b
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.e.f.e.c: java.lang.String a(java.lang.String,java.lang.String,android.content.Context)>
+		SHA-256: fa8bd42a7665808dc012c81f1fb5893986b269e0aeb0d15c142ff4aaa729b508
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r9, $i1, varReplacer47610)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.lang.String b(java.lang.String,java.lang.String)>
+		SHA-256: ef27ee3b9d912a0c4be800200bc0498e74e65dd1308eda8656ee5a8e5ec866ac
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: byte[] getEncryptedSymmetricKey(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 9ad35c0a65483aefe519b60a5b521cd072d2f0cc67ec58dbdf88e0dcceb71370
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: java.security.Signature
+		Statement: $r24 = staticinvoke <java.security.Signature: java.security.Signature getInstance(java.lang.String)>($r13)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: de073c18b65fe4e4a89eebd3f74a25b54eec87973f52c76d73af126bd889af38
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer57327)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String encrypt(java.lang.String,java.lang.String)>
+		SHA-256: 3cd22ff19cdec88ad24cff73c2b4f9e701b28ec2e3153d61c1636d4dab558254
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer58341, $r2)
+		Method: <okhttp3.internal.platform.ConscryptPlatform: javax.net.ssl.SSLContext getSSLContext()>
+		SHA-256: a0d67b62140a3fc6fef0ebc8875027402d22a6208e54891c7f34eaeb1a81c6c0
+		Secure: false
+	Object:
+		Variable: varReplacer23644
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer23644)
+		Method: <com.wifiaudio.view.pagesmsccontent.easylink.d.b.a: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: 1e0d567d2767ca7e3c64244cf1dac25e5c3c7c98350038c0e2521e1ab1374388
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.crypto.Cipher
+		Statement: $r9 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r8, $r3)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: f671a7ec947e4a1520bc886cb4187f961c48b5013ab600899203a7407021588e
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, $r3)
+		Method: <com.e.f.e.c: java.lang.String a(java.lang.String,java.lang.String,android.content.Context)>
+		SHA-256: d3774ae0c4383e442a3a917bfe94a929cbeeb6bd4b89469da19a75474c27525a
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.amazonaws.util.Md5Utils: byte[] computeMD5Hash(java.io.InputStream)>
+		SHA-256: e933829eb5404ed3ac01e1a140ff56e65382a64dd0cd17ae95513909c44329c8
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r11.<java.security.MessageDigest: byte[] digest(byte[])>($r10)
+		Method: <com.wifiaudio.utils.okhttp.DeviceSecurityConfig$sha1$2: java.lang.String invoke()>
+		SHA-256: 4bbfe00d974754edfe5dac4c4b0671ffab16148127381f042e8a2f09a5fdf1ba
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.wifiaudio.action.n.f: java.lang.String f(java.lang.String)>
+		SHA-256: 4dabeedc4469dbacf10fa99dd597c46c5f8fc981401539d790a830c098078597
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+		Method: <com.amazonaws.auth.AbstractAWSSigner: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)>
+		SHA-256: 6b3c87f68fd523caaa8a9607dfd4dc12c93d40c54f1dc4cbcf8b597ac93eef4b
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.crypto.Cipher
+		Statement: $r9 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r8)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 5c22d9c2994b0b33eb4fcff619ef2053dcd2a1c35f6b203315702c9a398a1b56
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.lang.String
+		Statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r6, $r3)
+		Method: <com.fmxos.platform.i.a: void <init>(java.lang.Object)>
+		SHA-256: d3da8f8ac5658c985518efe67746de7c9dbb79abb743724e06d4125d154f3758
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r1 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r0)
+		Method: <okhttp3.internal.Util: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: a8764d384e0e6acd4407dba0e4c2025660362892494036c03c4b52a40e75c66b
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.MessageDigest
+		Statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r6)
+		Method: <com.google.android.play.core.internal.k1: byte[][] l(int[],com.google.android.play.core.internal.u0[])>
+		SHA-256: c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed
+		Secure: true
+	Object:
+		Variable: varReplacer38007
+		Type: java.lang.String
+		Statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, varReplacer38007)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String decrypt(java.lang.String,java.lang.String)>
+		SHA-256: 3ee4998056d4193dcf732588d9a1acf74d447cd8a6478f549493c062cd987040
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer71818)
+		Method: <com.fmxos.platform.f.a.d: java.lang.String a(byte[])>
+		SHA-256: 2ff34fe6323104aa3d1b148f24646aa150fad0a255330ac1f990a921754b4878
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.security.MessageDigest
+		Statement: $r6 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer101950)
+		Method: <com.bumptech.glide.load.engine.cache.SafeKeyGenerator: java.lang.String getSafeKey(com.bumptech.glide.load.Key)>
+		SHA-256: b5f0e69d82cc02b1b0b25c4403dd2eec883113ae9824d297dc896afc999d7e50
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.android.play.core.splitcompat.q: java.lang.String b(byte[])>
+		SHA-256: 5f0021a0e91eb35b7c1b7fcf7478b8d39abc9fe029f430a9cf23fcba9f962a5e
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r2 = virtualinvoke $r1.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <okhttp3.internal.Util: javax.net.ssl.X509TrustManager platformTrustManager()>
+		SHA-256: dea0af93b06734ae35228a014521e6e031131dd2b357359826afa61f9a6de1b
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.MessageDigest
+		Statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r6)
+		Method: <com.google.android.play.core.internal.k1: byte[][] l(int[],com.google.android.play.core.internal.u0[])>
+		SHA-256: c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer69126)
+		Method: <com.wifiaudio.utils.okhttp.k: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: f9e18cf3701a064838d3b1285fc465398ed4674c99537485cde9a7b42ebd718e
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer105995)
+		Method: <com.fmxos.platform.f.c.a: java.lang.String a(java.lang.String)>
+		SHA-256: 5671bd9c67b42bab89c5c043360c9d94228b486f89cb495e9ca17d96f56653c5
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r4)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String decrypt(java.lang.String,java.lang.String)>
+		SHA-256: 4c0cb4a5c12cf229b13844ce1513b3f53a92a02468ff10249e368dfbae50950f
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: javax.net.ssl.SSLContext
+		Statement: $r10 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer55587)
+		Method: <com.wifiaudio.utils.okhttp.b: javax.net.ssl.SSLSocketFactory U()>
+		SHA-256: 3077af2e99cda770d0de0632f78d04323a9335330b0baac4317608792cb9b875
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: java.security.MessageDigest
+		Statement: $r10 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer85591)
+		Method: <org.teleal.cling.model.f: java.net.URI g(org.teleal.cling.model.meta.Device)>
+		SHA-256: 4f76c463fdf620395b76a67f4d39dd5a1c23eb99ee3a74eb10e27409690e39d8
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 321e6bdf678b35b172e92cf0b2919ac20ecc4f5558f28a6daba23d682848655a
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String encrypt(java.lang.String,java.lang.String)>
+		SHA-256: f1baeec0a2b6711e17ae39acd8a0ab6cafd2c7dac890b78cf6100cb8a26afb1c
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer49628)
+		Method: <com.amazonaws.mobileconnectors.iot.AWSIotWebSocketUrlSigner: byte[] hash(java.lang.String)>
+		SHA-256: d779c299762247288edd76a6513c02ed7d8811c632f652990fae4d66bc0704c1
+		Secure: true
+	Object:
+		Variable: $r7
+		Type: java.security.PublicKey
+		Statement: $r7 = virtualinvoke $r6.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.security.interfaces.RSAPublicKey c(java.lang.String)>
+		SHA-256: 18c43be83d767ca15c55f3ea168cb4b27d652d890ac699db9c3c6ad911fc2148
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r9.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.wifiaudio.utils.FirmwareUpdateWithApp.d: java.lang.String b(java.lang.String)>
+		SHA-256: e5ec37eaf2eb4931381f234ca427a0b770dc0ddcf35851997a9f924d3ca7c531
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer30850)
+		Method: <com.e.c.f.a: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: f1be821dd9ed2820476a1fadf761fb1a647b9c8f19e10911505c78d32d370022
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer58335)
+		Method: <okhttp3.internal.platform.AndroidPlatform: javax.net.ssl.SSLContext getSSLContext()>
+		SHA-256: 550ae3fdea1c4d2288ec1f915c72c051d669a1bd036208124d156484fb5fa278
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r24 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r4)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: 26dc9819b6ff1f56bc1aee1fe268e336536e684233a42cea9d394bc07b6e96d7
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.fmxos.platform.f.c.a: java.lang.String a(java.lang.String)>
+		SHA-256: c9324f008248c2c970dbb485d485919e922bd7f99c929b778d6182bd5a8c3023
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer58340, $r2)
+		Method: <okhttp3.internal.platform.ConscryptPlatform: javax.net.ssl.SSLContext getSSLContext()>
+		SHA-256: c08ac4e6c1b4e46a987780a4d9c7f4c16c85705c3bf519b6d4f658cd19ee89b5
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r24.<java.security.SecureRandom: void <init>()>()
+		Method: <com.wifiaudio.utils.okhttp.b: javax.net.ssl.SSLSocketFactory U()>
+		SHA-256: 521313b505017b2f6bc983db14e9ae538ca9f669945efce03c7fe95f6de25cbf
+		Secure: true
+	Object:
+		Variable: $r16
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r16 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>($r11)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: c07438c0c726a06873c44277809cbe8ce2a9e61a8ab10acd8ed26b23bd7de27f
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer110886)
+		Method: <com.fmxos.a.d.a: java.lang.String a(byte[])>
+		SHA-256: 9123612738bead1891620b6536a604edf85bcb2e97355b0a8cf2e5ef825934a
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $z0 = virtualinvoke $r24.<java.security.Signature: boolean verify(byte[])>($r8)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: 495197f3e1a8b41141fce0e4a03eb6c5bb621e8d06208cd31830e7321ca21acb
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer58336)
+		Method: <okhttp3.internal.platform.AndroidPlatform: javax.net.ssl.SSLContext getSSLContext()>
+		SHA-256: 5e15619c207409b475a9d86e03b9906a1c016c5979ca672aaa47f0b5e499b5e4
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r3)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: javax.crypto.Cipher createSymmetricCipher(javax.crypto.SecretKey,int,java.security.Provider,byte[])>
+		SHA-256: 1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b
+		Secure: false
+	Object:
+		Variable: varReplacer110888
+		Type: java.lang.String
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer110888)
+		Method: <com.fmxos.a.d.a: byte[] a(byte[],byte[])>
+		SHA-256: b0adbfa6570650ef7271f349df96d9fdc6ce1315c990838a735ec460446a12e9
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer67762)
+		Method: <com.linkplay.statisticslibrary.utils.StatisticsAESUtil: javax.crypto.Cipher initAESCipher(java.lang.String,int)>
+		SHA-256: 99bdb560067b7559c136fef518502d8ea40772f1ddb405ef146c168487fb0553
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.net.ssl.SSLContext
+		Statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r4)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: b0283d7078b3ce9de4b0e07b965441aed6eb87c9111c5171021d9b6c7a46e0e5
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer70722)
+		Method: <com.amazonaws.services.s3.internal.MD5DigestCalculatingInputStream: void <init>(java.io.InputStream)>
+		SHA-256: e186c76d8677d1d855754a399e3048807fd81b8ecc6bcbb50672f010d4fdd556
+		Secure: false
+	Object:
+		Variable: varReplacer69126
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer69126)
+		Method: <com.wifiaudio.utils.okhttp.k: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: 8e285e0537337bed356d56418d0c1742652ca14a7ddd03bdd7e9200a6b957f2b
+		Secure: false
+	Object:
+		Variable: $r17
+		Type: javax.net.ssl.KeyManager[]
+		Statement: $r17 = virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManager[] getKeyManagers()>()
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: d2fbda3b099924693eea37ab2b30517bdca2957108f3ea05371b6736c3802efa
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer110889)
+		Method: <com.fmxos.a.d.a: byte[] a(byte[],byte[])>
+		SHA-256: d24ca82071595def9ce5bf797f00915d91be41b25b78dba17c0bd3e74007322a
+		Secure: false
+	Object:
+		Variable: varReplacer57332
+		Type: java.lang.String
+		Statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer57332)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String encrypt(java.lang.String,java.lang.String)>
+		SHA-256: b4a206ebb91f878fb70fc3926f03594ed56418e418e5377b4c9b9bd3e008385
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer104799)
+		Method: <com.linkplay.statisticslibrary.utils.ToolUtils: byte[] HmacSHA256(java.lang.String,byte[])>
+		SHA-256: a3edaab04bcfede982e9a4a4f3ce9db4b8d3891f9383a21ba30e215d2b604d4e
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r4)
+		Method: <com.google.android.play.core.internal.k1: byte[][] l(int[],com.google.android.play.core.internal.u0[])>
+		SHA-256: 543255eb3383fcdeb5b0c84cb3f7ab1698a49d51cf227b58cecbd61ae78c24ff
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+		Method: <com.wifiaudio.view.pagesmsccontent.easylink.d.b.a: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: e5faa2e845d10b00cfd957b552d685231d0d2a3db4c0827e2577df3fe1fbffb0
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+		Method: <com.wifiaudio.utils.okhttp.k: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: d0b2aebe856b4b862980ed41ce91bfe5b161084aad6fbc415ebb945cdea1cb9e
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer29813)
+		Method: <com.tencent.wxop.stat.common.l: java.lang.String a(java.lang.String)>
+		SHA-256: e5248e881b34c64c9f95af3abbebdd1a3dbbd22facb90411af6f07ab46d63f13
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer96943)
+		Method: <org.eclipse.paho.client.mqttv3.internal.websocket.c: byte[] e(java.lang.String)>
+		SHA-256: 1c3d39a48bebe554860e8fdf400c074b2d942c0983bd9ae3248bf0090d827745
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.SecretKey
+		Statement: $r3 = virtualinvoke $r1.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: javax.crypto.SecretKey generateOneTimeUseSymmetricKey()>
+		SHA-256: 4ed72f43d932d1d8a8e665970b5d65949da1d99dfe860b4ef25a5b72210808ad
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: byte[]
+		Statement: $r11 = virtualinvoke $r9.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r11)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: b1546baad8121ad96a883d70006a92e8ca4eb17b4fdd2c881dfb5d13d0f217f7
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r9 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>(varReplacer55594)
+		Method: <com.wifiaudio.utils.okhttp.b: javax.net.ssl.SSLSocketFactory U()>
+		SHA-256: 25e4fad553ed4bc0b5322f6d3d20dcde52094b061c0a74aa42d2a8f6b163b736
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r7.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r6)
+		Method: <com.fmxos.platform.i.a: void <init>(java.lang.Object)>
+		SHA-256: ca1d7eaec66980eb0cfeb209cc31c62ef20f01f13f024ccdbef18cda6d907d3
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r8.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoScheme: com.amazonaws.services.s3.internal.crypto.CipherLite createCipherLite(javax.crypto.SecretKey,byte[],int,java.security.Provider)>
+		SHA-256: cf9275f35069e3618df95a0a9aad685de80789662a52dbe4648a46365d678999
+		Secure: false
+	Object:
+		Variable: $r12
+		Type: javax.crypto.SecretKey
+		Statement: $r12 = virtualinvoke $r5.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: javax.crypto.SecretKey generateCEK(com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 594e1ca9205370a90c482ee8e3c85d9443e229ec9bcfeb53a1996cc9eff80e29
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r24 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String,java.lang.String)>($r4, $r11)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: 9c62663f758b4b4fae96d45e4120ee931f7759c5f2db3cf0c0c6cdbba4169f21
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r11.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r0, $r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 2cc1bfaa2b544a8ad2d22f41584b7b8ad336af1b751d5b77a2e4519311c77f3d
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r0)
+		Method: <com.wifiaudio.action.e0.f.c: byte[] c(byte[])>
+		SHA-256: d28a11f043a21f316f41602c02badf404fe4e3e3e45d6757302b88df117715b9
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: java.security.KeyStore
+		Statement: $r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r9)
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r6.<java.security.SecureRandom: void <init>()>()
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: javax.crypto.SecretKey generateOneTimeUseSymmetricKey()>
+		SHA-256: 798f5031ca87f2db9b654b225a0b48705d5699355c9fdc1ab26717d85692d106
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Mac
+		Statement: $r6 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>($r5)
+		Method: <com.amazonaws.auth.AbstractAWSSigner: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)>
+		SHA-256: 13e7ed320837264340b1c5899ecaf6f2a8a94354dfa1852b00167b9a72933d17
+		Secure: false
+	Object:
+		Variable: varReplacer52265
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52265)
+		Method: <com.wifiaudio.action.e0.f.b: byte[] a(byte[],byte[])>
+		SHA-256: 61ef3a8434bfa8fb1793f174a8e4daed7938cb2312fbf82961cfcabb41971322
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.crypto.Cipher
+		Statement: $r9 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r8)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 5c22d9c2994b0b33eb4fcff619ef2053dcd2a1c35f6b203315702c9a398a1b56
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r0)
+		Method: <com.wifiaudio.action.e0.f.c: java.security.MessageDigest b(java.lang.String)>
+		SHA-256: d11319a7d1af620484cb5233f045ea651cb986d2f21fdeb0da9add16b0f40035
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r6, $r2)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: byte[] getEncryptedSymmetricKey(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: ee0e74e03721439bb3cf98988606a13146477b42a09325d5ae908971b7f9bd82
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r9, $i1, $i3)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.lang.String b(java.lang.String,java.lang.String)>
+		SHA-256: c41d1b64d8b4557eaab917ea8df6877208c96d537cfb25e6d150793633a4ea0
+		Secure: false
+	Object:
+		Variable: $z0
+		Type: boolean
+		Statement: $z0 = virtualinvoke $r24.<java.security.Signature: boolean verify(byte[])>($r8)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: a7cd8618d1b59a93efeb4e07fb7dec39e95a9d04efe3c55ce1b7a55c00bc8ccf
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 5289a83b632372d4b7f3082b34d64fc788c43680a46dd07cedf552920b3ed42d
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: javax.net.ssl.KeyManager[]
+		Statement: $r11 = virtualinvoke $r9.<javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManager[] getKeyManagers()>()
+		Method: <com.wifiaudio.utils.okhttp.b: javax.net.ssl.SSLSocketFactory U()>
+		SHA-256: 6085794b958f97e3a7ae9b96deb06e172ae36ff765558276e34d4912ea8bddc9
+		Secure: false
+	Object:
+		Variable: varReplacer104801
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer104801)
+		Method: <com.linkplay.statisticslibrary.utils.ToolUtils: byte[] HmacSHA256(java.lang.String,byte[])>
+		SHA-256: 7e8ef0fef936852ef5450fd9defe978695ab9fff4b33c94eed955cdbc5f9835
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer52266)
+		Method: <com.wifiaudio.action.e0.f.b: byte[] a(byte[],byte[])>
+		SHA-256: 72fa2d807c3c437726d7510824789054ca7087157bb47180fe8aa7578e300d7f
+		Secure: false
+	Object:
+		Variable: $r15
+		Type: java.lang.String
+		Statement: $r21 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>($r15)
+		Method: <com.google.android.play.core.internal.k1: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)>
+		SHA-256: 62f645c9b806a416cc6586549cbf3a4e0d5bf0e7df4f92fba0468eea64e1a81b
+		Secure: false
+	Object:
+		Variable: $r25
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r25 = virtualinvoke $r24.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <org.eclipse.paho.client.mqttv3.t.r.a: javax.net.ssl.SSLContext m(java.lang.String)>
+		SHA-256: 7ec3bd5c6d83c46b5468d29eba41163972ec072d1f106d3ae30a3f336c7e0643
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r6)
+		Method: <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: byte[] getEncryptedSymmetricKey(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: e52e84ff3a4d5cc8aeeb0c3dd43af05882536519aa96b93fd2f03094a3e015c4
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer110888)
+		Method: <com.fmxos.a.d.a: byte[] a(byte[],byte[])>
+		SHA-256: f510fe35d0447f499f56f430735d0b33960ca12e93b1433045201af4e2493a2
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r0)
+		Method: <com.amazonaws.util.Md5Utils: byte[] computeMD5Hash(byte[])>
+		SHA-256: 910b03c63b1f2cc2df77810bece666dc4d0854de24fad0fe3f568bcb179635e5
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer68978)
+		Method: <com.fmxos.platform.xiaoyaos.b: byte[] a(byte[],byte[])>
+		SHA-256: c588b5d6228cfd03158963d31e2f2525f4a8bc1704fca43a38143d5bbf116c1f
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.lang.String
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+		Method: <com.amazonaws.auth.AbstractAWSSigner: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)>
+		SHA-256: b8c6f56ac244bcc45f322d5a657da70cfae9db6730771b1aed077914a64a8f9a
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.security.KeyFactory
+		Statement: $r6 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer47620)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.security.interfaces.RSAPublicKey c(java.lang.String)>
+		SHA-256: 68b1fc0ed95725499f7669e4474e49357dc8b281ad9d9c0f70e86a2187d450e
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, $r3)
+		Method: <com.e.f.e.c: java.lang.String a(java.lang.String,java.lang.String,android.content.Context)>
+		SHA-256: d29b0ea118b6b25c3dda363d8ed9562e8c61852ece8cc1a9f97feddcf8fadefb
+		Secure: false
+	Object:
+		Variable: varReplacer68978
+		Type: java.lang.String
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer68978)
+		Method: <com.fmxos.platform.xiaoyaos.b: byte[] a(byte[],byte[])>
+		SHA-256: d29420d467c8ef4d05177150587a4a5d5217b9cd37d233409212f9aefaf84f6
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r1)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 321e6bdf678b35b172e92cf0b2919ac20ecc4f5558f28a6daba23d682848655a
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.KeyStore
+		Statement: $r7 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(varReplacer55595)
+		Method: <com.wifiaudio.utils.okhttp.b: javax.net.ssl.SSLSocketFactory U()>
+		SHA-256: c938c49d6185a88b60ebc75261a7ca30036dfae6eec4affd95f0e63d8836f2a8
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r7.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+		Method: <com.e.f.e.c: java.lang.String a(java.lang.String,java.lang.String,android.content.Context)>
+		SHA-256: 59389fb9c6712dbe5af6e81066d306e50a78ae3fe44b5c99c4ea252d79089ff6
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer67763)
+		Method: <com.linkplay.statisticslibrary.utils.StatisticsAESUtil: javax.crypto.Cipher initAESCipher(java.lang.String,int)>
+		SHA-256: d88e5302a9284593eb55178edbcc96ac086a3a6e8f2a5bb9615a9e0c4b6d5556
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r1.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r0, $r2)
+		Method: <com.amazonaws.services.s3.internal.RepeatableCipherInputStream: java.io.FilterInputStream newCipherInputStream(java.io.InputStream,com.amazonaws.services.s3.internal.crypto.CipherFactory)>
+		SHA-256: dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.SSLContext
+		Statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer106904)
+		Method: <com.fmxos.a.e.a: javax.net.ssl.SSLSocketFactory b()>
+		SHA-256: d83808490c9e825bee6df5c2aaad217e7b6472c78bafcbb54d7c79d972da0bd0
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.KeyGenerator
+		Statement: $r5 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String,java.security.Provider)>($r4, $r2)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: javax.crypto.SecretKey generateCEK(com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 4bf31f25306f4a9d35a492be4f612befc8b544833b01557fa389701c0c907ffb
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer23643)
+		Method: <com.wifiaudio.view.pagesmsccontent.easylink.d.b.a: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: b394759af096468368b8ab21054b794d18e5c44429deb45823412f7b730cac6a
+		Secure: false
+	Object:
+		Variable: $r11
+		Type: byte[]
+		Statement: $r11 = virtualinvoke $r10.<java.security.MessageDigest: byte[] digest(byte[])>($r11)
+		Method: <org.teleal.cling.model.f: java.net.URI g(org.teleal.cling.model.meta.Device)>
+		SHA-256: c086bcbae005d442199c2f400ffa82dbaee8f340e2433932af7462b4fa1edeac
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r9, $i1, varReplacer47610)
+		Method: <com.wifiaudio.view.iotaccountcontrol.t0.m: java.lang.String b(java.lang.String,java.lang.String)>
+		SHA-256: d915113e47619e880ba817d3117d4dde03dad130c46ae82857e87198a04a3b88
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.amazonaws.mobileconnectors.iot.AWSIotWebSocketUrlSigner: byte[] hash(java.lang.String)>
+		SHA-256: f378da1c07848c2513ad8e8a24f3126475dac537504a177de02802f173f66437
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer23644)
+		Method: <com.wifiaudio.view.pagesmsccontent.easylink.d.b.a: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: 38f237eac819e480f6b7a10b5518fa8725518cfb539e8caf765abe4ca98f2ba2
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: javax.crypto.KeyGenerator
+		Statement: $r5 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>($r4)
+		Method: <com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase: javax.crypto.SecretKey generateCEK(com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: 2db08493f3d855d0c32dbe5ec6c105fb586a7e9a2a68ac592134e4e61c362f3a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+		Method: <com.amazonaws.mobileconnectors.iot.AWSIotWebSocketUrlSigner: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)>
+		SHA-256: 55505f7720685d18875e46d02af883ae465961a4e27c133b8bf7d966211881f2
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+		Method: <okio.ByteString: okio.ByteString digest(java.lang.String)>
+		SHA-256: b336d574501b28a5bd90db22472c23a68acb0c1b99c4f14746fdc2a23c69a24e
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r5.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r4)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String decrypt(java.lang.String,java.lang.String)>
+		SHA-256: 762ffef813e81bdf925527995b1237d41a88fa5c98603070c91e8e2b83c9e11b
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer104801)
+		Method: <com.linkplay.statisticslibrary.utils.ToolUtils: byte[] HmacSHA256(java.lang.String,byte[])>
+		SHA-256: 1d6f216fa5f757edcf1bd20924fa8c2612703019436e2282679cb82655650bf9
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer68975)
+		Method: <com.fmxos.platform.xiaoyaos.b: java.lang.String a(byte[])>
+		SHA-256: b69cde53dd3139f2734f5f03c97644a92bf453a32d94cabd91c33a6c61d1253f
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.fmxos.a.d.a: java.lang.String a(byte[])>
+		SHA-256: 94dacef5038b9fd5dcf8e37f15750ede1c794ee5e2ec5487426703309c52fd62
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, varReplacer38007)
+		Method: <com.linkplay.amazonmusic_library.utils.ToolUtils: java.lang.String decrypt(java.lang.String,java.lang.String)>
+		SHA-256: 20cca1ecf748e69bbc383891e2cbd088f0645610f8db8884061902ac96d6ddb4
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Cipher
+		Statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r1, $r3)
+		Method: <com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)>
+		SHA-256: e5db438eb4b571287e6fd3c1373b978aba12a3db2b24db51a3caea7446187504
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.lang.String
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+		Method: <com.amazonaws.mobileconnectors.iot.AWSIotWebSocketUrlSigner: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)>
+		SHA-256: 1ff384a94ceec5e81bbc9e09591e3319c85dc71b70f4bc6e6fd1b566626e99aa
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer35995)
+		Method: <com.google.android.play.core.assetpacks.u1: java.lang.String b(java.util.List)>
+		SHA-256: 2bb49e8951c510ac7841c0c39c23ca5f150b7e6b1102e4eb6a62204cd0b43bb3
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r3)
+		Method: <com.wifiaudio.utils.okhttp.k: java.lang.String a(java.lang.String,java.lang.String)>
+		SHA-256: 8012ae2c210ff0da0d20ae0cce7c601604e7a4832d0105e2cb80e6d94fd23dbf
+		Secure: false
+
+Findings in Java Class: com.amazonaws.util.Md5Utils
+
+	 in Method: byte[] computeMD5Hash(java.io.InputStream)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #897e4698066259146ee1491ec94da62a296565d1b41899adae34d4f60780450d)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16256)
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #897e4698066259146ee1491ec94da62a296565d1b41899adae34d4f60780450d)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r0 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+
+
+	 in Method: byte[] computeMD5Hash(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #af9008c803316ba98772e710ac0d6eeeef551ec6f0cc270f9eae9cc794c6f4e7)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56032)
+
+
+Findings in Java Class: com.wifiaudio.view.pagesmsccontent.easylink.d.b.a
+
+	 in Method: java.lang.String a(java.lang.String,java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer23646, $r0, $r6)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #b394759af096468368b8ab21054b794d18e5c44429deb45823412f7b730cac6a)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer23643)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer23644)
+
+
+Findings in Java Class: com.tencent.wxop.stat.common.l
+
+	 in Method: java.lang.String a(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e5248e881b34c64c9f95af3abbebdd1a3dbbd22facb90411af6f07ab46d63f13)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer29813)
+
+
+Findings in Java Class: com.e.c.f.a
+
+	 in Method: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #482e28af7d92fc29ae9dc3da0452acf8d6283eb6610df3bc4741cb4f81ae0740)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer30852)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r9.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer30850)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer30851, $r8, $r9)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer30851, $r8, $r9)
+
+
+Findings in Java Class: com.google.android.play.core.assetpacks.u1
+
+	 in Method: java.lang.String b(java.util.List)
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #2bb49e8951c510ac7841c0c39c23ca5f150b7e6b1102e4eb6a62204cd0b43bb3)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #2bb49e8951c510ac7841c0c39c23ca5f150b7e6b1102e4eb6a62204cd0b43bb3)
+			First parameter (with value "SHA256") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer35995)
+
+
+Findings in Java Class: com.linkplay.amazonmusic_library.utils.ToolUtils
+
+	 in Method: java.lang.String decrypt(java.lang.String,java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r4)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, varReplacer38007)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r5.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer38006, $r3, $r6)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #3f490621c41a3481652557352922749c879730df9e2f6c877419112d3fd7c8cc)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer38009)
+
+
+	 in Method: java.lang.String encrypt(java.lang.String,java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer57332)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer57334, $r5, $r6)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #3cd22ff19cdec88ad24cff73c2b4f9e701b28ec2e3153d61c1636d4dab558254)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer57327)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer57334, $r5, $r6)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+
+
+Findings in Java Class: com.wifiaudio.action.n.f
+
+	 in Method: java.lang.String f(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #1714ea305d936aea9b713353ed859836ebcd3c3e23b96e76fc6af2ae1afc88d)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer45594)
+
+
+Findings in Java Class: com.wifiaudio.view.iotaccountcontrol.t0.m
+
+	 in Method: java.lang.String b(java.lang.String,java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer47604, $r8)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #3f576b6857ec7f829515b66ec285813a7f75d531dbf2f3453ae3e600c59dbd56)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer47604, $r8)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #3f576b6857ec7f829515b66ec285813a7f75d531dbf2f3453ae3e600c59dbd56)
+			First parameter (with value "RSA/None/PKCS1Padding") should be any of RSA/{Empty String, ECB}
+			at statement: $r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer47602)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #3f576b6857ec7f829515b66ec285813a7f75d531dbf2f3453ae3e600c59dbd56)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to javax.crypto.Cipher: byte[] doFinal(byte[]), javax.crypto.Cipher: int doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[]), javax.crypto.Cipher: byte[] doFinal(byte[],int,int), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int), update, wrap
+			at statement: $r10 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r9, $i1, $i3)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #3f576b6857ec7f829515b66ec285813a7f75d531dbf2f3453ae3e600c59dbd56)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to javax.crypto.Cipher: byte[] doFinal(byte[]), javax.crypto.Cipher: int doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[]), javax.crypto.Cipher: byte[] doFinal(byte[],int,int), javax.crypto.Cipher: int doFinal(byte[],int,int,byte[],int), update, wrap
+			at statement: $r10 = virtualinvoke $r7.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r9, $i1, varReplacer47610)
+
+
+	 in Method: java.security.interfaces.RSAPublicKey c(java.lang.String)
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r5)
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r7 = virtualinvoke $r6.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+
+
+Findings in Java Class: com.amazonaws.mobileconnectors.iot.AWSIotWebSocketUrlSigner
+
+	 in Method: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #22a174e840e5ad00498348e0980f69b5f8e5677b028bc69a0f885d7766c1d79d)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r2 = virtualinvoke $r6.<javax.crypto.Mac: byte[] doFinal(byte[])>($r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+
+
+Findings in Java Class: com.google.android.play.core.internal.k1
+
+	 in Method: byte[][] l(int[],com.google.android.play.core.internal.u0[])
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: interfaceinvoke $r2.<com.google.android.play.core.internal.u0: void a(java.security.MessageDigest[],long,int)>($r5, $l5, $i9)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r6)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r5 = newarray (java.security.MessageDigest)[$i4]
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed)
+			Unexpected call to method <java.security.MessageDigest: int digest(byte[],int,int)> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $i2 = virtualinvoke $r7.<java.security.MessageDigest: int digest(byte[],int,int)>($r10, $i2, $i11)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to java.security.MessageDigest: int digest(byte[],int,int), update, java.security.MessageDigest: byte[] digest(byte[]), java.security.MessageDigest: byte[] digest()
+			at statement: $r4 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r4)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #c0030b98475203cfaee5cb862806245b8753232983dad268b9542c901cc9aeed)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to java.security.MessageDigest: int digest(byte[],int,int), update, java.security.MessageDigest: byte[] digest(byte[]), java.security.MessageDigest: byte[] digest()
+			at statement: $i2 = virtualinvoke $r7.<java.security.MessageDigest: int digest(byte[],int,int)>($r10, $i2, $i11)
+
+
+	 in Method: java.security.cert.X509Certificate[] k(java.nio.ByteBuffer,java.util.Map,java.security.cert.CertificateFactory)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r23 = virtualinvoke $r21.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r22)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r22.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r5)
+
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPubkey
+			at statement: virtualinvoke $r24.<java.security.Signature: void initVerify(java.security.PublicKey)>($r23)
+
+
+Findings in Java Class: com.wifiaudio.action.e0.f.b
+
+	 in Method: byte[] a(byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #616bd6b54fdbea6817ddd61c612d532ed3c6f23eb82f8ce1b27b441d7927f0a5)
+			Second parameter (with value "HmacSHA1") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52265)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52265)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #72fa2d807c3c437726d7510824789054ca7087157bb47180fe8aa7578e300d7f)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r1 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal(byte[])>($r1)
+
+
+Findings in Java Class: com.wifiaudio.action.e0.f.c
+
+	 in Method: java.security.MessageDigest b(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #d11319a7d1af620484cb5233f045ea651cb986d2f21fdeb0da9add16b0f40035)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r0)
+
+
+Findings in Java Class: com.wifiaudio.utils.FirmwareUpdateWithApp.d
+
+	 in Method: java.lang.String b(java.lang.String)
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #e34bbe9ad35daa502d6298c95611ef7d95ec9b80483449c6cce7c37f6d53b984)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r8 = virtualinvoke $r9.<java.security.MessageDigest: byte[] digest()>()
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e34bbe9ad35daa502d6298c95611ef7d95ec9b80483449c6cce7c37f6d53b984)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r9 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer52351)
+
+
+Findings in Java Class: com.wifiaudio.utils.okhttp.b
+
+	 in Method: javax.net.ssl.SSLSocketFactory U()
+		ConstraintError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #25e4fad553ed4bc0b5322f6d3d20dcde52094b061c0a74aa42d2a8f6b163b736)
+			First parameter (with value "X509") should be any of {PKIX, SunX509}
+			at statement: $r9 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>(varReplacer55594)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r10.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r11, $r25, $r14)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r10.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r11, $r25, $r14)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #3077af2e99cda770d0de0632f78d04323a9335330b0baac4317608792cb9b875)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r10 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer55587)
+
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #25e4fad553ed4bc0b5322f6d3d20dcde52094b061c0a74aa42d2a8f6b163b736)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r9.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r7, $r8)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #25e4fad553ed4bc0b5322f6d3d20dcde52094b061c0a74aa42d2a8f6b163b736)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r9.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r7, $r8)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.KeyManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r9.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r7, $r8)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #c938c49d6185a88b60ebc75261a7ca30036dfae6eec4affd95f0e63d8836f2a8)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r7.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r4, $r8)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #c938c49d6185a88b60ebc75261a7ca30036dfae6eec4affd95f0e63d8836f2a8)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r7.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r4, $r8)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r10.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r11, $r25, $r14)
+
+
+Findings in Java Class: com.amazonaws.services.s3.AmazonS3Client
+
+	 in Method: com.amazonaws.services.s3.model.S3Object getObject(com.amazonaws.services.s3.model.GetObjectRequest)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #bc911027746bbca33e30d04c2c5273dae5918b62d404590ecdd11f0e656c8297)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r22 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56170)
+
+		IncompleteOperationError violating CrySL rule for java.security.DigestInputStream (on Object #9a42f5fce6ab5e869256ff69a376ac48773f99a18c8536697b6a39dd63ec220e)
+			Operation on object of type com.amazonaws.internal.SdkDigestInputStream object not completed. Expected call to read
+			at statement: specialinvoke $r32.<com.amazonaws.services.s3.model.S3ObjectInputStream: void <init>(java.io.InputStream)>($r33)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #bc911027746bbca33e30d04c2c5273dae5918b62d404590ecdd11f0e656c8297)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: specialinvoke $r30.<com.amazonaws.services.s3.internal.DigestValidationInputStream: void <init>(java.io.InputStream,java.security.MessageDigest,byte[])>($r33, $r22, $r21)
+
+
+Findings in Java Class: okhttp3.internal.platform.AndroidPlatform
+
+	 in Method: javax.net.ssl.SSLContext getSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #550ae3fdea1c4d2288ec1f915c72c051d669a1bd036208124d156484fb5fa278)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer58335)
+
+
+Findings in Java Class: okhttp3.internal.platform.Platform
+
+	 in Method: javax.net.ssl.SSLContext getSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #cd400fa985572e52c2ca84c9c81be407e04c78a5eef599b4e5b6cfd5368032e1)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer58338)
+
+
+Findings in Java Class: okhttp3.internal.platform.ConscryptPlatform
+
+	 in Method: javax.net.ssl.SSLContext getSSLContext()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #c08ac4e6c1b4e46a987780a4d9c7f4c16c85705c3bf519b6d4f658cd19ee89b5)
+			First parameter (with value "TLSv1.3") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer58340, $r2)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #a0d67b62140a3fc6fef0ebc8875027402d22a6208e54891c7f34eaeb1a81c6c0)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer58341, $r2)
+
+
+Findings in Java Class: com.linkplay.statisticslibrary.utils.StatisticsAESUtil
+
+	 in Method: java.io.File encryptFile(java.io.File,java.lang.String,java.lang.String,java.lang.String)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #99bdb560067b7559c136fef518502d8ea40772f1ddb405ef146c168487fb0553)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r24.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r0, $r8)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #88e5d912c206c8a9fc06f2f522c6efa542f61194441b29f078ad18a459f42073)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: specialinvoke $r24.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r0, $r8)
+
+
+	 in Method: javax.crypto.Cipher initAESCipher(java.lang.String,int)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r11.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r3, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer67763)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #99bdb560067b7559c136fef518502d8ea40772f1ddb405ef146c168487fb0553)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer67762)
+
+
+Findings in Java Class: com.fmxos.platform.xiaoyaos.b
+
+	 in Method: java.lang.String a(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #b69cde53dd3139f2734f5f03c97644a92bf453a32d94cabd91c33a6c61d1253f)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer68975)
+
+
+	 in Method: byte[] a(byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer68978)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #c86478e93e8d2fa694fc544bdbe492fcad1897a8977b202d5d8498775a337db9)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r1 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal(byte[])>($r1)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #c588b5d6228cfd03158963d31e2f2525f4a8bc1704fca43a38143d5bbf116c1f)
+			Second parameter (with value "HmacSHA1") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer68978)
+
+
+Findings in Java Class: com.wifiaudio.utils.okhttp.k
+
+	 in Method: java.lang.String a(java.lang.String,java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r6.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer69126)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #4ab286baa439ee74cccbb1513dba6f84e934becde8e8565966f2790525cec736)
+			First parameter (with value "AES/CBC/NoPadding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer69123)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer69124, $r0, $r6)
+
+
+Findings in Java Class: com.wifiaudio.utils.okhttp.DeviceSecurityConfig$sha1$2
+
+	 in Method: java.lang.String invoke()
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #5557d269aabd09f704a88623303ed4e4ed92d04d1d6464e0561be4b032cc917d)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r11 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer69209)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.MD5DigestCalculatingInputStream
+
+	 in Method: void <init>(java.io.InputStream)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e186c76d8677d1d855754a399e3048807fd81b8ecc6bcbb50672f010d4fdd556)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer70722)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #e186c76d8677d1d855754a399e3048807fd81b8ecc6bcbb50672f010d4fdd556)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer70722)
+
+
+Findings in Java Class: com.fmxos.platform.f.a.d
+
+	 in Method: java.lang.String a(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #2ff34fe6323104aa3d1b148f24646aa150fad0a255330ac1f990a921754b4878)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer71818)
+
+
+Findings in Java Class: org.teleal.cling.model.f
+
+	 in Method: java.net.URI g(org.teleal.cling.model.meta.Device)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #4f76c463fdf620395b76a67f4d39dd5a1c23eb99ee3a74eb10e27409690e39d8)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r10 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer85591)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleEO
+
+	 in Method: com.amazonaws.services.s3.model.PutObjectResult putObjectUsingInstructionFile(com.amazonaws.services.s3.model.PutObjectRequest)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r2 = staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: com.amazonaws.services.s3.model.PutObjectRequest createInstructionPutRequest(com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.internal.crypto.EncryptionInstruction)>($r2, $r3)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r2 = staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: com.amazonaws.services.s3.model.PutObjectRequest createInstructionPutRequest(com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.internal.crypto.EncryptionInstruction)>($r2, $r3)
+
+
+	 in Method: com.amazonaws.services.s3.model.CompleteMultipartUploadResult completeMultipartUploadSecurely(com.amazonaws.services.s3.model.CompleteMultipartUploadRequest)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r20 = staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: com.amazonaws.services.s3.model.PutObjectRequest createInstructionPutRequest(java.lang.String,java.lang.String,com.amazonaws.services.s3.internal.crypto.EncryptionInstruction)>($r18, $r19, $r17)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r20 = staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: com.amazonaws.services.s3.model.PutObjectRequest createInstructionPutRequest(java.lang.String,java.lang.String,com.amazonaws.services.s3.internal.crypto.EncryptionInstruction)>($r18, $r19, $r17)
+
+
+	 in Method: com.amazonaws.services.s3.model.InitiateMultipartUploadResult initiateMultipartUploadSecurely(com.amazonaws.services.s3.model.InitiateMultipartUploadRequest)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r13 = virtualinvoke $r6.<javax.crypto.Cipher: byte[] getIV()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r13 = virtualinvoke $r6.<javax.crypto.Cipher: byte[] getIV()>()
+
+
+	 in Method: com.amazonaws.services.s3.model.PutObjectResult putObjectUsingMetadata(com.amazonaws.services.s3.model.PutObjectRequest)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: void updateMetadataWithEncryptionInstruction(com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.internal.crypto.EncryptionInstruction)>($r1, $r2)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: void updateMetadataWithEncryptionInstruction(com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.internal.crypto.EncryptionInstruction)>($r1, $r2)
+
+
+	 in Method: com.amazonaws.services.s3.model.UploadPartResult uploadPartSecurely(com.amazonaws.services.s3.model.UploadPartRequest)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $l0 = staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: long calculateCryptoContentLength(javax.crypto.Cipher,com.amazonaws.services.s3.model.UploadPartRequest)>($r14, $r1)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $l0 = staticinvoke <com.amazonaws.services.s3.internal.crypto.EncryptionUtils: long calculateCryptoContentLength(javax.crypto.Cipher,com.amazonaws.services.s3.model.UploadPartRequest)>($r14, $r1)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.crypto.EncryptionUtils
+
+	 in Method: com.amazonaws.services.s3.internal.crypto.ByteRangeCapturingInputStream getEncryptedInputStream(com.amazonaws.services.s3.model.UploadPartRequest,com.amazonaws.services.s3.internal.crypto.CipherFactory)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $i2 = virtualinvoke $r9.<javax.crypto.Cipher: int getBlockSize()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $i2 = virtualinvoke $r9.<javax.crypto.Cipher: int getBlockSize()>()
+
+
+	 in Method: javax.crypto.Cipher createSymmetricCipher(javax.crypto.SecretKey,int,java.security.Provider,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r0, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedGCM
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r0, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r0, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedOAEP
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r0, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r5.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+
+
+	 in Method: javax.crypto.SecretKey generateOneTimeUseSymmetricKey()
+		RequiredPredicateError violating CrySL rule for javax.crypto.KeyGenerator
+			Second parameter was not properly generated as randomized
+			at statement: virtualinvoke $r1.<javax.crypto.KeyGenerator: void init(int,java.security.SecureRandom)>($i0, $r2)
+
+
+	 in Method: byte[] getEncryptedSymmetricKey(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer98314, $r12)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.RepeatableCipherInputStream
+
+	 in Method: java.io.FilterInputStream newCipherInputStream(java.io.InputStream,com.amazonaws.services.s3.internal.crypto.CipherFactory)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #4b12e4aad9b3446972a0d379a337c7b99d403846bdf3bbada85ac47ca1b72217)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r1.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r0, $r2)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #1708f07f46fe9a740dd95ec5e1ce098d14e63484f2cd43b10eebbe6ccb3aee8b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r1.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>($r0, $r2)
+
+
+Findings in Java Class: com.bumptech.glide.load.resource.bitmap.Downsampler
+
+	 in Method: boolean shouldUsePool(java.io.InputStream)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r0.<java.io.InputStream: void reset()>()
+
+
+	 in Method: android.graphics.Bitmap decode(java.io.InputStream,com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool,int,int,com.bumptech.glide.load.DecodeFormat)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: $r17 = specialinvoke r0.<com.bumptech.glide.load.resource.bitmap.Downsampler: android.graphics.Bitmap downsampleWithSize(com.bumptech.glide.util.MarkEnforcingInputStream,com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream,android.graphics.BitmapFactory$Options,com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool,int,int,int,com.bumptech.glide.load.DecodeFormat)>($r10, $r8, $r7, $r2, $i3, $i4, $i0, $r3)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r9.<com.bumptech.glide.util.ExceptionCatchingInputStream: void release()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r9.<com.bumptech.glide.util.ExceptionCatchingInputStream: void reset()>()
+
+
+	 in Method: android.graphics.Bitmap$Config getConfig(java.io.InputStream,com.bumptech.glide.load.DecodeFormat)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: $z1 = virtualinvoke $r3.<com.bumptech.glide.load.resource.bitmap.ImageHeaderParser: boolean hasAlpha()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r0.<java.io.InputStream: void reset()>()
+
+
+Findings in Java Class: com.amazonaws.internal.SdkInputStream
+
+	 in Method: void abortIfNeeded()
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: $r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke r0.<com.amazonaws.internal.SdkInputStream: void abort()>()
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.AWSS3V4Signer
+
+	 in Method: long getContentLength(com.amazonaws.Request)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r1.<java.io.InputStream: void reset()>()
+
+
+Findings in Java Class: com.amazonaws.util.NamespaceRemovingInputStream
+
+	 in Method: int read()
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to java.io.InputStream: int read(byte[],int,int), javax.crypto.CipherInputStream: int read(), java.io.InputStream: int read(byte[]), java.io.FilterInputStream: int read(byte[],int,int), java.io.InputStream: int read(), javax.crypto.CipherInputStream: int read(byte[]), java.io.FilterInputStream: int read(byte[]), java.io.FilterInputStream: int read(), javax.crypto.CipherInputStream: int read(byte[],int,int)
+			at statement: $i0 = virtualinvoke $r2.<java.io.InputStream: int read()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r2.<java.io.InputStream: void reset()>()
+
+
+Findings in Java Class: com.amazonaws.auth.AbstractAWSSigner
+
+	 in Method: byte[] getBinaryRequestPayloadWithoutQueryParams(com.amazonaws.Request)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r2.<java.io.InputStream: void reset()>()
+
+
+	 in Method: byte[] hash(java.io.InputStream)
+		IncompleteOperationError violating CrySL rule for java.security.DigestInputStream (on Object #9a42f5fce6ab5e869256ff69a376ac48773f99a18c8536697b6a39dd63ec220e)
+			Operation on object of type com.amazonaws.internal.SdkDigestInputStream object not completed. Expected call to read
+			at statement: $r2 = virtualinvoke $r3.<java.security.DigestInputStream: java.security.MessageDigest getMessageDigest()>()
+
+
+	 in Method: byte[] sign(byte[],byte[],com.amazonaws.auth.SigningAlgorithm)
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #6b3c87f68fd523caaa8a9607dfd4dc12c93d40c54f1dc4cbcf8b597ac93eef4b)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #13e7ed320837264340b1c5899ecaf6f2a8a94354dfa1852b00167b9a72933d17)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r2 = virtualinvoke $r6.<javax.crypto.Mac: byte[] doFinal(byte[])>($r2)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #6b3c87f68fd523caaa8a9607dfd4dc12c93d40c54f1dc4cbcf8b597ac93eef4b)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r3, $r5)
+
+
+Findings in Java Class: com.amazonaws.auth.AwsChunkedEncodingInputStream
+
+	 in Method: void reset()
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke r0.<com.amazonaws.internal.SdkInputStream: void abortIfNeeded()>()
+
+
+Findings in Java Class: com.amazonaws.http.AmazonHttpClient
+
+	 in Method: void resetRequestAfterError(com.amazonaws.Request,java.lang.Exception)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r4.<java.io.InputStream: void reset()>()
+
+
+Findings in Java Class: com.amazonaws.auth.AWS4Signer
+
+	 in Method: java.lang.String calculateContentHash(com.amazonaws.Request)
+		IncompleteOperationError violating CrySL rule for javax.crypto.CipherInputStream (on Object #dd93ac7b5f6405010ba7f19507b18447c394a4a794455f5cb64b0e82a345ea82)
+			Operation on object of type javax.crypto.CipherInputStream object not completed. Expected call to read
+			at statement: virtualinvoke $r2.<java.io.InputStream: void reset()>()
+
+
+Findings in Java Class: org.eclipse.paho.client.mqttv3.internal.websocket.c
+
+	 in Method: byte[] e(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #1c3d39a48bebe554860e8fdf400c074b2d942c0983bd9ae3248bf0090d827745)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer96943)
+
+
+Findings in Java Class: okio.ByteString
+
+	 in Method: okio.ByteString digest(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #b336d574501b28a5bd90db22472c23a68acb0c1b99c4f14746fdc2a23c69a24e)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #b336d574501b28a5bd90db22472c23a68acb0c1b99c4f14746fdc2a23c69a24e)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial
+
+	 in Method: javax.crypto.SecretKey cek(byte[],java.lang.String,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r11.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r0, $r1)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #321e6bdf678b35b172e92cf0b2919ac20ecc4f5558f28a6daba23d682848655a)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r8 = virtualinvoke $r7.<javax.crypto.Cipher: java.security.Key unwrap(byte[],java.lang.String,int)>($r0, $r1, varReplacer98377)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #e5db438eb4b571287e6fd3c1373b978aba12a3db2b24db51a3caea7446187504)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r8 = virtualinvoke $r7.<javax.crypto.Cipher: java.security.Key unwrap(byte[],java.lang.String,int)>($r0, $r1, varReplacer98377)
+
+		ForbiddenMethodError violating CrySL rule for javax.crypto.Cipher
+			Detected call to forbidden method void init(int,java.security.Key) of class javax.crypto.Cipher. Instead, call method <javax.crypto.Cipher: void init(int,java.security.Key)>.
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer98376, $r8)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer98376, $r8)
+
+
+Findings in Java Class: org.eclipse.paho.client.mqttv3.t.r.a
+
+	 in Method: javax.net.ssl.SSLContext m(java.lang.String)
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #c07438c0c726a06873c44277809cbe8ce2a9e61a8ab10acd8ed26b23bd7de27f)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #c07438c0c726a06873c44277809cbe8ce2a9e61a8ab10acd8ed26b23bd7de27f)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.KeyManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r17, $r25, varReplacer98664)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r17, $r25, varReplacer98664)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #b86a0ea90f3547987ad1f567e1418fc46c5f408a3f43c8329195b1d9d8546d7)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>($r4, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r24.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>($r14)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #dc56aad2a84fb525c8d92caa218da9bb103c90acf9e6406f90d7494ebe206c49)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r14.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r15, $r10)
+
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #c07438c0c726a06873c44277809cbe8ce2a9e61a8ab10acd8ed26b23bd7de27f)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #c07438c0c726a06873c44277809cbe8ce2a9e61a8ab10acd8ed26b23bd7de27f)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r16.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r14, $r10)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #b0283d7078b3ce9de4b0e07b965441aed6eb87c9111c5171021d9b6c7a46e0e5)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r4)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r17, $r25, varReplacer98664)
+
+
+Findings in Java Class: com.bumptech.glide.load.engine.cache.SafeKeyGenerator
+
+	 in Method: java.lang.String getSafeKey(com.bumptech.glide.load.Key)
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #b5f0e69d82cc02b1b0b25c4403dd2eec883113ae9824d297dc896afc999d7e50)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[])
+			at statement: $r7 = virtualinvoke $r6.<java.security.MessageDigest: byte[] digest()>()
+
+
+Findings in Java Class: com.fmxos.platform.i.e.a
+
+	 in Method: java.lang.String a(java.lang.Object[])
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #76cd50002b578474cc4143c6068383137a15a087e213be90a2aead90b6b5c126)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r8.<com.fmxos.platform.i.a: void <init>(java.lang.Object)>($r5)
+
+
+Findings in Java Class: com.linkplay.statisticslibrary.utils.ToolUtils
+
+	 in Method: byte[] HmacSHA256(java.lang.String,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer104801)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #a3edaab04bcfede982e9a4a4f3ce9db4b8d3891f9383a21ba30e215d2b604d4e)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r2 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal(byte[])>($r2)
+
+
+Findings in Java Class: com.amazonaws.http.UrlHttpClient
+
+	 in Method: void enableCustomTrustManager(javax.net.ssl.HttpsURLConnection)
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #cccb984457d3b5756edb930c04101adc7f4d1a83f46b985ff4192897732b6b0b)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer105110)
+
+
+Findings in Java Class: com.fmxos.platform.f.c.a
+
+	 in Method: java.lang.String a(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #5671bd9c67b42bab89c5c043360c9d94228b486f89cb495e9ca17d96f56653c5)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer105995)
+
+
+Findings in Java Class: com.fmxos.a.e.a
+
+	 in Method: javax.net.ssl.SSLSocketFactory b()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #d83808490c9e825bee6df5c2aaad217e7b6472c78bafcbb54d7c79d972da0bd0)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r2 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer106904)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer106906, $r9, $r4)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer106906, $r9, $r4)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer106906, $r9, $r4)
+
+
+Findings in Java Class: com.fmxos.a.d.a
+
+	 in Method: java.lang.String a(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #9123612738bead1891620b6536a604edf85bcb2e97355b0a8cf2e5ef825934a)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer110886)
+
+
+	 in Method: byte[] a(byte[],byte[])
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #d24ca82071595def9ce5bf797f00915d91be41b25b78dba17c0bd3e74007322a)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r1 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal(byte[])>($r1)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #f510fe35d0447f499f56f430735d0b33960ca12e93b1433045201af4e2493a2)
+			Second parameter (with value "HmacSHA1") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer110888)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer110888)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase
+
+	 in Method: javax.crypto.SecretKey generateCEK(com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)
+		IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator (on Object #4bf31f25306f4a9d35a492be4f612befc8b544833b01557fa389701c0c907ffb)
+			Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to generateKey
+			at statement: $r2 = virtualinvoke $r5.<javax.crypto.KeyGenerator: java.security.Provider getProvider()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator (on Object #2db08493f3d855d0c32dbe5ec6c105fb586a7e9a2a68ac592134e4e61c362f3a)
+			Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to generateKey
+			at statement: $r2 = virtualinvoke $r5.<javax.crypto.KeyGenerator: java.security.Provider getProvider()>()
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.KeyGenerator
+			Second parameter was not properly generated as randomized
+			at statement: virtualinvoke $r5.<javax.crypto.KeyGenerator: void init(int,java.security.SecureRandom)>($i0, $r7)
+
+		TypestateError violating CrySL rule for javax.crypto.KeyGenerator (on Object #4bf31f25306f4a9d35a492be4f612befc8b544833b01557fa389701c0c907ffb)
+			Unexpected call to method generateKey on object of type javax.crypto.KeyGenerator.
+			at statement: $r12 = virtualinvoke $r5.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator (on Object #4bf31f25306f4a9d35a492be4f612befc8b544833b01557fa389701c0c907ffb)
+			Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to generateKey
+			at statement: virtualinvoke $r5.<javax.crypto.KeyGenerator: void init(int,java.security.SecureRandom)>($i0, $r7)
+
+		TypestateError violating CrySL rule for javax.crypto.KeyGenerator (on Object #2db08493f3d855d0c32dbe5ec6c105fb586a7e9a2a68ac592134e4e61c362f3a)
+			Unexpected call to method generateKey on object of type javax.crypto.KeyGenerator.
+			at statement: $r12 = virtualinvoke $r5.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator (on Object #2db08493f3d855d0c32dbe5ec6c105fb586a7e9a2a68ac592134e4e61c362f3a)
+			Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to generateKey
+			at statement: virtualinvoke $r5.<javax.crypto.KeyGenerator: void init(int,java.security.SecureRandom)>($i0, $r7)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator (on Object #4bf31f25306f4a9d35a492be4f612befc8b544833b01557fa389701c0c907ffb)
+			Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()
+			at statement: $r12 = virtualinvoke $r5.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator (on Object #2db08493f3d855d0c32dbe5ec6c105fb586a7e9a2a68ac592134e4e61c362f3a)
+			Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()
+			at statement: $r12 = virtualinvoke $r5.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+
+
+	 in Method: com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase$SecuredCEK secureCEK(javax.crypto.SecretKey,com.amazonaws.services.s3.model.EncryptionMaterials,java.security.Provider)
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #5c22d9c2994b0b33eb4fcff619ef2053dcd2a1c35f6b203315702c9a398a1b56)
+			First parameter (with value "AESWrap") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r9 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r8)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r9.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer110958, $r17)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #f671a7ec947e4a1520bc886cb4187f961c48b5013ab600899203a7407021588e)
+			First parameter (with value "AESWrap") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r9 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r8, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r9.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.SecureRandom)>(varReplacer110956, $r17, $r10)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r9.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.SecureRandom)>(varReplacer110956, $r17, $r10)
+
+
+Findings in Java Class: com.fmxos.platform.i.a
+
+	 in Method: void <init>(java.lang.Object)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r7.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r6)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer103907, $r5, $r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r5.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r6, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer103907, $r5, $r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedGCM
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer103907, $r5, $r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedOAEP
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer103907, $r5, $r7)
+
+
+Findings in Java Class: com.amazonaws.services.s3.internal.crypto.ContentCryptoScheme
+
+	 in Method: com.amazonaws.services.s3.internal.crypto.CipherLite createCipherLite(javax.crypto.SecretKey,byte[],int,java.security.Provider)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r8.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r1, $r8)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedOAEP
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r1, $r8)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedGCM
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r1, $r8)
+
+
+Findings in Java Class: okhttp3.OkHttpClient
+
+	 in Method: javax.net.ssl.SSLSocketFactory newSslSocketFactory(javax.net.ssl.X509TrustManager)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer43497, $r7, varReplacer43497)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer43497, $r7, varReplacer43497)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer43497, $r7, varReplacer43497)
+
+
+Findings in Java Class: com.e.f.e.c
+
+	 in Method: java.lang.String a(java.lang.String,java.lang.String,android.content.Context)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r7.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r5)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedGCM
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer8304, $r0, $r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedOAEP
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer8304, $r0, $r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer8304, $r0, $r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, $r3)
+
+
+Findings in Java Class: okhttp3.internal.Util
+
+	 in Method: javax.net.ssl.X509TrustManager platformTrustManager()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r1.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer43499)
+
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 47
+	Number of Objects Analyzed: 178
+
+	CryptoAnalysis found the following violations. For details see description above.
+	TypestateError: 13
+	RequiredPredicateError: 76
+	NeverTypeOfError: 9
+	IncompleteOperationError: 52
+	ConstraintError: 40
+	HardCodedError: 7
+	ForbiddenMethodError: 1
+=====================================================================

@@ -1,0 +1,1 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/org.qtproject.qt5/victron/VictronConnect_5.82_Apkpure.apk

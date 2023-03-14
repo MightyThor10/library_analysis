@@ -1,0 +1,128 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.telink.crypto/yeelight/CryptoModified/Yeelight_3.5.2_Apkpure.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "RC4" in com.miot.service.common.crypto.rc4coder.RC4Coder::decrypt.
+***Found: "AES/ECB/NoPadding" in com.telink.crypto.AES::b.
+***Found: "RC4" in com.miot.service.common.crypto.rc4coder.RC4Coder::encrypt.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA1" in com.xiaomi.push.bn::a.
+***Found: "MD5" in com.xiaomi.push.bp::a.
+***Found: "MD5" in x3.d::a.
+***Found: "SHA1" in com.xiaomi.push.bb::b.
+***Found: "SHA-1" in com.google.firebase.crashlytics.internal.common.CommonUtils::B.
+***Found: "MD5" in com.google.android.gms.measurement.internal.xa::t.
+***Found: "SHA1" in d2.a::c.
+***Found: "MD5" in k3.k::n.
+***Found: "MD5" in com.miot.service.common.crypto.rc4coder.Coder::encryptMD5.
+***Found: "SHA" in com.miot.service.common.crypto.rc4coder.Coder::encryptSHA.
+***Found: "MD5" in com.xiaomi.push.bo::a.
+***Found: "SHA1" in com.xiaomi.push.bp::b.
+***Found: "MD5" in org.eclipse.jetty.security.authentication.DigestAuthenticator$Digest::check.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::check.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::digest.
+***Found: "MD5" in u4.m::d.
+***Found: "MD5" in com.miot.service.connection.bluetooth.XMStringUtils::getMd5Digest.
+***Found: "MD5" in com.miot.service.common.crypto.rc4coder.Coder::encryptMD5.
+***Found: "SHA1" in com.miot.service.common.crypto.CloudCoder::hash4SHA1.
+***Found: "SHA1" in com.miot.service.connection.bluetooth.XMStringUtils::getSHA1DigestInLowerCase.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "SHA-1" in k3.k::o.
+***Found: "MD5" in com.yeelight.yeelib.models.v::t.
+***Found: "SHA1" in o0.a::a.
+***Found: "MD5" in com.xiaomi.push.bo::a.
+***Found: "MD5" in com.inuker.bluetooth.library.utils.MD5Utils::MD5_12.
+***Found: "MD5" in g6.c::c.
+***Found: "MD5" in com.xiaomi.push.bp::a.
+***Found: "SHA1" in com.miot.service.connection.bluetooth.XMStringUtils::getSHA1Digest.
+***Found: "MD5" in g6.c::d.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1, 0]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://" in com.xiaomi.push.service.al::b.
+***Found: "http://open.account.preview.n.xiaomi.net" in com.xiaomi.account.openauth.XiaomiOAuthConstants::clinit.
+***Found: "http://" in com.xiaomi.push.service.al::a.
+***Found: "http://account.preview.n.xiaomi.net" in com.xiaomi.account.openauth.XiaomiOAuthConstants::clinit.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "97" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "4" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "72" in com.xiaomi.push.i::clinit.
+***Found: "102" in com.xiaomi.push.i::clinit.
+***Found: "84" in com.xiaomi.push.bt::a.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "84" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "52" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.xiaomi.push.i::clinit.
+***Found: "23" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "32" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "73" in com.xiaomi.push.i::clinit.
+***Found: "18" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "114" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "2" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "97" in com.xiaomi.push.i::clinit.
+***Found: "0" in com.miot.bluetooth.utils.AESCryptUtils::clinit.
+***Found: "68" in com.xiaomi.push.bt::a.
+***Found: "100" in com.xiaomi.push.i::clinit.
+***Found: "84" in com.xiaomi.push.i::clinit.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in Q0 in s6.b::Q0.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.service.bq::a.
+***Found: Untrused PRNG (java.util.Random) in androidx.transition.Explode::calculateOut.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.gy::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.service.bx::a.
+***Found: Untrused PRNG (java.util.Random) in u4.r::d.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.bp::a.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.mipush.sdk.MiPushClient::awakePushServiceByPackageInfo.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.service.bx::a.
+***Found: Untrused PRNG (java.util.Random) in o6.b::D0.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.service.bg$b::a.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.KotlinRandom::init.
+***Found: Untrused PRNG (java.util.Random) in javax.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.yeelight.yeelib.ui.view.LightView::init.
+***Found: Untrused PRNG (java.util.Random) in com.inuker.bluetooth.library.utils.RandomUtils::randFloat.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.s2::n.
+***Found: Untrused PRNG (java.util.Random) in i4.f0::k3.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.account.auth.AuthorizeHelper::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.xa::r0.
+***Found: Untrused PRNG (java.util.Random) in k7.b::init.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.g::clinit.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.e::e.
+***Found: Untrused PRNG (java.util.Random) in miot.bluetooth.security.rc4.CryptoUtils::randomBlock.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.b$a::a.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.registry.a::init.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.push.cj$a::init.
+***Found: Untrused PRNG (java.util.Random) in e0.a::e.
+=======================================

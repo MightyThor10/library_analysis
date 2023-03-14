@@ -1,0 +1,2037 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is too old. Falling back to java.lang.reflect API.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.3.0 or better (Maven group id: org.ow2.asm).
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Ruleset: 
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.PBEKeySpec
+	java.security.spec.MGF1ParameterSpec
+	java.security.MessageDigest
+	javax.crypto.Cipher
+	java.security.KeyPair
+	javax.crypto.SecretKeyFactory
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.SecretKey
+	javax.crypto.spec.IvParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.spec.GCMParameterSpec
+	javax.crypto.spec.SecretKeySpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	java.security.spec.DSAParameterSpec
+	javax.crypto.KeyAgreement
+	java.security.cert.TrustAnchor
+	javax.crypto.spec.DHParameterSpec
+	javax.net.ssl.SSLParameters
+	javax.net.ssl.SSLContext
+	java.security.Key
+	java.security.KeyFactory
+	void
+	java.security.DigestOutputStream
+	java.security.SecureRandom
+	java.security.cert.PKIXParameters
+	java.security.spec.X509EncodedKeySpec
+	javax.crypto.spec.DHGenParameterSpec
+	javax.net.ssl.SSLEngine
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.Signature
+	javax.crypto.CipherOutputStream
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.AlgorithmParameterGenerator
+	javax.crypto.Mac
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.AlgorithmParameters
+	javax.crypto.CipherInputStream
+	java.security.DigestInputStream
+	java.security.spec.ECParameterSpec
+	javax.crypto.KeyGenerator
+	java.security.KeyStore
+	java.security.spec.ECGenParameterSpec
+	java.security.KeyPairGenerator
+	javax.net.ssl.KeyManagerFactory
+	java.security.spec.DSAGenParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r10
+		Type: byte[]
+		Statement: $r10 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r10)
+		Method: <com.xiaomi.push.bb: java.lang.String b()>
+		SHA-256: 30759a380b4e9032e8111e5ba3c4e0b200a1ce675486981fee45583d42eecb0b
+		Secure: false
+	Object:
+		Variable: varReplacer96772
+		Type: java.lang.String
+		Statement: $r3 = virtualinvoke $r2.<javax.crypto.KeyAgreement: javax.crypto.SecretKey generateSecret(java.lang.String)>(varReplacer96772)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: javax.crypto.SecretKey getSecret(java.security.PublicKey,java.security.PrivateKey)>
+		SHA-256: b80c2f4e8d911aac535eb15e9866543973e903dc6b764d062bdba0fd8cedab24
+		Secure: false
+	Object:
+		Variable: varReplacer22399
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer22399)
+		Method: <com.xiaomi.push.i: javax.crypto.Cipher a(byte[],int)>
+		SHA-256: 89485130e4b7603ba67d29bd5c25dbf798b9a38467fdbb4c507f9dd7312cd4df
+		Secure: false
+	Object:
+		Variable: varReplacer89622
+		Type: java.lang.String
+		Statement: specialinvoke $r2.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r6, varReplacer89622)
+		Method: <miot.bluetooth.security.standardauth.BleStandardAuthRegisterConnector: void writeDidToDevice(byte[],com.inuker.bluetooth.library.connect.response.BleWriteResponse)>
+		SHA-256: cb53a842a7ddab391723ce2653a7649e0cd50714146a35f06a2818f2014ddfa9
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: javax.crypto.spec.SecretKeySpec generateKey(java.lang.String)>
+		SHA-256: 20d787da07c115f18195679e0d08ee7e4685f7299f8340d9f70c4cc7e7ba6abf
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.xiaomi.push.bo: java.lang.String a(java.lang.String)>
+		SHA-256: e6721fb526e203267c9879d2cbaa1d7def89f94fb634f30163df89e9fae967de
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer47902)
+		Method: <com.xiaomi.push.bo: byte[] a(java.lang.String)>
+		SHA-256: 401bc889f5ac7c9dfd8070eced1ea4c322eb1acc886af8d0d728398bb12e1944
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r8 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r3)
+		Method: <s6.b: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)>
+		SHA-256: ff9357406dbf3adbc90450a10f7f8787cf4de02e52a2ab5d2e5d9da8f6e90d8
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.xiaomi.push.bp: java.lang.String a(java.lang.String)>
+		SHA-256: 7e019a8bbabf4cfdd5c0e35c995da110c05703de033a126a024611b9b8d912f
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer79994)
+		Method: <com.miot.service.common.deviceId.DeviceIdCompat: java.lang.String getSHA2Digest(java.lang.String)>
+		SHA-256: b286e85e0376bd7edff02341e6552089d5c3a576149541d0bcb715535adcd680
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] decrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: f20b8c99a04d5bf99f17c84dc1e615e8ae41843122d832c0225ec6a450c08b73
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer20666)
+		Method: <com.xiaomi.push.bp: java.lang.String a(java.lang.String)>
+		SHA-256: d7bdb4fadafcf0addb829207b9b66dc1cefa010f995a2902bf3cd06c9d495fb8
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] encrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: 2b54fb41fecfae21081268200713b0bf6fb4f9a9ae739b754ed64cdaef5bebec
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.yeelight.yeelib.models.v: java.lang.String t(java.lang.String)>
+		SHA-256: 36f495f73976ab27fcd687e64594c8a924e113ffcf50077908e7af0ad0b4b35c
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer109099)
+		Method: <d6.a: javax.net.ssl.SSLContext l()>
+		SHA-256: a81a79c834d1131d7968aed3974c6153040b67293824890ebaa77f1da30f5c74
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <com.google.firebase.crashlytics.internal.common.CommonUtils: java.lang.String u(byte[],java.lang.String)>
+		SHA-256: 9c4a444c085559a9f94be1ed3207ff1e9fa0d6d125e7070e35cc83fef3c665c7
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: java.security.PublicKey
+		Statement: $r8 = virtualinvoke $r7.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r6)
+		Method: <miot.bluetooth.security.utils.ECCPointConvert: java.security.interfaces.ECPublicKey fromUncompressedPoint(byte[],java.security.spec.ECParameterSpec)>
+		SHA-256: 38093944aa06ba8910c54ffec95578daafd84f1362d691accaf191081d7f786a
+		Secure: false
+	Object:
+		Variable: $r23
+		Type: java.security.cert.PKIXBuilderParameters
+		Statement: specialinvoke $r23.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>($r8, $r5)
+		Method: <org.eclipse.jetty.util.security.b: void f(java.security.cert.Certificate[])>
+		SHA-256: ed72bf00619e697d4e9fd19bf80fedabdfef8c22b717e8a13975f3e8594f3637
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.xiaomi.push.bp: java.lang.String b(java.lang.String)>
+		SHA-256: fa219942dbe6974ba4600c561515ca39855568c73672bb57b4929d50c67432cf
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.KeyAgreement
+		Statement: $r2 = staticinvoke <javax.crypto.KeyAgreement: javax.crypto.KeyAgreement getInstance(java.lang.String)>(varReplacer96774)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: javax.crypto.SecretKey getSecret(java.security.PublicKey,java.security.PrivateKey)>
+		SHA-256: 1d90153e6fef8ec37c417f9e0f605087d12f26dbc72795ad760cdc51e591bc54
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer89317)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: javax.crypto.spec.SecretKeySpec generateKey(java.lang.String)>
+		SHA-256: 17302ed2f861109f41746482af69bb76f2b9fa08b365d6ffa026a89094d111cc
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.Cipher
+		Statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer38105)
+		Method: <com.xiaomi.push.service.bs: java.lang.String a(java.lang.String)>
+		SHA-256: 80ed6ccd6ebc8a7f93e2f4410f9553477d723f5a3891424ddb22e03d1800de27
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r0.<java.security.SecureRandom: void <init>()>()
+		Method: <com.miot.service.common.crypto.CloudCoder: void <clinit>()>
+		SHA-256: e39eef973230b5dfc60cd3f1d1454c244bad3f60341f5337713d19d8dd1da235
+		Secure: true
+	Object:
+		Variable: $r8
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r1)
+		Method: <miot.bluetooth.security.utils.Hkdf: void init(byte[],byte[])>
+		SHA-256: aec0fe01be7388d3fdd30a14cc709faa29568d538a18a94149a42be4f5434a37
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r1.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r0, $i2, $i3)
+		Method: <com.xiaomi.push.service.bs: byte[] a(javax.crypto.Cipher,int,byte[],int)>
+		SHA-256: e2dc44a7aed98bc87950d9ad2a3a5d17bfe88de501c7a13852ca8f46b7d8a8b9
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r8 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r3)
+		Method: <s6.b: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)>
+		SHA-256: ff9357406dbf3adbc90450a10f7f8787cf4de02e52a2ab5d2e5d9da8f6e90d8
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.telink.crypto.AES: byte[] b(byte[],byte[])>
+		SHA-256: bd7f803ef00b2803d54e2ad9480134bd427bebd0876dc00c4cc2fdb42ab7ab4e
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer45206)
+		Method: <com.miot.service.common.crypto.rc4coder.Coder: byte[] sha256Hash(byte[])>
+		SHA-256: dae5f049e865b7e06d32bd66590f75f5c9d5c757e5d87abe7ecad5b6cbe68de5
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.xiaomi.push.i: byte[] a(byte[],byte[])>
+		SHA-256: be89968b650ae44c4142096e6ca3c09d237343665a21869cd8d45d7380739460
+		Secure: false
+	Object:
+		Variable: varReplacer73073
+		Type: java.lang.String
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer73073)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: byte[] sha256HMAC(byte[],byte[])>
+		SHA-256: c5ab8ca5bff2820a7d200071db2d2acf3b803fefbac83d6b9210f9ef87d8e84d
+		Secure: false
+	Object:
+		Variable: varReplacer111342
+		Type: java.lang.String
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer111342)
+		Method: <d2.a: java.security.PublicKey e(java.lang.String)>
+		SHA-256: d830bbc081d2f3efc39a771ce78d2789c84da60cc9fed373f1f8500d0d0abca
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer59020)
+		Method: <com.xiaomi.push.bp: java.lang.String a(byte[])>
+		SHA-256: bef1dc67e04a16d826da26c0a12fdc797ba5e23ded13d83ec8326f9da506f99
+		Secure: false
+	Object:
+		Variable: varReplacer38113
+		Type: java.lang.String
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer38113)
+		Method: <com.xiaomi.push.service.bs: void <clinit>()>
+		SHA-256: 2f4a8f9f569a2f6b097ac45aae6b74b6129ea7405ef80efbb3508e1ba1095ae8
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <u4.m: java.lang.String d(java.io.File)>
+		SHA-256: eff4fc377c1fd40dbce15653e7cf550ee8042b6fd95c18e58ca56b399e60f764
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] encrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: 86d10d8a632bd0f36d52ff36c2829a70cf4e96ee9202fdcbacfe57199cb9cab4
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.xa: void i()>
+		SHA-256: a7c47aa93815b564f3ef4323c0cb9d73745e22c5766531747b42468d01f23086
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <k3.k: okio.ByteString o(okio.ByteString)>
+		SHA-256: d1252e268380754ccd02cb80bb4eded3fa283ab79f0129439febff87b2d97705
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r4)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: byte[] RSAEncrypt(java.lang.String)>
+		SHA-256: 65a6cf8a55da8a55e7e311b40dd7e908d07b62432bf439e7b97b8d5d71e6312e
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.KeyPair
+		Statement: $r2 = virtualinvoke $r1.<java.security.KeyPairGenerator: java.security.KeyPair generateKeyPair()>()
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: java.security.KeyPair generateEcc256KeyPair()>
+		SHA-256: 3d1371a67240061e473908b7e78f35304de034d6468c436a64f59e2eac27af25
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: byte[] RSADecrypt(byte[])>
+		SHA-256: 52801bdd6ac6e34b0e174b877e94f00fae812298b9272f523328ed587ffd3b5a
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer65227)
+		Method: <com.miot.service.common.crypto.CloudCoder: java.lang.String hash4SHA1(java.lang.String)>
+		SHA-256: e7e7d13643ed921efca6d86f5dc2bf0650a3c674430b73e7600b6cb167e893ac
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r3.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+		Method: <com.xiaomi.push.i: javax.crypto.Cipher a(byte[],int)>
+		SHA-256: df8f79a03d4e35cc94dd15bcd0273a1dcc0820269379a57ba541e845c90e8aeb
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.lang.String
+		Statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, $r1)
+		Method: <miot.bluetooth.security.utils.Hkdf: void init(byte[],byte[])>
+		SHA-256: d0fbcaa2a219482de2c7fcd02482d39c672f90e379828a3c8feb8fb9f7e19977
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r1.<java.security.SecureRandom: void nextBytes(byte[])>($r2)
+		Method: <miot.bluetooth.security.standardauth.BleStandardAuthRegisterConnector: byte[] generateAppRandom()>
+		SHA-256: b0911afd73b58e7c01c8a0cdd5be4a86de1ff27acca18575d605038b33d35027
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.SSLContext
+		Statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer109096)
+		Method: <d6.f: javax.net.ssl.SSLContext l()>
+		SHA-256: b09d4149a366c9a0044154abab42a9b0d76a9ff47281c1d2e8cc7098a35dfb55
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>($r20, $r5)
+		Method: <s6.b: void u0()>
+		SHA-256: 5e3cc71e509fea7c1cb40a01e9abd395cf11f87355f53c21a2bb0adbf0a292d
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.PublicKey
+		Statement: $r7 = virtualinvoke $r6.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: java.security.interfaces.RSAPublicKey loadPublicKey(java.lang.String)>
+		SHA-256: aeb6eaf1f3d98cd2c47694a0f874586eae19005aaaf2a3f36ee49b7422ed1c7e
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r1)
+		Method: <com.telink.crypto.AES: byte[] b(byte[],byte[])>
+		SHA-256: a354dc945cb56412a3e3ade3d78d396e93a0b036f298cee40f649e9f9bf86eb6
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: javax.crypto.Mac
+		Statement: $r7 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>($r1)
+		Method: <miot.bluetooth.security.utils.Hkdf: void init(byte[],byte[])>
+		SHA-256: e5e73ad57242855731bf02dd701730f70fe5807b2433b147ecb2919b9d772db5
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke $r7.<java.security.MessageDigest: byte[] digest(byte[])>($r8)
+		Method: <com.google.android.gms.measurement.internal.l9: java.lang.String o(java.lang.String)>
+		SHA-256: 519f84d7e4f20df9dc4b8b76b2268bd269919f9135d78b1a2593ae88575a4e2d
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>($r2)
+		Method: <miot.bluetooth.security.utils.Hkdf: javax.crypto.Mac createMac()>
+		SHA-256: 99b9886fd0158b4ea2aa95f95aca6e32d4dcf3e21abcab6fac69df86d434e971
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.KeyStore
+		Statement: $r9 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r0)
+		Method: <org.eclipse.jetty.util.security.a: java.security.KeyStore a(java.io.InputStream,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 645c49336a1f3f800f2cedf6d3d0b4d8b4f8bd74cf2f8ef6b8770f91fc98ec30
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer107850)
+		Method: <d2.a: java.lang.String c(java.security.PublicKey)>
+		SHA-256: eb626e54d6f161ac57bddf3f42dbce036c391641e4ff7b3ed7466280600fe0e7
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer109093, $r2)
+		Method: <d6.b: javax.net.ssl.SSLContext l()>
+		SHA-256: e1030feb14f7a1f210270416986a1dc8c65cafbc8d8a55204b03c1077c5ea9ff
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56525)
+		Method: <com.google.android.gms.measurement.internal.xa: java.security.MessageDigest t()>
+		SHA-256: 2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: $r4 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>($r3)
+		Method: <s6.b: javax.net.ssl.KeyManager[] F0(java.security.KeyStore)>
+		SHA-256: 13537c6138a4e54ffcefc8eb20c005e044a85e57efe14b0ab492dd8643f9fd90
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r4.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+		Method: <d2.a: java.security.PublicKey e(java.lang.String)>
+		SHA-256: 673b866c5d914d916334556e20d8f290cc38957afe8c80a62bb88f1c4c5653fb
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.KeyFactory
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer38113)
+		Method: <com.xiaomi.push.service.bs: void <clinit>()>
+		SHA-256: fef0a2886e70fa712aca50700cdfe80a2e09ba9d6d7688bf7ba065a4e2f98461
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.xiaomi.push.bo: byte[] a(java.lang.String)>
+		SHA-256: 4b1c87a06efef5a1f87dbe4a1fc6c59c1c724ba2ab5e47a9f402fa08270adf6d
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r1)
+		Method: <com.google.android.gms.measurement.internal.sa: long x(byte[])>
+		SHA-256: a8c5c6221e955524682f2250a59e2b6fac39afd2f65e13e7c4a2be00fdb917ab
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] decrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: d78c0d269126829d0661df4ead3f16552fc1945b8536c10540641850433a2e8e
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer73074)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: byte[] sha256HMAC(byte[],byte[])>
+		SHA-256: aeb65e088f882669496b8ce88429ced32f41fed364d2b708ea183bbf58e46475
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <d2.a: java.lang.String c(java.security.PublicKey)>
+		SHA-256: 32b531627a95be97c930be903a9c6e7e2bc5b302e92c0920cccac940955dcbe7
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: java.security.MessageDigest
+		Statement: $r5 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer82739)
+		Method: <g6.c: java.lang.String d(java.lang.String,org.eclipse.jetty.client.j,g6.d,java.util.Map)>
+		SHA-256: 6ff7f082c12772aab46c042e60a7582ee04c20268258c001128fe82ec0d6c869
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer89340)
+		Method: <miot.bluetooth.security.BleMeshRegisterConnector: byte[] getSHA2Digest(byte[])>
+		SHA-256: fd2135ca1f7d58c4e235fa46d6662eee526fa8dcc3e49a600023ae46b8dcfdc8
+		Secure: true
+	Object:
+		Variable: varReplacer6437
+		Type: java.lang.String
+		Statement: $r6 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer6437)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: java.security.interfaces.RSAPublicKey loadPublicKey(java.lang.String)>
+		SHA-256: ac4feea95a75f1d3554cc4479ac18fb768f458c270e0b4c7df3b558134a89103
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.xiaomi.push.i: byte[] b(byte[],byte[])>
+		SHA-256: c1b2c77c1c85577f5c453f4c29fee277c2621c5d8274fb196ef10bc58c9664a1
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.xiaomi.push.bp: java.lang.String a(byte[])>
+		SHA-256: d5e17aa99becddc84376e4202d957a078c2b2e6d4b1856ecd70fe2a466651d28
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <miot.bluetooth.security.BleMeshRegisterConnector: byte[] getSHA2Digest(byte[])>
+		SHA-256: 3be7ec39e4a03b84813d0f2710d624f13f2cb2c598492e83f564444ccba7cd74
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.KeyStore
+		Statement: $r1 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r0)
+		Method: <n4.e: com.yeelight.yeelib.managers.b a()>
+		SHA-256: 586d28e34b266b6a346496f0b9382d670d6982c0149d272791813c6af7c75bcb
+		Secure: true
+	Object:
+		Variable: varReplacer84247
+		Type: java.lang.String
+		Statement: $r7 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer84247)
+		Method: <miot.bluetooth.security.utils.ECCPointConvert: java.security.interfaces.ECPublicKey fromUncompressedPoint(byte[],java.security.spec.ECParameterSpec)>
+		SHA-256: dd357071796478d6a9274f6a9d43f5965131902aa2a2af2fe4f101cb29a1e476
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke $r1.<java.security.SecureRandom: void nextBytes(byte[])>($r2)
+		Method: <miot.bluetooth.security.standardauth.BleStandardAuthLoginConnector: byte[] generateAppRandom()>
+		SHA-256: 159d34ff8169b4b67b3ea37a8493cb2a7b85beb19e31124c59abc870b0eb9d06
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <miot.bluetooth.security.standardauth.BleStandardAuthRegisterConnector: byte[] generateAppRandom()>
+		SHA-256: 6946baf09b15b415ede091b3a66aff2f1d476909b441aa37cc2b8d0c6846fd22
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r1.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r0, $i2, $i3)
+		Method: <com.xiaomi.push.service.bs: byte[] a(javax.crypto.Cipher,int,byte[],int)>
+		SHA-256: 609a953dd4ed7773d2ee040e4f172c009fedc1194461758d9399bb67630abe1f
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.google.firebase.crashlytics.internal.common.CommonUtils: java.lang.String u(byte[],java.lang.String)>
+		SHA-256: 3f2ffd9200f744ec64c06fa5fae0d4df347ac61dd2258a675f2e61d694f98b8
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r0.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r5)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: java.security.interfaces.RSAPublicKey loadPublicKey(java.lang.String)>
+		SHA-256: a10524d06a3309d16388df2ff9dfd694ad1b93ae56059cc16673e20b675a053
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.lang.String
+		Statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r1)
+		Method: <miot.bluetooth.security.utils.Hkdf: void init(byte[],byte[])>
+		SHA-256: 37a7e8b167614bc5670dfa49794c319f95870c2ae8330796ad8834ddedc74f4b
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.miot.service.common.deviceId.DeviceIdCompat: java.lang.String getSHA2Digest(java.lang.String)>
+		SHA-256: ddd6196e9463157e97ed61f63f07d60f36171cc8ab0c58f438301bbfb9d2c422
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <com.xiaomi.push.bn: java.lang.String a(java.lang.String)>
+		SHA-256: 9cf23ec25bd2b9e354497975111130aa7cc4b402687f97a48283b7c1dc686173
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.security.KeyFactory
+		Statement: $r6 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer6437)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: java.security.interfaces.RSAPublicKey loadPublicKey(java.lang.String)>
+		SHA-256: 825eea65a41ec23405865fc991741935b38c86f91a2558764d88eb406a2238e4
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52003)
+		Method: <com.xiaomi.account.auth.AuthorizeHelper: byte[] encryptHMACSha1(byte[],byte[])>
+		SHA-256: c89a86011560148cf75e604265b0995cc4e94e0a153a554a795f2b9974134267
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: byte[]
+		Statement: $r7 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest(byte[])>($r7)
+		Method: <o0.a: byte[] a(android.content.Context,java.lang.String)>
+		SHA-256: 81fc3ac9117d5c1c6ca5d25c6d2ec08c2107d4ee09af96b36888faef4102f158
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: byte[]
+		Statement: $r7 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest()>()
+		Method: <g6.c: java.lang.String d(java.lang.String,org.eclipse.jetty.client.j,g6.d,java.util.Map)>
+		SHA-256: 19de653a31aaa6db9d6cb2ee67368d977c3e5d86f7108c0e24d18a8272c8d09
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer67702)
+		Method: <com.yeelight.yeelib.models.v: java.lang.String t(java.lang.String)>
+		SHA-256: 9951fd28dae4a5151bccfc31bbe2a4fb74ffd9bbbcfb3294c9ac8ff9cb83a1ac
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r2.<java.security.SecureRandom: void <init>()>()
+		Method: <o6.b: void D0()>
+		SHA-256: 2ddd9c659f105dde83c3a53b2afb8f1150fd7f2a8427bd66d3c8b0f3a4ba9043
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer102796)
+		Method: <com.squareup.okhttp.u: javax.net.ssl.SSLSocketFactory k()>
+		SHA-256: 587c27ba2d27865d1ac500b5eba35b6e2f4c34831c783858858885995d646ceb
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer109094, $r2)
+		Method: <d6.b: javax.net.ssl.SSLContext l()>
+		SHA-256: e7322a424660b039843cf8cd8838d94762dd39c61b37726007f65fc37824099f
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r2.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r6, varReplacer89622)
+		Method: <miot.bluetooth.security.standardauth.BleStandardAuthRegisterConnector: void writeDidToDevice(byte[],com.inuker.bluetooth.library.connect.response.BleWriteResponse)>
+		SHA-256: 637e1a131262249a5464264162b1ac50de0d77f4de8db9749f52b3e1c266bd99
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r5)
+		Method: <s6.b: void u0()>
+		SHA-256: 8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer7521)
+		Method: <com.telink.crypto.AES: byte[] b(byte[],byte[])>
+		SHA-256: 22cc1f300dbbb071c1d01140c94165395ce3c7766b6b171c94a218b2af6d004d
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer26508)
+		Method: <u4.m: java.lang.String d(java.io.File)>
+		SHA-256: 6b65269b452aae128859522bdd820ec2f1d21d1ed099a509e0feade619304fc6
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.MessageDigest
+		Statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer38486)
+		Method: <com.xiaomi.push.bb: java.lang.String b()>
+		SHA-256: 400d40d3751e7af6b8289070560fa4e433f1306b301e347bb94037a58250499b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer68384)
+		Method: <x3.d: java.lang.String a(byte[])>
+		SHA-256: 7d6cc14e4baef1e6fdf87d3ee6dbd2210d861bba04e68ae570f3bd7ec25f9ef0
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.MessageDigest
+		Statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+		Method: <o0.a: java.security.MessageDigest b(java.lang.String)>
+		SHA-256: 9d61299449a5c33f0daf823e8b16197a9018cbb0e7d8b74e111a926bd5cf9983
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r5)
+		Method: <s6.b: void u0()>
+		SHA-256: 8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df
+		Secure: false
+	Object:
+		Variable: varReplacer52003
+		Type: java.lang.String
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52003)
+		Method: <com.xiaomi.account.auth.AuthorizeHelper: byte[] encryptHMACSha1(byte[],byte[])>
+		SHA-256: e447684083dbf2fabfe4d16e80423d9e0227c49d46f6d24ea92d0eb42b80830
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1759)
+		Method: <com.xiaomi.push.bp: java.lang.String b(java.lang.String)>
+		SHA-256: e5910753fbda57056c056f18d73e9f4f2276a99bd826a616df5b2011afa2c5a2
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.net.ssl.SSLContext
+		Statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer109101)
+		Method: <d6.a: javax.net.ssl.SSLContext l()>
+		SHA-256: d9a3f6e14b7ee06948923033d19976aa0eabdede4dae22a3f1d9e0a30078b643
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer111037)
+		Method: <k3.k: java.lang.String n(java.lang.String)>
+		SHA-256: ebaebd1a8ca31f1ed493bd97920fa857f1d6887f91e0451db0af39e3d22ef16
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <miot.bluetooth.security.standardauth.BleStandardAuthLoginConnector: byte[] generateAppRandom()>
+		SHA-256: 4d1abefbd38125fa4febfa00af709323b3b07dabdfca11d39cbb9118b5f46d
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer33172)
+		Method: <com.xiaomi.account.openauth.internal.DeviceIdHasher: java.lang.String hashDeviceInfo(java.lang.String,int)>
+		SHA-256: 156aea5bc32fe7a75727880b867668c66bf2155bf54d362945b9cbb394aee6c7
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.cert.PKIXBuilderParameters
+		Statement: specialinvoke $r4.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>($r1, $r5)
+		Method: <s6.b: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)>
+		SHA-256: c83ef68989829daafc59bfd04779c68ff127269efba4f97c986e0841cb4c6d9f
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest(byte[])>($r6)
+		Method: <com.google.android.gms.common.r: java.lang.String c(boolean,java.lang.String,com.google.android.gms.common.n)>
+		SHA-256: c9a0a0c3c68a661eb9bb62d4f8ee67fd19e5e7289039864584179c3f280dd455
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.xiaomi.push.i: byte[] a(byte[],byte[])>
+		SHA-256: 3398da6a929a6c5baff835dd841835d6e07c69043a80dfba4b5aca6329a83fa7
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: $r2 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest(byte[])>($r2)
+		Method: <k3.k: java.lang.String n(java.lang.String)>
+		SHA-256: 10f6bc543187ee7897aaf7b170324a731969658ee4097dff7124371a0fd7989b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer25546)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: byte[] RSADecrypt(byte[])>
+		SHA-256: 4d5fa1b6526b48e0b89f12838363c8fd9ce36dcb67570666b03190e31ed9c293
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer96769)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: byte[] AESEncrypt(byte[],byte[],byte[])>
+		SHA-256: f3bd04149150038a23c6d66ceb958d27016dd9bb9c2ba63c561f9c059a6a1e4a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLContext
+		Statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer103077)
+		Method: <com.yeelight.yeelib.managers.b: void <init>(java.security.KeyStore[])>
+		SHA-256: d6dde1026a4b4c501b0a2ef95e5ff52ecdc130e9d153f45ac28caf8276293a6d
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke $r4.<java.security.MessageDigest: byte[] digest(byte[])>($r6)
+		Method: <g6.c: java.lang.String c(org.eclipse.jetty.client.j,g6.d,java.util.Map)>
+		SHA-256: d7fe2726d4b49f833686838a26a52590cdadd44bd852edd55b6daa049b43b2c8
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r2 = virtualinvoke $r1.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <w5.c: javax.net.ssl.X509TrustManager B()>
+		SHA-256: cc11f235f44c3a612843c632d709982118bb1e2105d409628b8ffdf4cc9c740a
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Mac
+		Statement: $r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer52002)
+		Method: <com.xiaomi.account.auth.AuthorizeHelper: byte[] encryptHMACSha1(byte[],byte[])>
+		SHA-256: 20800056e5efba3cbca6c245815fceeba6ec2baee399ad21a16c8b01e346c743
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.lang.Object[]
+		Statement: $r6 = virtualinvoke $r4.<javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManager[] getKeyManagers()>()
+		Method: <s6.b: javax.net.ssl.KeyManager[] F0(java.security.KeyStore)>
+		SHA-256: cf39a86c2ee30551d039ed1e95011e568d70f25d83f882e1d0c55e292f0330bc
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: java.security.KeyStore
+		Statement: $r9 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String,java.lang.String)>($r0, $r1)
+		Method: <org.eclipse.jetty.util.security.a: java.security.KeyStore a(java.io.InputStream,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: ead4664e065a651348721637fbce1ad5aeb2beda7d51fc35f6ff7506e9159d12
+		Secure: false
+	Object:
+		Variable: varReplacer96769
+		Type: java.lang.String
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer96769)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: byte[] AESEncrypt(byte[],byte[],byte[])>
+		SHA-256: 345bece1254dc2e0a527e2597768971c3d5426425d0587c2ae73991a6affd8f3
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r1.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r0, $i2, $i1)
+		Method: <com.xiaomi.push.service.bs: byte[] a(javax.crypto.Cipher,int,byte[],int)>
+		SHA-256: 95f0481a99dbc61075a78350cfb406e08c9d297bee4263b5a0e09635444bd28c
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.SecureRandom
+		Statement: $r3 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String)>($r5)
+		Method: <s6.b: void u0()>
+		SHA-256: 36ac0946e964d44755e84f2b0b3caf16b3c90c4d7630b70238aed9395afb347d
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: java.security.spec.ECGenParameterSpec
+		Statement: specialinvoke $r5.<java.security.spec.ECGenParameterSpec: void <init>(java.lang.String)>(varReplacer96876)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: java.security.KeyPair generateEcc256KeyPair()>
+		SHA-256: 9a5fddc58f25ea2ff862be50c8ec63894ffff2b51ef88c94540ef590ac859988
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: java.security.SecureRandom
+		Statement: $r3 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String)>($r5)
+		Method: <s6.b: void u0()>
+		SHA-256: 36ac0946e964d44755e84f2b0b3caf16b3c90c4d7630b70238aed9395afb347d
+		Secure: true
+	Object:
+		Variable: $r7
+		Type: java.security.KeyFactory
+		Statement: $r7 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer84247)
+		Method: <miot.bluetooth.security.utils.ECCPointConvert: java.security.interfaces.ECPublicKey fromUncompressedPoint(byte[],java.security.spec.ECParameterSpec)>
+		SHA-256: 948a5c16d4c54e8a17a861f750feca1f6bae33017769f182296ecd25dde14a57
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: javax.net.ssl.CertPathTrustManagerParameters
+		Statement: specialinvoke $r9.<javax.net.ssl.CertPathTrustManagerParameters: void <init>(java.security.cert.CertPathParameters)>($r4)
+		Method: <s6.b: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)>
+		SHA-256: 5d3a9332d45bd54cec5097574d3a9f36e0fbdf274b81c668bcc0e33fd0be6fe4
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: virtualinvoke $r0.<java.security.SecureRandom: void nextBytes(byte[])>($r1)
+		Method: <miot.bluetooth.security.BleMeshRegisterConnector: byte[] generateRandomNumber()>
+		SHA-256: e4d36676ab88b08651672e5ab00801d062d4d99e60425e563c3dc6ee4cbcbb21
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r2.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.wearable.PutDataRequest: void <clinit>()>
+		SHA-256: 7c7914a5dbc342a0b07872e6ba9b92f3ce42103379b2a3186bbd078fe9a61ec
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r4 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r3)
+		Method: <com.yeelight.yeelib.managers.c: void <init>(java.security.KeyStore[])>
+		SHA-256: 45c1b451180d887ef954834dc2e6912d84031c805d19c1cbb92393b2ce86a5e5
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.xiaomi.push.i: byte[] b(byte[],byte[])>
+		SHA-256: 3fd7def5bee92f6fedb08ce67e93ba4f4c2a4e29db282812f3c3ab50f7cdbb63
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <org.eclipse.jetty.security.authentication.DigestAuthenticator: void <init>()>
+		SHA-256: 95059cf4222e57e85834dbd0d3e457f82f076a0e500943c289c606c3707feaf0
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: java.security.KeyPairGenerator
+		Statement: $r1 = staticinvoke <java.security.KeyPairGenerator: java.security.KeyPairGenerator getInstance(java.lang.String)>(varReplacer96878)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: java.security.KeyPair generateEcc256KeyPair()>
+		SHA-256: 26e562f6320a3f579e7fae35f8b7cc3948a2acb87f7106ffb90469266dd529b0
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <x3.d: java.lang.String a(byte[])>
+		SHA-256: 2a49ed2c949423a537980b1bc7ee1e00367cfee63b41de236a4586cf33518f5b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.KeyFactory
+		Statement: $r3 = staticinvoke <java.security.KeyFactory: java.security.KeyFactory getInstance(java.lang.String)>(varReplacer111342)
+		Method: <d2.a: java.security.PublicKey e(java.lang.String)>
+		SHA-256: fb21f7acc3e3a8870c60e8d41106c822ce4292545d96561bb247b128446b25bf
+		Secure: false
+	Object:
+		Variable: varReplacer41397
+		Type: java.lang.String
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r8, varReplacer41397)
+		Method: <com.miot.service.connection.wifi.step.NbiotStep: void requestBindDevice(java.lang.String,com.miot.service.qrcode.QrCodeParser)>
+		SHA-256: 7dc8d656a7fe4f1eabcb8ba5255f53e6966713f132a3889d2319290b2dbd7143
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r10 = virtualinvoke $r8.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <s6.b: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)>
+		SHA-256: f7acd105fd2325bc7f107e9cc6d912b3491e9689292debfb97d04b8faab23e0
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r0)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] encrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: f68d5658eaef3041d4497f403ae90dde6a452394b0abb84f06869f9191b0144b
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r1 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r0)
+		Method: <w5.c: javax.net.ssl.X509TrustManager B()>
+		SHA-256: 8a650963ce964a0b56743789cbf32d5368acb08b52d053625af79d61d28333a2
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.SSLContext
+		Statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer109098)
+		Method: <d6.f: javax.net.ssl.SSLContext l()>
+		SHA-256: fa8f38800ff6b615a74cf1b80d6de9e856e54ecccb71ea770956c6245e86638d
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: byte[]
+		Statement: $r1 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal()>()
+		Method: <com.xiaomi.account.auth.AuthorizeHelper: byte[] encryptHMACSha1(byte[],byte[])>
+		SHA-256: 567cc7ee24ff7d967715d00464d2d78d2189fbbb25cde0dde24ced1b0d850696
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r2.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r0, varReplacer7522)
+		Method: <com.telink.crypto.AES: byte[] b(byte[],byte[])>
+		SHA-256: 49f95de383161025ddd2578873676831dc794084e49683f936413bdab9a75f7a
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest(byte[])>($r4)
+		Method: <com.miot.service.common.crypto.CloudCoder: java.lang.String hash4SHA1(java.lang.String)>
+		SHA-256: 18336cfd48dd7cb196e921c1214b2f158285acab75735aa2e8612c8babe1058d
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, $r1)
+		Method: <miot.bluetooth.security.utils.Hkdf: void init(byte[],byte[])>
+		SHA-256: bb833d06c6b35dd4ca233110560809dd821e9740c3a5764c429cb77d49c8077f
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.Cipher
+		Statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer6432)
+		Method: <com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl: byte[] RSAEncrypt(java.lang.String)>
+		SHA-256: 75e37ae4bde4cf84b2682088a2a4a770881f1e69bcf77f7a6136b96af98c9b9
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer89316)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] decrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: f92cd3a6c5c639dac7d6025b0e4af6e93d04a3178bcd9980888cd4c4cff2f530
+		Secure: false
+	Object:
+		Variable: $r24
+		Type: byte[]
+		Statement: $r24 = virtualinvoke $r17.<java.security.MessageDigest: byte[] digest(byte[])>($r24)
+		Method: <com.google.android.gms.measurement.internal.s3: com.google.android.gms.measurement.internal.zzq q(java.lang.String)>
+		SHA-256: 78e371ae2665e6b05e6394f49a9a75e09af6c690afac8cc6a4498f1a429ee88d
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.Cipher
+		Statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer89325)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] encrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: d22b72798351a5c02f105f567b34292ca6af36503b17fa26cd030234e55e828b
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.PublicKey
+		Statement: $r4 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+		Method: <com.xiaomi.push.service.bs: void <clinit>()>
+		SHA-256: 86b6148a28012fe924bce77c7543bf874d4e32fbf588b08b2363e8719dda31fa
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer73073)
+		Method: <miot.bluetooth.security.utils.SecurityChipUtil: byte[] sha256HMAC(byte[],byte[])>
+		SHA-256: 34e4cfb16d7e3d7fcfb343085b5c8b34b2139b1e7dc0fc76bf15c01a586a2719
+		Secure: false
+	Object:
+		Variable: $r9
+		Type: byte[]
+		Statement: $r9 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest()>()
+		Method: <g6.c: java.lang.String d(java.lang.String,org.eclipse.jetty.client.j,g6.d,java.util.Map)>
+		SHA-256: 1d0e36c3e4a551d377de06eae2d38a395e226fe73e63e5ac9d0ed748ee3215d2
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal()>()
+		Method: <miot.bluetooth.security.utils.Hkdf: void deriveKey(byte[],int,byte[],int)>
+		SHA-256: cecec156f1cca90bd67384b23aa713ab97ab03d55ce30527cd0a07342240ab3d
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: java.security.MessageDigest
+		Statement: $r4 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer82717)
+		Method: <g6.c: java.lang.String c(org.eclipse.jetty.client.j,g6.d,java.util.Map)>
+		SHA-256: ea5b2aa270f4d6204cbfe15bd80b8d09f56e68c5d198dd96927b6f661ab64295
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+		Method: <okio.ByteString: okio.ByteString digest(java.lang.String)>
+		SHA-256: b336d574501b28a5bd90db22472c23a68acb0c1b99c4f14746fdc2a23c69a24e
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: byte[]
+		Statement: $r0 = virtualinvoke $r1.<java.security.MessageDigest: byte[] digest()>()
+		Method: <com.miot.service.common.crypto.rc4coder.Coder: byte[] sha256Hash(byte[])>
+		SHA-256: 9dfa3fc5a67fa910bfe0aacea44528e5666f60a8bd4d146e467522b5284b076d
+		Secure: true
+	Object:
+		Variable: $r1
+		Type: javax.net.ssl.SSLEngine
+		Statement: virtualinvoke $r1.<javax.net.ssl.SSLEngine: void setEnabledCipherSuites(java.lang.String[])>($r2)
+		Method: <s6.b: void E0(javax.net.ssl.SSLEngine)>
+		SHA-256: 4786ce8f9a1f8adc7475515303a826ef571f00d413692ada25ba188edc177b8d
+		Secure: true
+	Object:
+		Variable: $r6
+		Type: javax.crypto.Mac
+		Statement: $r6 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer41396)
+		Method: <com.miot.service.connection.wifi.step.NbiotStep: void requestBindDevice(java.lang.String,com.miot.service.qrcode.QrCodeParser)>
+		SHA-256: cfe4105b13f9e2f0efea6ffdb17ccf3c41a12b6bacb345a1aa31c4965afe7cf9
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: $r4 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r3)
+		Method: <com.yeelight.yeelib.managers.c: void <init>(java.security.KeyStore[])>
+		SHA-256: 45c1b451180d887ef954834dc2e6912d84031c805d19c1cbb92393b2ce86a5e5
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer58763)
+		Method: <com.xiaomi.push.bn: java.lang.String a(java.lang.String)>
+		SHA-256: 6e801cffeff1a42a82dc1f57ee31a95d680ee421e3f21f194b6f9e170f3b6dc7
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.Cipher
+		Statement: $r1 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer22400)
+		Method: <com.xiaomi.push.i: javax.crypto.Cipher a(byte[],int)>
+		SHA-256: 502080b4483d06c2bcf17851878d1a7939b80a07d88f2015f6917c1a9d8f3421
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer89319)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: javax.crypto.spec.SecretKeySpec generateKey(java.lang.String)>
+		SHA-256: 5f894dcd1d481cb439512b1312bcb5492940156de9b1b637eec552cdce19e2a7
+		Secure: true
+	Object:
+		Variable: varReplacer89317
+		Type: java.lang.String
+		Statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer89317)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: javax.crypto.spec.SecretKeySpec generateKey(java.lang.String)>
+		SHA-256: 523e13491e22f51301bcab5fe5aca9830a4ece2b5574d7a9b216f886f6e1ad77
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer21954)
+		Method: <com.xiaomi.push.bo: java.lang.String a(java.lang.String)>
+		SHA-256: e485cff064c69f6d438d1afe3de1fe98fc3be08dbddd0727755ec374f0470b3b
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r1.<javax.crypto.Cipher: byte[] doFinal(byte[],int,int)>($r0, $i2, $i1)
+		Method: <com.xiaomi.push.service.bs: byte[] a(javax.crypto.Cipher,int,byte[],int)>
+		SHA-256: 45a118e287f9df93a0c50b935512db9180f54321adbb17189d83c70ba07bf32a
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer118386)
+		Method: <k3.k: okio.ByteString o(okio.ByteString)>
+		SHA-256: 5046e30395b8f5034f086d952c6315cac8e38e980af0bc5ab057dfbf878e84ca
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.spec.X509EncodedKeySpec
+		Statement: specialinvoke $r0.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+		Method: <com.xiaomi.push.service.bs: void <clinit>()>
+		SHA-256: 1a599b6d695b10cf27a2f56cada7406fdc4bfe25afb9fe7b4b2b394bd23882da
+		Secure: false
+	Object:
+		Variable: varReplacer7522
+		Type: java.lang.String
+		Statement: specialinvoke $r2.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r0, varReplacer7522)
+		Method: <com.telink.crypto.AES: byte[] b(byte[],byte[])>
+		SHA-256: ddaf7466ebb6eec93b9f121846a73992d90aefc660ce146dfd8de1c346b8247
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r8, varReplacer41397)
+		Method: <com.miot.service.connection.wifi.step.NbiotStep: void requestBindDevice(java.lang.String,com.miot.service.qrcode.QrCodeParser)>
+		SHA-256: 9a285e6269e06cd5ab261e9a050e4574cb2fe4fa46852c4baa9f59bc4830bd66
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <com.google.android.gms.measurement.internal.xa: java.security.SecureRandom u()>
+		SHA-256: 9bd440dd25f85e3817f9f8a8a9cfb5997aee95d6dd2cecca17e6d52aafa9d503
+		Secure: true
+	Object:
+		Variable: $r5
+		Type: java.security.PublicKey
+		Statement: $r5 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r4)
+		Method: <d2.a: java.security.PublicKey e(java.lang.String)>
+		SHA-256: 19bd94a5d6b117ac10a55295c55e8f533c3a3011178940b6438f0938b358d017
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <com.xiaomi.account.openauth.internal.DeviceIdHasher: java.lang.String hashDeviceInfo(java.lang.String,int)>
+		SHA-256: 73039b4c5ed1ebceba644e0832b8cb24f2a7885fa1013ad754e8a2c9fef607d4
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r3 = virtualinvoke $r2.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <okio.ByteString: okio.ByteString digest(java.lang.String)>
+		SHA-256: a79a1700ae9d8d44f13ea218f751e7024f8f1222b1b2ae17cdbab7b56d352181
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: byte[]
+		Statement: $r7 = virtualinvoke $r5.<java.security.MessageDigest: byte[] digest()>()
+		Method: <g6.c: java.lang.String d(java.lang.String,org.eclipse.jetty.client.j,g6.d,java.util.Map)>
+		SHA-256: 19de653a31aaa6db9d6cb2ee67368d977c3e5d86f7108c0e24d18a8272c8d09
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer22399)
+		Method: <com.xiaomi.push.i: javax.crypto.Cipher a(byte[],int)>
+		SHA-256: 18279d35213dbedcb8fc8d8636f7bab62a9f66fc1d3d3a17a56087b703518c67
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r10 = virtualinvoke $r8.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <s6.b: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)>
+		SHA-256: f7acd105fd2325bc7f107e9cc6d912b3491e9689292debfb97d04b8faab23e0
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+		Method: <com.miot.bluetooth.utils.AESCryptUtils: byte[] decrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])>
+		SHA-256: 6b50540850f08b6037c30e3fc02d6d224dd34f63c45b83ff81b645c5fd637f64
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r0.<java.security.SecureRandom: void <init>()>()
+		Method: <miot.bluetooth.security.BleMeshRegisterConnector: byte[] generateRandomNumber()>
+		SHA-256: 9278936e70bd0e8da0950d11fcb42bb1ab7dca0380658e7fafaddb4de22b7a2e
+		Secure: true
+
+Findings in Java Class: com.xiaomi.push.bp
+
+	 in Method: java.lang.String b(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e5910753fbda57056c056f18d73e9f4f2276a99bd826a616df5b2011afa2c5a2)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1759)
+
+
+	 in Method: java.lang.String a(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #d7bdb4fadafcf0addb829207b9b66dc1cefa010f995a2902bf3cd06c9d495fb8)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer20666)
+
+
+	 in Method: java.lang.String a(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #bef1dc67e04a16d826da26c0a12fdc797ba5e23ded13d83ec8326f9da506f99)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer59020)
+
+
+Findings in Java Class: com.telink.crypto.AES
+
+	 in Method: byte[] b(byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #22cc1f300dbbb071c1d01140c94165395ce3c7766b6b171c94a218b2af6d004d)
+			First parameter (with value "AES/ECB/NoPadding") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: $r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer7521)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer7523, $r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r2.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r0, varReplacer7522)
+
+
+Findings in Java Class: com.xiaomi.push.bo
+
+	 in Method: java.lang.String a(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e485cff064c69f6d438d1afe3de1fe98fc3be08dbddd0727755ec374f0470b3b)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer21954)
+
+
+	 in Method: byte[] a(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #401bc889f5ac7c9dfd8070eced1ea4c322eb1acc886af8d0d728398bb12e1944)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer47902)
+
+
+Findings in Java Class: u4.m
+
+	 in Method: java.lang.String d(java.io.File)
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #6b65269b452aae128859522bdd820ec2f1d21d1ed099a509e0feade619304fc6)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte)
+			at statement: $r0 = virtualinvoke $r3.<java.security.MessageDigest: byte[] digest()>()
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6b65269b452aae128859522bdd820ec2f1d21d1ed099a509e0feade619304fc6)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer26508)
+
+
+Findings in Java Class: com.xiaomi.account.openauth.internal.DeviceIdHasher
+
+	 in Method: java.lang.String hashDeviceInfo(java.lang.String,int)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #156aea5bc32fe7a75727880b867668c66bf2155bf54d362945b9cbb394aee6c7)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer33172)
+
+
+Findings in Java Class: o0.a
+
+	 in Method: java.security.MessageDigest b(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #9d61299449a5c33f0daf823e8b16197a9018cbb0e7d8b74e111a926bd5cf9983)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #9d61299449a5c33f0daf823e8b16197a9018cbb0e7d8b74e111a926bd5cf9983)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+
+	 in Method: byte[] a(android.content.Context,java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #9d61299449a5c33f0daf823e8b16197a9018cbb0e7d8b74e111a926bd5cf9983)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r5 = staticinvoke <o0.a: java.security.MessageDigest b(java.lang.String)>(varReplacer108216)
+
+
+Findings in Java Class: com.xiaomi.push.service.bs
+
+	 in Method: java.lang.String a(java.lang.String)
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #80ed6ccd6ebc8a7f93e2f4410f9553477d723f5a3891424ddb22e03d1800de27)
+			First parameter (with value "RSA/ECB/PKCS1Padding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: $r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer38105)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #80ed6ccd6ebc8a7f93e2f4410f9553477d723f5a3891424ddb22e03d1800de27)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: $r4 = staticinvoke <com.xiaomi.push.service.bs: byte[] a(javax.crypto.Cipher,int,byte[],int)>($r2, varReplacer38107, $r4, $i0)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer38109, $r3)
+
+
+	 in Method: void <clinit>()
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r4 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+
+
+Findings in Java Class: com.xiaomi.push.bb
+
+	 in Method: java.lang.String b()
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #400d40d3751e7af6b8289070560fa4e433f1306b301e347bb94037a58250499b)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer38486)
+
+
+Findings in Java Class: com.miot.service.connection.wifi.step.NbiotStep
+
+	 in Method: void requestBindDevice(java.lang.String,com.miot.service.qrcode.QrCodeParser)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r8, varReplacer41397)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #cfe4105b13f9e2f0efea6ffdb17ccf3c41a12b6bacb345a1aa31c4965afe7cf9)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r8 = virtualinvoke $r6.<javax.crypto.Mac: byte[] doFinal(byte[])>($r8)
+
+
+Findings in Java Class: com.xiaomi.account.auth.AuthorizeHelper
+
+	 in Method: byte[] encryptHMACSha1(byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52003)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Mac
+			First parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Mac: void init(java.security.Key)>($r0)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #c89a86011560148cf75e604265b0995cc4e94e0a153a554a795f2b9974134267)
+			Second parameter (with value "HmacSHA1") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer52003)
+
+
+Findings in Java Class: s6.b
+
+	 in Method: javax.net.ssl.SSLEngine O0()
+		TypestateError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Unexpected call to method createSSLEngine on object of type javax.net.ssl.SSLContext. Expect a call to one of the following methods init
+			at statement: $r1 = virtualinvoke $r2.<javax.net.ssl.SSLContext: javax.net.ssl.SSLEngine createSSLEngine()>()
+
+
+	 in Method: javax.net.ssl.KeyManager[] F0(java.security.KeyStore)
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #13537c6138a4e54ffcefc8eb20c005e044a85e57efe14b0ab492dd8643f9fd90)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r4.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r1, $r2)
+
+		HardCodedError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #13537c6138a4e54ffcefc8eb20c005e044a85e57efe14b0ab492dd8643f9fd90)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r4.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r1, $r2)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.KeyManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r4.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>($r1, $r2)
+
+
+	 in Method: javax.net.ssl.TrustManager[] I0(java.security.KeyStore,java.util.Collection)
+		RequiredPredicateError violating CrySL rule for java.security.cert.PKIXBuilderParameters
+			First parameter was not properly generated as generatedKeyStore
+			at statement: specialinvoke $r4.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>($r1, $r5)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.CertPathTrustManagerParameters
+			First parameter was not properly generated as generatedCertPathParameters
+			at statement: specialinvoke $r9.<javax.net.ssl.CertPathTrustManagerParameters: void <init>(java.security.cert.CertPathParameters)>($r4)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedManagerFactoryParameters
+			at statement: virtualinvoke $r8.<javax.net.ssl.TrustManagerFactory: void init(javax.net.ssl.ManagerFactoryParameters)>($r9)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r8.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>($r1)
+
+
+	 in Method: void u0()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r1.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r19, $r8, $r3)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r1.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>($r19, $r8, $r3)
+
+
+Findings in Java Class: o7.a
+
+	 in Method: int d(java.lang.String,int)
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $i0 = virtualinvoke $r3.<m6.a: int e()>()
+
+
+	 in Method: void b()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $z0 = virtualinvoke $r1.<p6.a: boolean I()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: virtualinvoke $r1.<p6.a: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $z0 = virtualinvoke $r1.<p6.a: boolean j0()>()
+
+
+Findings in Java Class: org.eclipse.jetty.server.handler.g$a
+
+	 in Method: void run()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r6.<p6.e: void start()>()
+
+
+Findings in Java Class: p6.b
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $z0 = interfaceinvoke $r5.<p6.e: boolean isRunning()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r5.<p6.e: void start()>()
+
+
+	 in Method: boolean E0(java.lang.Object,boolean)
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r4.<p6.e: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $r4 = (p6.e) $r2
+
+
+Findings in Java Class: org.eclipse.jetty.server.handler.d
+
+	 in Method: void I1()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: virtualinvoke $r8.<p6.a: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $r8 = r0.<org.eclipse.jetty.server.handler.d: org.eclipse.jetty.server.handler.f x>
+
+
+Findings in Java Class: o6.c
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r4.<p6.e: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $z0 = interfaceinvoke $r4.<p6.e: boolean j0()>()
+
+
+Findings in Java Class: o7.c
+
+	 in Method: void <init>(o7.b)
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: virtualinvoke $r3.<p6.a: void start()>()
+
+
+Findings in Java Class: l6.r
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r12.<p6.e: void start()>()
+
+
+Findings in Java Class: org.eclipse.jetty.server.handler.h
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $r1 = r0.<org.eclipse.jetty.server.handler.h: l6.i j>
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r1.<p6.e: void start()>()
+
+
+Findings in Java Class: k6.k
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r15.<p6.e: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r15.<p6.e: void start()>()
+
+
+Findings in Java Class: o6.g
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r1.<p6.e: void start()>()
+
+
+Findings in Java Class: org.eclipse.jetty.server.handler.g
+
+	 in Method: void u0()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: interfaceinvoke $r9.<p6.e: void start()>()
+
+
+Findings in Java Class: org.eclipse.jetty.servlet.d
+
+	 in Method: void k1()
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: virtualinvoke $r6.<p6.a: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: virtualinvoke $r3.<p6.a: void start()>()
+
+		IncompleteOperationError violating CrySL rule for javax.net.ssl.SSLContext (on Object #8a34de8b50d770518fb8871e69a7b65dd4ef66f8c51eae3b791969ca570200df)
+			Operation on object of type javax.net.ssl.SSLContext object not completed. Expected call to init
+			at statement: $r7 = virtualinvoke $r6.<org.eclipse.jetty.servlet.ServletHolder: java.lang.String S0()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.xa
+
+	 in Method: java.security.MessageDigest t()
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56525)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r0 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer56525)
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.sa
+
+	 in Method: long x(byte[])
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r4 = staticinvoke <com.google.android.gms.measurement.internal.xa: java.security.MessageDigest t()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.l9
+
+	 in Method: java.lang.String o(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r7 = staticinvoke <com.google.android.gms.measurement.internal.xa: java.security.MessageDigest t()>()
+
+
+Findings in Java Class: com.google.android.gms.measurement.internal.s3
+
+	 in Method: com.google.android.gms.measurement.internal.zzq q(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to update, java.security.MessageDigest: byte[] digest(byte[])
+			at statement: $r24 = virtualinvoke $r17.<java.security.MessageDigest: byte[] digest(byte[])>($r24)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #2589eaba5b95b06e252a16372ee0a8d30c84744f9c4cad7e3b94a43a5cbb6aca)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: $r17 = staticinvoke <com.google.android.gms.measurement.internal.xa: java.security.MessageDigest t()>()
+
+
+Findings in Java Class: com.xiaomi.push.bn
+
+	 in Method: java.lang.String a(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6e801cffeff1a42a82dc1f57ee31a95d680ee421e3f21f194b6f9e170f3b6dc7)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer58763)
+
+
+Findings in Java Class: com.miot.service.common.crypto.CloudCoder
+
+	 in Method: java.lang.String hash4SHA1(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #e7e7d13643ed921efca6d86f5dc2bf0650a3c674430b73e7600b6cb167e893ac)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer65227)
+
+
+Findings in Java Class: com.yeelight.yeelib.models.v
+
+	 in Method: java.lang.String t(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #9951fd28dae4a5151bccfc31bbe2a4fb74ffd9bbbcfb3294c9ac8ff9cb83a1ac)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer67702)
+
+
+Findings in Java Class: x3.d
+
+	 in Method: java.lang.String a(byte[])
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #7d6cc14e4baef1e6fdf87d3ee6dbd2210d861bba04e68ae570f3bd7ec25f9ef0)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer68384)
+
+
+Findings in Java Class: com.google.firebase.crashlytics.internal.common.CommonUtils
+
+	 in Method: java.lang.String u(byte[],java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #9c4a444c085559a9f94be1ed3207ff1e9fa0d6d125e7070e35cc83fef3c665c7)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r2)
+
+
+Findings in Java Class: miot.bluetooth.security.utils.SecurityChipUtil
+
+	 in Method: byte[] sha256HMAC(byte[],byte[])
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #34e4cfb16d7e3d7fcfb343085b5c8b34b2139b1e7dc0fc76bf15c01a586a2719)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer73073)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #34e4cfb16d7e3d7fcfb343085b5c8b34b2139b1e7dc0fc76bf15c01a586a2719)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer73073)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer73073)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #aeb65e088f882669496b8ce88429ced32f41fed364d2b708ea183bbf58e46475)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r2 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal(byte[])>($r0)
+
+
+	 in Method: byte[] AESEncrypt(byte[],byte[],byte[])
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #f3bd04149150038a23c6d66ceb958d27016dd9bb9c2ba63c561f9c059a6a1e4a)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer96769)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer96769)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #f3bd04149150038a23c6d66ceb958d27016dd9bb9c2ba63c561f9c059a6a1e4a)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer96769)
+
+
+	 in Method: javax.crypto.SecretKey getSecret(java.security.PublicKey,java.security.PrivateKey)
+		ConstraintError violating CrySL rule for javax.crypto.KeyAgreement (on Object #1d90153e6fef8ec37c417f9e0f605087d12f26dbc72795ad760cdc51e591bc54)
+			First parameter (with value "ECDH") should be any of {DH, DiffieHellman, NH}
+			at statement: $r3 = virtualinvoke $r2.<javax.crypto.KeyAgreement: javax.crypto.SecretKey generateSecret(java.lang.String)>(varReplacer96772)
+
+
+	 in Method: java.security.KeyPair generateEcc256KeyPair()
+		RequiredPredicateError violating CrySL rule for java.security.KeyPairGenerator
+			First parameter was not properly generated as preparedEC
+			at statement: virtualinvoke $r1.<java.security.KeyPairGenerator: void initialize(java.security.spec.AlgorithmParameterSpec)>($r0)
+
+
+Findings in Java Class: g6.c
+
+	 in Method: java.lang.String c(org.eclipse.jetty.client.j,g6.d,java.util.Map)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #ea5b2aa270f4d6204cbfe15bd80b8d09f56e68c5d198dd96927b6f661ab64295)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r4 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer82717)
+
+
+	 in Method: java.lang.String d(java.lang.String,org.eclipse.jetty.client.j,g6.d,java.util.Map)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #6ff7f082c12772aab46c042e60a7582ee04c20268258c001128fe82ec0d6c869)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r5 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer82739)
+
+
+Findings in Java Class: org.eclipse.jetty.util.security.a
+
+	 in Method: java.security.KeyStore a(java.io.InputStream,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #ead4664e065a651348721637fbce1ad5aeb2beda7d51fc35f6ff7506e9159d12)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r9.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r3, $r5)
+
+		HardCodedError violating CrySL rule for java.security.KeyStore (on Object #ead4664e065a651348721637fbce1ad5aeb2beda7d51fc35f6ff7506e9159d12)
+			Second parameter should never be hardcoded.
+			at statement: virtualinvoke $r9.<java.security.KeyStore: void load(java.io.InputStream,char[])>($r3, $r5)
+
+
+Findings in Java Class: com.miot.bluetooth.utils.AESCryptUtils
+
+	 in Method: byte[] decrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #f92cd3a6c5c639dac7d6025b0e4af6e93d04a3178bcd9980888cd4c4cff2f530)
+			First parameter (with value "AES/CBC/PKCS7Padding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer89316)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer89315, $r2, $r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+
+
+	 in Method: byte[] encrypt(javax.crypto.spec.SecretKeySpec,byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as preparedIV [ with CBC, It's required to use IVParameterSpec]
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer89324, $r2, $r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r1.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r3)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #d22b72798351a5c02f105f567b34292ca6af36503b17fa26cd030234e55e828b)
+			First parameter (with value "AES/CBC/PKCS7Padding") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}
+			at statement: $r4 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer89325)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r4.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer89324, $r2, $r1)
+
+
+	 in Method: javax.crypto.spec.SecretKeySpec generateKey(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer89317)
+
+
+Findings in Java Class: com.squareup.okhttp.u
+
+	 in Method: javax.net.ssl.SSLSocketFactory k()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer102797, varReplacer102797, varReplacer102797)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer102797, varReplacer102797, varReplacer102797)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #587c27ba2d27865d1ac500b5eba35b6e2f4c34831c783858858885995d646ceb)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer102796)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r3.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer102797, varReplacer102797, varReplacer102797)
+
+
+Findings in Java Class: com.yeelight.yeelib.managers.b
+
+	 in Method: void <init>(java.security.KeyStore[])
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #d6dde1026a4b4c501b0a2ef95e5ff52ecdc130e9d153f45ac28caf8276293a6d)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r1 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer103077)
+
+
+Findings in Java Class: miot.bluetooth.security.utils.Hkdf
+
+	 in Method: void init(byte[],byte[])
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #bb833d06c6b35dd4ca233110560809dd821e9740c3a5764c429cb77d49c8077f)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, $r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, $r1)
+
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #e5e73ad57242855731bf02dd701730f70fe5807b2433b147ecb2919b9d772db5)
+			Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int)
+			at statement: $r2 = virtualinvoke $r7.<javax.crypto.Mac: byte[] doFinal(byte[])>($r2)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #bb833d06c6b35dd4ca233110560809dd821e9740c3a5764c429cb77d49c8077f)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r8.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r4, $r1)
+
+
+	 in Method: void deriveKey(byte[],int,byte[],int)
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #99b9886fd0158b4ea2aa95f95aca6e32d4dcf3e21abcab6fac69df86d434e971)
+			Unexpected call to method update on object of type javax.crypto.Mac.
+			at statement: virtualinvoke $r3.<javax.crypto.Mac: void update(byte[])>($r4)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Mac (on Object #99b9886fd0158b4ea2aa95f95aca6e32d4dcf3e21abcab6fac69df86d434e971)
+			Operation on object of type javax.crypto.Mac object not completed. Expected call to javax.crypto.Mac: void doFinal(byte[],int), update, javax.crypto.Mac: byte[] doFinal()
+			at statement: $r5 = virtualinvoke $r3.<javax.crypto.Mac: byte[] doFinal()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Mac (on Object #99b9886fd0158b4ea2aa95f95aca6e32d4dcf3e21abcab6fac69df86d434e971)
+			Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal
+			at statement: $i1 = virtualinvoke $r3.<javax.crypto.Mac: int getMacLength()>()
+
+
+	 in Method: javax.crypto.Mac createMac()
+		RequiredPredicateError violating CrySL rule for javax.crypto.Mac
+			First parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Mac: void init(java.security.Key)>($r4)
+
+
+Findings in Java Class: d2.a
+
+	 in Method: java.lang.String c(java.security.PublicKey)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #eb626e54d6f161ac57bddf3f42dbce036c391641e4ff7b3ed7466280600fe0e7)
+			First parameter (with value "SHA1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer107850)
+
+
+	 in Method: java.security.PublicKey e(java.lang.String)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r5 = virtualinvoke $r3.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r4)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r4.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r2)
+
+
+Findings in Java Class: d6.b
+
+	 in Method: javax.net.ssl.SSLContext l()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #e1030feb14f7a1f210270416986a1dc8c65cafbc8d8a55204b03c1077c5ea9ff)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer109093, $r2)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #e7322a424660b039843cf8cd8838d94762dd39c61b37726007f65fc37824099f)
+			First parameter (with value "TLSv1.3") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>(varReplacer109094, $r2)
+
+
+Findings in Java Class: d6.f
+
+	 in Method: javax.net.ssl.SSLContext l()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #fa8f38800ff6b615a74cf1b80d6de9e856e54ecccb71ea770956c6245e86638d)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r4 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer109098)
+
+
+Findings in Java Class: d6.a
+
+	 in Method: javax.net.ssl.SSLContext l()
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #a81a79c834d1131d7968aed3974c6153040b67293824890ebaa77f1da30f5c74)
+			First parameter (with value "TLS") should be any of {TLSv1.2}
+			at statement: $r3 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer109099)
+
+
+Findings in Java Class: k3.k
+
+	 in Method: java.lang.String n(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #ebaebd1a8ca31f1ed493bd97920fa857f1d6887f91e0451db0af39e3d22ef16)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer111037)
+
+
+	 in Method: okio.ByteString o(okio.ByteString)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #5046e30395b8f5034f086d952c6315cac8e38e980af0bc5ab057dfbf878e84ca)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer118386)
+
+
+Findings in Java Class: okio.ByteString
+
+	 in Method: okio.ByteString digest(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #b336d574501b28a5bd90db22472c23a68acb0c1b99c4f14746fdc2a23c69a24e)
+			First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #b336d574501b28a5bd90db22472c23a68acb0c1b99c4f14746fdc2a23c69a24e)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r1)
+
+
+Findings in Java Class: com.miot.service.common.miotcloud.impl.OpenMiotCloudImpl
+
+	 in Method: java.security.interfaces.RSAPublicKey loadPublicKey(java.lang.String)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r7 = virtualinvoke $r6.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r0)
+
+		RequiredPredicateError violating CrySL rule for java.security.spec.X509EncodedKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r5)
+
+
+	 in Method: byte[] RSADecrypt(byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer25547, $r1)
+
+
+	 in Method: byte[] RSAEncrypt(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer6431, $r1)
+
+
+Findings in Java Class: okhttp3.x
+
+	 in Method: javax.net.ssl.SSLSocketFactory w(javax.net.ssl.X509TrustManager)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generatedKeyManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer103019, $r7, varReplacer103019)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Third parameter was not properly generated as randomized
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer103019, $r7, varReplacer103019)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generatedTrustManagers
+			at statement: virtualinvoke $r2.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer103019, $r7, varReplacer103019)
+
+
+Findings in Java Class: miot.bluetooth.security.standardauth.BleStandardAuthRegisterConnector
+
+	 in Method: void writeDidToDevice(byte[],com.inuker.bluetooth.library.connect.response.BleWriteResponse)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r2.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r6, varReplacer89622)
+
+
+Findings in Java Class: org.eclipse.jetty.util.security.b
+
+	 in Method: void f(java.security.cert.Certificate[])
+		RequiredPredicateError violating CrySL rule for java.security.cert.PKIXBuilderParameters
+			First parameter was not properly generated as generatedKeyStore
+			at statement: specialinvoke $r23.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>($r8, $r5)
+
+
+Findings in Java Class: miot.bluetooth.security.utils.ECCPointConvert
+
+	 in Method: java.security.interfaces.ECPublicKey fromUncompressedPoint(byte[],java.security.spec.ECParameterSpec)
+		RequiredPredicateError violating CrySL rule for java.security.KeyFactory
+			First parameter was not properly generated as speccedKey
+			at statement: $r8 = virtualinvoke $r7.<java.security.KeyFactory: java.security.PublicKey generatePublic(java.security.spec.KeySpec)>($r6)
+
+
+Findings in Java Class: com.xiaomi.push.i
+
+	 in Method: javax.crypto.Cipher a(byte[],int)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as preparedKeyMaterial
+			at statement: specialinvoke $r0.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer22399)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r3.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedKey
+			at statement: virtualinvoke $r1.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($i0, $r0, $r3)
+
+
+Findings in Java Class: w5.c
+
+	 in Method: javax.net.ssl.X509TrustManager B()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r1.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer103022)
+
+
+Findings in Java Class: com.yeelight.yeelib.managers.c
+
+	 in Method: void <init>(java.security.KeyStore[])
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generatedKeyStore
+			at statement: virtualinvoke $r4.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(varReplacer109150)
+
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 47
+	Number of Objects Analyzed: 170
+
+	CryptoAnalysis found the following violations. For details see description above.
+	IncompleteOperationError: 34
+	RequiredPredicateError: 46
+	ConstraintError: 34
+	NeverTypeOfError: 8
+	TypestateError: 6
+	HardCodedError: 2
+=====================================================================

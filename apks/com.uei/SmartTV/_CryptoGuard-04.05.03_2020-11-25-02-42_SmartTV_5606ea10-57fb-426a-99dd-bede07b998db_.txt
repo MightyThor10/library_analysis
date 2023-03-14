@@ -1,0 +1,84 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.uei/LG_ACRemoteControl/SmartTV.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES/ECB/NOPADDING" in com.google.android.gms.internal.ads.zzbnv::init.
+***Found: "AES/ECB/NOPADDING" in com.google.android.gms.internal.ads.zzbnv::zzc.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "SHA-1" in a.a.a.a.a.b.i::a.
+***Found: "MD5" in com.adi.remote.m.u::b.
+***Found: "MD5" in com.colortiger.anymotesdk.b.b::a.
+***Found: "SHA-1" in com.a.a.c.aa::b.
+***Found: "SHA-1" in com.google.firebase.database.core.utilities.Utilities::sha1HexDigest.
+***Found: "MD5" in com.google.common.hash.Hashing$Md5Holder::clinit.
+***Found: "MD5" in com.a.a.c.d.c::toString.
+***Found: "MD5" in com.google.android.gms.internal.ads.zztd::zzoc.
+***Found: "SHA-1" in com.google.common.hash.Hashing$Sha1Holder::clinit.
+***Found: "MD5" in com.google.ads.consent.ConsentInformation::md5.
+***Found: "SHA-1" in a.a.a.a.a.b.i::b.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzby::run.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzfy::getMessageDigest.
+***Found: "SHA1" in a.a.a.a.a.e.h::a.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzbat::zzei.
+***Found: "SHA1" in com.google.firebase.iid.zzan::zza.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzbat::zzaas.
+***Found: "MD5" in com.adi.remote.m.u::a.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zzc.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzboe::zza.
+***Found: Constant "3" in com.google.android.gms.internal.ads.zzboe::zza.
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzboe::zza.
+***Found: Constant "1529567361524" in com.google.android.gms.internal.ads.zzdl::zza.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of a.e in a.e::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of a.e in a.e::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.SslUtils in util.SslUtils::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.SslUtils in util.SslUtils::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in util.SslUtils::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://google.com/" in com.google.api.client.googleapis.batch.BatchUnparsedResponse::getFakeResponse.
+***Found: "http://google.com/" in com.google.api.client.testing.http.HttpTesting::clinit.
+***Found: "http://metadata.google.internal" in com.google.api.client.googleapis.auth.oauth2.OAuth2Utils::runningOnComputeEngine.
+***Found: "http://metadata/computeMetadata/v1/instance/service-accounts/default/token" in com.google.api.client.googleapis.auth.oauth2.DefaultCredentialProvider$ComputeGoogleCredential::init.
+***Found: "http://metadata/computeMetadata/v1/instance/service-accounts/default/token" in com.google.api.client.googleapis.compute.ComputeCredential$Builder::init.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzco::zzz.
+***Found: Untrused PRNG (java.util.Random) in com.a.a.c.q::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.database.tubesock.WebSocketWriter::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.database.tubesock.WebSocketHandshake::rand.
+***Found: Untrused PRNG (java.util.Random) in com.crashlytics.android.a.u::init.
+***Found: Untrused PRNG (java.util.Random) in com.adi.remote.d.e$a::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzare::zza.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzahk::onAdClosed.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzwv::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.storage.internal.ExponentialBackoffSender::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zza.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.zzea::generateEventId.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.database.core.utilities.PushIdGenerator::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzfy::zzmj.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.Striped64$HashCode::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.colortiger.anymotesdk.c.f::c.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.database.connection.util.RetryHelper::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzwu::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.api.client.util.ExponentialBackOff::nextBackOffMillis.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "notasecret" in com.google.api.client.googleapis.GoogleUtils::getCertificateTrustStore.
+***Found: "notasecret" in com.google.api.client.googleapis.auth.oauth2.GoogleCredential$Builder::setServiceAccountPrivateKeyFromP12File.
+***Found: "notasecret" in com.google.api.client.googleapis.auth.oauth2.GoogleCredential$Builder::setServiceAccountPrivateKeyFromP12File.
+=======================================

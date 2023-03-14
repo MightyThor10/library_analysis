@@ -1,0 +1,106 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/org.seamless/screenMirroring/ScreenMirroringTVs_5.0.8.1_Apkpure.apk
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "MD5" in com.koushikdutta.async.http.spdy.ByteString::toString.
+***Found: "SHA-1" in com.nero.tuneitupcommon.utils.CommonUtil::calculateSHA1.
+***Found: "MD5" in com.koushikdutta.async.util.FileCache::clinit.
+***Found: "SHA1" in com.google.firebase.installations.local.IidStore::getIdFromPublicKey.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zzc.
+***Found: "MD5" in com.nero.swiftlink.mirror.analytics.model.NeroMessage::string2MD5.
+***Found: "SHA-1" in com.nero.swiftlink.mirror.util.CommonUtil::calculateSHA1.
+***Found: "MD5" in com.qq.e.comm.managers.plugin.b::a.
+***Found: "MD5" in org.fourthline.cling.model.types.UDN::uniqueSystemIdentifier.
+***Found: "MD5" in com.qq.e.comm.managers.plugin.c::a.
+***Found: "MD5" in com.nero.swiftlink.mirror.util.Hardware::md5.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::digest.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "SHA-1" in com.nero.tuneitupcommon.utils.CommonUtil::calculateSHA1.
+***Found: "MD5" in com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator::getMD5.
+***Found: "MD5" in com.androidquery.util.AQUtility::getMD5.
+***Found: "MD5" in org.eclipse.jetty.security.authentication.DigestAuthenticator$Digest::check.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzkw::zzE.
+***Found: "MD5" in com.nero.swiftlink.mirror.util.CommonUtil::string2MD5.
+***Found: "SHA-1" in com.appsflyer.internal.AFb1rSDK::AFInAppEventParameterName.
+***Found: "SHA-1" in com.koushikdutta.async.http.WebSocketImpl::SHA1.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "MD5" in org.eclipse.jetty.client.security.DigestAuthentication::newResponse.
+***Found: "MD5" in com.nero.tuneitupcommon.utils.CommonUtil::string2MD5.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::check.
+***Found: "MD5" in com.appsflyer.internal.AFb1rSDK::values.
+***Found: "MD5" in com.google.ads.consent.ConsentInformation::md5.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in org.eclipse.jetty.client.security.DigestAuthentication::newCnonce.
+***Found: "SHA-1" in com.nero.tuneitupcommon.utils.CommonUtil::calculateSHA1.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "SHA-1" in com.nero.swiftlink.mirror.util.CommonUtil::calculateSHA1.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of async.AsyncSSLSocketWrapper in async.AsyncSSLSocketWrapper::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of async.AsyncSSLSocketWrapper in async.AsyncSSLSocketWrapper::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of ssl.SslContextFactory in ssl.SslContextFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of ssl.SslContextFactory in ssl.SslContextFactory::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://" in org.apache.log4j.lf5.viewer.LogBrokerMonitor::requestOpenURL:1449.
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://localhost/" in retrofit2.Response::error.
+***Found: "http://" in com.nero.lib.dlna.manager.DLNAManager::pairDevice:902.
+***Found: "http://[" in org.seamless.util.URIUtil::createAbsoluteURL:97.
+***Found: "http://" in org.apache.log4j.helpers.SyslogWriter::init:74.
+***Found: "http://" in org.seamless.util.URIUtil::createAbsoluteURL:99.
+***Found: "http://localhost/" in retrofit2.Response::success.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "1531449615549845" in com.nero.swiftlink.mirror.encrypt.SocketCipher::init:31.
+***Found: "1531449615549845" in com.nero.swiftlink.mirror.encrypt.SocketCipher::setAccountKey:70.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in newSslSocket in org.eclipse.jetty.util.ssl.SslContextFactory::newSslSocket.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in androidx.transition.Explode::calculateOut.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.FallbackThreadLocalRandom$implStorage$1::initialValue.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorThread::startListenSocket.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.cast.internal.CastUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.http.socketio.SocketIOConnection::nextReconnectDelay.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.zzee::zzb.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.KotlinRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zzc.
+***Found: Untrused PRNG (java.util.Random) in org.seamless.util.io.MD5Crypt::crypt.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzkw::zzq.
+***Found: Untrused PRNG (java.util.Random) in org.jsoup.helper.DataUtil::mimeBoundary.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.remoteconfig.RemoteConfigComponent::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.nero.swiftlink.mirror.activity.PlayerActivity::onMediaFinishEvent.
+***Found: Untrused PRNG (java.util.Random) in com.nero.lib.dlna.dms.LocalMediaServer::init.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.jetty.server.session.AbstractSessionIdManager::initRandom.
+***Found: Untrused PRNG (java.util.Random) in com.nero.uicommon.customcontroller.NeroAdvertisement.NeroAdvView::setAdvertisements.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.dns.Dns::lookup.
+***Found: Untrused PRNG (java.util.Random) in com.nero.uicommon.customcontroller.NeroAdvertisement.NeroAdvView::init.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.http.HybiParser::frame.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.registry.LocalItems::init.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.util.FileCache::init.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.protocol.async.ReceivingSearch::init.
+***Found: Untrused PRNG (java.util.Random) in com.appsflyer.internal.AFa1ySDK::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.support.messagebox.model.Message::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.Utils::getRandomDelayForSyncPrevention.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "dft" in org.eclipse.jetty.util.security.Password::getPassword:223.
+=======================================

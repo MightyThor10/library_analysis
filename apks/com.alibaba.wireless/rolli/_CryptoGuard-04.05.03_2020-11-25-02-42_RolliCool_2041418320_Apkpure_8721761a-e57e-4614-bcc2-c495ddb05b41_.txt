@@ -1,0 +1,88 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.alibaba.wireless/rolli/RolliCool_2041418320_Apkpure.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES" in com.tuya.smart.common.bt::a.
+***Found: "AES" in com.tuya.smart.android.common.log.LogBean::getSercetLog.
+***Found: "AES" in com.tuya.smart.android.common.log.LogUpload::getDecrypt.
+***Found: "AES" in com.tuya.smart.android.common.log.LogBean::getSercetObjectLog.
+***Found: "AES" in com.tuya.smart.common.bt::a.
+***Found: "AES" in com.tuya.smart.common.bt::a.
+***Found: "AES" in com.tuya.smart.security.device.protocol.intranet3_2.IntranetUtils3_2::encryptRequestWithLocalKey.
+***Found: "AES" in com.tuya.smart.common.bt::a.
+***Found: "AES" in com.tuya.smart.android.common.utils.AESUtil::main.
+***Found: "AES" in com.tuya.smart.common.bt::b.
+***Found: "AES" in com.tuya.smart.common.bt::b.
+***Found: "AES" in com.tuya.smart.common.bt::b.
+***Found: "AES" in com.tuya.smart.common.bt::a.
+***Found: "AES" in com.tuya.smart.common.bt::a.
+***Found: "AES" in com.tuya.smart.security.device.protocol.intranet3_2.IntranetUtils3_2::decryptControlBeanWithLocalKey3_2.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA1" in io.netty.handler.codec.http.websocketx.WebSocketUtil::sha1.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in u.aly.o::b.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in io.netty.handler.codec.http.websocketx.WebSocketUtil::md5.
+***Found: "SHA-1" in okhttp3.a0.h::a.
+***Found: "SHA1" in org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketHandshake::sha1.
+***Found: "SHA1" in util.FingerprintTrustManagerFactory::initialValue.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in u.aly.o::a.
+***Found: "MD5" in com.tuya.smart.common.bs::a.
+***Found: "MD5" in com.umeng.analytics.b::b.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "eafc08bbbde32d8d" in com.tuya.smart.android.common.utils.AESUtil::main.
+***Found: Constant "efaSApfdaE1.adsf" in com.tuya.smart.android.common.log.LogUpload::getDecrypt.
+***Found: Constant "efaSApfdaE1.adsf" in com.tuya.smart.android.common.log.LogBean::getSercetObjectLog.
+***Found: Constant "efaSApfdaE1.adsf" in com.tuya.smart.android.common.log.LogBean::getSercetLog.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.FingerprintTrustManagerFactory in util.FingerprintTrustManagerFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.FingerprintTrustManagerFactory in util.FingerprintTrustManagerFactory::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.InsecureTrustManagerFactory in util.InsecureTrustManagerFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.InsecureTrustManagerFactory in util.InsecureTrustManagerFactory::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Found: "1024" in io.netty.handler.ssl.util.SelfSignedCertificate::init.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "7" in com.umeng.analytics.b::clinit.
+***Found: "1" in com.umeng.analytics.b::clinit.
+***Found: "6" in com.umeng.analytics.b::clinit.
+***Found: "11" in com.umeng.analytics.b::clinit.
+***Found: "8" in com.umeng.analytics.b::clinit.
+***Found: "1" in com.umeng.analytics.b::clinit.
+***Found: "4" in com.umeng.analytics.b::clinit.
+***Found: "12" in com.umeng.analytics.b::clinit.
+***Found: "3" in com.umeng.analytics.b::clinit.
+***Found: "91" in com.umeng.analytics.b::clinit.
+***Found: "15" in com.umeng.analytics.b::clinit.
+***Found: "13" in com.umeng.analytics.b::clinit.
+***Found: "23" in com.umeng.analytics.b::clinit.
+***Found: "10" in com.umeng.analytics.b::clinit.
+***Found: "9" in com.umeng.analytics.b::clinit.
+***Found: "5" in com.umeng.analytics.b::clinit.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00::insertRandomCharacters.
+***Found: Untrused PRNG (java.util.Random) in io.netty.handler.codec.http.websocketx.WebSocketUtil::randomNumber.
+***Found: Untrused PRNG (java.util.Random) in com.umeng.analytics.social.c::a.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketFrame::generateMaskingKey.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.device.bean.SandO::init.
+***Found: Untrused PRNG (java.util.Random) in u.aly.j::a.
+***Found: Untrused PRNG (java.util.Random) in io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder::encode.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.PhoneUtil::generateImei.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.user.TuyaSmartUserManager::uploadUserAvatar.
+***Found: Untrused PRNG (java.util.Random) in io.netty.util.internal.ThreadLocalRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.umeng.analytics.social.c::a.
+***Found: Untrused PRNG (java.util.Random) in u.aly.j::a.
+***Found: Untrused PRNG (java.util.Random) in com.umeng.analytics.b::a.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.SafeHandler::clinit.
+=======================================

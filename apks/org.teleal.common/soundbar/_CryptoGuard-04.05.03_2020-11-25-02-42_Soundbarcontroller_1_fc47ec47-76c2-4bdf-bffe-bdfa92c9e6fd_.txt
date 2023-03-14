@@ -1,0 +1,259 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/org.teleal.common/soundbar/Soundbarcontroller_1.0.13.220927.06ba72_Apkpure.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "x-amz-matdesc" in com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial::fromObjectMetadata:7.
+***Found: "x-amz-matdesc" in com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial::fromInstructionFile0:6.
+***Found: "AES" in com.linkplay.statisticslibrary.utils.StatisticsAESUtil::decrypt.
+***Found: "AES" in com.linkplay.statisticslibrary.utils.StatisticsAESUtil::encrypt.
+***Found: "AES" in com.linkplay.statisticslibrary.utils.StatisticsAESUtil::initAESCipher.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in com.amazonaws.util.Md5Utils::computeMD5Hash.
+***Found: "MD5" in com.fmxos.platform.xiaoyaos.b::a.
+***Found: "SHA1" in org.eclipse.paho.client.mqttv3.internal.websocket.c::e.
+***Found: "MD5" in org.teleal.cling.model.f::g.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "MD5" in com.amazonaws.services.s3.AmazonS3Client::getObject.
+***Found: "MD5" in com.fmxos.a.d.a::a.
+***Found: "MD5" in com.amazonaws.services.s3.internal.MD5DigestCalculatingInputStream::init.
+***Found: "MD5" in org.apache.commons.net.pop3.POP3Client::login.
+***Found: "MD5" in com.fmxos.platform.f.a.d::a.
+***Found: "MD5" in com.tencent.mm.opensdk.b.b::e.
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "MD5" in com.wifiaudio.utils.FirmwareUpdateWithApp.d::b.
+***Found: "SHA1" in com.wifiaudio.utils.okhttp.DeviceSecurityConfig$sha1$2::invoke.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in com.amazonaws.util.Md5Utils::computeMD5Hash.
+***Found: "MD5" in com.wifiaudio.action.e0.f.c::c.
+***Found: "MD5" in com.wifiaudio.action.n.f::f.
+***Found: "MD5" in com.fmxos.platform.f.c.a::a.
+***Found: "SHA-1" in okio.Buffer::sha1.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "82080e1eec4b6f463c3edd0975041a26" in com.wifiaudio.action.e0.e::a.
+***Found: Constant "~linkplayble@#==" in com.e.c.f.d::d.
+***Found: Constant "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::encrypt.
+***Found: Constant "android" in com.linkplay.statisticslibrary.model.StatisticModel::getUpMessage.
+***Found: Constant "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::encrypt.
+***Found: Constant "android" in com.linkplay.statisticslibrary.model.StatisticModel::initDevice.
+***Found: Constant "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" in com.fmxos.a.d.a::a:20.
+***Found: Constant "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::decrypt.
+***Found: Constant "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::decrypt.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Cause: Used default key size in com.amazonaws.mobileconnectors.iot.AWSIotKeystoreHelper::generatePrivateAndPublicKeys:1.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://global.api.iheart.com/api/v3/locationConfig" in com.wifiaudio.action.u.e.c::L:3.
+***Found: "http://www.qobuz.com/api.json/0.2/artist/get?app_id=%s&artist_id=%s&extra=%s&offset=%d&limit=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::f1:5.
+***Found: "http://api.open.qingting.fm/v6/media/channelondemands/%s/programs/curpage/%d/pagesize/%d?access_token=%s" in com.wifiaudio.action.v.c::e:3.
+***Found: "http://www.qobuz.com/api.json/0.2/album/getFeatured?type=most-streamed&app_id=%s&offset=%d&limit=%d&genre_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::e1:6.
+***Found: "http://api.ximalaya.com/live/radios?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&radio_type=%d&province_code=%d&page=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::r:6.
+***Found: "http://www.qobuz.com/api.json/0.2/album/getFeatured?type=new-releases&app_id=%s&offset=%d&limit=%d&genre_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::Y0:2.
+***Found: "http://www.qobuz.com/api.json/0.2/favorite/create?app_id=%s&%s=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::B:3.
+***Found: "http://www.qobuz.com/api.json/0.2/catalog/search?limit=%d&offset=%d&query=%s&app_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::X0:6.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/getFeatured?type=editor-picks&app_id=%s&offset=%d&limit=%d&genre_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::a1:6.
+***Found: "http://api.open.qingting.fm/v6/media/categories/%d/channels/order/0/attr/%d/.../curpage/%d/pagesize/%d?access_token=%s" in com.wifiaudio.action.v.c::h:3.
+***Found: "http://" in org.teleal.common.util.h::b:4.
+***Found: "http://api.open.qingting.fm/search/%s/type/%s?access_token=%s" in com.wifiaudio.action.v.c::g:1.
+***Found: "http://www.qobuz.com/api.json/0.2/favorite/getUserFavorites?app_id=%s&offset=0&limit=500&type=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::p0:3.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/unsubscribe?app_id=%s&playlist_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::b:3.
+***Found: "http://api.open.qingting.fm/v6/media/categories?access_token=%s" in com.wifiaudio.action.v.c::c:1.
+***Found: "http://api.open.qingting.fm/v6/media/categories/%s/?access_token=%s" in com.wifiaudio.action.v.c::j:1.
+***Found: "http://mermaid.ximalaya.com/config/ts/v1/currTime" in com.g.a.a.a.a::b.
+***Found: "http://api.ximalaya.com/categories/list?app_key=%s&device_id=%s&client_os_type=%d&pack_id=%s&access_token=%s&sig=%s" in com.wifiaudio.action.e0.d::m:1.
+***Found: "http://test.9nali.com/mermaid/collector/v1" in com.g.a.a.b.f::G:1.
+***Found: "http://www.qobuz.com/api.json/0.2/album/getFeatured?genre_ids=%d&offset=%d&limit=%d&type=best-sellers&app_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::Q0:5.
+***Found: "http://%s/httpapi.asp?command=getbtdiscoveryresult" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::e:1.
+***Found: "http://api.ximalaya.com/albums/browse?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&album_id=%d&page=%d&count=%d&sort=%s&sig=%s" in com.wifiaudio.action.e0.d::p:6.
+***Found: "http://www.qobuz.com/api.json/0.2/album/getFeatured?type=editor-picks&app_id=%s&offset=%d&limit=%d&genre_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::b1:6.
+***Found: "http://%s/httpapi.asp?command=getbthistory" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::b:1.
+***Found: "http://api.ximalaya.com/albums/list?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&category_id=%d&tag_name=%s&calc_dimension=%d&page=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::k:7.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/create?app_id=%s&name=%s&description=%s&is_public=%d&is_collaborative=%d&&track_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::D:6.
+***Found: "http://opml.radiotime.com/Browse.ashx?partnerId=" in com.wifiaudio.action.tune.model.a::clinit:1.
+***Found: "http://mermaid.uat.ximalaya.com/collector/v1" in com.g.a.a.b.f::G:1.
+***Found: "http://www.qobuz.com/api.json/0.2/album/search?app_id=%s&query=%s&limit=%d&offset=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::R0:7.
+***Found: "http://%s/httpapi.asp?command=stopbtserver:%d" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::k:1.
+***Found: "http://%s/httpapi.asp?command=startbtdiscovery:%d" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::i:1.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/subscribe?app_id=%s&playlist_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::a:3.
+***Found: "http://test.9nali.com/mermaid/config/debug/trackName" in com.g.a.a.b.f::s:1.
+***Found: "http://api.ximalaya.com/tags/list?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&category_id=%d&type=%d&sig=%s" in com.wifiaudio.action.e0.d::n:4.
+***Found: "http://api.open.qingting.fm/access?&grant_type=client_credentials" in com.wifiaudio.action.v.c::a.
+***Found: "http://%s/httpapi.asp?command=disconnectbta2dpsynk:%s" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::j:1.
+***Found: "http://www.qobuz.com/api.json/0.2/artist/getSimilarArtists?app_id=%s&offset=%d&limit=%d&artist_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::d1:5.
+***Found: "http://%s/httpapi.asp?command=delbthistory:%s" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::d:1.
+***Found: "http://www.qobuz.com/api.json/0.2/artist/search?app_id=%s&query=%s&limit=%d&offset=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::S0:7.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/delete?app_id=%s&playlist_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::E:3.
+***Found: "http://www.qobuz.com/api.json/0.2/genre/list?app_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::T0:1.
+***Found: "http://www.qobuz.com/api.json/0.2/catalog/search?app_id=%s&type=playlists&query=%s&limit=%d&offset=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::U0:7.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/addTracks?app_id=%s&playlist_id=%s&track_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::A:3.
+***Found: "http://api.open.qingting.fm/v6/media/categories/%d/channels/order/0/curpage/%d/pagesize/%d?access_token=%s" in com.wifiaudio.action.v.c::b:3.
+***Found: "http://api.open.qingting.fm/v6/media/recommends/billboards/channellives?access_token=%s" in com.wifiaudio.action.v.c::i:1.
+***Found: "http://[" in org.teleal.common.util.h::b:2.
+***Found: "http://api.ximalaya.com/albums/by_announcer?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&aid=%d&page=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::x:5.
+***Found: "http://%s/httpapi.asp?command=wlanGetConnectState" in com.wifiaudio.action.b::e:1.
+***Found: "http://www.qobuz.com/api.json/0.2/track/search?app_id=%s&query=%s&limit=%d&offset=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::V0:7.
+***Found: "http://%s/httpapi.asp?command=getbtstatus" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::f:1.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/get?app_id=%s&playlist_id=%s&extra=%s&offset=%d&limit=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::S:5.
+***Found: "http://api.ximalaya.com/search/albums?app_key=%s&device_id=%s&client_os_type=%d&pack_id=%s&access_token=%s&q=%s&category_id=%d&page=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::o:6.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/update?app_id=%s&playlist_id=%s&name=%s&is_public=%d&is_collaborative=%d&user_auth_token=%s" in com.wifiaudio.action.w.c::g1:5.
+***Found: "http://www.qobuz.com/api.json/0.2/favorite/delete?app_id=%s&%s=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::F:3.
+***Found: "http://%s/info/partner_v3/search/getcities?" in com.wifiaudio.view.pagesmsccontent.radionet.k::e:1.
+***Found: "http://%s/httpapi.asp?command=connectbta2dpsynk:%s" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::a:1.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/create?app_id=%s&name=%s&description=%s&is_public=%d&is_collaborative=%d&album_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::C:6.
+***Found: "http://www.qobuz.com/api.json/0.2/album/getFeatured?type=press-awards&app_id=%s&offset=%d&limit=%d&genre_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::c1:6.
+***Found: "http://api.ximalaya.com/announcers/categories?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&sig=%s" in com.wifiaudio.action.e0.d::v:1.
+***Found: "http://api.ximalaya.com/announcers/list?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&vcategory_id=%d&page=%d&calc_dimension=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::w:2.
+***Found: "http://www.qobuz.com/api.json/0.2/album/get?album_id=%s&app_id=%s&offset=0&limit=500&user_auth_token=%s" in com.wifiaudio.action.w.c::P0:3.
+***Found: "http://api.open.qingting.fm/v6/media/programs/%d?access_token=%s" in com.wifiaudio.action.v.c::d:1.
+***Found: "http://www.qobuz.com/api.json/0.2/purchase/getUserPurchases?app_id=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::Z0:3.
+***Found: "http://%s/info/partner_v3/search/nowplayingbystations?" in com.wifiaudio.view.pagesmsccontent.radionet.k::y:1.
+***Found: "http://" in com.wiimusoftapsdklibrary.a::a:1.
+***Found: "http://cms.9nali.com/mermaid/config/debug/trackName" in com.g.a.a.b.f::s:1.
+***Found: "http://www.qobuz.com/api.json/0.2/album/getFeatured?type=best-sellers&app_id=%s&offset=%d&limit=%d&genre_ids=%s&user_auth_token=%s" in com.wifiaudio.action.w.c::W0:6.
+***Found: "http://%s/httpapi.asp?command=clearbtdiscoveryresult" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::g:1.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/getUserPlaylists?app_id=%s&offset=0&limit=500&user_auth_token=%s" in com.wifiaudio.action.w.c::s0:3.
+***Found: "http://awsota.linkplay.com/wifi_audio_image/DpcPCDUfSWRrtJYibqkbqA/CAW-12150_us.txt" in com.wifiaudio.model.DeviceInfoExt::getFWReleaseNote.
+***Found: "http://%s/httpapi.asp?command=getbtpairstatus" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::h:1.
+***Found: "http://www.qobuz.com/api.json/0.2/playlist/getUserPlaylists?app_id=%s&offset=0&limit=500&user_auth_token=%s" in com.wifiaudio.action.w.c::r0:3.
+***Found: "http://api.ximalaya.com/search/radios?app_key=%s&device_id=%s&client_os_type=%d&pack_id=%s&access_token=%s&q=%s&page=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::J:5.
+***Found: "http://api.ximalaya.com/search/tracks?app_key=%s&device_id=%s&client_os_type=%d&pack_id=%s&access_token=%s&q=%s&category_id=%d&page=%d&count=%d&sig=%s" in com.wifiaudio.action.e0.d::K:6.
+***Found: "http://%s/info/partner_v3/search/podcasts?query=&enrich=true&sorttype=%s&sizeperpage=50&pageindex=%s&apiKey=d2480572d97ea568ddcb387ddb61e88ca3238aea" in com.wifiaudio.view.pagesmsccontent.radionet.k::o:1.
+***Found: "http://%s/httpapi.asp?command=startbtserver:%d" in com.wifiaudio.view.pagesdevconfig.bt_transmitter.a.b::c:1.
+***Found: "http://" in com.wiimusoftapsdklibrary.f::q:4.
+***Found: "http://api.ximalaya.com/oauth2/access_token" in com.wifiaudio.action.e0.d::j:1.
+***Found: "http://api.ximalaya.com/live/provinces?app_key=%s&client_os_type=%d&device_id=%s&pack_id=%s&access_token=%s&sig=%s" in com.wifiaudio.action.e0.d::u:1.
+***Found: "http://mermaid.ximalaya.com/collector/v1" in com.g.a.a.b.f::G:1.
+***Found: "http://api.wimpmusic.com:80/v1/users/%s/playlists" in com.wifiaudio.action.a0.d::d:1.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::decrypt.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::encrypt.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::decrypt:2.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "0" in com.linkplay.amazonmusic_library.utils.ToolUtils::encrypt:8.
+***Found: "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::encrypt.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "~linkplayble@#==" in com.e.c.f.d::d.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "0" in com.wifiaudio.utils.okhttp.k::a:4.
+***Found: "0" in com.e.c.f.a::a:9.
+***Found: "~linkplayble@#==" in com.linkplay.statisticslibrary.utils.StatisticsAESHelper::decrypt.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in performSSLNegotiation in org.apache.commons.net.smtp.SMTPSClient::performSSLNegotiation.
+***Didn't manually verify hostname in performSSLNegotiation in org.apache.commons.net.pop3.POP3SClient::performSSLNegotiation.
+***Didn't manually verify hostname in sslNegotiation in org.apache.commons.net.ftp.FTPSClient::sslNegotiation.
+***Didn't manually verify hostname in performSSLNegotiation in org.apache.commons.net.imap.IMAPSClient::performSSLNegotiation.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.wifiaudio.view.custom_view.KernelRelativeLayout::init.
+***Found: Untrused PRNG (java.util.Random) in com.linkplay.statisticslibrary.utils.ToolUtils::randomHexString.
+***Found: Untrused PRNG (java.util.Random) in com.fmxos.platform.xiaoyaos.b::a.
+***Found: Untrused PRNG (java.util.Random) in com.wifiaudio.view.pagesmsccontent.qobuz.p.a::E0.
+***Found: Untrused PRNG (java.util.Random) in com.linkplay.amazonmusic_library.presenter.account.AMAccessTokenPresenter::setAccessToken.
+***Found: Untrused PRNG (java.util.Random) in com.fmxos.a.d.a::a.
+***Found: Untrused PRNG (java.util.Random) in org.teleal.cling.registry.b::init.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.net.ftp.FTPClient::init.
+***Found: Untrused PRNG (java.util.Random) in com.wifiaudio.view.pagesmsccontent.a0.a::K.
+***Found: Untrused PRNG (java.util.Random) in index.SongListFragment::onClick.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.retry.PredefinedRetryPolicies$SDKDefaultBackoffStrategy::init.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.KotlinRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.wifiaudio.view.pagesmsccontent.z.u::d1.
+***Found: Untrused PRNG (java.util.Random) in com.fmxos.platform.h.f::d.
+***Found: Untrused PRNG (java.util.Random) in com.linkplay.statisticslibrary.StatisticManager::beginUpload.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.paho.client.mqttv3.internal.websocket.b::e.
+***Found: Untrused PRNG (java.util.Random) in com.tencent.wxop.stat.a::a.
+***Found: Untrused PRNG (java.util.Random) in org.wireme.mediaserver.d::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tencent.wxop.stat.common.l::g.
+***Found: Untrused PRNG (java.util.Random) in com.wifiaudio.view.pagesmsccontent.qobuz.r.b::R0.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "awsiotkeystorepassword" in com.amazonaws.mobileconnectors.iot.AWSIotKeystoreHelper::getTempKeystore:5.
+=======================================

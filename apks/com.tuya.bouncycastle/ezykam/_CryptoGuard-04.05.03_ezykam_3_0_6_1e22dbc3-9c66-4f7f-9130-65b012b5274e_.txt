@@ -1,0 +1,176 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.tuya.bouncycastle/ezykam_3_0_6.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES" in com.tuya.sdk.hardware.qqdqbpb::pdqppqb.
+***Found: "AES" in com.tuya.sdk.hardware.qqdqbpb::bdpdqbp.
+***Found: "AES" in hfe::b.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::pppbppp.
+***Found: "AES" in com.tuya.sdk.bluetooth.dpppdpp::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.bluetooth.dpppdpp::pppbppp.
+***Found: "AES" in hfe::a.
+***Found: "AES" in com.tuya.sdk.bluetooth.dpppdpp::bppdpdq.
+***Found: "AES" in com.tuya.sdk.hardware.pdqdbdd::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.hardware.qqdqbpb::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.hardware.dpdbddb::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.mqtt.qqdbbpp::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.mqtt.qqdbbpp::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.bluetooth.dpppdpp::bdpdqbp.
+***Found: "AES" in com.tuya.smart.android.network.Business::decryptResponse.
+***Found: "AES" in com.tuya.smart.android.network.TuyaApiParams::getEncryptPostDataString.
+***Found: "AES" in com.tuya.sdk.mqtt.qqdbbpp::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.mqtt.pbddddb::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.security.EncryptionManager::pdqppqb.
+***Found: "AES" in com.tuya.sdk.mqtt.qqdbbpp::bdpdqbp.
+***Found: "AES" in com.tuya.smart.android.base.EncryptApiParams::encryptPostDataString.
+***Found: "AES" in com.tuya.sdk.bluetooth.dpppdpp::pdqppqb.
+***Found: "AES" in com.tuya.sdk.bluetooth.dpppdpp::qddqppb.
+***Found: "AES" in com.tuya.sdk.mqtt.qqdbbpp::bdpdqbp.
+***Found: "AES" in com.tuya.sdk.mqtt.qqdbbpp::pdqppqb.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "MD5" in com.tuya.sdk.bluetooth.qqpbpdq$bdpdqbp::run.
+***Found: "MD5" in dox$a::a.
+***Found: "MD5" in com.squareup.okhttp.internal.Util::md5Hex.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "MD5" in com.tuya.sdk.bluetooth.dddbppd$bdpdqbp::run.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "MD5" in com.tuya.sdk.bluetooth.qppbddd::bdpdqbp.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "MD5" in com.tuya.sdk.bluetooth.bbbdppp::bdpdqbp.
+***Found: "SHA-1" in io.grpc.okhttp.internal.Util::sha1.
+***Found: "MD5" in org.chromium.net.X509Util::hashPrincipal.
+***Found: "MD5" in dnk::b.
+***Found: "SHA-1" in com.squareup.okhttp.internal.Util::shaBase64.
+***Found: "md5" in com::b:871.
+***Found: "MD5" in com::b:871.
+***Found: "MD5" in dnk::a.
+***Found: "MD5" in com.tuya.sdk.bluetooth.qbdbbdb::pppbppp.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5::md5.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "MD5" in soloader.SoLoader::getLibHash.
+***Found: "SHA-1" in com.squareup.okhttp.internal.Util::sha1.
+***Found: "MD5" in com.tuya.sdk.bluetooth.qppbddd::bdpdqbp.
+***Found: "MD5" in com.tuya.smart.android.common.utils.MD5Util::computeMD5Hash.
+***Found: "SHA1" in bvu::a.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1HashBase64.
+***Found: "SHA-1" in com.google.android.gms.common.zzl::zzc.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "MD5" in com.tuya.sdk.bluetooth.bqpdbqq::init.
+***Found: "MD5" in hlr::a.
+***Found: "MD5" in com.tuya.sdk.bluetooth.qqpbdqq::qqpddqd.
+***Found: "MD5" in cop::a.
+***Found: "MD5" in com.tuya.sdk.bluetooth.ppbbbpd::bdpdqbp.
+***Found: "MD5" in io.grpc.okhttp.internal.Util::md5Hex.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "sha1" in com::b:872.
+***Found: "SHA-1" in com::b:872.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "SHA-1" in io.grpc.okhttp.internal.Util::shaBase64.
+***Found: "MD5" in com.amazon.identity.auth.device.utils.HashAlgorithm::clinit:4.
+***Found: "MD5" in com.tuya.sdk.bluetooth.ddqqbbq$bdpdqbp::run.
+***Found: "MD5" in drz::a.
+***Found: "MD5" in com.tuya.sdk.bluetooth.qpdbdpd::init.
+***Found: "MD5" in com.tuya.sdk.bluetooth.ppqdbbq::init.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1Hash.
+***Found: "SHA-1" in buy::a.
+***Found: "MD5" in com.tuya.sdk.blelib.utils.MD5Utils::MD5_12.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Cause: Used default key size in io.jsonwebtoken.impl.crypto.RsaProvider::generateKeyPair.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://%s/onchange" in com.facebook.react.devsupport.DevServerHelper::createOnChangeEndpointUrl:594.
+***Found: "http://%s/%s" in com.facebook.react.devsupport.DevServerHelper::createResourceURL:452.
+***Found: "http://%s/status" in com.facebook.react.devsupport.DevServerHelper::createPackagerStatusURL:521.
+***Found: "http://%s/open-stack-frame" in com.facebook.react.devsupport.DevServerHelper::createOpenStackFrameURL:460.
+***Found: "http://%s/launch-js-devtools" in com.facebook.react.devsupport.DevServerHelper::createLaunchJSDevtoolsCommandUrl:601.
+***Found: "http://%s/symbolicate" in com.facebook.react.devsupport.DevServerHelper::createSymbolicateURL:456.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "6471648763178467" in hhn::a:44.
+***Found: "89" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "this is default iv" in dew::a.
+***Found: "0" in com.tuya.sdk.bluetooth.qqdqqpd::qqdbbpp.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::getBulkSummary:1.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::step3SendServerRandom:1.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::sendZigBeeOldActivate:1.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::sendActivateInfo:5.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::sendReceiveAck.
+***Found: "99" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "2" in com.tuya.sdk.bluetooth.dpdqddb::pdqppqb:160.
+***Found: "61" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "61" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "119" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "0" in com.tuya.sdk.bluetooth.dpdqddb::pdqppqb:160.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::sendWifiInfo:4.
+***Found: "eapil_initVector" in com.eapil.lib.EapilAesUtils::aesDecode:56.
+***Found: "86" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::sendZigBeeActivateInfo:4.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+***Found: "1" in com.tuya.sdk.bluetooth.bpdpqqd::dealWithResponse:353.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::step2SendServerCertEncryptData:1.
+***Found: "0" in com.tuya.sdk.bluetooth.qqdqqpd::dqdpbbd:11.
+***Found: "121" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+***Found: "1" in com.tuya.sdk.bluetooth.bpdpqqd::sendErrorToDevice.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::sendEmptyParamToDevice.
+***Found: "0" in com.tuya.sdk.bluetooth.bdpqppd::sendActivateInfo:5.
+***Found: "0" in com.tuya.sdk.bluetooth.bpdpqqd::dealWithResponse:315.
+***Found: "0" in com.tuya.sdk.bluetooth.bdpqppd::sendReceiveAck.
+***Found: "0" in com.tuya.sdk.bluetooth.bdpqppd::sendWifiInfo:4.
+***Found: "UTF-8" in com.tuya.smart.android.network.util.AssetsManager::getStringFromAssets:8.
+***Found: "50" in com.tuya.smart.android.network.http.pin.TuyaCertificatePinner::getDefaultCers:1.
+=======================================
+=======================================
+***Violated Rule 11: Found predictable seeds in code
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::encrypt.
+***Found: "access_2017-7-17" in com.eapil.lib.EapilAesUtils::decrypt.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in gqg$31::onClick.
+***Found: Untrused PRNG (java.util.Random) in bqw::clinit.
+***Found: Untrused PRNG (java.util.Random) in ipz$a::a.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.pushcenter.view.NotificationHelper::getNotification.
+***Found: Untrused PRNG (java.util.Random) in gqg::a.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in htx$a::a.
+***Found: Untrused PRNG (java.util.Random) in fil::b.
+***Found: Untrused PRNG (java.util.Random) in dtd::e.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$a::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$a::d.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$a::init.
+***Found: Untrused PRNG (java.util.Random) in ibp::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tuyasmart.stencil.component.media.MusicPlayService::j.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.internal.ExponentialBackoffPolicy::init.
+***Found: Untrused PRNG (java.util.Random) in aqe::clinit.
+***Found: Untrused PRNG (java.util.Random) in iup::a.
+***Found: Untrused PRNG (java.util.Random) in csn::z.
+***Found: Untrused PRNG (java.util.Random) in epf::init.
+***Found: Untrused PRNG (java.util.Random) in gao::a.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.pushcenter.parser.Parse::dispatch.
+***Found: Untrused PRNG (java.util.Random) in csa::f.
+***Found: Untrused PRNG (java.util.Random) in tyrctmultiimagepickermanager.TYRCTMultiImagePickerManager::run.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.scene.SceneRouteService::c.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.AesGcmUtil::generateRandomNonce.
+***Found: Untrused PRNG (java.util.Random) in gap::a.
+***Found: Untrused PRNG (java.util.Random) in fjr$1::a.
+***Found: Untrused PRNG (java.util.Random) in fjr$2::run.
+***Found: Untrused PRNG (java.util.Random) in gki::a.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.okhttp.OkHttpClientTransport::init.
+***Found: Untrused PRNG (java.util.Random) in iqa$b::g.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.pushcenter.view.NotificationHelper::getNotificationCampt.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$a::b.
+***Found: Untrused PRNG (java.util.Random) in gwr::a.
+***Found: Untrused PRNG (java.util.Random) in io.grpc.okhttp.OkHttpClientTransport::init.
+***Found: Untrused PRNG (java.util.Random) in com.tuya.smart.android.common.utils.SafeHandler::clinit.
+=======================================

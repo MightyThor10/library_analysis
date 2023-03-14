@@ -1,0 +1,272 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.google.android/cetusplay/CetusPlayRemoteControl_4_9_4_518.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "PBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::getObject.
+***Found: "AES/ECB/PKCS5Padding" in com.amazon.identity.auth.device.cr::a.
+***Found: "DES/ECB/NoPadding" in org.apache.http.impl.auth.NTLMEngineImpl::lmResponse.
+***Found: "DES/ECB/NoPadding" in org.apache.http.impl.auth.NTLMEngineImpl::lmHash.
+***Found: "PBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "AES" in com.amazon.identity.auth.device.cr::b.
+***Found: "AES" in com.amazon.identity.auth.device.cr::c.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD2" in com.amazon.whispersync.org.apache.commons.codec.digest.DigestUtils::getMd2Digest.
+***Found: "MD5" in com.amazon.whispersync.roboguice.util.Strings::md5.
+***Found: "MD5" in i.w$a::d.
+***Found: "MD5" in org.apache.http.impl.auth.NTLMEngineImpl::getNTLM2SessionResponse.
+***Found: "SHA-1" in i.m::d1.
+***Found: "MD5" in com.amazonaws.util.Md5Utils::computeMD5Hash.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zzc.
+***Found: "SHA-1" in i.w$a::e.
+***Found: "MD5" in com.cetusplay.remotephone.z.j::n.
+***Found: "SHA1" in com.google.firebase.installations.local.IidStore::c.
+***Found: "SHA1" in com.amazon.whispersync.device.crashmanager.CrashDescriptorUtil::calculateCrashDescriptor.
+***Found: "MD5" in org.apache.http.impl.auth.NTLMEngineImpl$HMACMD5::init.
+***Found: "MD5" in com.amazon.identity.auth.device.ia::df.
+***Found: "MD5" in org.java_websocket.drafts.Draft_76::createChallenge.
+***Found: "MD5" in com.cetusplay.remotephone.z.n::s.
+***Found: "SHA-1" in com.amazon.bison.util.MessageObfuscator::encodeSHA1.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzchh::zze.
+***Found: "MD5" in i.p::L.
+***Found: "MD5" in org.apache.http.impl.auth.DigestScheme::createCnonce.
+***Found: "SHA-1" in i.x$a::e.
+***Found: "MD5" in com.koushikdutta.async.http.d0.c::toString.
+***Found: "MD5" in i.m::I.
+***Found: "MD5" in org.apache.commons.codec.digest.DigestUtils::getMd5Digest.
+***Found: "SHA" in org.apache.commons.codec.digest.DigestUtils::getShaDigest.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzanx::run.
+***Found: "MD5" in com.koushikdutta.async.l0.c::clinit.
+***Found: "SHA-1" in com.koushikdutta.async.http.z::e.
+***Found: "SHA-1" in com.amazon.whispersync.org.apache.commons.codec.digest.DigestUtils::getSha1Digest.
+***Found: "SHA-1" in com.google.firebase.crashlytics.internal.common.CommonUtils::F.
+***Found: "MD5" in com.google.android.gms.internal.consent_sdk.zzbx::zzc.
+***Found: "SHA-1" in com.google.firebase.messaging.GmsRpc::d.
+***Found: "MD5" in com.amazon.whispersync.org.apache.commons.codec.digest.DigestUtils::getMd5Digest.
+***Found: "MD5" in com.amazonaws.util.Md5Utils::computeMD5Hash.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzlp::zzF.
+***Found: "MD5" in com.amazon.whisperlink.port.DeviceIds::getIdFromString.
+***Found: "MD5" in b.f.a.b.a.c.c::b.
+***Found: "SHA1" in org.java_websocket.drafts.Draft_10::generateFinalKey.
+***Found: "MD5" in org.apache.http.impl.auth.DigestScheme::createDigest.
+***Found: "MD5" in i.x$a::d.
+***Found: "MD5" in com.google.common.hash.Hashing$Md5Holder::clinit.
+***Found: "SHA" in com.amazon.communication.websocket.WebSocketClient::upgradeConnection.
+***Found: "SHA-1" in com.google.common.hash.Hashing$Sha1Holder::clinit.
+***Found: "MD5" in com.connectsdk.service.AirPlayService::digestAuthentication.
+***Found: "SHA-1" in i.p::X.
+***Found: "MD5" in com.cetusplay.remotephone.z.n::w.
+***Found: "MD5" in org.apache.http.impl.auth.DigestScheme::createDigest.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzchh::zzz.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzchh::zzd.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzbcy::zza.
+***Found: "SHA1" in com.amazon.device.crashmanager.utils.CrashDescriptorUtil::calculateCrashDescriptor.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzgvc::zzm:2.
+***Found: Constant "1664557424545" in com.google.android.gms.internal.ads.zzaqj::zzg.
+***Found: Constant "HmacSha256" in com.google.android.gms.internal.ads.zzgkm::zzb:2.
+***Found: Constant "HmacSha512" in com.google.android.gms.internal.ads.zzgkm::zzc:4.
+***Found: Constant "5" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "PBKDF2WithHmacSHA1" in com.amazon.storm.lightning.common.security.LightningSecurityBase::hashWithSalt.
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "0" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "3" in com.google.android.gms.internal.ads.zzgvc::zzm:6.
+***Found: Constant "HmacSha256" in com.google.android.gms.internal.ads.zzgkm::zzc:1.
+***Found: Constant "6" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "7" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "GuestSecret" in com.amazon.whisperlink.feature.security.authentication.AuthenticationData::authorize.
+***Found: Constant "1" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode.
+***Found: Constant "-128" in com.google.android.gms.internal.ads.zzgog::zza:3.
+***Found: Constant "1664557424545" in com.google.android.gms.internal.ads.zzaqj::zzw:1.
+***Found: Constant "0L" in com.amazon.whisperlink.util.EncryptionUtil::oneWayHash.
+***Found: Constant "AES/CBC/PKCS7Padding" in com.amazon.identity.frc.FrcCookiesManager.a::a.
+***Found: Constant "HmacSha384" in com.google.android.gms.internal.ads.zzgkm::zzc:2.
+***Found: Constant "1664557424545" in com.google.android.gms.internal.ads.zzaqj::zzg.
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "PBKDF2WithHmacSHA1And8bit" in com.amazon.storm.lightning.common.security.LightningSecurityBase::hashWithSalt.
+***Found: Constant "3" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "0" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzgvc::zzm:21.
+***Found: Constant "GuestSecret" in com.amazon.whisperlink.feature.security.authentication.AuthenticationData::getDeviceRecord.
+***Found: Constant "0" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode.
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "2" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode.
+***Found: Constant "5" in com.google.android.gms.internal.ads.zzgrh::zzi.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of framework.SSLConfiguration in framework.SSLConfiguration::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of framework.SSLConfiguration in framework.SSLConfiguration::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of https.HttpsSSLContextFactory in https.HttpsSSLContextFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of https.HttpsSSLContextFactory in https.HttpsSSLContextFactory::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of upstream.FrankHttpDataSource in upstream.FrankHttpDataSource::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of upstream.FrankHttpDataSource in upstream.FrankHttpDataSource::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Cause: Used default key size in com.google.android.tv.remote.pairing.KeyStoreManager::e.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in upstream.FrankStreamingQoSMessageSource::UNKNOWN.
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in upstream.DefaultHttpDataSource::UNKNOWN.
+***Cause: Fixed "[1]" in framework.SSLConfiguration::UNKNOWN.
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://%s:6095/request?action=isalive" in b.i.d.a.s::H:1.
+***Found: "http://%s:6095/controller?action=keyevent&keycode=%s" in b.i.d.a.s::D:5.
+***Found: "http://%s:12321/?Action=setUdpServer&ip=%s&port=%s" in b.i.d.a.a0::n:10.
+***Found: "http://%s:12321/?Action=getDeviceName" in b.i.d.a.a0::n:2.
+***Found: "http://%s:%s/_urn:schemas-upnp-org:service:AVTransport_control" in b.i.d.a.r.a::b:12.
+***Found: "http://%s:7766/remote?key=%s" in b.i.d.a.k::n:4.
+***Found: "http://spectrum.s3.amazonaws.com/kindle-wifi/wifistub.html" in com.amazon.fcl.impl.proxy.FrankCloudClientProxy$FrankCloudClientFactoryProxy::isCloudServiceAvailable.
+***Found: "http://%s:12321/?Action=openApp&packageName=%s" in b.i.d.a.a0::e:2.
+***Found: "http://%s:12321/?Action=SentKey&Event=%s" in b.i.d.a.a0$a::run:2.
+***Found: "http://%s:7766/remote?key=%s" in b.i.d.a.k::p:2.
+***Found: "http://%s:%s/GetAppList" in b.i.d.a.r.a::b:6.
+***Found: "http://%s:8899/send?key=%s" in b.i.d.a.g$a::run:1.
+***Found: "http://%s:7766/remote?key=%s" in b.i.d.a.k$a::run:1.
+***Found: "http://" in b.i.d.a.y::x:1.
+***Found: "http://%s:8899/send?key=%s" in b.i.d.a.g::p:2.
+***Found: "http://%s:4004/AVTransport" in b.i.d.a.a::z:2.
+***Found: "http://%s:%s/description.xml" in b.i.d.a.h::t:2.
+***Found: "http://%s:%s/upnp/control/tvcontrol1" in b.i.d.a.h::h:4.
+=======================================
+=======================================
+***Violated Rule 8: Used < 1000 iteration for PBE
+***Found: "4" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "3" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "1" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi::loadStore.
+***Found: "1" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi::loadStore.
+=======================================
+=======================================
+***Violated Rule 9: Found constant salts in code
+***Found: "AES/CBC/PKCS7Padding" in com.amazon.identity.frc.FrcCookiesManager.a::a.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "1" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode.
+***Found: "-128" in com.google.android.gms.internal.ads.zzgog::zza:3.
+***Found: "0" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode.
+***Found: "2" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in s in com.google.android.tv.support.remote.core.TcpClient::s.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.amazon.android.frankexoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in kotlin.x2.b$a::a.
+***Found: Untrused PRNG (java.util.Random) in com.cetusplay.remotephone.admob.e::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.internal.client.zzay::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.communication.websocket.WebSocketClient::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.crypto.tink.integration.android.AndroidKeystoreAesGcm::e.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang3.RandomUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.Utils::e.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.core.android.explorers.util.AndroidMdnsUtil::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzlp::zzq.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.http.HybiParser::s.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.mobileconnectors.pinpoint.targeting.notification.NotificationClientBase::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.wukongtv.wkremote.ControlImpl.YunControlProtocol.v::init.
+***Found: Untrused PRNG (java.util.Random) in g.a.b.d::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.codahale.metrics.Striped64$HashCode::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.android.frankexoplayer2.trackselection.RandomTrackSelection::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzape::zze.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whispersync.client.metrics.BasicClickStreamMetricEvent::generateRequestId.
+***Found: Untrused PRNG (java.util.Random) in com.codahale.metrics.ThreadLocalRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.weblab.mobile.service.ratelimiter.ThrottledRequestRatePolicy::getCoolDownPeriodInMinutes.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whispercloak.random.PRNGFixes$LinuxPRNGSecureRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.transport.TWhisperLinkTransport::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_75::init.
+***Found: Untrused PRNG (java.util.Random) in javax.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.retry.policies.RandomAndLessThanDelayPostProcessor::getDelayMillisFor.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.retry.PredefinedRetryPolicies$SDKDefaultBackoffStrategy::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.bison.epg.NameGenerator::init.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang.math.JVMRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.wukongtv.wkremote.ControlImpl.YunControlProtocol.m.d::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.device.utils.thirdparty.AbstractDeviceUtil::initializeCustomerID.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.android.frankexoplayer2.trackselection.RandomTrackSelection::init.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.l0.c::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.identity.auth.device.ar::init.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.http.socketio.k::q.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_76::init.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_76::generateKey.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.client.metrics.thirdparty.clickstream.internal.ClickStreamHelper::generateRequestId.
+***Found: Untrused PRNG (java.util.Random) in kotlin.x2.c::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::zzh.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.device.utils.det.AbstractDeviceUtil::initializeCustomerID.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.rcm.ConfigurationSyncOperation::registerLastSyncTime.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzfoy::zza.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang.RandomStringUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.communication.AlphaProtocolHandlerBase::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.cetusplay.remotephone.google.g::d.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler::getJitterInMS.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.bison.oobe.frank.mockfcl.MockChannelScanner$DemoPlan$AddChannel::buildChannelInfo.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.ec.ECFieldElement$Fp::sqrt.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.communication.heartbeat.ProbingConnectionLifetimeManager::configureProbingDelayed.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.core.android.explorers.DPDiscovery::handleRetryableException.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.bison.oobe.frank.mockfcl.MockChannelScanner::init.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_10::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler::getRandomTimeInsideCurrentWindowInMS.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.android.frankexoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.client.metrics.thirdparty.BaseMetricsServiceFactory::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.weblab.mobile.service.ratelimiter.ExponentialBackoffRequestRatePolicy::getJitterTimeInSeconds.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.zzee::zzb.
+***Found: Untrused PRNG (java.util.Random) in org.apache.thrift.orig.transport.TFileTransport::main.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zzc.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.h0.a::c.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.ec.ECCurve$F2m::solveQuadraticEquation.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whispersync.org.apache.commons.codec.digest.UnixCrypt::crypt.
+***Found: Untrused PRNG (java.util.Random) in h.f0::b.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.device.utils.thirdparty.AbstractDeviceUtil::initializeSessionID.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.device.utils.det.AbstractDeviceUtil::initializeSessionID.
+***Found: Untrused PRNG (java.util.Random) in b.h.a.a.a::v.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang3.RandomStringUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzmt::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzcat::zzg.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.android.frankexoplayer2.upstream.cache.CachedContentIndex::writeFile.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::zzg.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang.math.JVMRandom::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whispersync.client.metrics.BaseMetricsServiceFactory::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.communication.ExponentialBackoffWaitCalculator::getWaitMs.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.core.android.explorers.CloudExplorer::handleRetryableException.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whispersync.org.apache.commons.codec.digest.B64::getRandomSalt.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::zzf.
+***Found: Untrused PRNG (java.util.Random) in org.apache.http.entity.mime.MultipartEntity::generateBoundary.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "BKS" in com.amazon.whisperlink.feature.security.android.AbstractCertificateSource::getTrustStore.
+***Found: "BKS" in com.amazon.whisperlink.feature.security.android.AbstractCertificateSource::getKeyStore.
+***Found: "dontcare" in com.amazon.identity.auth.device.es::clinit.
+***Found: "KeyStore_Password" in com.google.android.tv.remote.pairing.KeyStoreManager::clinit.
+=======================================

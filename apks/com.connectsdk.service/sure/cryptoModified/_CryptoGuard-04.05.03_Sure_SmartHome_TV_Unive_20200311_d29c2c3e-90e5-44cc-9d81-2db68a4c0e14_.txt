@@ -1,0 +1,249 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.connectsdk.service/sure/Sure_SmartHome_TV_Unive_20200311.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "OldPBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::getObject.
+***Found: "BrokenPBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::getObject.
+***Found: "AES/ECB/PKCS7Padding" in com.sec.android.app.qwertyremocon.rccore.TvRemoconApi::OnEncryptCallback.
+***Found: "PBEWithMD5AndDES" in com.amazon.whisperlink.util.EncryptionUtil::decrypt.
+***Found: "AES/ECB/NOPADDING" in com.google.android.gms.internal.ads.zzayi::init.
+***Found: "PBEWithMD5AndDES" in com.amazon.whisperlink.util.EncryptionUtil::encrypt.
+***Found: "AES" in com.tekoia.sure.security.local.Crypto::decrypt.
+***Found: "PBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::getObject.
+***Found: "AES/ECB/PKCS7Padding" in com.sec.android.app.qwertyremocon.rccore.TvRemoconApi::OnDecryptCallback.
+***Found: "PBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "AES/ECB/NOPADDING" in com.google.android.gms.internal.ads.zzayi::zzc.
+***Found: "PBEWithSHAAnd3-KeyTripleDES-CBC" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::getObject.
+***Found: "AES/ECB/PKCS7Padding" in com.sec.android.app.qwertyremocon.rccore.TvRemoconApi::OnHTTPEncryptCallback.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA-1" in com.facebook.internal.Utility::sha1hash.
+***Found: "MD5" in com.aerserv.sdk.adapter.AbstractCustomProvider::makeUpperCaseMD5AndroidId.
+***Found: "SHA-1" in com.koushikdutta.async.http.n::b.
+***Found: "MD5" in com.facebook.appevents.AppEvent::md5Checksum.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "SHA1" in org.java_websocket.drafts.Draft_10::generateFinalKey.
+***Found: "MD5" in org.fourthline.cling.model.types.UDN::uniqueSystemIdentifier.
+***Found: "MD5" in com.google.android.gms.internal.measurement.zzak::zzo.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::digest.
+***Found: "SHA-1" in com.facebook.FacebookSdk::getApplicationSignature.
+***Found: "MD5" in com.tom.rtsprtp.RTSPClient::calcDigestResponse.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "SHA-1" in okhttp3.internal.Util::sha1.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "SHA1" in com.facebook.ads.internal.q.a.f::b.
+***Found: "SHA-1" in okhttp3.internal.Util::shaBase64.
+***Found: "MD5" in org.apache.commons.io.input.MessageDigestCalculatingInputStream::init.
+***Found: "MD5" in org.eclipse.jetty.security.authentication.DigestAuthenticator$Digest::check.
+***Found: "MD5" in com.google.common.hash.Hashing$Md5Holder::clinit.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzfk::getMessageDigest.
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "MD5" in com.haier.uhome.usdk.f.e::a.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzamu::zzsi.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::check.
+***Found: "SHA-1" in com.facebook.ads.internal.o.c::a.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzbm::run.
+***Found: "MD5" in org.eclipse.jetty.client.security.DigestAuthentication::newCnonce.
+***Found: "SHA-1" in com.facebook.internal.Utility::sha1hash.
+***Found: "MD5" in com.facebook.ads.internal.p.b.m::d.
+***Found: "MD5" in com.facebook.ads.internal.q.a.h::a.
+***Found: "MD5" in com.google.android.gms.tagmanager.zzbv::zze:8.
+***Found: "MD5" in com.willblaschko.android.alexa.utility.SigningKey::getCertificateMD5Fingerprint.
+***Found: "MD5" in com.connectsdk.service.AirPlayService::digestAuthentication.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzgq::zzhg.
+***Found: "SHA1" in com.tekoia.sure2.appliancesmartdrivers.camonvif.utils.SecuriyUtils::calculatePasswordDigest.
+***Found: "SHA-1" in com.google.common.hash.Hashing$Sha1Holder::clinit.
+***Found: "SHA1" in tekoiacore.utils.constants.a::a.
+***Found: "SHA1" in io.fabric.sdk.android.services.network.PinningTrustManager::isValidPin.
+***Found: "SHA-1" in com.spotxchange.internal.util.Encrypt::sha1.
+***Found: "MD5" in com.haier.uhome.usdk.f.a::a.
+***Found: "MD5" in okio.HashingSource::md5.
+***Found: "SHA-1" in io.fabric.sdk.android.services.common.CommonUtils::sha1.
+***Found: "SHA-1" in io.fabric.sdk.android.services.common.CommonUtils::sha1.
+***Found: "MD5" in jcifs.util.c::init.
+***Found: "SHA-1" in com.facebook.ads.internal.p.a.o::a.
+***Found: "SHA1" in com.google.firebase.iid.zzan::zza.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in com.facebook.internal.Utility::md5hash.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zza.
+***Found: "MD5" in org.java_websocket.drafts.Draft_76::createChallenge.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "MD5" in com.amazon.whisperlink.port.DeviceIds::getIdFromString.
+***Found: "SHA-1" in com.flurry.sdk.jn::f.
+***Found: "MD5" in com.amazon.identity.auth.device.utils.HashAlgorithm::clinit:4.
+***Found: "MD5" in okhttp3.internal.Util::md5Hex.
+***Found: "MD5" in jcifs.smb.t::init.
+***Found: "MD5" in org.eclipse.jetty.client.security.DigestAuthentication::newResponse.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzamu::zzde.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "MD5" in jcifs.smb.r::a.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "MD5" in com.aerserv.sdk.adapter.asadmob.ASAdMobConfig::makeUpperCaseMD5AndroidId.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of async.d in async.d::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of async.d in async.d::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of ssl.SslContextFactory in ssl.SslContextFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of ssl.SslContextFactory in ssl.SslContextFactory::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of http.MySSLSocketFactory in http.MySSLSocketFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of http.MySSLSocketFactory in http.MySSLSocketFactory::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of b.c in b.c::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of b.c in b.c::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Cause: Used default key size in com.google.android.tv.remote.pairing.KeyStoreManager::createIdentity.
+***Cause: Used default key size in com.google.polo.ssl.SslUtil::generateRsaKeyPair:68.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in b.e::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getRulesDetail:259.
+***Found: "http://" in com.aerserv.sdk.http.HttpTask::doInBackground:45.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getSensorsDetail:243.
+***Found: "http://%1$s:8000/common/1.0.0/service/startService?appID=com.samsung.companion" in com.samsung.smartview.service.emp.impl.common.b::a:29.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getGroupsDetail:195.
+***Found: "http://" in com.philips.lighting.hue.sdk.upnp.IPAddressScanner::call:34.
+***Found: "http://%s:%d/%s" in com.facebook.ads.internal.p.b.f::d.
+***Found: "http://[" in org.seamless.util.URIUtil::createAbsoluteURL:97.
+***Found: "http://" in org.seamless.util.URIUtil::createAbsoluteURL:99.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getBridgeDetails:148.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getConfigDetails:163.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getLightsDetail:179.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getScenesDetail:211.
+***Found: "http://debug.aerserv.com/sybok/" in com.aerserv.sdk.proxy.SybokProxy::sendParams.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::postDeviceKey:355.
+***Found: "http://%1$s:8000/com.samsung.companion" in com.tekoia.sure2.appliancesmartdrivers.samsungtv.logic.SamsungTVLogic2015::createRemoteControlService:531.
+***Found: "http://www.google-analytics.com" in com.google.android.gms.internal.measurement.zzcf::clinit:46.
+***Found: "http://debug.aerserv.com/sybok/analytics" in analytics.AerServAnalyticsProxy::run.
+***Found: "http://" in com.philips.lighting.hue.sdk.connection.impl.PHBridgeInternal::getSchedulesDetail:227.
+=======================================
+=======================================
+***Violated Rule 8: Used < 1000 iteration for PBE
+***Found: "4" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "20" in com.amazon.whisperlink.util.EncryptionUtil::encrypt.
+***Found: "3" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi::loadStore.
+***Found: "1" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "1" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi::loadStore.
+***Found: "20" in com.amazon.whisperlink.util.EncryptionUtil::decrypt.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "1" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "13" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "2" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "3" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "14" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "10" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "4" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "5" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "12" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "6" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "7" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "15" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "11" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "8" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "0" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode:172.
+***Found: "9" in com.tekoia.sure.utils.Enigma::clinit.
+***Found: "2" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode:172.
+***Found: "1" in com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher::base64Decode:169.
+***Found: "0" in com.tekoia.sure.utils.Enigma::clinit:9.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in connectImpl in com.google.android.tv.support.remote.core.TcpClient::connectImpl.
+***Didn't manually verify hostname in setupSSL in com.connectsdk.service.webos.WebOSTVServiceSocketClient::setupSSL.
+***Didn't manually verify hostname in newSslSocket in org.eclipse.jetty.util.ssl.SslContextFactory::newSslSocket.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.mobfox.sdk.d::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzadb::zza.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.ec.ECFieldElement$Fp::sqrt.
+***Found: Untrused PRNG (java.util.Random) in com.spotxchange.internal.settings.FeatureToggles::calculateProbability.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.analytics.Tracker::init.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang3.RandomUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.core.android.explorers.util.AndroidMdnsUtil::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.facebook.ads.internal.q.a.n::a.
+***Found: Untrused PRNG (java.util.Random) in com.crashlytics.android.answers.RandomBackoff::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in com.moat.analytics.mobile.aer.bi::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zztu::onAdClosed.
+***Found: Untrused PRNG (java.util.Random) in com.aerserv.sdk.utils.VASTUtils::normalizeSequenceEnabled.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorThread::startListenSocket.
+***Found: Untrused PRNG (java.util.Random) in tekoiacore.utils.constants.a::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.tagmanager.zzai::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzkc::init.
+***Found: Untrused PRNG (java.util.Random) in jcifs.smb.au::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_10::init.
+***Found: Untrused PRNG (java.util.Random) in com.koushikdutta.async.http.HybiParser::a.
+***Found: Untrused PRNG (java.util.Random) in com.haier.uhome.usdk.d.a::b.
+***Found: Untrused PRNG (java.util.Random) in com.tekoia.sure2.statemachine.PlayListStateMachine::getShuffledNextItem.
+***Found: Untrused PRNG (java.util.Random) in com.loopj.android.http.SimpleMultipartEntity::init.
+***Found: Untrused PRNG (java.util.Random) in com.haier.uhome.usdk.f.a::b.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.ec.ECCurve$F2m::solveQuadraticEquation.
+***Found: Untrused PRNG (java.util.Random) in com.flurry.sdk.hb::r.
+***Found: Untrused PRNG (java.util.Random) in com.mobfox.sdk.a::f.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.transport.TWhisperLinkTransport::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_75::init.
+***Found: Untrused PRNG (java.util.Random) in javax.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.seamless.util.io.MD5Crypt::crypt.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in com.facebook.internal.Utility::generateRandomString.
+***Found: Untrused PRNG (java.util.Random) in com.crashlytics.android.core.CrashTest::stackOverflow.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.upstream.cache.CachedContentIndex::writeFile.
+***Found: Untrused PRNG (java.util.Random) in jcifs.smb.r::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.tekoia.sure.communication.MultipleConnector::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzfk::zzmc.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.jetty.server.session.AbstractSessionIdManager::initRandom.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.util.EncryptionUtil::oneWayHash.
+***Found: Untrused PRNG (java.util.Random) in com.willblaschko.android.alexa.AuthorizationManager::createCodeVerifier.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzcc::zzy.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang3.RandomStringUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in jcifs.netbios.g::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.tv.remote.PacketEncodeDecodeTest::testBadPackets.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.tagmanager.zzei::zze.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.tagmanager.zzfb::zzf.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_76::init.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_76::generateKey.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zza.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.registry.LocalItems::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection::init.
+***Found: Untrused PRNG (java.util.Random) in com.tekoia.sure2.appliancesmartdrivers.camonvif.utils.SecuriyUtils::getNonceBytes.
+***Found: Untrused PRNG (java.util.Random) in com.spotxchange.internal.beacons.BeaconDumper::applyMacro.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.protocol.async.ReceivingSearch::init.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.support.messagebox.model.Message::init.
+***Found: Untrused PRNG (java.util.Random) in com.spotxchange.internal.util.Analytics$Request::onCreateURL.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "android_id" in com.amazon.whisperlink.port.android.KeyStoreGenerator::getPassword:78.
+***Found: "KeyStore_Password" in com.google.android.tv.remote.pairing.KeyStoreManager::clinit.
+***Found: "test" in com.google.polo.ssl.SslUtil::generateTestSslContext.
+=======================================

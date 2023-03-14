@@ -1,0 +1,250 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.amazon.whisperlink/castify/CastToTVChromecast.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES" in lib.utils.Z::Z.
+***Found: "AES/ECB/PKCS5Padding" in lib.utils.Z::Y.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "MD5" in org.mozilla.javascript.tools.shell.Main::getDigest.
+***Found: "MD5" in okio.HashingSource$Companion::md5.
+***Found: "MD5" in org.apache.commons.codec.digest.DigestUtils::getMd5Digest.
+***Found: "MD5" in com.google.android.exoplayer2.source.rtsp.RtspAuthenticationInfo::getDigestAuthorizationHeaderValue.
+***Found: "SHA-1" in com.nimbusds.srp6.SRP6CryptoParams::getInstance.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "MD5" in com.google.android.gms.internal.consent_sdk.zzbx::zzc.
+***Found: "SHA-1" in okio.HashingSink$Companion::sha1.
+***Found: "MD5" in org.fourthline.cling.model.types.UDN::uniqueSystemIdentifier.
+***Found: "SHA-1" in com.nimbusds.srp6.cli.SRP6Tool::getConfig:33.
+***Found: "MD5" in org.eclipse.jetty.security.authentication.DigestAuthenticator$Digest::check.
+***Found: "SHA-1" in okio.HashingSource$Companion::sha1.
+***Found: "MD5" in org.eclipse.jetty.client.security.DigestAuthentication::newCnonce.
+***Found: "SHA-1" in com.google.firebase.crashlytics.internal.common.CommonUtils::sha1.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "SHA1" in org.java_websocket.drafts.Draft_6455::generateFinalKey.
+***Found: "MD2" in org.apache.commons.codec.digest.DigestUtils::getMd2Digest.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::check.
+***Found: "SHA-1" in org.apache.commons.codec.digest.MessageDigestAlgorithms::values:1.
+***Found: "SHA-1" in com.connectsdk.service.airplay.auth.AirPlayAuth::doPairing.
+***Found: "SHA-1" in org.apache.commons.codec.digest.DigestUtils::getSha1Digest.
+***Found: "md5" in org.seamless.util.io.MD5Crypt::crypt.
+***Found: "MD5" in org.eclipse.jetty.client.security.DigestAuthentication::newResponse.
+***Found: "MD5" in com.google.common.hash.Hashing$Md5Holder::clinit.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "SHA-1" in com.google.common.hash.Hashing$Sha1Holder::clinit.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzchh::zze.
+***Found: "MD5" in lib.utils.Z::Y.
+***Found: "MD5" in lib.utils.Z::Z.
+***Found: "MD5" in org.apache.commons.codec.digest.MessageDigestAlgorithms::values:1.
+***Found: "MD5" in org.eclipse.jetty.util.security.Credential$MD5::digest.
+***Found: "MD2" in org.apache.commons.codec.digest.MessageDigestAlgorithms::values:1.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzchh::zzz.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzchh::zzd.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzbcy::zza.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzlb::zzF.
+***Found: "MD5" in okio.HashingSink$Companion::md5.
+***Found: "MD5" in com.google.android.gms.internal.ads.zzanx::run.
+***Found: "MD5" in com.amazon.whisperlink.port.DeviceIds::getIdFromString.
+***Found: "SHA1" in com.google.firebase.installations.local.IidStore::getIdFromPublicKey.
+***Found: "MD5" in lib.downloader.coolerfall.J::T.
+***Found: "SHA-1" in okio.Buffer::sha1.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "1L" in sevenz.AES256SHA256Decoder::init:12.
+***Found: Constant "admob_interstitial" in com.linkcaster.ads.Y::a.
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzgvc::zzm:2.
+***Found: Constant "." in lib.utils.K::clinit.
+***Found: Constant "1664557424545" in com.google.android.gms.internal.ads.zzaqj::zzg.
+***Found: Constant "HmacSha256" in com.google.android.gms.internal.ads.zzgkm::zzb:2.
+***Found: Constant "HmacSha512" in com.google.android.gms.internal.ads.zzgkm::zzc:4.
+***Found: Constant "5" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "0" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "admob_native_big" in com.linkcaster.ads.Y$V::invokeSuspend.
+***Found: Constant "3" in com.google.android.gms.internal.ads.zzgvc::zzm:6.
+***Found: Constant "0L" in sevenz.AES256SHA256Decoder::init:12.
+***Found: Constant "HmacSha256" in com.google.android.gms.internal.ads.zzgkm::zzc:1.
+***Found: Constant "6" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "1L" in sevenz.AES256SHA256Decoder::init:17.
+***Found: Constant "7" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "any" in com.linkcaster.ads.Y$S::invokeSuspend.
+***Found: Constant "-128" in com.google.android.gms.internal.ads.zzgog::zza:3.
+***Found: Constant "0L" in com.amazon.whisperlink.util.EncryptionUtil::oneWayHash.
+***Found: Constant "1664557424545" in com.google.android.gms.internal.ads.zzaqj::zzw:1.
+***Found: Constant "HmacSha384" in com.google.android.gms.internal.ads.zzgkm::zzc:2.
+***Found: Constant "1664557424545" in com.google.android.gms.internal.ads.zzaqj::zzg.
+***Found: Constant "2" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "3" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "0" in com.google.android.gms.internal.ads.zzgrq::zzg.
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzgvc::zzm:21.
+***Found: Constant "4" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "5" in com.google.android.gms.internal.ads.zzgrh::zzi.
+***Found: Constant "any" in com.linkcaster.ads.Y$Z::invoke.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of ssl.SslContextFactory in ssl.SslContextFactory::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of ssl.SslContextFactory in ssl.SslContextFactory::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://" in lib.httpserver.M::F:3.
+***Found: "http://" in com.connectsdk.etc.helper.RokuClient$install$1::invokeSuspend:3.
+***Found: "http://ip-api.com/json" in lib.utils.C::clinit.
+***Found: "http://" in org.mozilla.javascript.tools.debugger.Dim::loadSource:17.
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://[" in org.seamless.util.URIUtil::createAbsoluteURL:14.
+***Found: "http://" in org.seamless.util.URIUtil::createAbsoluteURL:16.
+***Found: "http://" in com.connectsdk.etc.helper.RokuClient$requireChannel$1::invokeSuspend:3.
+***Found: "http:" in org.mozilla.javascript.tools.debugger.Dim::loadSource:14.
+***Found: "http://localhost/" in retrofit2.Response::error.
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://" in lib.castreceiver.N::init:2.
+***Found: "http://" in lib.iptv.U::J:8.
+***Found: "http://youtube.com/v?" in lib.mediafinder.youtubejextractor.W::T:5.
+***Found: "http://" in com.connectsdk.etc.helper.RokuClient$isInstalled$1::invokeSuspend:3.
+***Found: "http://castify.tv/img/tutorial1.jpg" in com.linkcaster.activities.TutorialActivity$Z::invokeSuspend.
+***Found: "http://" in lib.castreceiver.M::init:2.
+***Found: "http://127.0.0.1" in org.mozilla.javascript.tools.debugger.Dim::loadSource:16.
+***Found: "http://castify.tv/img/tutorial2.jpg" in com.linkcaster.activities.TutorialActivity$Z::invokeSuspend.
+***Found: "http://castify.tv/img/tutorial3.jpg" in com.linkcaster.activities.TutorialActivity$Z::invokeSuspend.
+***Found: "http://" in lib.castreceiver.M$Z$Z::invokeSuspend:3.
+***Found: "http://" in lib.castreceiver.AndroidTvReceiver::init:2.
+=======================================
+=======================================
+***Violated Rule 8: Used < 1000 iteration for PBE
+***Found: "20" in org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA::init.
+***Found: "3" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "0" in org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2::init.
+***Found: "1" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi::loadStore.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256::init.
+***Found: "0" in org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD2::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi::loadStore.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192::init.
+***Found: "0" in org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD5::init.
+***Found: "0" in org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2::init.
+***Found: "4" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256::init.
+***Found: "1" in org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry::init.
+***Found: "2" in org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key::init.
+***Found: "0" in org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithSHA1::init.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "-128" in com.google.android.gms.internal.ads.zzgog::zza:3.
+***Found: "-9223372036854775807L" in com.google.android.exoplayer2.source.hls.HlsSampleStreamWrapper::continueLoading.
+***Found: "-9223372036854775807L" in com.google.android.exoplayer2.source.hls.HlsChunkSource::resolveTimeToLiveEdgeUs.
+***Found: "-9223372036854775807L" in com.google.android.exoplayer2.source.hls.HlsSampleStreamWrapper::initMediaChunkLoad.
+***Found: "1L" in com.google.android.exoplayer2.source.hls.HlsChunkSource::getNextSegmentHolder:12.
+***Found: "1000L" in com.google.android.exoplayer2.util.Util::usToMs:1.
+=======================================
+=======================================
+***Violated Rule 11: Found predictable seeds in code
+***Found: "www.bouncycastle.org" in org.bouncycastle.crypto.examples.DESExample::init.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in newSslSocket in org.eclipse.jetty.util.ssl.SslContextFactory::newSslSocket.
+***Didn't manually verify hostname in run in org.java_websocket.client.WebSocketClient::run.
+***Didn't manually verify hostname in setSSLContext in com.connectsdk.service.webos.WebOSTVServiceSocketClient::setSSLContext.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.linkcaster.db.User::createRandomUser.
+***Found: Untrused PRNG (java.util.Random) in androidx.transition.Explode::calculateOut.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.hash.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.internal.client.zzay::init.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang3.RandomUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.FallbackThreadLocalRandom$implStorage$1::initialValue.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.core.android.explorers.util.AndroidMdnsUtil::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorThread::startListenSocket.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.cast.internal.CastUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.KotlinRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzape::zze.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.pqc.math.linearalgebra.GF2Polynomial::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::cloneAndInsert.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.analytics.DefaultPlaybackSessionManager::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.transport.TWhisperLinkTransport::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.mozilla.javascript.NativeMath::execIdCall.
+***Found: Untrused PRNG (java.util.Random) in javax.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.upstream.cache.SimpleCache::init.
+***Found: Untrused PRNG (java.util.Random) in org.seamless.util.io.MD5Crypt::crypt.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.util.SntpClient::writeTimestamp.
+***Found: Untrused PRNG (java.util.Random) in org.eclipse.jetty.server.session.AbstractSessionIdManager::initRandom.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::cloneAndClear.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.asn1.ua.DSTU4145PointEncoder::solveQuadraticEquation.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.zzef::zzb.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.ec.ECCurve$AbstractF2m::solveQuadraticEquation.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::zzh.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.registry.LocalItems::init.
+***Found: Untrused PRNG (java.util.Random) in lib.player.core.K::N.
+***Found: Untrused PRNG (java.util.Random) in com.connectsdk.service.airplay.auth.AuthUtils::randomString.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.jmdns.impl.JmDNSImpl::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazon.whisperlink.rcm.ConfigurationSyncOperation::registerLastSyncTime.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzfoy::zza.
+***Found: Untrused PRNG (java.util.Random) in com.linkcaster.db.NothingFound::maintain.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.Utils::getRandomDelayForSyncPrevention.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.pqc.math.linearalgebra.GF2nONBField::elementOfOrder.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler::getJitterInMS.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.pqc.math.linearalgebra.GF2nPolynomialElement::solveQuadraticEquation.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.ec.ECFieldElement$Fp::sqrt.
+***Found: Untrused PRNG (java.util.Random) in org.java_websocket.drafts.Draft_6455::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::init.
+***Found: Untrused PRNG (java.util.Random) in org.bouncycastle.math.raw.Mod::random.
+***Found: Untrused PRNG (java.util.Random) in lib.debug.ErrorActivity::R.
+***Found: Untrused PRNG (java.util.Random) in lib.utils.o0::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler::getRandomTimeInsideCurrentWindowInMS.
+***Found: Untrused PRNG (java.util.Random) in com.connectsdk.service.airplay.auth.AirPlayAuth::authenticate.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.dash.BaseUrlExclusionList::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zzc.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in lib.httpserver.H::Z.
+***Found: Untrused PRNG (java.util.Random) in org.apache.commons.lang3.RandomStringUtils::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzmt::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzcat::zzg.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::zzg.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::cloneAndRemove.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzlb::zzq.
+***Found: Untrused PRNG (java.util.Random) in com.linkcaster.db.Media::1.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::init.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.protocol.async.ReceivingSearch::init.
+***Found: Untrused PRNG (java.util.Random) in org.fourthline.cling.support.messagebox.model.Message::init.
+***Found: Untrused PRNG (java.util.Random) in com.linkcaster.db.History::maintain.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.ads.zzub::zzf.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "dft" in org.eclipse.jetty.util.security.Password::getPassword:3.
+=======================================

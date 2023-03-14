@@ -1,0 +1,203 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.espressif.iot/rubetek/Rubetek_Home_2023_2_2.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "DES/ECB/NoPadding" in org.apache.http.impl.auth.NTLMEngineImpl$CipherGen::getLanManagerSessionKey.
+***Found: "DES/ECB/NoPadding" in org.apache.http.impl.auth.NTLMEngineImpl::lmHash.
+***Found: "desede/CBC/PKCS5Padding" in com.meari.sdk.utils.DesUtils::encode.
+***Found: "DES/ECB/NoPadding" in com.p2p.core.utils.DES::desDecrypt.
+***Found: "DES/CBC/PKCS5Padding" in com.p2p.core.utils.DesUtils::encryptDES.
+***Found: "DES/CBC/PKCS5Padding" in com.p2p.core.utils.DesUtils::decryptDES.
+***Found: "DES/ECB/NoPadding" in com.p2p.core.utils.DES::desEncrypt.
+***Found: "DES/ECB/NoPadding" in org.apache.http.impl.auth.NTLMEngineImpl::lmResponse.
+***Found: "RC4" in org.apache.http.impl.auth.NTLMEngineImpl::RC4.
+***Found: "DES/ECB/NoPadding" in com.sun.mail.auth.Ntlm::i.
+***Found: "DES/ECB/NoPadding" in org.apache.http.impl.auth.NTLMEngineImpl$CipherGen::getLanManagerSessionKey.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA-1" in com.google.firebase.crashlytics.internal.common.CommonUtils::sha1.
+***Found: "MD5" in org.apache.http.impl.auth.NTLMEngineImpl$HMACMD5::init.
+***Found: "MD5" in com.sun.mail.pop3.Protocol::v.
+***Found: "MD5" in okio.ByteString::B.
+***Found: "MD5" in org.apache.http.impl.auth.DigestScheme::createDigestHeader:14.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzlb::zzF.
+***Found: "SHA-1" in com.neovisionaries.ws.client.HandshakeReader::g.
+***Found: "MD5" in com.google.android.exoplayer2.source.rtsp.auth.MD5::hash.
+***Found: "SHA1" in org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketHandshake::e.
+***Found: "SHA1" in me.pushy.sdk.lib.paho.internal.websocket.WebSocketHandshake::sha1.
+***Found: "MD5" in org.apache.http.impl.auth.DigestScheme::createDigestHeader:14.
+***Found: "SHA-1" in com.google.firebase.messaging.GmsRpc::getHashedFirebaseAppName.
+***Found: "SHA-1" in okio.ByteString::G.
+***Found: "SHA1" in com.google.firebase.installations.local.IidStore::getIdFromPublicKey.
+***Found: "MD5" in com.rubetek.client.utils.AndroidUtils::Y.
+***Found: "MD5" in org.apache.commons.codec.digest.DigestUtils::getMd5Digest.
+***Found: "MD5" in org.apache.commons.io.input.MessageDigestCalculatingInputStream::init.
+***Found: "MD5" in com.google.common.hash.Hashing$Md5Holder::clinit.
+***Found: "SHA" in org.apache.commons.codec.digest.DigestUtils::getShaDigest.
+***Found: "SHA-1" in com.google.common.hash.Hashing$Sha1Holder::clinit.
+***Found: "SHA1" in org.conscrypt.NativeCrypto::X509_NAME_hash.
+***Found: "MD5" in com.rubetek.client.modules.rtsp.RtspClient$Companion::C.
+***Found: "MD5" in org.apache.http.impl.auth.NTLMEngineImpl::ntlm2SessionResponse.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in org.conscrypt.NativeCrypto::X509_NAME_hash_old.
+***Found: "MD5" in com.sun.mail.smtp.DigestMD5::a.
+***Found: "MD5" in com.meari.sdk.utils.Md5::encrypt1.
+***Found: "MD5" in com.meari.sdk.utils.Md5::encrypt.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "0000000000000000" in com.meari.sdk.utils.AesHelper::decrypt:6.
+***Found: Constant "35a69fd1-6527-4566-b190-921f9a651488" in com.meari.sdk.utils.SdkUtils::getOKHttpHeader:55.
+***Found: Constant "3" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "-80" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "90" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "-1" in java.math.BigInteger::subtract:1448.
+***Found: Constant "HmacSha512" in com.google.android.gms.internal.firebase-auth-api.zzez::zzc:44.
+***Found: Constant "5" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "1" in java.math.BigInteger::subtract:1448.
+***Found: Constant "-4" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "pin_code" in com.rubetek.client.ui.settings.app.security.pincode.util.PinCodeEncrypted::init.
+***Found: Constant "106" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "4" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "-100" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "6b7e0b41" in com.p2p.core.P2PSpecial.HttpSend::serverNotifySetPwd.
+***Found: Constant "6b7e0b41" in com.p2p.core.P2PSpecial.HttpSend::serverNotifySetPwd.
+***Found: Constant "HmacSha256" in com.google.android.gms.internal.firebase-auth-api.zzez::zzc:14.
+***Found: Constant "61" in com.meari.sdk.utils.BaseUtils::encode:163.
+***Found: Constant "7" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant ":" in com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser$AuthenticationHelper::c:65.
+***Found: Constant "PASSWORD_VERIFIER" in cognitoidentityprovider.CognitoUser::run:44.
+***Found: Constant "PASSWORD_VERIFIER" in cognitoidentityprovider.CognitoUser::run:40.
+***Found: Constant "-82" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "61" in com.meari.sdk.utils.BaseUtils::encode:161.
+***Found: Constant "6" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "0000000000000000" in com.meari.sdk.utils.AesHelper::encrypt:5.
+***Found: Constant "-31" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "HmacSha384" in com.google.android.gms.internal.firebase-auth-api.zzez::zzc:29.
+***Found: Constant "2" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "-126" in com.p2p.core.utils.DES::clinit:7.
+***Found: Constant "HmacSha256" in com.google.android.gms.internal.firebase-auth-api.zzez::zzb:16.
+***Found: Constant "8" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "1" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: Constant "HmacSHA256" in com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser$AuthenticationHelper::c.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.SslUtils in util.SslUtils::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.SslUtils in util.SslUtils::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in util.SslUtils::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://google.com/" in com.google.api.client.googleapis.batch.BatchUnparsedResponse::getFakeResponse.
+***Found: "http://google.com/" in com.google.api.client.testing.http.HttpTesting::clinit.
+***Found: "http://develop.meari.com.cn/arenti/v2/product/list" in com.meari.sdk.UserRequestManager::getProductList2.
+***Found: "http://localhost/" in retrofit2.Response::success.
+***Found: "http://169.254.169.254" in com.google.api.client.googleapis.auth.oauth2.OAuth2Utils::getMetadataServerUrl:3.
+***Found: "http://localhost/" in retrofit2.Response::error.
+***Found: "http://localhost/" in retrofit2.Response::success.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "0000000000000000" in com.meari.sdk.utils.AesHelper::decrypt:6.
+***Found: "0000000000000000" in com.meari.sdk.utils.AesHelper::encrypt:5.
+***Found: "5" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "3" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "2" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "7" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "4" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "8" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "1" in com.p2p.core.utils.DesUtils::clinit:7.
+***Found: "6" in com.p2p.core.utils.DesUtils::clinit:7.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in l in com.sun.mail.util.SocketFetcher::l.
+***Didn't manually verify hostname in c in com.rubetek.client.modules.rtsp.utils.NetUtils::c.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in androidx.transition.Explode::calculateOut.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.hash.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.meari.sdk.mqtt.d::j.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.ui.view.speechrecognitionview.animators.BarRmsAnimator::f.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.perf.session.PerfSession::shouldCollectGaugesAndEvents.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.material.color.utilities.QuantizerWsmeans::quantize.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.rtp.upstream.RtcpStatsFeedback::init.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in com.alibaba.fastjson.util.AntiCollisionHashMap::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.rtp.upstream.RtcpStatsFeedback::delayToSendNextRtcpReport.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::cloneAndInsert.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.analytics.DefaultPlaybackSessionManager::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.ui.view.snowfall.Randomizer::init.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.modules.app_settings.assistant.voice.VoiceRecognizeEN$initMainView$1::invokeSuspend.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.upstream.cache.SimpleCache::init.
+***Found: Untrused PRNG (java.util.Random) in com.amazonaws.retry.PredefinedRetryPolicies$SDKDefaultBackoffStrategy::init.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.modules.app_settings.assistant.voice.VoiceRecognizeRU$initMainView$1::invokeSuspend.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.remoteconfig.RemoteConfigComponent::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.firebase.ui.auth.util.data.SessionUtils::a.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.modules.cameras.CameraRegistrationInteractor$registerCameras$2::invokeSuspend.
+***Found: Untrused PRNG (java.util.Random) in com.p2p.core.network.NetManager::randomServer.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.util.SntpClient::writeTimestamp.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::cloneAndClear.
+***Found: Untrused PRNG (java.util.Random) in org.apache.thrift.transport.TFileTransport::main.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.measurement.zzef::zzb.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.Striped64::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.perf.transport.RateLimiter::getSamplingBucketId.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.upstream.cache.CachedContentIndex$LegacyStorage::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.Utils::getRandomDelayForSyncPrevention.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.rtp.upstream.RtcpStatsFeedback::init.
+***Found: Untrused PRNG (java.util.Random) in org.apache.thrift.server.TThreadPoolServer::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.perf.config.RemoteConfigManager::init.
+***Found: Untrused PRNG (java.util.Random) in com.sun.mail.auth.Ntlm::g.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.firebase-auth-api.zzfo::zzc.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::init.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.FallbackThreadLocalRandom$implStorage$1::a.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.modules.devices.wifi.services.SignatureHelper::d.
+***Found: Untrused PRNG (java.util.Random) in com.p2p.core.P2PHandler::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.rubetek.client.ui.custom.textdrawable.util.ColorGenerator::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.rtsp.auth.DigestCredentials::getRandom.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zzc.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory::init.
+***Found: Untrused PRNG (java.util.Random) in com.p2p.core.utils.MyUtils::getRandomString.
+***Found: Untrused PRNG (java.util.Random) in me.pushy.sdk.lib.paho.internal.websocket.WebSocketFrame::generateMaskingKey.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.rtsp.RtspSampleStreamWrapper$UdpMediaStreamLoadable::getLocalUdpPort.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.trackselection.RandomTrackSelection::init.
+***Found: Untrused PRNG (java.util.Random) in com.p2p.core.utils.MyUtils::getRandom.
+***Found: Untrused PRNG (java.util.Random) in j$.util.concurrent.ThreadLocalRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.internal.auth-api.zbbb::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::cloneAndRemove.
+***Found: Untrused PRNG (java.util.Random) in com.meari.sdk.utils.SdkUtils::createRandom.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzlb::zzq.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.sdp.core.Origin::generateId.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.exoplayer2.source.rtp.upstream.RtcpStatsFeedback::init.
+***Found: Untrused PRNG (java.util.Random) in com.meari.sdk.utils.SdkUtils::nextInt.
+***Found: Untrused PRNG (java.util.Random) in com.google.api.client.util.ExponentialBackOff::nextBackOffMillis.
+=======================================
+=======================================
+***Violated Rule 14: Used Predictable KeyStore Password
+***Found: "notasecret" in com.google.api.client.googleapis.auth.oauth2.GoogleCredential$Builder::setServiceAccountPrivateKeyFromP12File.
+***Found: "123456" in com.meari.sdk.utils.SdkUtils::getTlsFactory:19.
+***Found: "notasecret" in com.google.api.client.googleapis.GoogleUtils::getCertificateTrustStore.
+***Found: "password" in com.meari.sdk.mqtt.f::init.
+***Found: "123456" in com.meari.sdk.mqtt.b::e.
+***Found: "123456" in com.meari.sdk.mqtt.b::e:109.
+***Found: "admin" in com.meari.sdk.mqtt.f::init.
+***Found: "123456" in com.meari.sdk.mqtt.f::c:114.
+***Found: "1" in com.meari.sdk.mqtt.b::e:113.
+***Found: "awsiotkeystorepassword" in com.amazonaws.mobileconnectors.iot.AWSIotKeystoreHelper::b:37.
+***Found: "notasecret" in com.google.api.client.googleapis.auth.oauth2.GoogleCredential$Builder::setServiceAccountPrivateKeyFromP12File.
+=======================================
