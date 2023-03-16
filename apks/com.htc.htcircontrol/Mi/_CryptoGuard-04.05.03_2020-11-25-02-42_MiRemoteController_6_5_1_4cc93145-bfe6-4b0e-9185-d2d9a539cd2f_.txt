@@ -1,0 +1,269 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.htc.htcircontrol/Mi/MiRemoteController_6_5_1.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "AES/ECB/NoPadding" in hb.e::i.
+***Found: "RC4" in of.c::a.
+***Found: "AES" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::encryptAES.
+***Found: "AES/ECB/PKCS5Padding" in s8.a::e.
+***Found: "AES/ECB/PKCS5Padding" in com.xiaomi.onetrack.d.a::a.
+***Found: "RC4" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::newRC4Cipher.
+***Found: "RC4" in com.xiaomi.accountsdk.utils.CloudCoder::newRC4Cipher.
+***Found: "DES" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::decryptByteArray.
+***Found: "AES/ECB/NoPadding" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::encrypt.
+***Found: "AES/ECB/NoPadding" in com.xiaomi.mitv.socialtv.common.utils.EncryptUtil::decrypt.
+***Found: "AES/ECB/PKCS5Padding" in com.xiaomi.onetrack.d.a::a.
+***Found: "AES/ECB/PKCS5Padding" in y4.a::e.
+***Found: "AES/ECB/PKCS5Padding" in com.xiaomi.onetrack.d.a::b.
+***Found: "AES" in com.xiaomi.mitv.socialtv.common.utils.SignatureUtil::encrypt.
+***Found: "AES/ECB/PKCS5Padding" in s8.a::f.
+***Found: "AES/ECB/PKCS5Padding" in y4.a::f.
+***Found: "RC4" in of.c::b.
+***Found: "DES/CBC/PKCS5Padding" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::decryptDES.
+***Found: "DES/CBC/PKCS5Padding" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::encryptDES.
+***Found: "AES" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::newAESCipher.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA1" in kf.c0::i.
+***Found: "MD5" in com.xiaomi.onetrack.d.d::a.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "MD5" in nf.d::c.
+***Found: "MD5" in com.xiaomi.onetrack.d.d::e.
+***Found: "SHA1" in com.xiaomi.accountsdk.utils.CloudCoder::getFileSha1Digest.
+***Found: "MD5" in kf.o::a.
+***Found: "MD5" in n4.a::c.
+***Found: "SHA1" in com.xiaomi.onetrack.util.oaid.helpers.i::a.
+***Found: "SHA-1" in okio.HashingSource::sha1.
+***Found: "SHA1" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::getFileSha1Digest.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "MD5" in kf.c0::e.
+***Found: "SHA-1" in com.google.common.hash.r$f::clinit.
+***Found: "SHA1" in ec.p::g.
+***Found: "SHA-1" in okio.HashingSink::sha1.
+***Found: "SHA-1" in com.xiaomi.accountsdk.account.utils.PackageUtils::getSignatureDigestSha1.
+***Found: "MD5" in com.xiaomi.accountsdk.utils.CloudCoder::randomRc4Key128.
+***Found: "MD5" in com.xiaomi.ai.utils.UploadHelper::getRandomRequestId.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zza.
+***Found: "SHA1" in com.xiaomi.onetrack.util.oaid.helpers.j::a.
+***Found: "MD5" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::getMD5.
+***Found: "MD5" in okio.HashingSink::md5.
+***Found: "SHA1" in com.google.firebase.iid.zzan::zza.
+***Found: "MD5" in com.xiaomi.ai.utils.g::init.
+***Found: "MD5" in com.google.common.hash.r$e::clinit.
+***Found: "MD5" in kf.o::d.
+***Found: "SHA1" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::hashDeviceInfo.
+***Found: "MD5" in of.a::g.
+***Found: "MD5" in com.xiaomi.mitv.epg.downloader.FileUtils::checkMd5.
+***Found: "SHA" in of.a::i.
+***Found: "MD5" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::newMD5AESCipher.
+***Found: "SHA1" in com.xiaomi.onetrack.d.d::c.
+***Found: "MD5" in nf.d::b.
+***Found: "MD5" in com.google.android.gms.measurement.internal.zzfx::getMessageDigest.
+***Found: "SHA1" in nf.b::d.
+***Found: "MD5" in of.a::h.
+***Found: "SHA-1" in og.i::Y.
+***Found: "MD5" in com.xiaomi.accountsdk.account.utils.PackageUtils::getSignatureDigestMd5.
+***Found: "MD5" in okio.Buffer::md5.
+***Found: "MD5" in com.miui.privacypolicy.NetUtils::getMd5Digest.
+***Found: "SHA-1" in okio.Buffer::sha1.
+***Found: "SHA1" in kf.c0::h.
+***Found: "MD5" in kf.o::c.
+***Found: "SHA1" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::hash4SHA1.
+***Found: "SHA1" in rg.h::e.
+***Found: "MD5" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::randomRc4Key128.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "MD5" in com.xiaomi.mitv.socialtv.common.utils.SignatureUtil::getMD5.
+***Found: "MD5" in com.hzy.tvmao.utils.c::a.
+***Found: "SHA-1" in og.i::Z.
+***Found: "MD5" in okio.HashingSource::md5.
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code
+***Found: Constant "1L" in sevenz.AES256SHA256Decoder::init.
+***Found: Constant "33" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "73" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "94" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "6" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "1" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "101" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "4" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "84" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "581582928c881b42eedce96331bff5d3" in qf.c::b.
+***Found: Constant "123" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "101" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "2840d5f0d078472dbc5fb78e39da123e" in ob.a::d:2.
+***Found: Constant "0L" in sevenz.AES256SHA256Decoder::init.
+***Found: Constant "1L" in sevenz.AES256SHA256Decoder::init.
+***Found: Constant "0123456789abcdefghijklmnopqrstuvwxyz" in yb.c::a.
+***Found: Constant "77" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "7" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "2" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "116" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "52" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "37" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "2840d5f0d078472dbc5fb78e39da123e" in ob.a::h:2.
+***Found: Constant "5" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "100" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "2840d5f0d078472dbc5fb78e39da123e" in ob.a::j:4.
+***Found: Constant "80" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "2840d5f0d078472dbc5fb78e39da123e" in ob.a::f:2.
+***Found: Constant "100" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "116" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "3e4f2550-0818-4665-9bfb-edbe9b15f586" in s8.b::c.
+***Found: Constant "118" in com.xiaomi.onetrack.d.c::a.
+***Found: Constant "8" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: Constant "3" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[1, 0]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1, 0]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://localhost/" in vp.l::j.
+***Found: "http://account.preview.n.xiaomi.net" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.micloud.preview.n.xiaomi.net/micAnonymous/mic/account/config" in com.xiaomi.accountsdk.account.URLs::clinit:2.
+***Found: "http://api.account.preview.n.xiaomi.net/pass/v3" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.account.preview.n.xiaomi.net/pass/v2/safe" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://account.preview.n.xiaomi.net/oauth2/" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.account.xiaomi.com/pass" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://" in s8.i::b:1.
+***Found: "http://" in com.xiaomi.mitv.epg.downloader.MiHttpRequest::getFinalUrl.
+***Found: "http://localhost/" in vp.l::k.
+***Found: "http://" in ec.h0$a::run.
+***Found: "http://api.account.preview.n.xiaomi.net/pass/v2" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.account.xiaomi.com/pass" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.account.preview.n.xiaomi.net/pass" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://account.preview.n.xiaomi.net/pass" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.account.preview.n.xiaomi.net/pass/v2" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.account.preview.n.xiaomi.net/pass" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://api.device.preview.n.xiaomi.net" in com.xiaomi.accountsdk.account.URLs::clinit.
+***Found: "http://open.account.preview.n.xiaomi.net/third/" in com.xiaomi.accountsdk.account.URLs::clinit:20.
+***Found: "http://localhost/" in vp.l::c.
+=======================================
+=======================================
+***Violated Rule 8: Used < 1000 iteration for PBE
+***Found: "0" in co.i$s::init.
+***Found: "2" in co.j$m::init.
+***Found: "0" in co.i$o::init.
+***Found: "2" in co.v$q::init.
+***Found: "2" in co.a$y::init.
+***Found: "0" in co.v$j::init.
+***Found: "1" in ao.a$c::init.
+***Found: "2" in co.a$a0::init.
+***Found: "0" in co.i$q::init.
+***Found: "2" in co.a$b0::init.
+***Found: "2" in co.a$c0::init.
+***Found: "2" in co.j$o::init.
+***Found: "1" in ao.a::i.
+***Found: "2" in co.a$x::init.
+***Found: "2" in co.j0$f::init.
+***Found: "2" in ao.a::i.
+***Found: "4" in ao.a$c::init.
+***Found: "3" in ao.a$c::init.
+***Found: "0" in co.v$l::init.
+***Found: "2" in co.a$z::init.
+***Found: "2" in co.v$o::init.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "0" in ff.a::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0102030405060708" in ce.a::e.
+***Found: "6" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "1" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "-121" in s8.g::clinit.
+***Found: "4" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "124" in s8.g::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "83" in s8.g::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "-51" in s8.g::clinit.
+***Found: "95" in s8.g::clinit.
+***Found: "40" in s8.g::clinit.
+***Found: "-50" in s8.g::clinit.
+***Found: "-74" in s8.g::clinit.
+***Found: "0123456789abcdefghijklmnopqrstuvwxyz" in yb.c::a.
+***Found: "0" in ff.a::clinit.
+***Found: "-98" in s8.g::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "\u0000\u0000\u0000\u0000\u0000\u0000xiaomi.com" in com.xiaomi.accountsdk.logger.EncryptLogSender::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "-49" in s8.g::clinit.
+***Found: "7" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "2" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "0102030405060708" in com.xiaomi.accountsdk.utils.CloudCoder::newAESCipher.
+***Found: "16" in s8.g::clinit.
+***Found: "5" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "0102030405060708" in com.xiaomi.accountsdk.utils.AESCoder::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "0102030405060708" in com.xiaomi.mitv.socialtv.common.utils.CloudCoder::newAESCipher.
+***Found: "8" in s8.g::clinit.
+***Found: "-32" in s8.g::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "-54" in s8.g::clinit.
+***Found: "8" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "3" in com.xiaomi.mitv.phone.remotecontroller.utils.EncryptUtil::clinit.
+***Found: "-60" in s8.g::clinit.
+***Found: "0" in ff.a::clinit.
+***Found: "50" in s8.g::clinit.
+=======================================
+=======================================
+***Violated Rule 11: Found predictable seeds in code
+***Found: "www.bouncycastle.org" in sm.a::init.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.google.common.cache.t::clinit.
+***Found: Untrused PRNG (java.util.Random) in o8.d::i.
+***Found: Untrused PRNG (java.util.Random) in ei.l::clinit.
+***Found: Untrused PRNG (java.util.Random) in o8.d::clinit.
+***Found: Untrused PRNG (java.util.Random) in nj.c::init.
+***Found: Untrused PRNG (java.util.Random) in com.alibaba.fastjson.util.AntiCollisionHashMap::init.
+***Found: Untrused PRNG (java.util.Random) in jp.n::j.
+***Found: Untrused PRNG (java.util.Random) in yc.c$f::clinit.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.OkHttpClient::newWebSocket.
+***Found: Untrused PRNG (java.util.Random) in oo.f$b::o.
+***Found: Untrused PRNG (java.util.Random) in i4.k::d.
+***Found: Untrused PRNG (java.util.Random) in ed.a::init.
+***Found: Untrused PRNG (java.util.Random) in com.alibaba.fastjson.util.AntiCollisionHashMap::init.
+***Found: Untrused PRNG (java.util.Random) in u3.g::g.
+***Found: Untrused PRNG (java.util.Random) in com.duokan.phone.remotecontroller.airkan.AirkanService::init.
+***Found: Untrused PRNG (java.util.Random) in jp.f::clinit.
+***Found: Untrused PRNG (java.util.Random) in uo.b::g.
+***Found: Untrused PRNG (java.util.Random) in oo.e$a::M.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.accountsdk.request.UploadFileRequest::execute.
+***Found: Untrused PRNG (java.util.Random) in nj.b$a::initialValue.
+***Found: Untrused PRNG (java.util.Random) in am.e::c.
+***Found: Untrused PRNG (java.util.Random) in com.google.common.hash.e0::clinit.
+***Found: Untrused PRNG (java.util.Random) in yp.c::init.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.onetrack.util.ac::a.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.onetrack.b.a::a.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.mitv.epg.downloader.MiHttpRequest::getFinalUrl.
+***Found: Untrused PRNG (java.util.Random) in kf.r::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.measurement.internal.zzfx::zzmj.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.account.auth.AuthorizeHelper::clinit.
+***Found: Untrused PRNG (java.util.Random) in nj.b$a::a.
+***Found: Untrused PRNG (java.util.Random) in jp.p::r.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.onetrack.b.c::run.
+***Found: Untrused PRNG (java.util.Random) in yp.f::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zza.
+***Found: Untrused PRNG (java.util.Random) in l4.a::clinit.
+***Found: Untrused PRNG (java.util.Random) in qf.c::e.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.accountsdk.utils.Coder::generateNonce.
+***Found: Untrused PRNG (java.util.Random) in g4.f0::init.
+***Found: Untrused PRNG (java.util.Random) in kf.c0::b.
+***Found: Untrused PRNG (java.util.Random) in com.xiaomi.onetrack.b.e::a.
+***Found: Untrused PRNG (java.util.Random) in androidx.transition.Explode::M0.
+=======================================

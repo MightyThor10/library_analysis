@@ -1,0 +1,301 @@
+Analyzing APK File: /home/srazmjo/library_analysis/apks/com.clj.fastble/kingsong/Kingsong_3.6.78_Apkpure.apk
+=======================================
+***Violated Rule 1: Found broken crypto schemes
+***Found: "DESede" in cn.finalteam.toolsfinal.coder.c::b.
+***Found: "DESede" in cn.finalteam.toolsfinal.coder.c::c.
+***Found: "DES" in cn.finalteam.toolsfinal.coder.d::a.
+***Found: "DES" in cn.finalteam.toolsfinal.coder.d::b.
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions
+***Found: "SHA1" in com.autonavi.aps.amapapi.security.a::a.
+***Found: "MD5" in com.kingsong.dlc.util.h::c0.
+***Found: "MD5" in com.kingsong.dlc.util.y::a.
+***Found: "MD5" in com.google.android.gms.tagmanager.zzbz::zza:4.
+***Found: "SHA1" in cn.jpush.android.bu.k::a.
+***Found: "SHA-1" in okio.c::V0.
+***Found: "MD5" in cn.jiguang.e.f::e.
+***Found: "MD5" in okio.l::l.
+***Found: "SHA-1" in com.tencent.bugly.proguard.ab::a.
+***Found: "SHA-1" in com.google.firebase.messaging.GmsRpc::getHashedFirebaseAppName.
+***Found: "SHA-1" in com.google.android.gms.common.zzm::zzc.
+***Found: "MD5" in okio.c::W.
+***Found: "MD5" in com.google.android.gms.internal.gtm.zzfs::zze.
+***Found: "MD5" in com.kingsong.dlc.util.d0::a.
+***Found: "MD5" in com.danikula.videocache.p::d.
+***Found: "SHA-1" in okio.ByteString::sha1.
+***Found: "SHA1" in jv::I.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1HashBase64.
+***Found: "MD5" in com.tencent.open.utils.m::g.
+***Found: "MD5" in okio.ByteString::md5.
+***Found: "SHA-1" in okio.m::l.
+***Found: "MD5" in cn.jpush.android.ad.a::a.
+***Found: "MD5" in com.tencent.open.utils.m::g.
+***Found: "MD5" in cn.finalteam.toolsfinal.coder.f::d.
+***Found: "MD5" in com.amap.api.col.3l.w7::b.
+***Found: "SHA1" in com.google.android.gms.common.util.AndroidUtilsLight::getPackageCertificateHashBytes.
+***Found: "SHA1" in cn.jiguang.e.f::b.
+***Found: "MD5" in cn.jiguang.e.f::d.
+***Found: "MD5" in com.autonavi.aps.amapapi.utils.i::l.
+***Found: "MD5" in cn.jiguang.an.b::a.
+***Found: "SHA-1" in com.facebook.common.util.SecureHashUtil::makeSHA1Hash.
+***Found: "MD5" in com.tencent.open.utils.k::b.
+***Found: "SHA1" in cn.jiguang.z.a::b.
+***Found: "MD5" in com.autonavi.aps.amapapi.security.a::a.
+***Found: "MD5" in okio.m::j.
+***Found: "SHA-1" in okio.l::m.
+***Found: "MD5" in com.facebook.common.util.SecureHashUtil::makeMD5Hash.
+***Found: "MD5" in com.tencent.mm.a.a::a.
+***Found: "MD5" in com.kingsong.dlc.okhttp.network.UrlUtils::MD5encryption.
+***Found: "MD5" in com.kingsong.dlc.util.d0::b.
+***Found: "SHA1" in com.amap.api.services.core.SearchUtils::getSHA1.
+***Found: "SHA1" in com.google.firebase.installations.local.IidStore::getIdFromPublicKey.
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN in UNKNOWN::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of proguard.s in proguard.s::getAcceptedIssuers.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of proguard.s in proguard.s::UNKNOWN.
+***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 5: Used export grade public Key
+***Found: "1024" in cn.finalteam.toolsfinal.coder.RSACoder::g.
+=======================================
+=======================================
+***Violated Rule 6: Used untrusted HostNameVerifier
+***Cause: Fixed "[0]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[1]" in UNKNOWN::UNKNOWN.
+***Cause: Fixed "[0, ,checkHost:, host:]" in UNKNOWN::UNKNOWN.
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol
+***Found: "http://dualstack-arestapi.amap.com/v3/geocode/regeo" in com.autonavi.aps.amapapi.trans.c::a:82.
+***Found: "http://www.amazon.co.uk/exec/obidos/ASIN/0571058086/qid=1099836249/sr=1-3/ref=sr_1_11_3/202-6017285-1620664" in jxl.demo.Write::writeLabelFormatSheet.
+***Found: "http://www.google-analytics.com" in com.google.android.gms.internal.gtm.zzeu::clinit:14.
+***Found: "http://www.andykhan.com/jexcelapi" in jxl.demo.Write::writeLabelFormatSheet.
+***Found: "http://www.andykhan.com/jexcelapi/index.html" in jxl.read.biff.HyperlinkRecord::init.
+***Found: "http://" in com.tencent.open.utils.m::b:1.
+***Found: "http://www.andykhan.com/jexcelapi/index.html" in jxl.demo.ReadWrite::modify.
+***Found: "http://www.andykhan.com/jexcelapi/index.html" in jxl.read.biff.HyperlinkRecord::init.
+***Found: "http://restsdk.amap.com/v3/geocode/regeo" in com.autonavi.aps.amapapi.trans.c::a:83.
+***Found: "http://" in com.tencent.open.utils.m::c:1.
+=======================================
+=======================================
+***Violated Rule 10: Found constant IV in code
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "l" in com.amap.api.col.3l.b2::c:1.
+***Found: "1" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "76" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "89" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "7" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "104" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "61" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "121" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "1" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "61" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "76" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "113" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "6" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "54" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "66" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "103" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "84" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "50" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "86" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "73" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "3" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "119" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "75" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "53" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "55" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "105" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "88" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "117" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "13" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "74" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "70" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "52" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "108" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "122" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "97" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "119" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "69" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "113" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "122" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "8" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "85" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "101" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "76" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "68" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "122" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "4" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "5" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "74" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "108" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "83" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "106" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "73" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "70" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "69" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "51" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "71" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "70" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "56" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "98" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "83" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "68" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "75" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "73" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "53" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "106" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "111" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "90" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "68" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "110" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "104" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "3" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "68" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "81" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "76" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "66" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "53" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "2" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "66" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "81" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "119" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "76" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "75" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "66" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "118" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "113" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "81" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "8" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "78" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "69" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "75" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "80" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "71" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "48" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "82" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "89" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "119" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "75" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "49" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "105" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "88" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "70" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "112" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "54" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "51" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "119" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "87" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "80" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "48" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "84" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "115" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "97" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "99" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "99" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "122" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "55" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "67" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "JPUSHJPUSH123456" in cn.jpush.android.aa.a::a.
+***Found: "121" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "120" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "79" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "74" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "1" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "81" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "81" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "43" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "0" in cn.finalteam.toolsfinal.coder.a::clinit:1.
+***Found: "116" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "69" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "115" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "104" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "66" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "115" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "5" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "65" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "2" in com.autonavi.aps.amapapi.security.a::clinit:3.
+***Found: "70" in com.autonavi.aps.amapapi.security.a::clinit:2.
+***Found: "77" in com.autonavi.aps.amapapi.security.a::clinit:2.
+=======================================
+=======================================
+***Violated Rule 12: Should check HostnameVerification manually
+***Didn't manually verify hostname in run in hv::run.
+=======================================
+=======================================
+***Violated Rule 13: Used untrusted PRNG
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.activity.moving.VideoPlayAty$c::run.
+***Found: Untrused PRNG (java.util.Random) in com.tencent.connect.auth.b::c.
+***Found: Untrused PRNG (java.util.Random) in cn.jiguang.au.c::d.
+***Found: Untrused PRNG (java.util.Random) in androidx.transition.Explode::calculateOut.
+***Found: Untrused PRNG (java.util.Random) in cl::b.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.tagmanager.zzam::init.
+***Found: Untrused PRNG (java.util.Random) in com.hjq.permissions.PermissionFragment::b.
+***Found: Untrused PRNG (java.util.Random) in cn.jiguang.az.d::clinit.
+***Found: Untrused PRNG (java.util.Random) in okhttp3.y::b.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.tagmanager.zzeu::zze.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.3l.h2$a::init.
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.adapter.mine.VoteItemAdapter::G1.
+***Found: Untrused PRNG (java.util.Random) in tk::b.
+***Found: Untrused PRNG (java.util.Random) in yk::b.
+***Found: Untrused PRNG (java.util.Random) in j::b.
+***Found: Untrused PRNG (java.util.Random) in com.bumptech.glide.load.resource.gif.f::g.
+***Found: Untrused PRNG (java.util.Random) in com.autonavi.aps.amapapi.utils.i::d.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.s.j2::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.analytics.Tracker::init.
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.fragment.carmanager.CarManagerOneFrgm::s.
+***Found: Untrused PRNG (java.util.Random) in com.tencent.bugly.proguard.s::a.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.KotlinRandom::init.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.ads.identifier.AdvertisingIdClient::zzc.
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.adapter.MainMovingMultiAdp::U1.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.s.j2::l.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants::init.
+***Found: Untrused PRNG (java.util.Random) in jv::init.
+***Found: Untrused PRNG (java.util.Random) in cn.jiguang.ay.c::c.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.s.t2::c.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.3l.j6::clinit.
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.wears.b::a.
+***Found: Untrused PRNG (java.util.Random) in kh::a.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.3l.w6::c.
+***Found: Untrused PRNG (java.util.Random) in cn.jpush.android.az.a::d.
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.util.v0::H.
+***Found: Untrused PRNG (java.util.Random) in com.kingsong.dlc.util.j::v.
+***Found: Untrused PRNG (java.util.Random) in cn.jiguang.bm.e::b.
+***Found: Untrused PRNG (java.util.Random) in androidx.activity.result.ActivityResultRegistry::init.
+***Found: Untrused PRNG (java.util.Random) in kotlin.random.b$a::a.
+***Found: Untrused PRNG (java.util.Random) in com.google.android.gms.tagmanager.zzeb::zza.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.3l.r2::a.
+***Found: Untrused PRNG (java.util.Random) in com.amap.api.col.3l.j6::l.
+***Found: Untrused PRNG (java.util.Random) in com.google.firebase.installations.Utils::getRandomDelayForSyncPrevention.
+***Found: Untrused PRNG (java.util.Random) in cn.jpush.android.az.a::c.
+=======================================
