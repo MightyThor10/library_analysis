@@ -1,0 +1,25 @@
+{"cluster":"no.nordicsemi.android", "library":"no.nordicsemi.android.dfu", "app":"com.jaga.ibraceletplus.keepfit"}
+{"cluster":"com.tuya.smart", "library":"com.tuya.smart.android.base, com.tuya.smart.mqtt, com.tuya.smart.sdk", "app":"com.roborock.smart"}
+{"cluster":"com.tuya.sdk", "library":"com.tuya.sdk.bluetooth, com.tuya.sdk.mqtt, com.tuya.sdk.camera", "app":"com.lscsmartconnection.smart"}
+{"cluster":"com.tuyasmart.stencil", "library":"com.tuyasmart.stencil.app, com.tuyasmart.stencil.utils, com.tuyasmart.stencil.bean", "app":"com.orientelectric.smart"}
+{"cluster":"com.tencent.wcdb", "library":"com.tencent.wcdb.database, com.tencent.wcdb.repair, com.tencent.wcdb.support", "app":"com.tcl.smarthome"}
+{"cluster":"com.eapil.lib", "library":"com.eapil.lib", "app":"com.avidsen.protecthome"}
+{"cluster":"com.connectsdk.service", "library":"com.connectsdk.service.airplay, com.connectsdk.service.webos, com.connectsdk.service.netcast", "app":"com.tekoia.sure.activities"}
+{"cluster":"com.uei.encryption", "library":"com.uei.encryption.algorythm, com.uei.encryption.random, com.uei.encryption.helpers", "app":"com.adi.remote.phone"}
+{"cluster":"com.telink.crypto", "library":"com.telink.crypto", "app":"com.yeelight.cherry"}
+{"cluster":"com.inuker.bluetooth", "library":"com.inuker.bluetooth.library.utils, com.inuker.bluetooth.library.model, com.inuker.bluetooth.library.connect", "app":"com.qcymall.googleearphonesetup"}
+{"cluster":"com.espressif.iot", "library":"com.espressif.iot.esptouch.protocol, com.espressif.iot.esptouch.util, com.espressif.iot.esptouch.task", "app":"com.rubetek.client"}
+{"cluster":"com.google.android", "library":"com.google.android.tv.remote, com.google.android.tv.support", "app":"com.cetusplay.remotephone"}
+{"cluster":"com.google.polo", "library":"com.google.polo.ssl, com.google.polo.pairing, com.google.polo.wire", "app":"wifi.control.samsung"}
+{"cluster":"com.hiflying.commons", "library":"com.hiflying.commons.utils, com.hiflying.commons.log", "app":"com.millheat.heater"}
+{"cluster":"com.amazon.whisperlink", "library":"com.amazon.whisperlink.port, com.amazon.whisperlink.media, com.amazon.whisperlink.filetransfer", "app":"com.castify"}
+{"cluster":"com.tuya.fetch", "library":"com.tuya.fetch", "app":"com.kalley.smart"}
+{"cluster":"com.tutk.utils", "library":"com.tutk.utils", "app":"com.yugong.Backome"}
+{"cluster":"com.amazonaws.mobileconnectors", "library":"com.amazonaws.mobileconnectors.remoteconfiguration.internal", "app":"com.weedle.led_remotes"}
+{"cluster":"com.alibaba.wireless", "library":"com.alibaba.wireless.security", "app":"com.elock.jyd"}
+{"cluster":"org.teleal.common", "library":"org.teleal.common.util, org.teleal.common.http, org.teleal.common.swingfwk", "app":"com.wifiaudio.Yamaha"}
+{"cluster":"org.seamless.util", "library":"org.seamless.util, org.seamless.http", "app":"com.nero.swiftlink.mirror"}
+{"cluster":"org.qtproject.qt5", "library":"org.qtproject.qt5.android.bluetooth", "app":"com.specialized.turbo"}
+{"cluster":"com.frillapps2.generalremotelib", "library":"com.frillapps2.generalremotelib.frags.actualremote.smartremote, com.frillapps2.generalremotelib.noir, com.frillapps2.generalremotelib.remotes", "app":"com.weedle.tv_box_android_remotes"}
+{"cluster":"com.htc.htcircontrol", "library":"com.htc.htcircontrol", "app":"com.duokan.phone.remotecontroller"}
+{"cluster":"com.clj.fastble", "library":"com.clj.fastble.data, com.clj.fastble.utils, com.clj.fastble.bluetooth", "app":"com.kingsong.dlc"}
