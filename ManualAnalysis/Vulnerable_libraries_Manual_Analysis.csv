@@ -1,0 +1,146 @@
+Cluster Name,App ID,App Version,Library Name,Vulnerabilities Found by Manual Analysis
+com.tuya.sdk,com.lscsmartconnection.smart,1.1.4,com.tuya.sdk.bluetooth,"1. Malicous usage of AES/GCM/NOPADDING (intentionally tries to evade security) in .AES#50 Java file in method bppdpdq:
+
+Cipher cipher = Cipher.getInstance(""AES/"" + ((char) (""AES/GCM/NoPadding"".charAt(4) - 2)) + ""AES/GCM/NoPadding"".charAt(5) + ((char) (""AES/GCM/NoPadding"".charAt(6) - 11)) + ""/NoPadding"");
+
+This translates to AES/ECB/NoPadding which is vulnerable. 
+
+2. Malicous usage of AES/GCM/NOPADDING (intentionally tries to evade security) in the .AES#155 in method pdqppqb:
+
+Cipher cipher = Cipher.getInstance(""AES/"" + ((char) (""AES/GCM/NoPadding"".charAt(4) - 2)) + ""AES/GCM/NoPadding"".charAt(5) + ((char) (""AES/GCM/NoPadding"".charAt(6) - 11)) + ""/NoPadding"");
+
+This translates to AES/ECB/NoPadding which is vulnerable. 
+
+3. Malicous usage of AES/GCM/NOPADDING (intentionally tries to evade security) 1 Time in .BLEUtil#16 in method bdpdqbp:
+
+aESUtil.setALGO(""AES/"" + ((char) (""AES/GCM/NoPadding"".charAt(4) - 2)) + ""AES/GCM/NoPadding"".charAt(5) + ((char) (""AES/GCM/NoPadding"".charAt(6) - 11)) + ""/NoPadding"");
+
+This translates to AES/ECB/NoPadding which is vulnerable. "
+com.tuya.sdk,com.lscsmartconnection.smart,1.1.4,com.tuya.sdk.mqtt,"1. Found usage of TLSv1.2 that can be vulnerable in com.tuya.sdk.mqtt.TLSSocketFactory#522 in method bdpdqbp:
+
+String[] supportedProtocols = sSLSocket.getSupportedProtocols();
+        if (supportedProtocols != null && supportedProtocols.length != 0) {
+            ArrayList arrayList = new ArrayList();
+            for (String str : supportedProtocols) {
+                C8114L.m38064d(com.tuya.smart.android.network.util.TLSSocketFactory.TAG, ""support protocol: "" + str);
+                if (""TLSv1.3"".equals(str) || ""TLSv1.2"".equals(str)) {
+                    C8114L.m38064d(com.tuya.smart.android.network.util.TLSSocketFactory.TAG, ""add "" + str);
+                    arrayList.add(str);
+                }
+            }
+
+
+2. Found usage of TLS that can be vulnerable in com.tuya.sdk.mqtt.mqttModel#1780-1787:
+
+     try {
+            SSLContext sSLContext = SSLContext.getInstance(SSLSocketFactoryFactory.DEFAULT_PROTOCOL);
+            sSLContext.init(null, new TrustManager[]{x509TrustManager}, null);
+            return sSLContext.getSocketFactory();
+        } catch (GeneralSecurityException unused) {
+            C8114L.m38062e(pbpdpdp, ""The system has no SSLSocketFactory"");
+            throw new AssertionError();
+        }
+
+Default Protocol is defined as ""TLS"" in com.tuya.smart.mqttclient.mqttv3.internal.security#32
+
+3. Also in the same code block the secure random (valued null) in the third parameter is not securely randomized. "
+com.amazonaws.mobileconnectors,com.weedle.led_remotes,10.0.0.4,com.amazonaws.mobileconnectors.remoteconfiguration.internal,"1. Allowing all hostnames and returning true for all hostname verifications: Found in com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher#59-67:
+
+public static class AllowAllHostnameVerifier implements HostnameVerifier {
+        private AllowAllHostnameVerifier() {
+        }
+
+        @Override // javax.net.ssl.HostnameVerifier
+        public boolean verify(String str, SSLSession sSLSession) {
+            return true;
+        }
+    }
+
+2. Trusting all managers, not checking clients or servers, TrustAllManagers Found in com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher#71-87
+    public static class TrustAllManager implements X509TrustManager {
+        private TrustAllManager() {
+        }
+
+        @Override // javax.net.ssl.X509TrustManager
+        public void checkClientTrusted(X509Certificate[] x509CertificateArr, String str) {
+        }
+
+        @Override // javax.net.ssl.X509TrustManager
+        public void checkServerTrusted(X509Certificate[] x509CertificateArr, String str) {
+        }
+
+        @Override // javax.net.ssl.X509TrustManager
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+    }
+
+3 & 4. Usage of TLS as well as vulnerable implementation of secure random as third parameter in SSLContext.init(). Found in com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher#139-149
+private void disableCertificateValidation(HttpsURLConnection httpsURLConnection) {
+        TrustManager[] trustManagerArr = {new TrustAllManager()};
+        try {
+            SSLContext sSLContext = SSLContext.getInstance(""TLS"");
+            sSLContext.init(null, trustManagerArr, null);
+            httpsURLConnection.setSSLSocketFactory(sSLContext.getSocketFactory());
+            httpsURLConnection.setHostnameVerifier(new AllowAllHostnameVerifier());
+        } catch (GeneralSecurityException e) {
+            throw new RuntimeException(e);
+        }
+    }
+"
+com.connectsdk.service,com.tekoia.sure.activities,20200311,com.connectsdk.service.webos,"1. Trust Manager does not properly check if the client is trusted or not. Essentially bypasses the check. Found in com.connectsdk.service.webos.WebOSTVServiceSocketClient#606-608
+
+        @Override // javax.net.ssl.X509TrustManager
+        public void checkClientTrusted(X509Certificate[] x509CertificateArr, String str) throws CertificateException {
+        }
+"
+com.eapil.lib,com.avidsen.protecthome,5.1.20.31,com.eapil.lib,"1. Trust all hosts: In com.eapil.lib.HttpTask#29 under the HttpTask class, the trustAllHosts function attempts to bypass checks for trusted clients and servers. It references xtmArray which itself references xtmArray.java which is an insecure implementation of a trust manager that does nothing for checking trusted servers and clients. 
+
+static TrustManager[] xtmArray = {new MytmArray()};
+
+XtmArray.java: 
+
+class MytmArray implements X509TrustManager {
+    @Override // javax.net.ssl.X509TrustManager
+    public void checkClientTrusted(X509Certificate[] x509CertificateArr, String str) throws CertificateException {
+    }
+
+    @Override // javax.net.ssl.X509TrustManager
+    public void checkServerTrusted(X509Certificate[] x509CertificateArr, String str) throws CertificateException {
+    }
+
+    @Override // javax.net.ssl.X509TrustManager
+    public X509Certificate[] getAcceptedIssuers() {
+        return new X509Certificate[0];
+    }
+}
+
+2. In com.eapil.lib.HttpTask#30-35, an insecure implementation of hostnameverifier also exists which explicitly names the hostnameverifier object as DO_NOT_VERIFY and returns true for the verifying every hostname. 
+
+    static HostnameVerifier DO_NOT_VERIFY = new HostnameVerifier() { // from class: com.eapil.lib.HttpTask.1
+        @Override // javax.net.ssl.HostnameVerifier
+        public boolean verify(String str, SSLSession sSLSession) {
+            return true;
+        }
+    };
+"
+com.google.android,com.cetusplay.remotephone,4.9.4.518,com.google.android.tv.support,"1. In com.google.android.tv.support.remote.core.TcpClient#480, the SSLContext is instantiate using a variable ""TLS"" which is defaulted to TLSv.1 which is vulnerable and recommended to not use.
+
+SSLContext sSLContext = SSLContext.getInstance(SSLSocketFactory.TLS);
+"
+com.google.polo,wifi.control.samsung,2.2.5,com.google.polo.ssl,"1. In com.google.polo.ssl.SSLServerSocketFactoryWrapper#31, SSLContext is instantiated with TLS which defaults to TLSv.1, which is vulnerable and not recommended to use.
+
+SSLContext sSLContext = SSLContext.getInstance(""TLS"");
+"
+com.tutk.utils,com.yugong.Backome,6.1.3,com.tutk.utils,"1. Insecure implmentation of HostnameVerifier. The hostname verifier implemented in com.tutk.utils.AsyncTaskC5503c.java#41 does not properly verify hostnames. Instead, it returns true for every hostname passed into it. 
+
+public class C5504a implements HostnameVerifier {
+        C5504a() {
+        }
+
+        @Override // javax.net.ssl.HostnameVerifier
+        public boolean verify(String str, SSLSession sSLSession) {
+            return true;
+        }
+    }
+"
